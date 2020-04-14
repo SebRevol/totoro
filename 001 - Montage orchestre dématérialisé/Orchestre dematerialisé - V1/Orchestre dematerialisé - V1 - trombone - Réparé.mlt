@@ -1,0 +1,1042 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mlt LC_NUMERIC="C" version="6.20.0" title="Shotcut version 20.02.17" producer="main_bin">
+  <profile description="HD 1080p 25 fps" width="1920" height="1080" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="25" frame_rate_den="1" colorspace="709"/>
+  <playlist id="main_bin">
+    <property name="xml_retain">1</property>
+  </playlist>
+  <producer id="black" in="00:00:00.000" out="00:03:25.720">
+    <property name="length">5144</property>
+    <property name="eof">pause</property>
+    <property name="resource">0</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="mlt_image_format">rgb24a</property>
+    <property name="set.test_audio">0</property>
+  </producer>
+  <playlist id="background">
+    <entry producer="black" in="00:00:00.000" out="00:03:25.720"/>
+  </playlist>
+  <producer id="producer0" title="Anonymous Submission" in="00:00:00.000" out="00:02:58.320">
+    <property name="length">00:02:58:09</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Chef/Jean-Jacques_chef_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-05T13:55:58</property>
+    <property name="shotcut:hash">54631fa1ec31562eee0a931256e35e96</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Jean-Jacques_chef_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter0" out="00:02:58.320">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">468 263 865 485 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist0">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Chef_JJS</property>
+    <property name="shotcut:lock">1</property>
+    <blank length="00:00:22.320"/>
+    <entry producer="producer0" in="00:00:00.000" out="00:02:58.320"/>
+  </playlist>
+  <producer id="producer1" title="Anonymous Submission" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00:00</property>
+    <property name="eof">pause</property>
+    <property name="resource">#00000000</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="mlt_image_format">rgb24a</property>
+    <property name="shotcut:caption">transparent</property>
+    <property name="ignore_points">0</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <filter id="filter1" out="00:00:04.960">
+      <property name="argument">Logo EMGB</property>
+      <property name="geometry">0 0 1920 1080 1</property>
+      <property name="family">Verdana</property>
+      <property name="size">1080</property>
+      <property name="weight">500</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">#ffffffff</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#aa000000</property>
+      <property name="pad">0</property>
+      <property name="halign">center</property>
+      <property name="valign">bottom</property>
+      <property name="outline">3</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">0</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+    </filter>
+  </producer>
+  <producer id="producer2" title="Anonymous Submission" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00:00</property>
+    <property name="eof">pause</property>
+    <property name="resource">#00000000</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="mlt_image_format">rgb24a</property>
+    <property name="shotcut:caption">transparent</property>
+    <property name="ignore_points">0</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <filter id="filter2" in="00:00:05.000" out="00:00:14.960">
+      <property name="argument">Temps de marge pour faire apparaitre/entrer les musiciens</property>
+      <property name="geometry">0 0 1920 1080 1</property>
+      <property name="family">Verdana</property>
+      <property name="size">1080</property>
+      <property name="weight">500</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">#ffffffff</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#aa000000</property>
+      <property name="pad">0</property>
+      <property name="halign">center</property>
+      <property name="valign">bottom</property>
+      <property name="outline">3</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">0</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+    </filter>
+  </producer>
+  <playlist id="playlist1">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Storyboard</property>
+    <property name="shotcut:lock">1</property>
+    <entry producer="producer1" in="00:00:00.000" out="00:00:04.960"/>
+    <entry producer="producer2" in="00:00:05.000" out="00:00:14.960"/>
+  </playlist>
+  <producer id="producer3" title="Anonymous Submission" in="00:00:00.000" out="00:03:24.560">
+    <property name="length">00:03:24:15</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../003 - Bande son/Practice avec texte initial et son youtube.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-04T10:52:53</property>
+    <property name="shotcut:hash">4799385e220417e9b67b0873b03fdf9a</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Practice avec texte initial et son youtube.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+  </producer>
+  <playlist id="playlist2">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Bande_son_practice</property>
+    <property name="shotcut:lock">1</property>
+    <blank length="00:00:15.000"/>
+    <entry producer="producer3" in="00:00:18.960" out="00:03:24.560"/>
+  </playlist>
+  <producer id="producer4" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.680">
+    <property name="length">00:03:16:18</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Trombone/Camille_trombone_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-09T17:56:38</property>
+    <property name="shotcut:hash">6322ebba469dd48f4d62f48f0e58e722</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Camille_trombone_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter3" out="00:00:20.240">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter4" out="00:00:20.240">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer5" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.680">
+    <property name="length">00:03:16:18</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Trombone/Camille_trombone_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-09T17:56:38</property>
+    <property name="shotcut:hash">6322ebba469dd48f4d62f48f0e58e722</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Camille_trombone_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter5" in="00:00:20.280" out="00:01:35.800">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <producer id="producer6" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.680">
+    <property name="length">00:03:16:18</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Trombone/Camille_trombone_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-09T17:56:38</property>
+    <property name="shotcut:hash">6322ebba469dd48f4d62f48f0e58e722</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Camille_trombone_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter6" in="00:01:35.840" out="00:01:49.360">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter7" in="00:01:35.840" out="00:01:49.360">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer7" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.680">
+    <property name="length">00:03:16:18</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Trombone/Camille_trombone_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-09T17:56:38</property>
+    <property name="shotcut:hash">6322ebba469dd48f4d62f48f0e58e722</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Camille_trombone_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter8" in="00:01:49.400" out="00:02:47.960">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <producer id="producer8" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.680">
+    <property name="length">00:03:16:18</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Trombone/Camille_trombone_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-09T17:56:38</property>
+    <property name="shotcut:hash">6322ebba469dd48f4d62f48f0e58e722</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Camille_trombone_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter9" in="00:02:48.000" out="00:02:50.680">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter10" in="00:02:48.000" out="00:02:50.680">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-5</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer9" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.680">
+    <property name="length">00:03:16:18</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Trombone/Camille_trombone_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-09T17:56:38</property>
+    <property name="shotcut:hash">6322ebba469dd48f4d62f48f0e58e722</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Camille_trombone_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter11" in="00:02:50.720" out="00:03:03.440">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <producer id="producer10" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.680">
+    <property name="length">00:03:16:18</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Trombone/Camille_trombone_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-09T17:56:38</property>
+    <property name="shotcut:hash">6322ebba469dd48f4d62f48f0e58e722</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Camille_trombone_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter12" in="00:03:03.480" out="00:03:05.600">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter13" in="00:03:03.480" out="00:03:05.600">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer11" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.680">
+    <property name="length">00:03:16:18</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Trombone/Camille_trombone_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-09T17:56:38</property>
+    <property name="shotcut:hash">6322ebba469dd48f4d62f48f0e58e722</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Camille_trombone_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter14" in="00:03:05.640" out="00:03:16.680">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter15" in="00:03:05.640" out="00:03:16.680">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist3">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Camille_trombone</property>
+    <property name="shotcut:lock">1</property>
+    <blank length="00:00:09.040"/>
+    <entry producer="producer4" in="00:00:00.000" out="00:00:20.240"/>
+    <entry producer="producer5" in="00:00:20.280" out="00:01:35.800"/>
+    <entry producer="producer6" in="00:01:35.840" out="00:01:49.360"/>
+    <entry producer="producer7" in="00:01:49.400" out="00:02:47.960"/>
+    <entry producer="producer8" in="00:02:48.000" out="00:02:50.680"/>
+    <entry producer="producer9" in="00:02:50.720" out="00:03:03.440"/>
+    <entry producer="producer10" in="00:03:03.480" out="00:03:05.600"/>
+    <entry producer="producer11" in="00:03:05.640" out="00:03:16.680"/>
+  </playlist>
+  <producer id="producer12" title="Anonymous Submission" in="00:00:00.000" out="00:03:39.200">
+    <property name="length">00:03:39:06</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/sr246418/Documents/EMGB-Totoro/Camille/006 - Videos format youtube/Trombone/daniel_trombone_totoro.mp4</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="shotcut:hash">a1664e01b7aa5838d73b735214bc61f9</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">daniel_trombone_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter16" in="00:00:26.360" out="00:00:47.880">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineRotate</property>
+      <property name="transition.fix_rotate_x">0</property>
+      <property name="transition.scale_x">0.416667</property>
+      <property name="transition.ox">0</property>
+      <property name="transition.oy">0</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.scale_y">0.416667</property>
+    </filter>
+    <filter id="filter17" in="00:00:26.360" out="00:00:47.880">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter18" in="00:00:26.360" out="00:00:47.880">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer13" title="Anonymous Submission" in="00:00:00.000" out="00:03:39.200">
+    <property name="length">00:03:39:06</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/sr246418/Documents/EMGB-Totoro/Camille/006 - Videos format youtube/Trombone/daniel_trombone_totoro.mp4</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="shotcut:hash">a1664e01b7aa5838d73b735214bc61f9</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">daniel_trombone_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter19" in="00:00:47.920" out="00:01:23.520">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineRotate</property>
+      <property name="transition.fix_rotate_x">0</property>
+      <property name="transition.scale_x">0.416667</property>
+      <property name="transition.ox">0</property>
+      <property name="transition.oy">0</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.scale_y">0.416667</property>
+    </filter>
+    <filter id="filter20" in="00:00:47.920" out="00:01:23.520">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <producer id="producer14" title="Anonymous Submission" in="00:00:00.000" out="00:03:39.200">
+    <property name="length">00:03:39:06</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/sr246418/Documents/EMGB-Totoro/Camille/006 - Videos format youtube/Trombone/daniel_trombone_totoro.mp4</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="shotcut:hash">a1664e01b7aa5838d73b735214bc61f9</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">daniel_trombone_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter21" in="00:01:23.480" out="00:01:30.480">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineRotate</property>
+      <property name="transition.fix_rotate_x">0</property>
+      <property name="transition.scale_x">0.416667</property>
+      <property name="transition.ox">0</property>
+      <property name="transition.oy">0</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.scale_y">0.416667</property>
+    </filter>
+    <filter id="filter22" in="00:01:23.480" out="00:01:30.480">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter23" in="00:01:23.480" out="00:01:30.480">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer15" title="Anonymous Submission" in="00:00:00.000" out="00:03:39.200">
+    <property name="length">00:03:39:06</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/sr246418/Documents/EMGB-Totoro/Camille/006 - Videos format youtube/Trombone/daniel_trombone_totoro.mp4</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="shotcut:hash">a1664e01b7aa5838d73b735214bc61f9</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">daniel_trombone_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter24" in="00:01:30.520" out="00:02:03.400">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineRotate</property>
+      <property name="transition.fix_rotate_x">0</property>
+      <property name="transition.scale_x">0.416667</property>
+      <property name="transition.ox">0</property>
+      <property name="transition.oy">0</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.scale_y">0.416667</property>
+    </filter>
+    <filter id="filter25" in="00:01:30.520" out="00:02:03.400">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <producer id="producer16" title="Anonymous Submission" in="00:00:00.000" out="00:03:39.200">
+    <property name="length">00:03:39:06</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/sr246418/Documents/EMGB-Totoro/Camille/006 - Videos format youtube/Trombone/daniel_trombone_totoro.mp4</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="shotcut:hash">a1664e01b7aa5838d73b735214bc61f9</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">daniel_trombone_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter26" in="00:02:03.440" out="00:02:16.840">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineRotate</property>
+      <property name="transition.fix_rotate_x">0</property>
+      <property name="transition.scale_x">0.416667</property>
+      <property name="transition.ox">0</property>
+      <property name="transition.oy">0</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.scale_y">0.416667</property>
+    </filter>
+    <filter id="filter27" in="00:02:03.440" out="00:02:16.840">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter28" in="00:02:03.440" out="00:02:16.840">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer17" title="Anonymous Submission" in="00:00:00.000" out="00:03:39.200">
+    <property name="length">00:03:39:06</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/sr246418/Documents/EMGB-Totoro/Camille/006 - Videos format youtube/Trombone/daniel_trombone_totoro.mp4</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="shotcut:hash">a1664e01b7aa5838d73b735214bc61f9</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">daniel_trombone_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter29" in="00:02:16.880" out="00:03:10.680">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineRotate</property>
+      <property name="transition.fix_rotate_x">0</property>
+      <property name="transition.scale_x">0.416667</property>
+      <property name="transition.ox">0</property>
+      <property name="transition.oy">0</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.scale_y">0.416667</property>
+    </filter>
+    <filter id="filter30" in="00:02:16.880" out="00:03:10.680">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <producer id="producer18" title="Anonymous Submission" in="00:00:00.000" out="00:03:39.200">
+    <property name="length">00:03:39:06</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/sr246418/Documents/EMGB-Totoro/Camille/006 - Videos format youtube/Trombone/daniel_trombone_totoro.mp4</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="shotcut:hash">a1664e01b7aa5838d73b735214bc61f9</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">daniel_trombone_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter31" in="00:03:10.720" out="00:03:12.400">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineRotate</property>
+      <property name="transition.fix_rotate_x">0</property>
+      <property name="transition.scale_x">0.416667</property>
+      <property name="transition.ox">0</property>
+      <property name="transition.oy">0</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.scale_y">0.416667</property>
+    </filter>
+    <filter id="filter32" in="00:03:10.720" out="00:03:12.400">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter33" in="00:03:10.720" out="00:03:12.400">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer19" title="Anonymous Submission" in="00:00:00.000" out="00:03:39.200">
+    <property name="length">00:03:39:06</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/sr246418/Documents/EMGB-Totoro/Camille/006 - Videos format youtube/Trombone/daniel_trombone_totoro.mp4</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="shotcut:hash">a1664e01b7aa5838d73b735214bc61f9</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">daniel_trombone_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter34" in="00:03:12.440" out="00:03:13.920">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineRotate</property>
+      <property name="transition.fix_rotate_x">0</property>
+      <property name="transition.scale_x">0.416667</property>
+      <property name="transition.ox">0</property>
+      <property name="transition.oy">0</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.scale_y">0.416667</property>
+    </filter>
+    <filter id="filter35" in="00:03:12.440" out="00:03:13.920">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter36" in="00:03:12.440" out="00:03:13.920">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-10</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer20" title="Anonymous Submission" in="00:00:00.000" out="00:03:39.200">
+    <property name="length">00:03:39:06</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/sr246418/Documents/EMGB-Totoro/Camille/006 - Videos format youtube/Trombone/daniel_trombone_totoro.mp4</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="shotcut:hash">a1664e01b7aa5838d73b735214bc61f9</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">daniel_trombone_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter37" in="00:03:13.960" out="00:03:21.720">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineRotate</property>
+      <property name="transition.fix_rotate_x">0</property>
+      <property name="transition.scale_x">0.416667</property>
+      <property name="transition.ox">0</property>
+      <property name="transition.oy">0</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.scale_y">0.416667</property>
+    </filter>
+    <filter id="filter38" in="00:03:13.960" out="00:03:21.720">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <producer id="producer21" title="Anonymous Submission" in="00:00:00.000" out="00:03:39.200">
+    <property name="length">00:03:39:06</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/sr246418/Documents/EMGB-Totoro/Camille/006 - Videos format youtube/Trombone/daniel_trombone_totoro.mp4</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="shotcut:hash">a1664e01b7aa5838d73b735214bc61f9</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">daniel_trombone_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter39" in="00:03:21.760" out="00:03:22.000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineRotate</property>
+      <property name="transition.fix_rotate_x">0</property>
+      <property name="transition.scale_x">0.416667</property>
+      <property name="transition.ox">0</property>
+      <property name="transition.oy">0</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.scale_y">0.416667</property>
+    </filter>
+    <filter id="filter40" in="00:03:21.760" out="00:03:22.000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter41" in="00:03:21.760" out="00:03:22.000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer22" title="Anonymous Submission" in="00:00:00.000" out="00:03:39.200">
+    <property name="length">00:03:39:06</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/sr246418/Documents/EMGB-Totoro/Camille/006 - Videos format youtube/Trombone/daniel_trombone_totoro.mp4</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="shotcut:hash">a1664e01b7aa5838d73b735214bc61f9</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">daniel_trombone_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter42" in="00:03:22.040" out="00:03:39.200">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineRotate</property>
+      <property name="transition.fix_rotate_x">0</property>
+      <property name="transition.scale_x">0.416667</property>
+      <property name="transition.ox">0</property>
+      <property name="transition.oy">0</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.scale_y">0.416667</property>
+    </filter>
+    <filter id="filter43" in="00:03:22.040" out="00:03:39.200">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist4">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Daniel</property>
+    <property name="shotcut:lock">1</property>
+    <blank length="00:00:07.760"/>
+    <entry producer="producer12" in="00:00:26.360" out="00:00:47.880"/>
+    <entry producer="producer13" in="00:00:47.920" out="00:01:23.480"/>
+    <entry producer="producer14" in="00:01:23.520" out="00:01:30.480"/>
+    <entry producer="producer15" in="00:01:30.520" out="00:02:03.400"/>
+    <entry producer="producer16" in="00:02:03.440" out="00:02:16.840"/>
+    <entry producer="producer17" in="00:02:16.880" out="00:03:10.680"/>
+    <entry producer="producer18" in="00:03:10.720" out="00:03:12.400"/>
+    <entry producer="producer19" in="00:03:12.440" out="00:03:13.920"/>
+    <entry producer="producer20" in="00:03:13.960" out="00:03:21.720"/>
+    <entry producer="producer21" in="00:03:21.760" out="00:03:22.000"/>
+    <entry producer="producer22" in="00:03:22.040" out="00:03:39.200"/>
+  </playlist>
+  <tractor id="tractor0" title="Shotcut version 20.02.17" global_feed="1" in="00:00:00.000" out="00:03:25.720">
+    <property name="shotcut">1</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">1</property>
+    <property name="shotcut:scaleFactor">3.385</property>
+    <track producer="background"/>
+    <track producer="playlist0"/>
+    <track producer="playlist1" hide="audio"/>
+    <track producer="playlist2" hide="video"/>
+    <track producer="playlist3"/>
+    <track producer="playlist4"/>
+    <transition id="transition0">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition1">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">1</property>
+    </transition>
+    <transition id="transition2">
+      <property name="a_track">0</property>
+      <property name="b_track">2</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition3">
+      <property name="a_track">1</property>
+      <property name="b_track">2</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition4">
+      <property name="a_track">0</property>
+      <property name="b_track">3</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition5">
+      <property name="a_track">1</property>
+      <property name="b_track">3</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition6">
+      <property name="a_track">0</property>
+      <property name="b_track">4</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition7">
+      <property name="a_track">1</property>
+      <property name="b_track">4</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition8">
+      <property name="a_track">0</property>
+      <property name="b_track">5</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition9">
+      <property name="a_track">1</property>
+      <property name="b_track">5</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">0</property>
+    </transition>
+  </tractor>
+</mlt>

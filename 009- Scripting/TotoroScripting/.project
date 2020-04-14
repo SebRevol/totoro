@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>TotoroScripting</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.python.pydev.PyDevBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.python.pydev.pythonNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>Orchestre dematerialisé - V1</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>Orchestre dematerialisé - V1/Orchestre dematerialisé - V1 - clarinette1.mlt</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/001%20-%20Montage%20orchestre%20d%C3%A9mat%C3%A9rialis%C3%A9/Orchestre%20dematerialis%C3%A9%20-%20V1/Orchestre%20dematerialis%C3%A9%20-%20V1%20-%20clarinette1.mlt</locationURI>
+		</link>
+		<link>
+			<name>Orchestre dematerialisé - V1/Orchestre dematerialisé - V1 - flute et hautbois.mlt</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/001%20-%20Montage%20orchestre%20d%C3%A9mat%C3%A9rialis%C3%A9/Orchestre%20dematerialis%C3%A9%20-%20V1/Orchestre%20dematerialis%C3%A9%20-%20V1%20-%20flute%20et%20hautbois.mlt</locationURI>
+		</link>
+		<link>
+			<name>Orchestre dematerialisé - V1/Orchestre dematerialisé - V1 - trombone.mlt</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/001%20-%20Montage%20orchestre%20d%C3%A9mat%C3%A9rialis%C3%A9/Orchestre%20dematerialis%C3%A9%20-%20V1/Orchestre%20dematerialis%C3%A9%20-%20V1%20-%20trombone.mlt</locationURI>
+		</link>
+		<link>
+			<name>Orchestre dematerialisé - V1/Orchestre dematerialisé - V1 - trompette.mlt</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/001%20-%20Montage%20orchestre%20d%C3%A9mat%C3%A9rialis%C3%A9/Orchestre%20dematerialis%C3%A9%20-%20V1/Orchestre%20dematerialis%C3%A9%20-%20V1%20-%20trompette.mlt</locationURI>
+		</link>
+		<link>
+			<name>Orchestre dematerialisé - V1/Orchestre dematerialisé - V1.mlt</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/001%20-%20Montage%20orchestre%20d%C3%A9mat%C3%A9rialis%C3%A9/Orchestre%20dematerialis%C3%A9%20-%20V1/Orchestre%20dematerialis%C3%A9%20-%20V1.mlt</locationURI>
+		</link>
+		<link>
+			<name>Orchestre dematerialisé - V1/Orchestre dematerialisé - V1_clatrombette.mlt</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/001%20-%20Montage%20orchestre%20d%C3%A9mat%C3%A9rialis%C3%A9/Orchestre%20dematerialis%C3%A9%20-%20V1/Orchestre%20dematerialis%C3%A9%20-%20V1_clatrombette.mlt</locationURI>
+		</link>
+		<link>
+			<name>Orchestre dematerialisé - V1/Orchestre dematerialisé - V1_pupitres incomplets-grille-manuelle.mlt</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/001%20-%20Montage%20orchestre%20d%C3%A9mat%C3%A9rialis%C3%A9/Orchestre%20dematerialis%C3%A9%20-%20V1/Orchestre%20dematerialis%C3%A9%20-%20V1_pupitres%20incomplets-grille-manuelle.mlt</locationURI>
+		</link>
+		<link>
+			<name>Orchestre dematerialisé - V1/Orchestre dematerialisé - V1_pupitres incomplets.mlt</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/001%20-%20Montage%20orchestre%20d%C3%A9mat%C3%A9rialis%C3%A9/Orchestre%20dematerialis%C3%A9%20-%20V1/Orchestre%20dematerialis%C3%A9%20-%20V1_pupitres%20incomplets.mlt</locationURI>
+		</link>
+		<link>
+			<name>Orchestre dematerialisé - V1/Orchestre dematerialisé - V1_to_merge_1.mlt</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/001%20-%20Montage%20orchestre%20d%C3%A9mat%C3%A9rialis%C3%A9/Orchestre%20dematerialis%C3%A9%20-%20V1/Orchestre%20dematerialis%C3%A9%20-%20V1_to_merge_1.mlt</locationURI>
+		</link>
+		<link>
+			<name>Orchestre dematerialisé - V1/Orchestre dematerialisé - V1_to_merge_2.mlt</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/001%20-%20Montage%20orchestre%20d%C3%A9mat%C3%A9rialis%C3%A9/Orchestre%20dematerialis%C3%A9%20-%20V1/Orchestre%20dematerialis%C3%A9%20-%20V1_to_merge_2.mlt</locationURI>
+		</link>
+		<link>
+			<name>Orchestre dematerialisé - V1/TestDecoupe</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>Orchestre dematerialisé - V1/TestDecoupe-moved.mlt</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/001%20-%20Montage%20orchestre%20d%C3%A9mat%C3%A9rialis%C3%A9/Orchestre%20dematerialis%C3%A9%20-%20V1/TestDecoupe-moved.mlt</locationURI>
+		</link>
+		<link>
+			<name>Orchestre dematerialisé - V1/TestDecoupe.mlt</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/001%20-%20Montage%20orchestre%20d%C3%A9mat%C3%A9rialis%C3%A9/Orchestre%20dematerialis%C3%A9%20-%20V1/TestDecoupe.mlt</locationURI>
+		</link>
+		<link>
+			<name>Orchestre dematerialisé - V1/TestDecoupe/TestDecoupe.mlt</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/001%20-%20Montage%20orchestre%20d%C3%A9mat%C3%A9rialis%C3%A9/Orchestre%20dematerialis%C3%A9%20-%20V1/TestDecoupe/TestDecoupe.mlt</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>

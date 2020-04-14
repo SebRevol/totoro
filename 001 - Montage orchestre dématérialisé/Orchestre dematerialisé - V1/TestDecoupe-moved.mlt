@@ -1,0 +1,1319 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<mlt LC_NUMERIC="C" producer="main_bin" title="Shotcut version 20.02.17" version="6.20.0">
+  <profile colorspace="709" description="PAL 4:3 DV or DVD" display_aspect_den="9" display_aspect_num="16" frame_rate_den="1" frame_rate_num="24" height="1080" progressive="1" sample_aspect_den="1" sample_aspect_num="1" width="1920" />
+  <playlist id="main_bin">
+    <property name="xml_retain">1</property>
+  </playlist>
+  <producer id="black" in="00:00:00.000" out="00:03:22.375">
+    <property name="length">00:03:22.417</property>
+    <property name="eof">pause</property>
+    <property name="resource">0</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="mlt_image_format">rgb24a</property>
+    <property name="set.test_audio">0</property>
+  </producer>
+  <playlist id="background">
+    <entry in="00:00:00.000" out="00:03:22.375" producer="black" />
+  </playlist>
+  <playlist id="playlist0">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V1</property>
+    <blank length="00:00:00.042" />
+  </playlist>
+  <producer id="producer0" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter0" out="00:00:00.458000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=5 3 893 502 1;00:00:00.500000=0 0 384 216 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.500000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter1" out="00:00:00.458000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer1" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter2" in="00:00:00.500000" out="00:00:00.958000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=0 0 384 216 1;00:00:00.500000=0 216 384 216 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.500000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter3" in="00:00:00.500000" out="00:00:00.958000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer2" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter4" in="00:00:01.000000" out="00:00:01.458000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=0 216 384 216 1;00:00:00.500000=0 432 384 216 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.500000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter5" in="00:00:01.000000" out="00:00:01.458000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer3" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter6" in="00:00:01.500000" out="00:00:01.958000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=0 432 384 216 1;00:00:00.500000=0 648 384 216 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.500000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter7" in="00:00:01.500000" out="00:00:01.958000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer4" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter8" in="00:00:02.000000" out="00:00:02.458000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=0 648 384 216 1;00:00:00.500000=0 864 384 216 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.500000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter9" in="00:00:02.000000" out="00:00:02.458000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer5" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter10" in="00:00:02.500000" out="00:00:02.958000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=0 864 384 216 1;00:00:00.500000=384 0 384 216 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.500000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter11" in="00:00:02.500000" out="00:00:02.958000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer6" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter12" in="00:00:03.000000" out="00:00:03.458000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=384 0 384 216 1;00:00:00.500000=384 216 384 216 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.500000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter13" in="00:00:03.000000" out="00:00:03.458000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer7" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter14" in="00:00:03.500000" out="00:00:03.958000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=384 216 384 216 1;00:00:00.500000=384 432 384 216 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.500000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter15" in="00:00:03.500000" out="00:00:03.958000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer8" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter16" in="00:00:04.000000" out="00:00:04.458000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=384 432 384 216 1;00:00:00.500000=384 648 384 216 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.500000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter17" in="00:00:04.000000" out="00:00:04.458000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer9" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter18" in="00:00:04.500000" out="00:00:04.958000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=384 648 384 216 1;00:00:00.500000=384 864 384 216 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.500000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter19" in="00:00:04.500000" out="00:00:04.958000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer10" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter20" in="00:00:05.000000" out="00:00:05.458000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=384 864 384 216 1;00:00:00.500000=768 0 384 216 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.500000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter21" in="00:00:05.000000" out="00:00:05.458000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer11" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter22" in="00:00:05.500000" out="00:00:05.958000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=768 0 384 216 1;00:00:00.500000=768 216 384 216 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.500000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter23" in="00:00:05.500000" out="00:00:05.958000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer12" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter24" in="00:00:06.000000" out="00:00:06.458000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=768 216 384 216 1;00:00:00.500000=768 432 384 216 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.500000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter25" in="00:00:06.000000" out="00:00:06.458000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer13" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter26" in="00:00:06.500000" out="00:00:06.958000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=768 432 384 216 1;00:00:00.500000=768 648 384 216 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.500000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter27" in="00:00:06.500000" out="00:00:06.958000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer14" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter28" in="00:00:07.000000" out="00:00:07.458000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=768 648 384 216 1;00:00:00.500000=768 864 384 216 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.500000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter29" in="00:00:07.000000" out="00:00:07.458000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer15" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter30" in="00:00:07.500000" out="00:00:07.958000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=768 864 384 216 1;00:00:00.500000=1152 0 384 216 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.500000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter31" in="00:00:07.500000" out="00:00:07.958000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer16" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter32" in="00:00:08.000000" out="00:00:08.458000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=1152 0 384 216 1;00:00:00.500000=1152 216 384 216 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.500000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter33" in="00:00:08.000000" out="00:00:08.458000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer17" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter34" in="00:00:08.500000" out="00:00:08.958000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=1152 216 384 216 1;00:00:00.500000=1152 432 384 216 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.500000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter35" in="00:00:08.500000" out="00:00:08.958000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer18" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter36" in="00:00:09.000000" out="00:00:09.458000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=1152 432 384 216 1;00:00:00.500000=1152 648 384 216 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.500000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter37" in="00:00:09.000000" out="00:00:09.458000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer19" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter38" in="00:00:09.500000" out="00:00:09.958000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=1152 648 384 216 1;00:00:00.500000=1152 864 384 216 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.500000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter39" in="00:00:09.500000" out="00:00:09.958000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer20" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter40" in="00:00:10.000000" out="00:00:10.458000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=1152 864 384 216 1;00:00:00.500000=1536 0 384 216 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.500000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter41" in="00:00:10.000000" out="00:00:10.458000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer21" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter42" in="00:00:10.500000" out="00:00:10.958000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=1536 0 384 216 1;00:00:00.500000=1536 216 384 216 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.500000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter43" in="00:00:10.500000" out="00:00:10.958000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer22" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter44" in="00:00:11.000000" out="00:00:11.458000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=1536 216 384 216 1;00:00:00.500000=1536 432 384 216 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.500000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter45" in="00:00:11.000000" out="00:00:11.458000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer23" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter46" in="00:00:11.500000" out="00:00:11.958000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=1536 432 384 216 1;00:00:00.500000=1536 648 384 216 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.500000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter47" in="00:00:11.500000" out="00:00:11.958000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer24" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter48" in="00:00:12.000000" out="00:00:12.458000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=1536 648 384 216 1;00:00:00.500000=1536 864 384 216 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.500000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter49" in="00:00:12.000000" out="00:00:12.458000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer25" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter50" in="00:00:12.500000" out="00:00:14.458000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=1536 864 384 216 1;00:00:01.000000=768 432 1152 648 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:01.000000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter51" in="00:00:12.500000" out="00:00:14.458000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer26" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter52" in="00:00:14.500000" out="00:00:16.458000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=768 432 1152 648 1;00:00:01.000000=384 216 1536 864 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:01.000000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter53" in="00:00:14.500000" out="00:00:16.458000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer27" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter54" in="00:00:16.500000" out="00:00:19.958">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=384 216 1536 864 1;00:00:01.000000=0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:01.000000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter55" in="00:00:16.500000" out="00:00:19.958">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer28" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter56" in="00:00:20.667" out="00:02:00.625000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">0</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:01.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter57" in="00:00:20.667" out="00:02:00.625000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer29" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter58" in="00:02:00.667000" out="00:02:02.625000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">0</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">-768 -432 384 216 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:01.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter59" in="00:02:00.667000" out="00:02:02.625000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer30" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter60" in="00:02:02.667000" out="00:02:10.625000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">0</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:01.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter61" in="00:02:02.667000" out="00:02:10.625000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer31" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter62" in="00:02:10.667000" out="00:02:15.625000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">0</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=0 0 1920 1080 1;00:00:03.000000=960 0 960 540 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:03.000000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter63" in="00:02:10.667000" out="00:02:15.625000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer32" in="00:00:00.000" out="00:03:21.875" title="Anonymous Submission">
+    <property name="length">00:03:21.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-06T20:38:12</property>
+    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter64" in="00:02:15.667000" out="00:03:21.875">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">0</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=960 0 960 540 1;00:00:03.000000=640 359 1280 719 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:03.000000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter65" in="00:02:15.667000" out="00:03:21.875">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <playlist id="playlist1">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V2</property>
+    <entry in="00:00:00.000" out="00:00:00.458000" producer="producer0" />
+    <entry in="00:00:00.500000" out="00:00:00.958000" producer="producer1" />
+    <entry in="00:00:01.000000" out="00:00:01.458000" producer="producer2" />
+    <entry in="00:00:01.500000" out="00:00:01.958000" producer="producer3" />
+    <entry in="00:00:02.000000" out="00:00:02.458000" producer="producer4" />
+    <entry in="00:00:02.500000" out="00:00:02.958000" producer="producer5" />
+    <entry in="00:00:03.000000" out="00:00:03.458000" producer="producer6" />
+    <entry in="00:00:03.500000" out="00:00:03.958000" producer="producer7" />
+    <entry in="00:00:04.000000" out="00:00:04.458000" producer="producer8" />
+    <entry in="00:00:04.500000" out="00:00:04.958000" producer="producer9" />
+    <entry in="00:00:05.000000" out="00:00:05.458000" producer="producer10" />
+    <entry in="00:00:05.500000" out="00:00:05.958000" producer="producer11" />
+    <entry in="00:00:06.000000" out="00:00:06.458000" producer="producer12" />
+    <entry in="00:00:06.500000" out="00:00:06.958000" producer="producer13" />
+    <entry in="00:00:07.000000" out="00:00:07.458000" producer="producer14" />
+    <entry in="00:00:07.500000" out="00:00:07.958000" producer="producer15" />
+    <entry in="00:00:08.000000" out="00:00:08.458000" producer="producer16" />
+    <entry in="00:00:08.500000" out="00:00:08.958000" producer="producer17" />
+    <entry in="00:00:09.000000" out="00:00:09.458000" producer="producer18" />
+    <entry in="00:00:09.500000" out="00:00:09.958000" producer="producer19" />
+    <entry in="00:00:10.000000" out="00:00:10.458000" producer="producer20" />
+    <entry in="00:00:10.500000" out="00:00:10.958000" producer="producer21" />
+    <entry in="00:00:11.000000" out="00:00:11.458000" producer="producer22" />
+    <entry in="00:00:11.500000" out="00:00:11.958000" producer="producer23" />
+    <entry in="00:00:12.000000" out="00:00:12.458000" producer="producer24" />
+    <entry in="00:00:12.500000" out="00:00:14.458000" producer="producer25" />
+    <entry in="00:00:14.500000" out="00:00:16.458000" producer="producer26" />
+    <entry in="00:00:16.500000" out="00:00:19.958" producer="producer27" />
+    <entry in="00:00:20.667" out="00:02:00.625000" producer="producer28" />
+  <entry in="00:02:00.667000" out="00:02:02.625000" producer="producer29" />
+  <entry in="00:02:02.667000" out="00:02:10.625000" producer="producer30" />
+  <entry in="00:02:10.667000" out="00:02:15.625000" producer="producer31" />
+  <entry in="00:02:15.667000" out="00:03:21.875" producer="producer32" />
+  </playlist>
+  <tractor global_feed="1" id="tractor0" in="00:00:00.000" out="00:03:22.375" title="Shotcut version 20.02.17">
+    <property name="shotcut">1</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">1</property>
+    <property name="shotcut:scaleFactor">1.37826</property>
+    <track producer="background" />
+    <track producer="playlist0" />
+    <track producer="playlist1" />
+    <transition id="transition0">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition1">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">1</property>
+    </transition>
+    <transition id="transition2">
+      <property name="a_track">0</property>
+      <property name="b_track">2</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition3">
+      <property name="a_track">1</property>
+      <property name="b_track">2</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">0</property>
+    </transition>
+  </tractor>
+</mlt>
