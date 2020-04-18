@@ -21,6 +21,11 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
+			<name>Orchestre dematerialisé - V1/Orchestre dematerialisé - V1 - barytons.mlt</name>
+			<type>1</type>
+			<location>C:/Users/sr246418/Documents/EMGB-Totoro/Camille/001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Orchestre dematerialisé - V1 - barytons.mlt</location>
+		</link>
+		<link>
 			<name>Orchestre dematerialisé - V1/Orchestre dematerialisé - V1 - clarinette1.mlt</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/001%20-%20Montage%20orchestre%20d%C3%A9mat%C3%A9rialis%C3%A9/Orchestre%20dematerialis%C3%A9%20-%20V1/Orchestre%20dematerialis%C3%A9%20-%20V1%20-%20clarinette1.mlt</locationURI>
@@ -29,6 +34,21 @@
 			<name>Orchestre dematerialisé - V1/Orchestre dematerialisé - V1 - flute et hautbois.mlt</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/001%20-%20Montage%20orchestre%20d%C3%A9mat%C3%A9rialis%C3%A9/Orchestre%20dematerialis%C3%A9%20-%20V1/Orchestre%20dematerialis%C3%A9%20-%20V1%20-%20flute%20et%20hautbois.mlt</locationURI>
+		</link>
+		<link>
+			<name>Orchestre dematerialisé - V1/Orchestre dematerialisé - V1 - percussion.mlt</name>
+			<type>1</type>
+			<location>C:/Users/sr246418/Documents/EMGB-Totoro/Camille/001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Orchestre dematerialisé - V1 - percussion.mlt</location>
+		</link>
+		<link>
+			<name>Orchestre dematerialisé - V1/Orchestre dematerialisé - V1 - saxophone.mlt</name>
+			<type>1</type>
+			<location>C:/Users/sr246418/Documents/EMGB-Totoro/Camille/001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Orchestre dematerialisé - V1 - saxophone.mlt</location>
+		</link>
+		<link>
+			<name>Orchestre dematerialisé - V1/Orchestre dematerialisé - V1 - trombone - Réparé.mlt</name>
+			<type>1</type>
+			<location>C:/Users/sr246418/Documents/EMGB-Totoro/Camille/001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Orchestre dematerialisé - V1 - trombone - Réparé.mlt</location>
 		</link>
 		<link>
 			<name>Orchestre dematerialisé - V1/Orchestre dematerialisé - V1 - trombone.mlt</name>
@@ -41,9 +61,34 @@
 			<locationURI>PARENT-2-PROJECT_LOC/001%20-%20Montage%20orchestre%20d%C3%A9mat%C3%A9rialis%C3%A9/Orchestre%20dematerialis%C3%A9%20-%20V1/Orchestre%20dematerialis%C3%A9%20-%20V1%20-%20trompette.mlt</locationURI>
 		</link>
 		<link>
+			<name>Orchestre dematerialisé - V1/Orchestre dematerialisé - V1 - tuba-pour-gif.mlt</name>
+			<type>1</type>
+			<location>C:/Users/sr246418/Documents/EMGB-Totoro/Camille/001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Orchestre dematerialisé - V1 - tuba-pour-gif.mlt</location>
+		</link>
+		<link>
+			<name>Orchestre dematerialisé - V1/Orchestre dematerialisé - V1 - tuba.mlt</name>
+			<type>1</type>
+			<location>C:/Users/sr246418/Documents/EMGB-Totoro/Camille/001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Orchestre dematerialisé - V1 - tuba.mlt</location>
+		</link>
+		<link>
+			<name>Orchestre dematerialisé - V1/Orchestre dematerialisé - V1-grille-auto.mlt</name>
+			<type>1</type>
+			<location>C:/Users/sr246418/Documents/EMGB-Totoro/Camille/001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Orchestre dematerialisé - V1-grille-auto.mlt</location>
+		</link>
+		<link>
 			<name>Orchestre dematerialisé - V1/Orchestre dematerialisé - V1.mlt</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/001%20-%20Montage%20orchestre%20d%C3%A9mat%C3%A9rialis%C3%A9/Orchestre%20dematerialis%C3%A9%20-%20V1/Orchestre%20dematerialis%C3%A9%20-%20V1.mlt</locationURI>
+		</link>
+		<link>
+			<name>Orchestre dematerialisé - V1/Orchestre dematerialisé - V1_cl_trb_trp_fl_hb.mlt</name>
+			<type>1</type>
+			<location>C:/Users/sr246418/Documents/EMGB-Totoro/Camille/001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Orchestre dematerialisé - V1_cl_trb_trp_fl_hb.mlt</location>
+		</link>
+		<link>
+			<name>Orchestre dematerialisé - V1/Orchestre dematerialisé - V1_cl_trb_trp_fl_hb_bar_tub.mlt</name>
+			<type>1</type>
+			<location>C:/Users/sr246418/Documents/EMGB-Totoro/Camille/001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Orchestre dematerialisé - V1_cl_trb_trp_fl_hb_bar_tub.mlt</location>
 		</link>
 		<link>
 			<name>Orchestre dematerialisé - V1/Orchestre dematerialisé - V1_clatrombette.mlt</name>

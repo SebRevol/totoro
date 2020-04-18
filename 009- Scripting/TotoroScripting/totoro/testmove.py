@@ -3,8 +3,10 @@ Created on 6 avr. 2020
 
 @author: SR246418
 '''
-from totoro.utils import Resource, zero_time, get_user_string_from_time
+from totoro.utils import  zero_time, get_user_string_from_time
 import datetime
+from totoro.model import Resource
+
 
 
 

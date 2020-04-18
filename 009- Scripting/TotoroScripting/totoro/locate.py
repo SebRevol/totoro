@@ -1,3 +1,4 @@
+from totoro.display import Line, Column
 
 def locate(mus, grid) :
     
@@ -5,15 +6,29 @@ def locate(mus, grid) :
     grid.set_margin(0) 
     
     #colonne gauche
-    mus["Jean-Jacques_chef_totoro"            ].at(1,1,1)
-    mus["Jean-Jacques_percu_totoro"           ].at(2,1,1)
-    mus["Jean-Jacques_chef_laché prise"       ].at(3,1,1)
-    mus["Aurianne_saxophone_totoro"           ].at(4,1,1)
-    mus["Franck_saxophone_totoro"             ].at(5,1,1)
-    mus["Nadine_saxophone_totoro"             ].at(6,1,1)
-    mus["Nathalie_saxophone_totoro"           ].at(7,1,1)
-    mus["Chloe_saxophone_totoro_clown_recadre"].at(8,1,1)
+#     mus["Jean-Jacques_chef_totoro"            ].at(1,1,1)
+#     mus["Jean-Jacques_percu_totoro"           ].at(2,1,1)
+#     mus["Jean-Jacques_chef_laché prise"       ].at(3,1,1)
+#     mus["Aurianne_saxophone_totoro"           ].at(4,1,1)
+#     mus["Franck_saxophone_totoro"             ].at(5,1,1)
+#     mus["Nadine_saxophone_totoraao"             ].at(6,1,1)
+#     mus["Nathalie_saxophone_totoro"           ].at(7,1,1)
+#     mus["Chloe_saxophone_totoro_clown_recadre"].at(8,1,1)
     
+    column1 = Column(mus,[
+          "Jean-Jacques_chef_totoro",            
+          "Jean-Jacques_percu_totoro",           
+          "Jean-Jacques_chef_laché prise",       
+          "Aurianne_saxophone_totoro",           
+          "Franck_saxophone_totoro",             
+          "Nadine_saxophone_totoraao",           
+          "Nathalie_saxophone_totoro",           
+          "Chloe_saxophone_totoro_clown_recadre"]).inside(grid).at(1,1,1)
+
+
+
+
+
     #ligne du bas
     mus["Amélie_clarinette_recadre"           ].at(8,2,1)
     mus["Nelly_clarinette_totoro"             ].at(8,3,1)
