@@ -39,7 +39,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 0 480 270 1</property>
+      <property name="transition.rect">0 0 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -176,7 +176,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 270 480 270 1</property>
+      <property name="transition.rect">0 360 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -212,7 +212,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 270 480 270 1</property>
+      <property name="transition.rect">0 360 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -248,7 +248,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 270 480 270 1</property>
+      <property name="transition.rect">0 360 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -284,7 +284,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 270 480 270 1</property>
+      <property name="transition.rect">0 360 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -320,7 +320,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 270 480 270 1</property>
+      <property name="transition.rect">0 360 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -363,7 +363,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 270 480 270 1</property>
+      <property name="transition.rect">0 360 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -399,7 +399,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 270 480 270 1</property>
+      <property name="transition.rect">0 360 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -435,7 +435,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 270 480 270 1</property>
+      <property name="transition.rect">0 360 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -471,7 +471,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 270 480 270 1</property>
+      <property name="transition.rect">0 360 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -514,7 +514,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 270 480 270 1</property>
+      <property name="transition.rect">0 360 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -550,7 +550,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 270 480 270 1</property>
+      <property name="transition.rect">0 360 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -586,7 +586,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 270 480 270 1</property>
+      <property name="transition.rect">0 360 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -653,7 +653,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 540 480 270 1</property>
+      <property name="transition.rect">0 720 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -690,7 +690,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 540 480 270 1</property>
+      <property name="transition.rect">0 720 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -734,7 +734,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 540 480 270 1</property>
+      <property name="transition.rect">0 720 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -771,7 +771,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 540 480 270 1</property>
+      <property name="transition.rect">0 720 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -827,7 +827,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 810 480 270 1</property>
+      <property name="transition.rect">640 0 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -865,7 +865,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 810 480 270 1</property>
+      <property name="transition.rect">640 0 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -902,7 +902,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 810 480 270 1</property>
+      <property name="transition.rect">640 0 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -940,7 +940,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 810 480 270 1</property>
+      <property name="transition.rect">640 0 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -971,7 +971,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 810 480 270 1</property>
+      <property name="transition.rect">640 0 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1002,7 +1002,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 810 480 270 1</property>
+      <property name="transition.rect">640 0 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1033,7 +1033,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 810 480 270 1</property>
+      <property name="transition.rect">640 0 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1071,7 +1071,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 810 480 270 1</property>
+      <property name="transition.rect">640 0 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1109,7 +1109,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 810 480 270 1</property>
+      <property name="transition.rect">640 0 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1166,7 +1166,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 0 480 270 1</property>
+      <property name="transition.rect">640 360 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1204,7 +1204,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 0 480 270 1</property>
+      <property name="transition.rect">640 360 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1235,7 +1235,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 0 480 270 1</property>
+      <property name="transition.rect">640 360 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1273,7 +1273,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 0 480 270 1</property>
+      <property name="transition.rect">640 360 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1304,7 +1304,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 0 480 270 1</property>
+      <property name="transition.rect">640 360 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1341,7 +1341,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 0 480 270 1</property>
+      <property name="transition.rect">640 360 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1372,7 +1372,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 0 480 270 1</property>
+      <property name="transition.rect">640 360 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1410,7 +1410,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 0 480 270 1</property>
+      <property name="transition.rect">640 360 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1462,7 +1462,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 270 480 270 1</property>
+      <property name="transition.rect">640 720 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1500,7 +1500,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 270 480 270 1</property>
+      <property name="transition.rect">640 720 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1531,7 +1531,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 270 480 270 1</property>
+      <property name="transition.rect">640 720 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1569,7 +1569,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 270 480 270 1</property>
+      <property name="transition.rect">640 720 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1600,7 +1600,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 270 480 270 1</property>
+      <property name="transition.rect">640 720 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1638,7 +1638,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 270 480 270 1</property>
+      <property name="transition.rect">640 720 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1669,7 +1669,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 270 480 270 1</property>
+      <property name="transition.rect">640 720 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1707,7 +1707,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 270 480 270 1</property>
+      <property name="transition.rect">640 720 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1738,7 +1738,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 270 480 270 1</property>
+      <property name="transition.rect">640 720 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1776,7 +1776,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 270 480 270 1</property>
+      <property name="transition.rect">640 720 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1807,7 +1807,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 270 480 270 1</property>
+      <property name="transition.rect">640 720 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1862,7 +1862,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 540 480 270 1</property>
+      <property name="transition.rect">1280 0 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1900,7 +1900,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 540 480 270 1</property>
+      <property name="transition.rect">1280 0 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1910,17 +1910,11 @@
   </producer>
   <playlist id="Alain_flute_totoroplaylist3">
     <property name="shotcut:video">1</property>
-    <property name="shotcut:name">Alain_flute2</property>
+    <property name="shotcut:name">Alain_flute</property>
     <property name="shotcut:lock">1</property>
     <blank length="00:00:02.080" />
     <entry in="00:00:00.000" out="00:00:33.760" producer="Alain_flute_totoroproducer4" />
     <entry in="00:00:33.800" out="00:03:19.240" producer="Alain_flute_totoroproducer5" />
-    <filter id="filter6" out="00:03:21.320">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="level">-10</property>
-      <property name="mlt_service">volume</property>
-    </filter>
   </playlist>
   <producer id="Laurence_flute_totoroproducer6" in="00:00:00.000" out="00:02:58.120" title="Anonymous Submission">
     <property name="length">00:02:58:04</property>
@@ -1939,13 +1933,13 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="Laurence_flute_totoroproducer6_filter7" out="00:01:19.520">
+    <filter id="Laurence_flute_totoroproducer6_filter6" out="00:01:19.520">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 810 480 270 1</property>
+      <property name="transition.rect">1280 360 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1970,20 +1964,20 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="Laurence_flute_totoroproducer7_filter8" in="00:01:19.560" out="00:01:22.320">
+    <filter id="Laurence_flute_totoroproducer7_filter7" in="00:01:19.560" out="00:01:22.320">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 810 480 270 1</property>
+      <property name="transition.rect">1280 360 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="Laurence_flute_totoroproducer7_filter9" in="00:01:19.560" out="00:01:22.320">
+    <filter id="Laurence_flute_totoroproducer7_filter8" in="00:01:19.560" out="00:01:22.320">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="mlt_service">volume</property>
@@ -2008,13 +2002,13 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="Laurence_flute_totoroproducer8_filter10" in="00:01:22.360" out="00:01:48.560">
+    <filter id="Laurence_flute_totoroproducer8_filter9" in="00:01:22.360" out="00:01:48.560">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 810 480 270 1</property>
+      <property name="transition.rect">1280 360 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -2039,20 +2033,20 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="Laurence_flute_totoroproducer9_filter11" in="00:01:48.600" out="00:01:52.120">
+    <filter id="Laurence_flute_totoroproducer9_filter10" in="00:01:48.600" out="00:01:52.120">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 810 480 270 1</property>
+      <property name="transition.rect">1280 360 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="Laurence_flute_totoroproducer9_filter12" in="00:01:48.600" out="00:01:52.120">
+    <filter id="Laurence_flute_totoroproducer9_filter11" in="00:01:48.600" out="00:01:52.120">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="mlt_service">volume</property>
@@ -2077,13 +2071,13 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="Laurence_flute_totoroproducer10_filter13" in="00:01:52.160" out="00:02:02.240">
+    <filter id="Laurence_flute_totoroproducer10_filter12" in="00:01:52.160" out="00:02:02.240">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 810 480 270 1</property>
+      <property name="transition.rect">1280 360 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -2108,20 +2102,20 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="Laurence_flute_totoroproducer11_filter14" in="00:02:02.280" out="00:02:05.120">
+    <filter id="Laurence_flute_totoroproducer11_filter13" in="00:02:02.280" out="00:02:05.120">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 810 480 270 1</property>
+      <property name="transition.rect">1280 360 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="Laurence_flute_totoroproducer11_filter15" in="00:02:02.280" out="00:02:05.120">
+    <filter id="Laurence_flute_totoroproducer11_filter14" in="00:02:02.280" out="00:02:05.120">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="mlt_service">volume</property>
@@ -2146,13 +2140,13 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="Laurence_flute_totoroproducer12_filter16" in="00:02:05.160" out="00:02:44.000">
+    <filter id="Laurence_flute_totoroproducer12_filter15" in="00:02:05.160" out="00:02:44.000">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 810 480 270 1</property>
+      <property name="transition.rect">1280 360 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -2177,20 +2171,20 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="Laurence_flute_totoroproducer13_filter17" in="00:02:44.040" out="00:02:51.720">
+    <filter id="Laurence_flute_totoroproducer13_filter16" in="00:02:44.040" out="00:02:51.720">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 810 480 270 1</property>
+      <property name="transition.rect">1280 360 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="Laurence_flute_totoroproducer13_filter18" in="00:02:44.040" out="00:02:51.720">
+    <filter id="Laurence_flute_totoroproducer13_filter17" in="00:02:44.040" out="00:02:51.720">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="mlt_service">volume</property>
@@ -2215,13 +2209,13 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="Laurence_flute_totoroproducer14_filter19" in="00:02:51.760" out="00:02:55.320">
+    <filter id="Laurence_flute_totoroproducer14_filter18" in="00:02:51.760" out="00:02:55.320">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 810 480 270 1</property>
+      <property name="transition.rect">1280 360 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -2246,20 +2240,20 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="Laurence_flute_totoroproducer15_filter20" in="00:02:55.360" out="00:02:58.120">
+    <filter id="Laurence_flute_totoroproducer15_filter19" in="00:02:55.360" out="00:02:58.120">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 810 480 270 1</property>
+      <property name="transition.rect">1280 360 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="Laurence_flute_totoroproducer15_filter21" in="00:02:55.360" out="00:02:58.120">
+    <filter id="Laurence_flute_totoroproducer15_filter20" in="00:02:55.360" out="00:02:58.120">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="mlt_service">volume</property>
@@ -2269,7 +2263,7 @@
   </producer>
   <playlist id="Laurence_flute_totoroplaylist4">
     <property name="shotcut:video">1</property>
-    <property name="shotcut:name"> Laurence_flute 2</property>
+    <property name="shotcut:name">V5</property>
     <property name="shotcut:lock">1</property>
     <blank length="00:00:19.560" />
     <entry in="00:00:00.000" out="00:01:19.520" producer="Laurence_flute_totoroproducer6" />
@@ -2282,12 +2276,6 @@
     <entry in="00:02:44.040" out="00:02:51.720" producer="Laurence_flute_totoroproducer13" />
     <entry in="00:02:51.760" out="00:02:55.320" producer="Laurence_flute_totoroproducer14" />
     <entry in="00:02:55.360" out="00:02:58.120" producer="Laurence_flute_totoroproducer15" />
-    <filter id="filter22" out="00:03:21.320">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="level">-10</property>
-      <property name="mlt_service">volume</property>
-    </filter>
   </playlist>
   <producer id="Antoine_flute_totoroproducer16" in="00:00:00.000" out="00:02:59.720" title="Anonymous Submission">
     <property name="length">00:02:59:19</property>
@@ -2306,20 +2294,20 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="Antoine_flute_totoroproducer16_filter23" out="00:00:19.960">
+    <filter id="Antoine_flute_totoroproducer16_filter21" out="00:00:19.960">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">960 0 480 270 1</property>
+      <property name="transition.rect">1280 720 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="Antoine_flute_totoroproducer16_filter24" out="00:00:19.960">
+    <filter id="Antoine_flute_totoroproducer16_filter22" out="00:00:19.960">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="mlt_service">volume</property>
@@ -2344,13 +2332,13 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="Antoine_flute_totoroproducer17_filter25" in="00:00:20.000" out="00:01:27.440">
+    <filter id="Antoine_flute_totoroproducer17_filter23" in="00:00:20.000" out="00:01:27.440">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">960 0 480 270 1</property>
+      <property name="transition.rect">1280 720 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -2375,20 +2363,20 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="Antoine_flute_totoroproducer18_filter26" in="00:01:27.480" out="00:01:41.960">
+    <filter id="Antoine_flute_totoroproducer18_filter24" in="00:01:27.480" out="00:01:41.960">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">960 0 480 270 1</property>
+      <property name="transition.rect">1280 720 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="Antoine_flute_totoroproducer18_filter27" in="00:01:27.480" out="00:01:41.960">
+    <filter id="Antoine_flute_totoroproducer18_filter25" in="00:01:27.480" out="00:01:41.960">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="mlt_service">volume</property>
@@ -2413,13 +2401,13 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="Antoine_flute_totoroproducer19_filter28" in="00:01:42.000" out="00:02:19.200">
+    <filter id="Antoine_flute_totoroproducer19_filter26" in="00:01:42.000" out="00:02:19.200">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">960 0 480 270 1</property>
+      <property name="transition.rect">1280 720 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -2444,20 +2432,20 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="Antoine_flute_totoroproducer20_filter29" in="00:02:19.240" out="00:02:32.120">
+    <filter id="Antoine_flute_totoroproducer20_filter27" in="00:02:19.240" out="00:02:32.120">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">960 0 480 270 1</property>
+      <property name="transition.rect">1280 720 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="Antoine_flute_totoroproducer20_filter30" in="00:02:19.240" out="00:02:32.120">
+    <filter id="Antoine_flute_totoroproducer20_filter28" in="00:02:19.240" out="00:02:32.120">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="mlt_service">volume</property>
@@ -2482,25 +2470,18 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="Antoine_flute_totoroproducer21_filter31" in="00:02:32.160" out="00:02:36.040">
+    <filter id="Antoine_flute_totoroproducer21_filter29" in="00:02:32.160" out="00:02:46.840">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">960 0 480 270 1</property>
+      <property name="transition.rect">1280 720 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
-    </filter>
-    <filter id="Antoine_flute_totoroproducer21_filter32" in="00:02:32.160" out="00:02:36.040">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">muteVolume</property>
-      <property name="gain">0</property>
     </filter>
   </producer>
   <producer id="Antoine_flute_totoroproducer22" in="00:00:00.000" out="00:02:59.720" title="Anonymous Submission">
@@ -2520,18 +2501,25 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="Antoine_flute_totoroproducer22_filter33" in="00:02:36.080" out="00:02:46.840">
+    <filter id="Antoine_flute_totoroproducer22_filter30" in="00:02:46.880" out="00:02:58.160">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">960 0 480 270 1</property>
+      <property name="transition.rect">1280 720 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
+    </filter>
+    <filter id="Antoine_flute_totoroproducer22_filter31" in="00:02:46.880" out="00:02:58.160">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
     </filter>
   </producer>
   <producer id="Antoine_flute_totoroproducer23" in="00:00:00.000" out="00:02:59.720" title="Anonymous Submission">
@@ -2551,58 +2539,20 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="Antoine_flute_totoroproducer23_filter34" in="00:02:46.880" out="00:02:58.160">
+    <filter id="Antoine_flute_totoroproducer23_filter32" in="00:02:58.200" out="00:02:59.720">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">960 0 480 270 1</property>
+      <property name="transition.rect">1280 720 640 360 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="Antoine_flute_totoroproducer23_filter35" in="00:02:46.880" out="00:02:58.160">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">muteVolume</property>
-      <property name="gain">0</property>
-    </filter>
-  </producer>
-  <producer id="Antoine_flute_totoroproducer24" in="00:00:00.000" out="00:02:59.720" title="Anonymous Submission">
-    <property name="length">00:02:59:19</property>
-    <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Flutes/Antoine_flute_totoro.mp4</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="mute_on_pause">0</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="creation_time">2020-04-09T18:43:14</property>
-    <property name="shotcut:hash">4b5c310c51f982bf236c6a3fad1fff39</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">Antoine_flute_totoro.mp4</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="global_feed">1</property>
-    <property name="xml">was here</property>
-    <filter id="Antoine_flute_totoroproducer24_filter36" in="00:02:58.200" out="00:02:59.720">
-      <property name="background">colour:0</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">960 0 480 270 1</property>
-      <property name="transition.valign">top</property>
-      <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-    </filter>
-    <filter id="Antoine_flute_totoroproducer24_filter37" in="00:02:58.200" out="00:02:59.720">
+    <filter id="Antoine_flute_totoroproducer23_filter33" in="00:02:58.200" out="00:02:59.720">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="mlt_service">volume</property>
@@ -2612,7 +2562,7 @@
   </producer>
   <playlist id="Antoine_flute_totoroplaylist5">
     <property name="shotcut:video">1</property>
-    <property name="shotcut:name">Antoine_flute1</property>
+    <property name="shotcut:name">V6</property>
     <property name="shotcut:lock">1</property>
     <blank length="00:00:16.720" />
     <entry in="00:00:00.000" out="00:00:19.960" producer="Antoine_flute_totoroproducer16" />
@@ -2620,983 +2570,9 @@
     <entry in="00:01:27.480" out="00:01:41.960" producer="Antoine_flute_totoroproducer18" />
     <entry in="00:01:42.000" out="00:02:19.200" producer="Antoine_flute_totoroproducer19" />
     <entry in="00:02:19.240" out="00:02:32.120" producer="Antoine_flute_totoroproducer20" />
-    <entry in="00:02:32.160" out="00:02:36.040" producer="Antoine_flute_totoroproducer21" />
-    <entry in="00:02:36.080" out="00:02:46.840" producer="Antoine_flute_totoroproducer22" />
-    <entry in="00:02:46.880" out="00:02:58.160" producer="Antoine_flute_totoroproducer23" />
-    <entry in="00:02:58.200" out="00:02:59.720" producer="Antoine_flute_totoroproducer24" />
-    <filter id="filter38" out="00:03:21.320">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="level">-10</property>
-      <property name="mlt_service">volume</property>
-    </filter>
-  </playlist>
-  <producer id="Aur&#233;lie_hautbois_totoroproducer29" in="00:00:00.000" out="00:03:11.560" title="Anonymous Submission">
-    <property name="length">00:03:11:15</property>
-    <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Hautbois/Aur&#233;lie_hautbois_totoro.mp4</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="mute_on_pause">0</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="shotcut:hash">eef028a0ef9d0a891fcda437adec93c6</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">Aur&#233;lie_hautbois_totoro.mp4</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="global_feed">1</property>
-    <property name="xml">was here</property>
-    <filter id="Aur&#233;lie_hautbois_totoroproducer29_filter46" out="00:01:30.880">
-      <property name="background">colour:0</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">960 270 480 270 1</property>
-      <property name="transition.valign">top</property>
-      <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-    </filter>
-  </producer>
-  <producer id="Aur&#233;lie_hautbois_totoroproducer30" in="00:00:00.000" out="00:03:11.560" title="Anonymous Submission">
-    <property name="length">00:03:11:15</property>
-    <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Hautbois/Aur&#233;lie_hautbois_totoro.mp4</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="mute_on_pause">0</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="shotcut:hash">eef028a0ef9d0a891fcda437adec93c6</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">Aur&#233;lie_hautbois_totoro.mp4</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="global_feed">1</property>
-    <property name="xml">was here</property>
-    <filter id="Aur&#233;lie_hautbois_totoroproducer30_filter47" in="00:01:30.920" out="00:01:36.080">
-      <property name="background">colour:0</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">960 270 480 270 1</property>
-      <property name="transition.valign">top</property>
-      <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-    </filter>
-    <filter id="Aur&#233;lie_hautbois_totoroproducer30_filter48" in="00:01:30.920" out="00:01:36.080">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">muteVolume</property>
-      <property name="gain">0</property>
-    </filter>
-  </producer>
-  <producer id="Aur&#233;lie_hautbois_totoroproducer31" in="00:00:00.000" out="00:03:11.560" title="Anonymous Submission">
-    <property name="length">00:03:11:15</property>
-    <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Hautbois/Aur&#233;lie_hautbois_totoro.mp4</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="mute_on_pause">0</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="shotcut:hash">eef028a0ef9d0a891fcda437adec93c6</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">Aur&#233;lie_hautbois_totoro.mp4</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="global_feed">1</property>
-    <property name="xml">was here</property>
-    <filter id="Aur&#233;lie_hautbois_totoroproducer31_filter49" in="00:01:36.120" out="00:02:55.200">
-      <property name="background">colour:0</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">960 270 480 270 1</property>
-      <property name="transition.valign">top</property>
-      <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-    </filter>
-  </producer>
-  <producer id="Aur&#233;lie_hautbois_totoroproducer32" in="00:00:00.000" out="00:03:11.560" title="Anonymous Submission">
-    <property name="length">00:03:11:15</property>
-    <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Hautbois/Aur&#233;lie_hautbois_totoro.mp4</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="mute_on_pause">0</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="shotcut:hash">eef028a0ef9d0a891fcda437adec93c6</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">Aur&#233;lie_hautbois_totoro.mp4</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="global_feed">1</property>
-    <property name="xml">was here</property>
-    <filter id="Aur&#233;lie_hautbois_totoroproducer32_filter50" in="00:02:55.240" out="00:02:55.880">
-      <property name="background">colour:0</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">960 270 480 270 1</property>
-      <property name="transition.valign">top</property>
-      <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-    </filter>
-    <filter id="Aur&#233;lie_hautbois_totoroproducer32_filter51" in="00:02:55.240" out="00:02:55.880">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">muteVolume</property>
-      <property name="gain">0</property>
-    </filter>
-  </producer>
-  <producer id="Aur&#233;lie_hautbois_totoroproducer33" in="00:00:00.000" out="00:03:11.560" title="Anonymous Submission">
-    <property name="length">00:03:11:15</property>
-    <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Hautbois/Aur&#233;lie_hautbois_totoro.mp4</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="mute_on_pause">0</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="shotcut:hash">eef028a0ef9d0a891fcda437adec93c6</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">Aur&#233;lie_hautbois_totoro.mp4</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="global_feed">1</property>
-    <property name="xml">was here</property>
-    <filter id="Aur&#233;lie_hautbois_totoroproducer33_filter52" in="00:02:55.920" out="00:03:11.560">
-      <property name="background">colour:0</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">960 270 480 270 1</property>
-      <property name="transition.valign">top</property>
-      <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-    </filter>
-  </producer>
-  <playlist id="Aur&#233;lie_hautbois_totoroplaylist7">
-    <property name="shotcut:video">1</property>
-    <property name="shotcut:name">Aur&#233;lie_hautbois</property>
-    <property name="shotcut:lock">1</property>
-    <blank length="00:00:07.960" />
-    <entry in="00:00:00.000" out="00:01:30.880" producer="Aur&#233;lie_hautbois_totoroproducer29" />
-    <entry in="00:01:30.920" out="00:01:36.080" producer="Aur&#233;lie_hautbois_totoroproducer30" />
-    <entry in="00:01:36.120" out="00:02:55.200" producer="Aur&#233;lie_hautbois_totoroproducer31" />
-    <entry in="00:02:55.240" out="00:02:55.880" producer="Aur&#233;lie_hautbois_totoroproducer32" />
-    <entry in="00:02:55.920" out="00:03:11.560" producer="Aur&#233;lie_hautbois_totoroproducer33" />
-  </playlist>
-  <producer id="Bidou_euphonium_totoroproducer4" in="00:00:00.000" out="00:03:21.840" title="Anonymous Submission">
-    <property name="length">00:03:21:22</property>
-    <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="mute_on_pause">0</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="creation_time">2020-04-05T19:40:16</property>
-    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="global_feed">1</property>
-    <property name="xml">was here</property>
-    <filter id="Bidou_euphonium_totoroproducer4_filter3" out="00:00:30.040">
-      <property name="background">colour:0</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">960 540 480 270 1</property>
-      <property name="transition.valign">top</property>
-      <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-    </filter>
-    <filter id="Bidou_euphonium_totoroproducer4_filter4" out="00:00:30.040">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">muteVolume</property>
-      <property name="gain">0</property>
-    </filter>
-  </producer>
-  <producer id="Bidou_euphonium_totoroproducer5" in="00:00:00.000" out="00:03:21.840" title="Anonymous Submission">
-    <property name="length">00:03:21:22</property>
-    <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="mute_on_pause">0</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="creation_time">2020-04-05T19:40:16</property>
-    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="global_feed">1</property>
-    <property name="xml">was here</property>
-    <filter id="Bidou_euphonium_totoroproducer5_filter5" in="00:00:30.080" out="00:00:44.200">
-      <property name="background">colour:0</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">960 540 480 270 1</property>
-      <property name="transition.valign">top</property>
-      <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-    </filter>
-  </producer>
-  <producer id="Bidou_euphonium_totoroproducer6" in="00:00:00.000" out="00:03:21.840" title="Anonymous Submission">
-    <property name="length">00:03:21:22</property>
-    <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="mute_on_pause">0</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="creation_time">2020-04-05T19:40:16</property>
-    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="global_feed">1</property>
-    <property name="xml">was here</property>
-    <filter id="Bidou_euphonium_totoroproducer6_filter6" in="00:00:44.240" out="00:00:46.920">
-      <property name="background">colour:0</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">960 540 480 270 1</property>
-      <property name="transition.valign">top</property>
-      <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-    </filter>
-    <filter id="Bidou_euphonium_totoroproducer6_filter7" in="00:00:44.240" out="00:00:46.920">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">muteVolume</property>
-      <property name="gain">0</property>
-    </filter>
-  </producer>
-  <producer id="Bidou_euphonium_totoroproducer7" in="00:00:00.000" out="00:03:21.840" title="Anonymous Submission">
-    <property name="length">00:03:21:22</property>
-    <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="mute_on_pause">0</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="creation_time">2020-04-05T19:40:16</property>
-    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="global_feed">1</property>
-    <property name="xml">was here</property>
-    <filter id="Bidou_euphonium_totoroproducer7_filter8" in="00:00:46.960" out="00:00:50.600">
-      <property name="background">colour:0</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">960 540 480 270 1</property>
-      <property name="transition.valign">top</property>
-      <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-    </filter>
-  </producer>
-  <producer id="Bidou_euphonium_totoroproducer8" in="00:00:00.000" out="00:03:21.840" title="Anonymous Submission">
-    <property name="length">00:03:21:22</property>
-    <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="mute_on_pause">0</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="creation_time">2020-04-05T19:40:16</property>
-    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="global_feed">1</property>
-    <property name="xml">was here</property>
-    <filter id="Bidou_euphonium_totoroproducer8_filter9" in="00:00:50.640" out="00:00:53.760">
-      <property name="background">colour:0</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">960 540 480 270 1</property>
-      <property name="transition.valign">top</property>
-      <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-    </filter>
-    <filter id="Bidou_euphonium_totoroproducer8_filter10" in="00:00:50.640" out="00:00:53.760">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">muteVolume</property>
-      <property name="gain">0</property>
-    </filter>
-  </producer>
-  <producer id="Bidou_euphonium_totoroproducer9" in="00:00:00.000" out="00:03:21.840" title="Anonymous Submission">
-    <property name="length">00:03:21:22</property>
-    <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="mute_on_pause">0</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="creation_time">2020-04-05T19:40:16</property>
-    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="global_feed">1</property>
-    <property name="xml">was here</property>
-    <filter id="Bidou_euphonium_totoroproducer9_filter11" in="00:00:53.800" out="00:01:04.680">
-      <property name="background">colour:0</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">960 540 480 270 1</property>
-      <property name="transition.valign">top</property>
-      <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-    </filter>
-  </producer>
-  <producer id="Bidou_euphonium_totoroproducer10" in="00:00:00.000" out="00:03:21.840" title="Anonymous Submission">
-    <property name="length">00:03:21:22</property>
-    <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="mute_on_pause">0</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="creation_time">2020-04-05T19:40:16</property>
-    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="global_feed">1</property>
-    <property name="xml">was here</property>
-    <filter id="Bidou_euphonium_totoroproducer10_filter12" in="00:01:04.720" out="00:01:13.400">
-      <property name="background">colour:0</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">960 540 480 270 1</property>
-      <property name="transition.valign">top</property>
-      <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-    </filter>
-    <filter id="Bidou_euphonium_totoroproducer10_filter13" in="00:01:04.720" out="00:01:13.400">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">muteVolume</property>
-      <property name="gain">0</property>
-    </filter>
-  </producer>
-  <producer id="Bidou_euphonium_totoroproducer11" in="00:00:00.000" out="00:03:21.840" title="Anonymous Submission">
-    <property name="length">00:03:21:22</property>
-    <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="mute_on_pause">0</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="creation_time">2020-04-05T19:40:16</property>
-    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="global_feed">1</property>
-    <property name="xml">was here</property>
-    <filter id="Bidou_euphonium_totoroproducer11_filter14" in="00:01:13.440" out="00:01:38.000">
-      <property name="background">colour:0</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">960 540 480 270 1</property>
-      <property name="transition.valign">top</property>
-      <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-    </filter>
-  </producer>
-  <producer id="Bidou_euphonium_totoroproducer12" in="00:00:00.000" out="00:03:21.840" title="Anonymous Submission">
-    <property name="length">00:03:21:22</property>
-    <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="mute_on_pause">0</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="creation_time">2020-04-05T19:40:16</property>
-    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="global_feed">1</property>
-    <property name="xml">was here</property>
-    <filter id="Bidou_euphonium_totoroproducer12_filter15" in="00:01:38.040" out="00:01:44.040">
-      <property name="background">colour:0</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">960 540 480 270 1</property>
-      <property name="transition.valign">top</property>
-      <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-    </filter>
-    <filter id="Bidou_euphonium_totoroproducer12_filter16" in="00:01:38.040" out="00:01:44.040">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">muteVolume</property>
-      <property name="gain">0</property>
-    </filter>
-  </producer>
-  <producer id="Bidou_euphonium_totoroproducer13" in="00:00:00.000" out="00:03:21.840" title="Anonymous Submission">
-    <property name="length">00:03:21:22</property>
-    <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="mute_on_pause">0</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="creation_time">2020-04-05T19:40:16</property>
-    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="global_feed">1</property>
-    <property name="xml">was here</property>
-    <filter id="Bidou_euphonium_totoroproducer13_filter17" in="00:01:44.080" out="00:03:14.200">
-      <property name="background">colour:0</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">960 540 480 270 1</property>
-      <property name="transition.valign">top</property>
-      <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-    </filter>
-  </producer>
-  <producer id="Bidou_euphonium_totoroproducer14" in="00:00:00.000" out="00:03:21.840" title="Anonymous Submission">
-    <property name="length">00:03:21:22</property>
-    <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="mute_on_pause">0</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="creation_time">2020-04-05T19:40:16</property>
-    <property name="shotcut:hash">c61ed928d3936826431ae6103cd9bcfd</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">Bidou_euphonium_totoro.mp4</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="global_feed">1</property>
-    <property name="xml">was here</property>
-    <filter id="Bidou_euphonium_totoroproducer14_filter18" in="00:03:14.240" out="00:03:21.840">
-      <property name="background">colour:0</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">960 540 480 270 1</property>
-      <property name="transition.valign">top</property>
-      <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-    </filter>
-    <filter id="Bidou_euphonium_totoroproducer14_filter19" in="00:03:14.240" out="00:03:21.840">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">muteVolume</property>
-      <property name="gain">0</property>
-    </filter>
-  </producer>
-  <playlist id="Bidou_euphonium_totoroplaylist3">
-    <property name="shotcut:video">1</property>
-    <property name="shotcut:name">Bidou_euphonium</property>
-    <property name="shotcut:lock">1</property>
-    <blank length="00:00:00.040" />
-    <entry in="00:00:00.000" out="00:00:30.040" producer="Bidou_euphonium_totoroproducer4" />
-    <entry in="00:00:30.080" out="00:00:44.200" producer="Bidou_euphonium_totoroproducer5" />
-    <entry in="00:00:44.240" out="00:00:46.920" producer="Bidou_euphonium_totoroproducer6" />
-    <entry in="00:00:46.960" out="00:00:50.600" producer="Bidou_euphonium_totoroproducer7" />
-    <entry in="00:00:50.640" out="00:00:53.760" producer="Bidou_euphonium_totoroproducer8" />
-    <entry in="00:00:53.800" out="00:01:04.680" producer="Bidou_euphonium_totoroproducer9" />
-    <entry in="00:01:04.720" out="00:01:13.400" producer="Bidou_euphonium_totoroproducer10" />
-    <entry in="00:01:13.440" out="00:01:38.000" producer="Bidou_euphonium_totoroproducer11" />
-    <entry in="00:01:38.040" out="00:01:44.040" producer="Bidou_euphonium_totoroproducer12" />
-    <entry in="00:01:44.080" out="00:03:14.200" producer="Bidou_euphonium_totoroproducer13" />
-    <entry in="00:03:14.240" out="00:03:21.840" producer="Bidou_euphonium_totoroproducer14" />
-  </playlist>
-  <producer id="Serge_euphonium_totoroproducer15" in="00:00:00.000" out="00:03:39.760" title="Anonymous Submission">
-    <property name="length">00:03:39:20</property>
-    <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="mute_on_pause">0</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="creation_time">2020-04-09T18:38:52</property>
-    <property name="shotcut:hash">febfb730e69b265c8667487f9874d68f</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">Serge_euphonium_totoro.mp4</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="global_feed">1</property>
-    <property name="xml">was here</property>
-    <filter id="Serge_euphonium_totoroproducer15_filter20" in="00:00:01.760" out="00:00:20.000">
-      <property name="background">colour:0</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">960 810 480 270 1</property>
-      <property name="transition.valign">top</property>
-      <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-    </filter>
-  </producer>
-  <producer id="Serge_euphonium_totoroproducer16" in="00:00:00.000" out="00:03:39.760" title="Anonymous Submission">
-    <property name="length">00:03:39:20</property>
-    <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="mute_on_pause">0</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="creation_time">2020-04-09T18:38:52</property>
-    <property name="shotcut:hash">febfb730e69b265c8667487f9874d68f</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">Serge_euphonium_totoro.mp4</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="global_feed">1</property>
-    <property name="xml">was here</property>
-    <filter id="Serge_euphonium_totoroproducer16_filter21" in="00:00:33.720" out="00:00:45.520">
-      <property name="background">colour:0</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">960 810 480 270 1</property>
-      <property name="transition.valign">top</property>
-      <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-    </filter>
-    <filter id="Serge_euphonium_totoroproducer16_filter22" in="00:00:33.720" out="00:00:45.520">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">muteVolume</property>
-      <property name="gain">0</property>
-    </filter>
-  </producer>
-  <producer id="Serge_euphonium_totoroproducer17" in="00:00:00.000" out="00:03:39.760" title="Anonymous Submission">
-    <property name="length">00:03:39:20</property>
-    <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="mute_on_pause">0</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="creation_time">2020-04-09T18:38:52</property>
-    <property name="shotcut:hash">febfb730e69b265c8667487f9874d68f</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">Serge_euphonium_totoro.mp4</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="global_feed">1</property>
-    <property name="xml">was here</property>
-    <filter id="Serge_euphonium_totoroproducer17_filter23" in="00:00:45.560" out="00:00:59.680">
-      <property name="background">colour:0</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">960 810 480 270 1</property>
-      <property name="transition.valign">top</property>
-      <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-    </filter>
-  </producer>
-  <producer id="Serge_euphonium_totoroproducer18" in="00:00:00.000" out="00:03:39.760" title="Anonymous Submission">
-    <property name="length">00:03:39:20</property>
-    <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="mute_on_pause">0</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="creation_time">2020-04-09T18:38:52</property>
-    <property name="shotcut:hash">febfb730e69b265c8667487f9874d68f</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">Serge_euphonium_totoro.mp4</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="global_feed">1</property>
-    <property name="xml">was here</property>
-    <filter id="Serge_euphonium_totoroproducer18_filter24" in="00:00:59.720" out="00:01:02.360">
-      <property name="background">colour:0</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">960 810 480 270 1</property>
-      <property name="transition.valign">top</property>
-      <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-    </filter>
-    <filter id="Serge_euphonium_totoroproducer18_filter25" in="00:00:59.720" out="00:01:02.360">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">muteVolume</property>
-      <property name="gain">0</property>
-    </filter>
-  </producer>
-  <producer id="Serge_euphonium_totoroproducer19" in="00:00:00.000" out="00:03:39.760" title="Anonymous Submission">
-    <property name="length">00:03:39:20</property>
-    <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="mute_on_pause">0</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="creation_time">2020-04-09T18:38:52</property>
-    <property name="shotcut:hash">febfb730e69b265c8667487f9874d68f</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">Serge_euphonium_totoro.mp4</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="global_feed">1</property>
-    <property name="xml">was here</property>
-    <filter id="Serge_euphonium_totoroproducer19_filter26" in="00:01:02.400" out="00:01:06.080">
-      <property name="background">colour:0</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">960 810 480 270 1</property>
-      <property name="transition.valign">top</property>
-      <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-    </filter>
-  </producer>
-  <producer id="Serge_euphonium_totoroproducer20" in="00:00:00.000" out="00:03:39.760" title="Anonymous Submission">
-    <property name="length">00:03:39:20</property>
-    <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="mute_on_pause">0</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="creation_time">2020-04-09T18:38:52</property>
-    <property name="shotcut:hash">febfb730e69b265c8667487f9874d68f</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">Serge_euphonium_totoro.mp4</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="global_feed">1</property>
-    <property name="xml">was here</property>
-    <filter id="Serge_euphonium_totoroproducer20_filter27" in="00:01:06.120" out="00:01:09.240">
-      <property name="background">colour:0</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">960 810 480 270 1</property>
-      <property name="transition.valign">top</property>
-      <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-    </filter>
-    <filter id="Serge_euphonium_totoroproducer20_filter28" in="00:01:06.120" out="00:01:09.240">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">muteVolume</property>
-      <property name="gain">0</property>
-    </filter>
-  </producer>
-  <producer id="Serge_euphonium_totoroproducer21" in="00:00:00.000" out="00:03:39.760" title="Anonymous Submission">
-    <property name="length">00:03:39:20</property>
-    <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="mute_on_pause">0</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="creation_time">2020-04-09T18:38:52</property>
-    <property name="shotcut:hash">febfb730e69b265c8667487f9874d68f</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">Serge_euphonium_totoro.mp4</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="global_feed">1</property>
-    <property name="xml">was here</property>
-    <filter id="Serge_euphonium_totoroproducer21_filter29" in="00:01:09.280" out="00:01:20.200">
-      <property name="background">colour:0</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">960 810 480 270 1</property>
-      <property name="transition.valign">top</property>
-      <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-    </filter>
-  </producer>
-  <producer id="Serge_euphonium_totoroproducer22" in="00:00:00.000" out="00:03:39.760" title="Anonymous Submission">
-    <property name="length">00:03:39:20</property>
-    <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="mute_on_pause">0</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="creation_time">2020-04-09T18:38:52</property>
-    <property name="shotcut:hash">febfb730e69b265c8667487f9874d68f</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">Serge_euphonium_totoro.mp4</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="global_feed">1</property>
-    <property name="xml">was here</property>
-    <filter id="Serge_euphonium_totoroproducer22_filter30" in="00:01:20.240" out="00:01:28.840">
-      <property name="background">colour:0</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">960 810 480 270 1</property>
-      <property name="transition.valign">top</property>
-      <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-    </filter>
-    <filter id="Serge_euphonium_totoroproducer22_filter31" in="00:01:20.240" out="00:01:28.840">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">muteVolume</property>
-      <property name="gain">0</property>
-    </filter>
-  </producer>
-  <producer id="Serge_euphonium_totoroproducer23" in="00:00:00.000" out="00:03:39.760" title="Anonymous Submission">
-    <property name="length">00:03:39:20</property>
-    <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="mute_on_pause">0</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="creation_time">2020-04-09T18:38:52</property>
-    <property name="shotcut:hash">febfb730e69b265c8667487f9874d68f</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">Serge_euphonium_totoro.mp4</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="global_feed">1</property>
-    <property name="xml">was here</property>
-    <filter id="Serge_euphonium_totoroproducer23_filter32" in="00:01:28.880" out="00:01:53.440">
-      <property name="background">colour:0</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">960 810 480 270 1</property>
-      <property name="transition.valign">top</property>
-      <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-    </filter>
-  </producer>
-  <producer id="Serge_euphonium_totoroproducer24" in="00:00:00.000" out="00:03:39.760" title="Anonymous Submission">
-    <property name="length">00:03:39:20</property>
-    <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="mute_on_pause">0</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="creation_time">2020-04-09T18:38:52</property>
-    <property name="shotcut:hash">febfb730e69b265c8667487f9874d68f</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">Serge_euphonium_totoro.mp4</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="global_feed">1</property>
-    <property name="xml">was here</property>
-    <filter id="Serge_euphonium_totoroproducer24_filter33" in="00:01:53.480" out="00:01:59.480">
-      <property name="background">colour:0</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">960 810 480 270 1</property>
-      <property name="transition.valign">top</property>
-      <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-    </filter>
-    <filter id="Serge_euphonium_totoroproducer24_filter34" in="00:01:53.480" out="00:01:59.480">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">muteVolume</property>
-      <property name="gain">0</property>
-    </filter>
-  </producer>
-  <producer id="Serge_euphonium_totoroproducer25" in="00:00:00.000" out="00:03:39.760" title="Anonymous Submission">
-    <property name="length">00:03:39:20</property>
-    <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="mute_on_pause">0</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="creation_time">2020-04-09T18:38:52</property>
-    <property name="shotcut:hash">febfb730e69b265c8667487f9874d68f</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">Serge_euphonium_totoro.mp4</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="global_feed">1</property>
-    <property name="xml">was here</property>
-    <filter id="Serge_euphonium_totoroproducer25_filter35" in="00:01:59.520" out="00:03:39.760">
-      <property name="background">colour:0</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">960 810 480 270 1</property>
-      <property name="transition.valign">top</property>
-      <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-    </filter>
-  </producer>
-  <playlist id="Serge_euphonium_totoroplaylist4">
-    <property name="shotcut:video">1</property>
-    <property name="shotcut:name">Serge_euphonium</property>
-    <property name="shotcut:lock">1</property>
-    <entry in="00:00:01.760" out="00:00:20.000" producer="Serge_euphonium_totoroproducer15" />
-    <entry in="00:00:33.720" out="00:00:45.520" producer="Serge_euphonium_totoroproducer16" />
-    <entry in="00:00:45.560" out="00:00:59.680" producer="Serge_euphonium_totoroproducer17" />
-    <entry in="00:00:59.720" out="00:01:02.360" producer="Serge_euphonium_totoroproducer18" />
-    <entry in="00:01:02.400" out="00:01:06.080" producer="Serge_euphonium_totoroproducer19" />
-    <entry in="00:01:06.120" out="00:01:09.240" producer="Serge_euphonium_totoroproducer20" />
-    <entry in="00:01:09.280" out="00:01:20.200" producer="Serge_euphonium_totoroproducer21" />
-    <entry in="00:01:20.240" out="00:01:28.840" producer="Serge_euphonium_totoroproducer22" />
-    <entry in="00:01:28.880" out="00:01:53.440" producer="Serge_euphonium_totoroproducer23" />
-    <entry in="00:01:53.480" out="00:01:59.480" producer="Serge_euphonium_totoroproducer24" />
-    <entry in="00:01:59.520" out="00:03:39.760" producer="Serge_euphonium_totoroproducer25" />
+    <entry in="00:02:32.160" out="00:02:46.840" producer="Antoine_flute_totoroproducer21" />
+    <entry in="00:02:46.880" out="00:02:58.160" producer="Antoine_flute_totoroproducer22" />
+    <entry in="00:02:58.200" out="00:02:59.720" producer="Antoine_flute_totoroproducer23" />
   </playlist>
   <tractor global_feed="1" id="tractor0" in="00:00:00.000" out="00:03:20.880" title="Shotcut version 19.08.05">
     <property name="shotcut">1</property>
@@ -3615,9 +2591,6 @@
     <track producer="Alain_flute_totoroplaylist3" />
     <track producer="Laurence_flute_totoroplaylist4" />
     <track producer="Antoine_flute_totoroplaylist5" />
-    <track producer="Aur&#233;lie_hautbois_totoroplaylist7" />
-    <track hide="both" producer="Bidou_euphonium_totoroplaylist3" />
-    <track producer="Serge_euphonium_totoroplaylist4" />
     <transition id="transition0">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
@@ -3756,7 +2729,7 @@
       <property name="always_active">1</property>
       <property name="sum">1</property>
     </transition>
-    <transition id="transition9_imported_2">
+  <transition id="transition9_imported_2">
       <property name="a_track">0</property>
       <property name="b_track">11</property>
       <property name="mlt_service">mix</property>
@@ -3770,47 +2743,5 @@
       <property name="mlt_service">frei0r.cairoblend</property>
       <property name="disable">0</property>
     </transition>
-    <transition id="transition14_imported_2">
-      <property name="a_track">0</property>
-      <property name="b_track">12</property>
-      <property name="mlt_service">mix</property>
-      <property name="always_active">1</property>
-      <property name="sum">1</property>
-    </transition>
-    <transition id="transition15_imported_2">
-      <property name="a_track">1</property>
-      <property name="b_track">12</property>
-      <property name="version">0.9</property>
-      <property name="mlt_service">frei0r.cairoblend</property>
-      <property name="disable">0</property>
-    </transition>
-  <transition id="transition6_imported_3">
-      <property name="a_track">0</property>
-      <property name="b_track">13</property>
-      <property name="mlt_service">mix</property>
-      <property name="always_active">1</property>
-      <property name="sum">1</property>
-    </transition>
-    <transition id="transition7_imported_3">
-      <property name="a_track">1</property>
-      <property name="b_track">13</property>
-      <property name="version">0.9</property>
-      <property name="mlt_service">frei0r.cairoblend</property>
-      <property name="disable">0</property>
-    </transition>
-    <transition id="transition8_imported_3">
-      <property name="a_track">0</property>
-      <property name="b_track">14</property>
-      <property name="mlt_service">mix</property>
-      <property name="always_active">1</property>
-      <property name="sum">1</property>
-    </transition>
-    <transition id="transition9_imported_3">
-      <property name="a_track">1</property>
-      <property name="b_track">14</property>
-      <property name="version">0.9</property>
-      <property name="mlt_service">frei0r.cairoblend</property>
-      <property name="disable">0</property>
-    </transition>
-  </tractor>
+    </tractor>
 </mlt>

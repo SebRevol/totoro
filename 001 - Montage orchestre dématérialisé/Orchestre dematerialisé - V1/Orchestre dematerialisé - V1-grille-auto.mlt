@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='us-ascii'?>
-<mlt LC_NUMERIC="C" producer="main_bin" title="Shotcut version 20.02.17" version="6.20.0">
-  <profile colorspace="709" description="HD 1080p 25 fps" display_aspect_den="9" display_aspect_num="16" frame_rate_den="1" frame_rate_num="25" height="1080" progressive="1" sample_aspect_den="1" sample_aspect_num="1" width="1920" />
+<mlt LC_NUMERIC="C" version="6.17.0" title="Shotcut version 19.08.05" producer="main_bin">
+  <profile description="HD 1080p 25 fps" width="1920" height="1080" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="25" frame_rate_den="1" colorspace="709" />
   <playlist id="main_bin">
     <property name="xml_retain">1</property>
   </playlist>
@@ -14,9 +14,9 @@
     <property name="set.test_audio">0</property>
   </producer>
   <playlist id="background">
-    <entry in="00:00:00.000" out="00:03:22.120" producer="black" />
+    <entry producer="black" in="00:00:00.000" out="00:03:22.120" />
   </playlist>
-  <producer id="producer0" in="00:00:00.000" out="00:02:58.320" title="Anonymous Submission">
+  <producer id="producer0" title="Anonymous Submission" in="00:00:00.000" out="00:02:58.320">
     <property name="length">00:02:58:09</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Chef/Jean-Jacques_chef_totoro.mp4</property>
@@ -52,9 +52,9 @@
     <property name="shotcut:name">Chef_JJS</property>
     <property name="shotcut:lock">1</property>
     <blank length="00:00:22.320" />
-    <entry in="00:00:00.000" out="00:02:58.320" producer="producer0" />
+    <entry producer="producer0" in="00:00:00.000" out="00:02:58.320" />
   </playlist>
-  <producer id="producer1" in="00:00:00.000" out="03:59:59.960" title="Anonymous Submission">
+  <producer id="producer1" title="Anonymous Submission" in="00:00:00.000" out="03:59:59.960">
     <property name="length">04:00:00:00</property>
     <property name="eof">pause</property>
     <property name="resource">#00000000</property>
@@ -88,7 +88,7 @@
       <property name="shotcut:animOut">00:00:00.000</property>
     </filter>
   </producer>
-  <producer id="producer2" in="00:00:00.000" out="03:59:59.960" title="Anonymous Submission">
+  <producer id="producer2" title="Anonymous Submission" in="00:00:00.000" out="03:59:59.960">
     <property name="length">04:00:00:00</property>
     <property name="eof">pause</property>
     <property name="resource">#00000000</property>
@@ -126,10 +126,10 @@
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">Storyboard</property>
     <property name="shotcut:lock">1</property>
-    <entry in="00:00:00.000" out="00:00:04.960" producer="producer1" />
-    <entry in="00:00:05.000" out="00:00:14.960" producer="producer2" />
+    <entry producer="producer1" in="00:00:00.000" out="00:00:04.960" />
+    <entry producer="producer2" in="00:00:05.000" out="00:00:14.960" />
   </playlist>
-  <producer id="producer3" in="00:00:00.000" out="00:03:24.560" title="Anonymous Submission">
+  <producer id="producer3" title="Anonymous Submission" in="00:00:00.000" out="00:03:24.560">
     <property name="length">00:03:24:15</property>
     <property name="eof">pause</property>
     <property name="resource">../../003 - Bande son/Practice avec texte initial et son youtube.mp4</property>
@@ -152,9 +152,9 @@
     <property name="shotcut:name">Bande_son_practice</property>
     <property name="shotcut:lock">1</property>
     <blank length="00:00:15.000" />
-    <entry in="00:00:18.960" out="00:03:24.560" producer="producer3" />
+    <entry producer="producer3" in="00:00:18.960" out="00:03:24.560" />
   </playlist>
-  <producer id="producer4" in="00:00:00.000" out="00:03:14.400" title="Anonymous Submission">
+  <producer id="producer4" title="Anonymous Submission" in="00:00:00.000" out="00:03:14.400">
     <property name="length">00:03:14:11</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Anne-sonia_clarinette_totoro.mp4</property>
@@ -190,9 +190,9 @@
     <property name="shotcut:name">Clarinette_Anne-Sonia</property>
     <property name="shotcut:lock">1</property>
     <blank length="00:00:07.720" />
-    <entry in="00:00:00.000" out="00:03:14.400" producer="producer4" />
+    <entry producer="producer4" in="00:00:00.000" out="00:03:14.400" />
   </playlist>
-  <producer id="producer5" in="00:00:00.000" out="00:03:21.840" title="Anonymous Submission">
+  <producer id="producer5" title="Anonymous Submission" in="00:00:00.000" out="00:03:21.840">
     <property name="length">00:03:21:22</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
@@ -230,7 +230,7 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer6" in="00:00:00.000" out="00:03:21.840" title="Anonymous Submission">
+  <producer id="producer6" title="Anonymous Submission" in="00:00:00.000" out="00:03:21.840">
     <property name="length">00:03:21:22</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
@@ -267,7 +267,7 @@
       <property name="mlt_service">volume</property>
     </filter>
   </producer>
-  <producer id="producer7" in="00:00:00.000" out="00:03:21.840" title="Anonymous Submission">
+  <producer id="producer7" title="Anonymous Submission" in="00:00:00.000" out="00:03:21.840">
     <property name="length">00:03:21:22</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
@@ -305,7 +305,7 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer8" in="00:00:00.000" out="00:03:21.840" title="Anonymous Submission">
+  <producer id="producer8" title="Anonymous Submission" in="00:00:00.000" out="00:03:21.840">
     <property name="length">00:03:21:22</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
@@ -347,12 +347,12 @@
     <property name="shotcut:name">Euphonium_bidou</property>
     <property name="shotcut:lock">1</property>
     <blank length="00:00:00.040" />
-    <entry in="00:00:00.000" out="00:00:30.080" producer="producer5" />
-    <entry in="00:00:30.120" out="00:01:34.120" producer="producer6" />
-    <entry in="00:01:34.160" out="00:01:43.240" producer="producer7" />
-    <entry in="00:01:43.280" out="00:03:21.840" producer="producer8" />
+    <entry producer="producer5" in="00:00:00.000" out="00:00:30.080" />
+    <entry producer="producer6" in="00:00:30.120" out="00:01:34.120" />
+    <entry producer="producer7" in="00:01:34.160" out="00:01:43.240" />
+    <entry producer="producer8" in="00:01:43.280" out="00:03:21.840" />
   </playlist>
-  <producer id="producer9" in="00:00:00.000" out="00:03:41.040" title="Anonymous Submission">
+  <producer id="producer9" title="Anonymous Submission" in="00:00:00.000" out="00:03:41.040">
     <property name="length">00:03:41:02</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Bidou_cornet_totoro.mp4</property>
@@ -390,7 +390,7 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer10" in="00:00:00.000" out="00:03:41.040" title="Anonymous Submission">
+  <producer id="producer10" title="Anonymous Submission" in="00:00:00.000" out="00:03:41.040">
     <property name="length">00:03:41:02</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Bidou_cornet_totoro.mp4</property>
@@ -427,7 +427,7 @@
       <property name="mlt_service">volume</property>
     </filter>
   </producer>
-  <producer id="producer11" in="00:00:00.000" out="00:03:41.040" title="Anonymous Submission">
+  <producer id="producer11" title="Anonymous Submission" in="00:00:00.000" out="00:03:41.040">
     <property name="length">00:03:41:02</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Bidou_cornet_totoro.mp4</property>
@@ -465,7 +465,7 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer12" in="00:00:00.000" out="00:03:41.040" title="Anonymous Submission">
+  <producer id="producer12" title="Anonymous Submission" in="00:00:00.000" out="00:03:41.040">
     <property name="length">00:03:41:02</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Bidou_cornet_totoro.mp4</property>
@@ -507,12 +507,12 @@
     <property name="shotcut:name">Cornet_bidou</property>
     <property name="shotcut:lock">1</property>
     <blank length="00:00:03.560" />
-    <entry in="00:00:23.720" out="00:00:50.280" producer="producer9" />
-    <entry in="00:00:50.320" out="00:01:57.840" producer="producer10" />
-    <entry in="00:01:57.880" out="00:02:18.480" producer="producer11" />
-    <entry in="00:02:18.520" out="00:03:41.040" producer="producer12" />
+    <entry producer="producer9" in="00:00:23.720" out="00:00:50.280" />
+    <entry producer="producer10" in="00:00:50.320" out="00:01:57.840" />
+    <entry producer="producer11" in="00:01:57.880" out="00:02:18.480" />
+    <entry producer="producer12" in="00:02:18.520" out="00:03:41.040" />
   </playlist>
-  <producer id="producer13" in="00:00:00.000" out="00:02:59.280" title="Anonymous Submission">
+  <producer id="producer13" title="Anonymous Submission" in="00:00:00.000" out="00:02:59.280">
     <property name="length">00:02:59:08</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Am&#233;lie_clarinette_V1 (pb cadrage).mp4</property>
@@ -553,9 +553,9 @@
     <property name="shotcut:name">Clarinette_am&#233;lie</property>
     <property name="shotcut:lock">1</property>
     <blank length="00:00:19.520" />
-    <entry in="00:00:00.000" out="00:02:59.280" producer="producer13" />
+    <entry producer="producer13" in="00:00:00.000" out="00:02:59.280" />
   </playlist>
-  <producer id="producer14" in="00:00:00.000" out="00:02:58.600" title="Anonymous Submission">
+  <producer id="producer14" title="Anonymous Submission" in="00:00:00.000" out="00:02:58.600">
     <property name="length">00:02:58:16</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Percussions/Jean-Jacques_percu_totoro.mp4</property>
@@ -591,9 +591,9 @@
     <property name="shotcut:name">Percu_JJS</property>
     <property name="shotcut:lock">1</property>
     <blank length="00:00:20.720" />
-    <entry in="00:00:00.000" out="00:02:58.600" producer="producer14" />
+    <entry producer="producer14" in="00:00:00.000" out="00:02:58.600" />
   </playlist>
-  <producer id="producer15" in="00:00:00.000" out="00:02:56.880" title="Anonymous Submission">
+  <producer id="producer15" title="Anonymous Submission" in="00:00:00.000" out="00:02:56.880">
     <property name="length">00:02:56:23</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Saxophone/Nadine_saxophone_totoro.mp4</property>
@@ -630,7 +630,7 @@
       <property name="mlt_service">volume</property>
     </filter>
   </producer>
-  <producer id="producer16" in="00:00:00.000" out="00:02:56.880" title="Anonymous Submission">
+  <producer id="producer16" title="Anonymous Submission" in="00:00:00.000" out="00:02:56.880">
     <property name="length">00:02:56:23</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Saxophone/Nadine_saxophone_totoro.mp4</property>
@@ -674,7 +674,7 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer17" in="00:00:00.000" out="00:02:56.880" title="Anonymous Submission">
+  <producer id="producer17" title="Anonymous Submission" in="00:00:00.000" out="00:02:56.880">
     <property name="length">00:02:56:23</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Saxophone/Nadine_saxophone_totoro.mp4</property>
@@ -716,11 +716,11 @@
     <property name="shotcut:name">Saxophone_Nadine</property>
     <property name="shotcut:lock">0</property>
     <blank length="00:00:21.760" />
-    <entry in="00:00:00.000" out="00:01:10.880" producer="producer15" />
-    <entry in="00:01:10.920" out="00:01:22.760" producer="producer16" />
-    <entry in="00:01:22.800" out="00:02:56.880" producer="producer17" />
+    <entry producer="producer15" in="00:00:00.000" out="00:01:10.880" />
+    <entry producer="producer16" in="00:01:10.920" out="00:01:22.760" />
+    <entry producer="producer17" in="00:01:22.800" out="00:02:56.880" />
   </playlist>
-  <producer id="producer18" in="00:00:00.000" out="00:03:00.640" title="Anonymous Submission">
+  <producer id="producer18" title="Anonymous Submission" in="00:00:00.000" out="00:03:00.640">
     <property name="length">00:03:00:17</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Saxophone/Nathalie_saxophone_totoro.mp4</property>
@@ -751,7 +751,7 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer19" in="00:00:00.000" out="00:03:00.640" title="Anonymous Submission">
+  <producer id="producer19" title="Anonymous Submission" in="00:00:00.000" out="00:03:00.640">
     <property name="length">00:03:00:17</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Saxophone/Nathalie_saxophone_totoro.mp4</property>
@@ -782,7 +782,7 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer20" in="00:00:00.000" out="00:03:00.640" title="Anonymous Submission">
+  <producer id="producer20" title="Anonymous Submission" in="00:00:00.000" out="00:03:00.640">
     <property name="length">00:03:00:17</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Saxophone/Nathalie_saxophone_totoro.mp4</property>
@@ -813,7 +813,7 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer21" in="00:00:00.000" out="00:03:00.640" title="Anonymous Submission">
+  <producer id="producer21" title="Anonymous Submission" in="00:00:00.000" out="00:03:00.640">
     <property name="length">00:03:00:17</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Saxophone/Nathalie_saxophone_totoro.mp4</property>
@@ -844,7 +844,7 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer22" in="00:00:00.000" out="00:03:00.640" title="Anonymous Submission">
+  <producer id="producer22" title="Anonymous Submission" in="00:00:00.000" out="00:03:00.640">
     <property name="length">00:03:00:17</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Saxophone/Nathalie_saxophone_totoro.mp4</property>
@@ -875,7 +875,7 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer23" in="00:00:00.000" out="00:03:00.640" title="Anonymous Submission">
+  <producer id="producer23" title="Anonymous Submission" in="00:00:00.000" out="00:03:00.640">
     <property name="length">00:03:00:17</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Saxophone/Nathalie_saxophone_totoro.mp4</property>
@@ -913,7 +913,7 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer24" in="00:00:00.000" out="00:03:00.640" title="Anonymous Submission">
+  <producer id="producer24" title="Anonymous Submission" in="00:00:00.000" out="00:03:00.640">
     <property name="length">00:03:00:17</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Saxophone/Nathalie_saxophone_totoro.mp4</property>
@@ -944,7 +944,7 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer25" in="00:00:00.000" out="00:03:00.640" title="Anonymous Submission">
+  <producer id="producer25" title="Anonymous Submission" in="00:00:00.000" out="00:03:00.640">
     <property name="length">00:03:00:17</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Saxophone/Nathalie_saxophone_totoro.mp4</property>
@@ -975,7 +975,7 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer26" in="00:00:00.000" out="00:03:00.640" title="Anonymous Submission">
+  <producer id="producer26" title="Anonymous Submission" in="00:00:00.000" out="00:03:00.640">
     <property name="length">00:03:00:17</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Saxophone/Nathalie_saxophone_totoro.mp4</property>
@@ -1006,7 +1006,7 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer27" in="00:00:00.000" out="00:03:00.640" title="Anonymous Submission">
+  <producer id="producer27" title="Anonymous Submission" in="00:00:00.000" out="00:03:00.640">
     <property name="length">00:03:00:17</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Saxophone/Nathalie_saxophone_totoro.mp4</property>
@@ -1044,7 +1044,7 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer28" in="00:00:00.000" out="00:03:00.640" title="Anonymous Submission">
+  <producer id="producer28" title="Anonymous Submission" in="00:00:00.000" out="00:03:00.640">
     <property name="length">00:03:00:17</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Saxophone/Nathalie_saxophone_totoro.mp4</property>
@@ -1075,7 +1075,7 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer29" in="00:00:00.000" out="00:03:00.640" title="Anonymous Submission">
+  <producer id="producer29" title="Anonymous Submission" in="00:00:00.000" out="00:03:00.640">
     <property name="length">00:03:00:17</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Saxophone/Nathalie_saxophone_totoro.mp4</property>
@@ -1106,7 +1106,7 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer30" in="00:00:00.000" out="00:03:00.640" title="Anonymous Submission">
+  <producer id="producer30" title="Anonymous Submission" in="00:00:00.000" out="00:03:00.640">
     <property name="length">00:03:00:17</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Saxophone/Nathalie_saxophone_totoro.mp4</property>
@@ -1142,30 +1142,30 @@
     <property name="shotcut:name">Saxophone_nathalie</property>
     <property name="shotcut:lock">1</property>
     <blank length="00:00:16.280" />
-    <entry in="00:00:00.000" out="00:00:37.240" producer="producer18" />
+    <entry producer="producer18" in="00:00:00.000" out="00:00:37.240" />
     <blank length="00:00:00.360" />
-    <entry in="00:00:37.280" out="00:00:41.680" producer="producer19" />
+    <entry producer="producer19" in="00:00:37.280" out="00:00:41.680" />
     <blank length="00:00:01.960" />
-    <entry in="00:00:43.720" out="00:00:46.680" producer="producer20" />
+    <entry producer="producer20" in="00:00:43.720" out="00:00:46.680" />
     <blank length="00:00:00.280" />
-    <entry in="00:00:47.080" out="00:00:54.960" producer="producer21" />
+    <entry producer="producer21" in="00:00:47.080" out="00:00:54.960" />
     <blank length="00:00:00.920" />
-    <entry in="00:00:55.840" out="00:01:16.040" producer="producer22" />
-    <entry in="00:01:16.080" out="00:01:27.920" producer="producer23" />
-    <entry in="00:01:27.960" out="00:01:46.200" producer="producer24" />
+    <entry producer="producer22" in="00:00:55.840" out="00:01:16.040" />
+    <entry producer="producer23" in="00:01:16.080" out="00:01:27.920" />
+    <entry producer="producer24" in="00:01:27.960" out="00:01:46.200" />
     <blank length="00:00:01.000" />
-    <entry in="00:01:47.320" out="00:02:20.160" producer="producer25" />
+    <entry producer="producer25" in="00:01:47.320" out="00:02:20.160" />
     <blank length="00:00:00.560" />
-    <entry in="00:02:20.840" out="00:02:23.720" producer="producer26" />
+    <entry producer="producer26" in="00:02:20.840" out="00:02:23.720" />
     <blank length="00:00:00.960" />
-    <entry in="00:02:24.400" out="00:02:31.720" producer="producer27" />
-    <entry in="00:02:32.200" out="00:02:36.080" producer="producer28" />
+    <entry producer="producer27" in="00:02:24.400" out="00:02:31.720" />
+    <entry producer="producer28" in="00:02:32.200" out="00:02:36.080" />
     <blank length="00:00:00.280" />
-    <entry in="00:02:36.120" out="00:02:43.440" producer="producer29" />
+    <entry producer="producer29" in="00:02:36.120" out="00:02:43.440" />
     <blank length="00:00:00.400" />
-    <entry in="00:02:43.480" out="00:03:00.640" producer="producer30" />
+    <entry producer="producer30" in="00:02:43.480" out="00:03:00.640" />
   </playlist>
-  <producer id="producer31" in="00:00:00.000" out="00:03:11.560" title="Anonymous Submission">
+  <producer id="producer31" title="Anonymous Submission" in="00:00:00.000" out="00:03:11.560">
     <property name="length">00:03:11:15</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Hautbois/Aur&#233;lie_hautbois_totoro.mp4</property>
@@ -1200,9 +1200,9 @@
     <property name="shotcut:name">Hautbois_Aur&#233;lie</property>
     <property name="shotcut:lock">1</property>
     <blank length="00:00:08.000" />
-    <entry in="00:00:00.000" out="00:03:11.560" producer="producer31" />
+    <entry producer="producer31" in="00:00:00.000" out="00:03:11.560" />
   </playlist>
-  <producer id="producer32" in="00:00:00.000" out="00:03:27.800" title="Anonymous Submission">
+  <producer id="producer32" title="Anonymous Submission" in="00:00:00.000" out="00:03:27.800">
     <property name="length">00:03:27:21</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Nelly_clarinette_totoro.mp4</property>
@@ -1244,26 +1244,26 @@
     <property name="shotcut:name">Clarinette_Nelly</property>
     <property name="shotcut:lock">1</property>
     <blank length="00:00:08.520" />
-    <entry in="00:00:15.440" out="00:03:27.800" producer="producer32" />
+    <entry producer="producer32" in="00:00:15.440" out="00:03:27.800" />
   </playlist>
-  <tractor global_feed="1" id="tractor0" in="00:00:00.000" out="00:03:22.120" title="Shotcut version 20.02.17">
+  <tractor id="tractor0" title="Shotcut version 19.08.05" global_feed="1" in="00:00:00.000" out="00:03:22.120">
     <property name="shotcut">1</property>
     <property name="shotcut:projectAudioChannels">2</property>
     <property name="shotcut:projectFolder">1</property>
     <property name="shotcut:scaleFactor">7.31904</property>
     <track producer="background" />
-    <track hide="audio" producer="playlist0" />
-    <track hide="audio" producer="playlist1" />
+    <track producer="playlist0" hide="audio" />
+    <track producer="playlist1" hide="audio" />
     <track producer="playlist2" />
-    <track hide="audio" producer="playlist3" />
-    <track hide="audio" producer="playlist4" />
-    <track hide="audio" producer="playlist5" />
-    <track hide="audio" producer="playlist6" />
-    <track hide="audio" producer="playlist7" />
+    <track producer="playlist3" hide="both" />
+    <track producer="playlist4" hide="audio" />
+    <track producer="playlist5" hide="both" />
+    <track producer="playlist6" hide="both" />
+    <track producer="playlist7" hide="both" />
     <track producer="playlist8" />
     <track producer="playlist9" />
-    <track hide="audio" producer="playlist10" />
-    <track hide="audio" producer="playlist11" />
+    <track producer="playlist10" hide="both" />
+    <track producer="playlist11" hide="both" />
     <transition id="transition0">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
