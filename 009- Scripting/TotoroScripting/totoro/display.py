@@ -349,10 +349,10 @@ class Grid(Container):
         
     
     def get_position(self,abs_y,abs_x , size):
-        x = int(self.res_x *abs_x) 
-        y = int(self.res_y *abs_y)
-        x_width = int(size *self.res_x)
-        y_width = int(size * self.res_y)
+        x = round(self.res_x *abs_x) 
+        y = round(self.res_y *abs_y)
+        x_width =round(size *self.res_x)
+        y_width = round(size * self.res_y)
         
         return  "{} {} {} {} 1".format(x, y, x_width, y_width)
    
