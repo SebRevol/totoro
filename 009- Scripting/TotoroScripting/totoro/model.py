@@ -9,17 +9,17 @@ import datetime
 import math
 import uuid
 
+
+
 from totoro import locate
-from totoro.display import Grid, DisplayedElement
+from totoro.display import Grid, DisplayedElement, get_clock
 from totoro.utils import fix_relpath, collect_video_files_names, get_num_box, \
     insert_before, zero_time, get_position, get_time_from_user_string, \
     get_player_name, get_property, get_filter, get_time_string, TIME_FORMAT, \
-    get_duration, insert_after, frame_duration, set_frame_duration, \
-    get_frame_duration
+    get_duration, insert_after, set_frame_duration, \
+    get_frame_duration, set_current_resource
 import xml.etree.ElementTree as ET
 
-
-current_resource = None
 
 def merge_files(resources_to_merge, output_path, MARGIN=0):
     receiving_resource= Resource(resources_to_merge[0], "receiving")
@@ -49,10 +49,10 @@ class Resource(object):
         self.x_res = int(profile.get("width"))
         self.y_res = int(profile.get("height"))
         self.frame_rate = int(profile.get("frame_rate_num"))
+        set_current_resource(self)
         
         set_frame_duration(datetime.timedelta(milliseconds = math.ceil(1000/self.frame_rate)))
-        self.grid = Grid(self.x_res,#resolution X 
-                   self.y_res) #resolution Y
+       
                 
         
         self.parent_map = {c:p for p in self.root.iter( ) for c in p}
@@ -62,9 +62,14 @@ class Resource(object):
         self.playsist_registry={}
         self.players_registry = {}
         
+        self.instru_map = {}
+        
         self.node_to_object ={}
         
         self.tractor = None
+        
+        self.grid = Grid(self.x_res,#resolution X 
+                   self.y_res) #resolution Y
         
         self.init_producers()
         self.init_playlists()
@@ -75,14 +80,30 @@ class Resource(object):
     
     
         
+    def clean_instru_map(self):
+        instru_to_remove = []
+        for instru in self.instru_map :
+            print(instru)
+            players = self.instru_map[instru]
+            for player  in players:
+                print(player)
+            
+                if player not in self.players_registry or ('audio' in player) :
+                    print("Attention : {}/{}.mp4 n'est pas présent dans le mlt".format(instru, player))
+                    players.remove(player)
+            
+            if( len(players)==0):
+                instru_to_remove.append(instru)
+        for instru in instru_to_remove :
+                self.instru_map.pop(instru)
     
     def locate(self):
-        global current_resource
-        current_resource=self
-        locate.locate(self.players_registry, self.grid)
+        set_current_resource(self)
+        self.clean_instru_map()
+        locate.locate(self.players_registry, self.grid, self.instru_map)
     
     def auto_locate(self, margin):
-           
+        set_current_resource(self)
         video_file_names = collect_video_files_names("../006 - Videos format youtube")
      
         #video_file_names.remove('Jean-Jacques_chef_totoro')
@@ -93,7 +114,7 @@ class Resource(object):
         
         
         #names_to_show.remove("Serge_baryton_audio")      
-        num_box = get_num_box(names_to_show)
+        num_box = get_num_box(len(names_to_show))
         
         
         self.grid.set_num_box(num_box)  
@@ -102,7 +123,7 @@ class Resource(object):
         for col in range(num_box) :
             for line in range(num_box):
                 if (col*num_box+line < len(names_to_show) ):
-                    self.players_registry[names_to_show[col*num_box+line ]].at(line+1,col+1,1)  
+                    self.players_registry[names_to_show[col*num_box+line ]].inside(self.grid).at(line+1,col+1,1)  
         
     
     def save(self, path=None):
@@ -132,11 +153,11 @@ class Resource(object):
         
     
     def init_players(self):
-        player_names = collect_video_files_names("../006 - Videos format youtube")
+        player_names, self.instru_map = collect_video_files_names("../006 - Videos format youtube")
         
         for track in self.tractor.tracks :
             if (track.get_name() in player_names) :
-                player = Player(track.get_name(),track, self.grid)
+                player = Player(track.get_name(),track)
                 self.players_registry[track.get_name()]= player
                 player.transitions = self.get_transitions(player)
         
@@ -218,14 +239,15 @@ class Resource(object):
 
 
 class Player(DisplayedElement) :
-    def __init__(self, name, track, grid):
+    def __init__(self, name, track):
+        DisplayedElement.__init__(self)
         self.track = track
         self.playlist = track.playlist
         self.producers = self.playlist.producers
         self.transitions = []
         self.name = name
+        self.current_entry = None
         
-        self.inside(grid)
         self.current_time = zero_time
         
     def at(self, line_num, col_num,size):
@@ -233,11 +255,12 @@ class Player(DisplayedElement) :
         self.get_top_grid().locate( self.producers, self)
         
     def prop_move(self,vert_ratio, horiz_ratio,size_ratio, duration =None):
-        self.rel_x =horiz_ratio
-        self.rel_y = vert_ratio
-        self.rel_size = size_ratio
-        
-        current_producer = self.current_entry.producer
+        DisplayedElement.prop_move(self,vert_ratio, horiz_ratio, size_ratio, duration)
+        if (self.current_entry is not None ):
+            current_producer = self.current_entry.producer
+        else :
+            current_producer = self.producers[0]
+            
         current_prod_index= self.producers.index(current_producer)
         if (duration == None):
             self.get_top_grid().locate(self.producers[current_prod_index:],self)
@@ -254,8 +277,8 @@ class Player(DisplayedElement) :
 
     
     def on(self, time_string):
+        super().on(time_string)
         self.current_time = get_time_from_user_string(time_string)
-        print(self.name)
         self.current_entry = self.playlist.get_current_entry(self.current_time)
         
         return self
@@ -264,24 +287,32 @@ class Player(DisplayedElement) :
         self.update()
         
     def hide(self):
-        current_producer = self.current_entry.producer
-        current_prod_index= self.producers.index(current_producer)
+        time = get_clock()
+        if (time is not None) :
+            self.on(time)
+            
+        if (self.current_entry is None ):
+            current_prod_index=0
+        else :
+            
+            current_producer = self.current_entry.producer
+            current_prod_index= self.producers.index(current_producer)
         
         self.get_top_grid().locate_wit_coord(self.producers[current_prod_index:],-1,-1,1)
     
                 
     def __str__(self, *args, **kwargs):
            
-        result = 'Player : '+ self.name +'\n'
-        result+= '     Track:'
-        result += str(self.track.node)
-        
-        result += '\n    Playslist:\n'
-        result += str(self.playlist.node)
-        
-        result += '\n   Producers:\n'
-        for prod in self.producers :
-            result +=str(prod.node)
+        result = 'Player : '+ self.name 
+#         result+= '     Track:'
+#         result += str(self.track.node)
+#         
+#         result += '\n    Playslist:\n'
+#         result += str(self.playlist.node)
+#         
+#         result += '\n   Producers:\n'
+#         for prod in self.producers :
+#             result +=str(prod.node)
         
         return result
         
@@ -378,8 +409,7 @@ class Playlist(object):
             if entry.start_time == time : 
                 return entry
             elif entry.start_time < time and entry.get_end_time() > time :
-                print(entry.start_time)
-                print(entry.get_end_time())
+              
                
                 new_entry = entry.split(time)
                 self.insert_entry(entry, new_entry)

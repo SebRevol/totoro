@@ -1117,7 +1117,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">0</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">-768 -432 384 216 1</property>
+      <property name="transition.rect">-1920 -1080 1920 1080 1</property>
       <property name="transition.valign">middle</property>
       <property name="transition.halign">center</property>
       <property name="shotcut:animIn">00:00:01.000</property>
@@ -1228,7 +1228,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">0</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">00:00:00.000000=960 0 960 540 1;00:00:03.000000=640 359 1280 719 1</property>
+      <property name="transition.rect">00:00:00.000000=960 0 960 540 1;00:00:03.000000=640 360 1280 720 1</property>
       <property name="transition.valign">middle</property>
       <property name="transition.halign">center</property>
       <property name="shotcut:animIn">00:00:03.000000</property>

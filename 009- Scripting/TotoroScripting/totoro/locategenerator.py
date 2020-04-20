@@ -5,8 +5,11 @@ Created on 6 avr. 2020
 '''
 
 
-from totoro.utils import    collect_video_files_names,Resource, get_num_box
 import os
+
+from totoro.model import Resource
+from totoro.utils import collect_video_files_names, get_num_box
+
 
 def get_space(name, max_len):
     current_len = len(name)
@@ -17,19 +20,21 @@ def get_space(name, max_len):
 
 if __name__ == '__main__':
     resource= Resource('../001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Orchestre dematerialisé - V1_pupitres incomplets.mlt')
-  
     
-    video_file_names = collect_video_files_names("../006 - Videos format youtube")
+    
+    resource.clean_instru_map()
+    
+    video_file_names, instru_map = collect_video_files_names("../006 - Videos format youtube")
     names_to_show = []
     for name in resource.players_registry :
         if name in video_file_names :
             names_to_show.append(name)
-    num_box = get_num_box(names_to_show)
+    num_box = get_num_box(len(names_to_show))
 
     file_content ='''
 
 
-def locate(mus, grid) :
+def locate(mus, grid, instru_map) :
     
     grid.set_num_box({})
     grid.set_margin(10) 

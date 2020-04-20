@@ -1,104 +1,153 @@
-from totoro.display import Line, Column
 
-def locate(mus, grid) :
+from totoro.display import Line, Column, Box, clock
+from totoro.utils import get_num_box
+
+
+def locate(mus, grid, instru_map) :
     
-    grid.set_num_box(8)
+    grid.set_num_box(10)
     grid.set_margin(0) 
     
-    #colonne gauche
-#     mus["Jean-Jacques_chef_totoro"            ].at(1,1,1)
-#     mus["Jean-Jacques_percu_totoro"           ].at(2,1,1)
-#     mus["Jean-Jacques_chef_laché prise"       ].at(3,1,1)
-#     mus["Aurianne_saxophone_totoro"           ].at(4,1,1)
-#     mus["Franck_saxophone_totoro"             ].at(5,1,1)
-#     mus["Nadine_saxophone_totoraao"             ].at(6,1,1)
-#     mus["Nathalie_saxophone_totoro"           ].at(7,1,1)
-#     mus["Chloe_saxophone_totoro_clown_recadre"].at(8,1,1)
+        
+    '''
+    "Jean-Jacques_chef_totoro"            
+    "Jean-Jacques_percu_totoro"           
+    "Jean-Jacques_chef_laché prise"       
+    "Alizee_piano_totoro"                 
+    "Bidou_euphonium_totoro"              
+    "Serge_euphonium_totoro"              
+    "Amélie_clarinette_recadre"           
+    "Nelly_clarinette_totoro"             
+    "Natacha_clarinette_totoro"           
+    "Pierre_clarinette_totoro_recadre"    
+    "Anne-sonia_clarinette_totoro"        
+    "Stephane_clarinette_totoro"          
+    "PierreG_clarinette_totoro"           
+    "Violette_clarinette_totoro"          
+    "André_cor_totoro"                    
+    "Alain_flute_totoro"                  
+    "Laurence_flute_totoro"               
+    "Antoine_flute_totoro"                
+    "Gwenn_flute_totoro"                  
+    "Aurélie_hautbois_totoro"             
+    "Veronique_hautbois_totoro"           
+    "Aurianne_saxophone_totoro"           
+    "Marie-Claude_saxophone_totoro"       
+    "Franck_saxophone_totoro"             
+    "Nadine_saxophone_totoro"             
+    "Nathalie_saxophone_totoro"           
+    "Chloe_saxophone_totoro_clown_recadre"
+    "Camille_trombone_totoro"             
+    "daniel_trombone_totoro"              
+    "Bidou_cornet_totoro"                 
+    "Serge_trompette_totoro"              
+    "Patrick_trompette_totoro"            
+    "Marianne_trompette_totoro"           
+    "Svoisine_tuba"                       
+    "Serge_baryton_totoro_recadre"        
+    "Srevol_tuba_recadre"
+    '''                 
+    musiciens = list(mus.keys())
+    col_gauche =Column(musiciens[0:9])
+    col_gauche.move(1,1)
+      
+    col_droite = Column(musiciens[9:18])
+    col_droite.move(2,10)
+#     
+    ligne_haut = Line( musiciens[18:27])
+    ligne_haut.move(1,2)
+      
+    ligne_bas = Line(musiciens[27:36])
+    ligne_bas.move(10,1)
     
-    column1 = Column(mus,[
-          "Jean-Jacques_chef_totoro",            
-          "Jean-Jacques_percu_totoro",           
-          "Jean-Jacques_chef_laché prise",       
-          "Aurianne_saxophone_totoro",           
-          "Franck_saxophone_totoro",             
-          "Nadine_saxophone_totoraao",           
-          "Nathalie_saxophone_totoro",           
-          "Chloe_saxophone_totoro_clown_recadre"]).inside(grid).at(1,1,1)
-
-
-
-
-
-    #ligne du bas
-    mus["Amélie_clarinette_recadre"           ].at(8,2,1)
-    mus["Nelly_clarinette_totoro"             ].at(8,3,1)
-    mus["Natacha_clarinette_totoro"           ].at(8,4,1)
-    mus["Pierre_clarinette_totoro_recadre"    ].at(8,5,1)
-    mus["Anne-sonia_clarinette_totoro"        ].at(8,6,1)
-    mus["Stephane_clarinette_totoro"          ].at(8,7,1)
-    mus["Violette_clarinette_totoro"          ].at(8,8,1)
-    
-    #colone droite
-    mus["Alain_flute_totoro"                  ].at(7,8,1)
-    mus["Laurence_flute_totoro"               ].at(6,8,1)
-    mus["Antoine_flute_totoro"                ].at(5,8,1)
-    mus["Gwenn_flute_totoro"                  ].at(4,8,1) 
-    mus["Aurélie_hautbois_totoro"             ].at(3,8,1)  
-    mus["Bidou_euphonium_totoro"              ].at(2,8,1)
-    mus["Svoisine_tuba"                       ].at(1,8,1)
-    
-    #ligne du haut
-    mus["Serge_baryton_totoro_recadre"        ].at(1,7,1)
-    mus["Srevol_tuba_recadre"                 ].at(1,6,1)
-    mus["Camille_trombone_totoro"             ].at(1,5,1)
-    mus["daniel_trombone_totoro"              ].at(1,4,1)
-    mus["Bidou_cornet_totoro"                 ].at(1,3,1)
-    mus["Serge_trompette_totoro"              ].at(1,2,1)
-
-
     #Serge au centre
-    mus["Serge_euphonium_totoro"              ].at(2,2,6)
+    mus["Serge_euphonium_totoro"].move(2,2,8)
     
     
-    t_clap ="00:00:22:38"
+    clock("00:00:22:38")
     duree_transition = 0.5 #en  secondes
-    grid.set_num_box(6)
+    #grid.set_num_box(get_num_box(len(instru_map)))
 
     
-    mus["Aurianne_saxophone_totoro"           ].on(t_clap).move(1,1,1, duree_transition)
-    mus["Franck_saxophone_totoro"             ].on(t_clap).move(2,1,1, duree_transition)
-    mus["Nadine_saxophone_totoro"             ].on(t_clap).move(3,1,1, duree_transition)
-    mus["Nathalie_saxophone_totoro"           ].on(t_clap).move(4,1,1, duree_transition)
-    mus["Chloe_saxophone_totoro_clown_recadre"].on(t_clap).move(5,1,1, duree_transition)
-    mus["Serge_baryton_totoro_recadre"        ].on(t_clap).move(6,1,1, duree_transition)
+      
+    col_gauche.hide()
+    col_droite.hide() 
+    ligne_haut.hide()
+    ligne_bas.hide()          
+       
+    mus["Serge_euphonium_totoro"].hide()
+    box_map = {}
     
+    tubas = Box(instru_map['Tuba'])
     
-    mus["Srevol_tuba_recadre"                 ].on(t_clap).move(6,2,1, duree_transition)
-    mus["Svoisine_tuba"                       ].on(t_clap).move(6,3,1, duree_transition)
-    mus["Jean-Jacques_percu_totoro"           ].on(t_clap).move(6,4,1, duree_transition)
-    mus["Camille_trombone_totoro"             ].on(t_clap).move(6,5,1, duree_transition)
-    mus["daniel_trombone_totoro"              ].on(t_clap).move(6,6,1, duree_transition)
-    
-    mus["Bidou_euphonium_totoro"              ].on(t_clap).move(5,6,1, duree_transition)
-    mus["Serge_euphonium_totoro"              ].on(t_clap).move(4,6,1, duree_transition)
-    mus["Bidou_cornet_totoro"                 ].on(t_clap).move(3,6,1, duree_transition)
-    mus["Serge_trompette_totoro"              ].on(t_clap).move(2,6,1, duree_transition)
-    
-    mus["Amélie_clarinette_recadre"           ].on(t_clap).move(1,6,1, duree_transition)
-    mus["Nelly_clarinette_totoro"             ].on(t_clap).move(1,5,1, duree_transition)
-    mus["Natacha_clarinette_totoro"           ].on(t_clap).move(2,5,1, duree_transition)
-    mus["Pierre_clarinette_totoro_recadre"    ].on(t_clap).move(3,5,1, duree_transition)
-    mus["Anne-sonia_clarinette_totoro"        ].on(t_clap).move(4,5,1, duree_transition)
-    mus["Stephane_clarinette_totoro"          ].on(t_clap).move(5,5,1, duree_transition)
-    mus["Violette_clarinette_totoro"          ].on(t_clap).move(5,4,1, duree_transition)
-    
-    mus["Alain_flute_totoro"                  ].on(t_clap).move(5,3,1, duree_transition)
-    mus["Laurence_flute_totoro"               ].on(t_clap).move(5,2,1, duree_transition)
-    mus["Antoine_flute_totoro"                ].on(t_clap).move(4,2,1, duree_transition)
-    mus["Gwenn_flute_totoro"                  ].on(t_clap).move(3,2,1, duree_transition) 
-    mus["Aurélie_hautbois_totoro"             ].on(t_clap).move(2,2,1, duree_transition)  
-   
-  
+    tubas.move(1,1,10)
 
-    mus["Jean-Jacques_chef_laché prise"       ].on(t_clap).move(1,2,1, duree_transition)
-    mus["Jean-Jacques_chef_totoro"            ].on(t_clap).move(2,3,2, duree_transition)
+    clock("00:00:25:00")
+    
+    tubas.hide()
+    clarinettes = Box(instru_map['Clarinettes'])
+    clarinettes.move(1,1,10)
+    
+    clock("00:00:30:00")
+    
+    clarinettes.hide()
+    sax = Box(instru_map['Saxophone'])
+    sax.move(1,1,10)
+    
+    
+    
+    clock("00:00:35:00")
+    
+    tubas.show()
+    clarinettes.show()
+    
+    
+    #grid.auto_layout()
+    
+    clock("00:00:40:00")
+    
+    grid.set_num_box(3)
+    top_box = Box([], 2,3)
+    top_box.move(1/2, 1,3 )
+    
+    tubas.inside(top_box).move(1,1,1)
+    clarinettes.inside(top_box).move(2,2,1)
+    sax.inside(top_box).move(1,3,1)
+    
+    
+    clock("00:00:45:00")
+    
+    tubas.inside(top_box).move(1,3,1)
+    clarinettes.inside(top_box).move(1,1,2)
+    sax.inside(top_box).move(2,3,1)
+    
+    
+    
+    clock("00:00:50:00")
+    
+    top_box.auto_layout()
+    
+    
+    clock("00:00:55:00")
+    tubas.to_previous()
+    clarinettes.to_previous()
+    sax.to_previous()
+    
+    
+    clock("00:01:00:00")
+    
+    tubas.swap(clarinettes)
+    mus["Serge_euphonium_totoro"].swap(sax)
+    sax.hide()
+    
+    
+#     for instru in instru_map:
+#         print("==============instru============="+ instru)
+#         print(instru_map[instru])
+#         box =  Box(0,0,instru_map[instru])
+#         box_map[instru]=box
+#         box.inside(grid).on(t_clap).auto_layout()
+#         
+#     grid.auto_layout(duree_transition)
+    
+    

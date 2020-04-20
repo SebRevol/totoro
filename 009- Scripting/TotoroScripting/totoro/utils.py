@@ -12,6 +12,8 @@ TIME_FORMAT="%H:%M:%S.%f"
 zero_time =  datetime.datetime.strptime("00:00:00.000", TIME_FORMAT)
 
 frame_duration = None
+current_resource = None
+
 
 TIME_FORMAT_USER = "%H:%M:%S:%f"
 
@@ -23,20 +25,33 @@ def get_frame_duration():
     global frame_duration
     return frame_duration
 
+def get_current_resource():
+    global current_resource
+    return current_resource
+
+def set_current_resource(resource):
+    global current_resource
+    current_resource = resource
+
 
 def collect_video_files_names(youtube_path):
+    instru_map= {}
     instru_dirs= [f for f in listdir(youtube_path) if not  isfile(youtube_path+'/'+ f)]
     video_file_names =[]
     for instru_dir in instru_dirs :
         if (not instru_dir.startswith("001")):
+            player_names =[]
             path = youtube_path+'/'+ instru_dir
             for f in listdir(path) :
                 full_path = path+'/'+ f
                 
-                if (isfile(full_path)):
-                    video_file_names.append(get_player_name(full_path))
+                if (isfile(full_path) ):
+                    player_name = get_player_name(full_path)
+                    video_file_names.append(player_name)
+                    player_names.append(player_name)
+            instru_map[instru_dir] = player_names
                     
-    return video_file_names
+    return video_file_names, instru_map
 
 def fix_relpath(prexif, root):
 
@@ -96,10 +111,10 @@ def insert_after(previous_node, node_to_insert, parent_map):
     parent_node.insert(index+1, node_to_insert)
     parent_map[node_to_insert] = parent_node
     
-def get_num_box(names):
+def get_num_box(names_num):
     
     num=0
-    names_num = len(names)
+   
     while (num*num < names_num) :
         num +=1
         

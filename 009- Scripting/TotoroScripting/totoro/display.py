@@ -4,14 +4,23 @@ Created on 17 avr. 2020
 @author: SR246418
 '''
 from totoro.utils import get_time_string, zero_time, frame_duration,\
-    get_property, get_frame_duration
+    get_property, get_frame_duration, get_num_box, get_current_resource
 import datetime
 from _collections import deque
+import math
 
 
+clock_value = None
 
+def get_clock():
+    global clock_value
+    return clock_value
 
+def clock(time):
+    global clock_value
+    clock_value = time
     
+
 class Grid_old(object):
     def __init__(self, res_x, res_y, num_box=1, x_margin=0) :
         self.res_x = res_x
@@ -79,14 +88,22 @@ class DisplayedElement(object):
         self.rel_x = 0
         self.rel_y=0
         self.rel_size =1
+        self.width_on_height=1
         self.parent = None
+        self.inside( get_current_resource().grid)
+        
+        self.previous_move_times = []
+        self.previous_coordinates=[]
+    
+    def  get_width_on_height(self):
+        return 1
     
     def get_absolute_coordinates(self):
         if (type(self.parent) is not Grid):
             (parent_abs_x, parent_abs_y, parent_abs_size) = self.parent.get_absolute_coordinates()
             abs_x = parent_abs_x + self.rel_x*parent_abs_size
-            abs_y = parent_abs_y + self.rel_y*parent_abs_size
-            abs_size = self.abs_size * parent_abs_size
+            abs_y = parent_abs_y + self.rel_y*parent_abs_size/self.parent.get_width_on_height()
+            abs_size = self.rel_size * parent_abs_size
             
             return (abs_x, abs_y, abs_size)
         else :
@@ -97,6 +114,9 @@ class DisplayedElement(object):
         self.prop_move(self.rel_y, self.rel_x, self.rel_size, duration)
         
     def inside(self, parent):
+        if (self.parent is not None ):
+            self.parent._remove_child(self)
+            
         self.parent = parent
         parent._add_child(self)
         return self
@@ -108,6 +128,7 @@ class DisplayedElement(object):
         if (type(col_num)== float):
             col_num +=1
         
+        self.store_previous_coordinates()
         self.rel_x = (col_num-1)/self.parent.num_box_col
         self.rel_y = (line_num-1)/self.parent.num_box_line
         self.rel_size = size_in_cols/self.parent.num_box_col
@@ -124,14 +145,45 @@ class DisplayedElement(object):
     def at(self, line_num, col_num,size):
         raise NotImplementedError        
     
-    def prop_move(self,vert_ratio, horiz_ratio,size_ratio, duration =None):
-        raise NotImplementedError
+    def store_previous_coordinates(self):
+        self.previous_coordinates.append(
+            {"parent": self.parent, "x": self.rel_x, "y": self.rel_y, "size": self.rel_size } )
     
+    def to_previous(self, duration=None, history =1):
+        previous = self.previous_coordinates[-history]
+        self.inside(previous["parent"]).prop_move(previous["y"], previous["x"], previous["size"], duration)
+        
+        
+    def swap(self, other, duration = None):
+        other_parent = other.parent
+        other_x = other.rel_x
+        other_y = other.rel_y
+        other_size = other.rel_size
+
+        other.inside(self.parent).prop_move(self.rel_y, self.rel_x, self.rel_size, duration)
+        self.inside(other_parent).prop_move(other_y, other_x, other_size, duration)
+        
+        
+    def prop_move(self,vert_ratio, horiz_ratio,size_ratio, duration =None):
+        time = get_clock()
+        
+        if (time is not None):
+            self.on(time)
+#             if (time in self.previous_move_times):
+#                 print("WARNING: {} already moved on time {}".format(self, time) )
+#             else :
+#                 self.previous_move_times.append(time)
+                
+        self.store_previous_coordinates()
+        self.rel_y = vert_ratio
+        self.rel_x = horiz_ratio
+        self.rel_size = size_ratio
+        
     def move(self,  line_num, col_num,size, duration =None):
         raise NotImplementedError
     
     def on(self, time_string):
-        raise NotImplementedError
+        pass
     
     def show(self):
         raise NotImplementedError
@@ -140,29 +192,98 @@ class DisplayedElement(object):
         raise NotImplementedError
     
 class Container(object):
-    def __init__(self, num_of_lines, num_of_cols,player_registry= None, children_names=[]):
-        self.player_registry = player_registry
+    def __init__(self, num_of_lines, num_of_cols, children_names_or_obj=[]):
+        self.player_registry = get_current_resource().players_registry
         self.num_box_line =num_of_lines
         self.num_box_col = num_of_cols
         self.children = []
         
-        for child in [self.player_registry[name] for name in children_names] :
+        for child_name_or_obj in children_names_or_obj:
+            if type(child_name_or_obj) == str :
+                child = self.player_registry[child_name_or_obj]
+            else: 
+                child = child_name_or_obj
             child.inside(self)
+            
+        
+        
+       
     
     def _add_child(self, string_or_container_or_player):
         if(type(string_or_container_or_player) == str ):
             player = self.player_registry[string_or_container_or_player]
-            self.children.append(player)
+            if (player not in self.children):
+                self.children.append(player)
         else :
-            self.children.append(string_or_container_or_player) 
+            if (string_or_container_or_player):
+                self.children.append(string_or_container_or_player) 
     
+    
+    def _remove_child(self,string_or_container_or_player):
+        if(type(string_or_container_or_player) == str ):
+            player = self.player_registry[string_or_container_or_player]
+            self.children.remove(player)
+        else :
+            self.children.remove(string_or_container_or_player) 
+    
+    
+    def auto_layout(self, duration = None):
+        self.compute_line_and_cols()
+        if (self.num_box_line == 1):
+            new_child = Line(self.children)
+            new_child.inside(self).move(1,1,self.num_box_col, duration)
+        else :
+            child_num = len(self.children)
+            number_of_middle_lines = self.num_box_col *(self.num_box_line-2)/self.num_box_col
+            num_of_remaing_children = child_num -(number_of_middle_lines* self.num_box_col)
+            
+            number_of_elements_in_first = math.ceil(num_of_remaing_children/2)
+            number_of_elements_in_last = math.floor(num_of_remaing_children/2)
+            
+            children_to_locate = self.children.copy()
+            
+            first_line = Line(children_to_locate[:number_of_elements_in_first])
+            first_line.inside(self).prop_move(0, (self.num_box_col-number_of_elements_in_first)/(2*self.num_box_col),number_of_elements_in_first/ self.num_box_col, duration)
+            
+            index_of_last_players = child_num - number_of_elements_in_last
+            start_index= number_of_elements_in_first
+            
+            line_index= 2
+            while(start_index <index_of_last_players) :
+                new_line = Line(children_to_locate[start_index:start_index +self.num_box_col ])
+                new_line.inside(self).move(line_index, 1, self.num_box_col)
+                start_index+= self.num_box_col
+                line_index +=1
+            
+            last_line = Line(children_to_locate[index_of_last_players:])
+            last_line.inside(self).prop_move((line_index-1)/self.num_box_line, (self.num_box_col-number_of_elements_in_last)/(2*self.num_box_col),number_of_elements_in_last/ self.num_box_col, duration)
+            
+                
+    
+    def compute_line_and_cols(self):
+        child_num= len(self.children)
+        if (self.num_box_line ==0 and self.num_box_col ==0):
+            self.num_box_col =  get_num_box(child_num)
+            self.num_box_line = get_num_box(child_num)
+        elif (self.num_box_col ==0) :
+            self.num_box_col = math.ceil(child_num/self.num_box_line)
+        elif (self.num_box_line ==0):
+            self.num_box_line = math.ceil(child_num/self.num_box_col)
+            
+            
 
 class Box(DisplayedElement, Container):
     
-    def __init__(self, num_of_lines, num_of_cols, player_registry= None,children_names=[]):
-        Container.__init__(self, num_of_lines, num_of_cols, player_registry,children_names)
+    def __init__(self, children_names=[], num_of_lines = 0, num_of_cols=0):
+        Container.__init__(self, num_of_lines, num_of_cols,children_names)
         DisplayedElement.__init__(self)
         
+        
+    
+    def get_width_on_height(self):
+        if (self.num_box_line == 0):
+            self.auto_layout()
+        return self.num_box_col/self.num_box_line
         
     def at(self, line_num, col_num,size):
         self.update_relative_coordinates(line_num, col_num, size);
@@ -170,21 +291,27 @@ class Box(DisplayedElement, Container):
             child.update()
     
     def prop_move(self,rel_y, rel_x,rel_size, duration =None):
-        self.rel_y = rel_y
-        self.rel_x = rel_x
-        self.rel_size = rel_size
+        DisplayedElement.prop_move(self,rel_y, rel_x, rel_size, duration)
+       
         
         for child in self.children :
             child.update(duration)
             
         
     def move(self,  line_num, col_num,size, duration =None):
+        self.auto_layout_if_needed()
+        
         self.update_relative_coordinates(line_num, col_num, size);
         
         for child in self.children :
             child.update(duration)
     
+    def auto_layout_if_needed(self):
+        if (self.num_box_col == 0 or self.num_box_line ==0):
+            self.auto_layout()
+    
     def on(self, time_string):
+        super().on(time_string)
         for child in self.children:
             child.on(time_string)
         return self
@@ -197,6 +324,10 @@ class Box(DisplayedElement, Container):
         for child in self.children :
             child.hide()
 
+   
+        
+        
+        
 
 class Grid(Container):
     
@@ -261,10 +392,14 @@ class Grid(Container):
         
 
 class LineOrColumn(Box):
-    def __init__(self,player_registry,children_names):
-        self.size = len(children_names)
-        super().__init__(self.get_num_of_lines(),self.get_num_of_columns(), player_registry, children_names)
+    def __init__(self,children_names):
+        self.size_init = len(children_names)
+        self.children = None
+        super().__init__(children_names,self.get_num_of_lines(),self.get_num_of_columns())
         self.children = deque(self.children)
+    
+    def get_size(self):
+        return len(self.children)
     
     def get_num_of_lines(self):
         raise NotImplementedError
@@ -275,34 +410,38 @@ class LineOrColumn(Box):
     def move_child(self, player, index, duration = None):
         raise NotImplementedError
         
-    def at(self, line_num, col_num, size):
+    def at(self, line_num, col_num, size=None):
+        if size is None :
+            size = self.get_num_of_columns()
         self.update_relative_coordinates(line_num, col_num, size)
         for index, child in enumerate(self.children):
-            self.move_child(child, index)
+            self.move_child(child, index+1)
             
-    def move(self, line_num, col_num, size, duration=None):
+    def move(self, line_num, col_num, size=None, duration=None):
+        if size is None :
+            size = self.get_num_of_columns()
         self.update_relative_coordinates(line_num, col_num, size)
         for index, child in enumerate(self.children):
-            self.move_child(child, index, duration)
+            self.move_child(child, index+1, duration)
         
     def prop_move(self, rel_y, rel_x, rel_size, duration=None):
-        self.rel_y = rel_y
-        self.rel_x = rel_x
-        self.rel_size = rel_size
+        DisplayedElement.prop_move(self,rel_y, rel_x, rel_size, duration)
         
         for index, child in enumerate(self.children):
-            self.move_child(child, index,duration)
+            self.move_child(child, index+1,duration)
     
     def shift(self, num_of_box, duration):
         self.children.rotate(num_of_box)
         for index, child in enumerate (self.children) :
-            self.move_child(child, index,duration)
+            self.move_child(child, index+1,duration)
     
 
 
 class Column(LineOrColumn):
     def get_num_of_lines(self):
-        return self.size
+        if (self.children is not None):
+            return self.get_size()
+        return self.size_init
     
     def get_num_of_columns(self):
         return 1
@@ -311,12 +450,14 @@ class Column(LineOrColumn):
         child.move(index, 1,1, duration)
     
     
-class Line(Box):
+class Line(LineOrColumn):
     def get_num_of_lines(self):
         return 1
     
     def get_num_of_columns(self):
-        return self.size
+        if (self.children is not None):
+            return self.get_size()
+        return self.size_init
     
     def move_child(self, child, index,duration=None):
         child.move(1,index,1,duration)
