@@ -103,27 +103,28 @@ class Resource(object):
         locate.locate(self.players_registry, self.grid, self.instru_map)
     
     def auto_locate(self, margin):
-        set_current_resource(self)
-        video_file_names = collect_video_files_names("../006 - Videos format youtube")
-     
-        #video_file_names.remove('Jean-Jacques_chef_totoro')
-        names_to_show = []
-        for name in self.players_registry :
-            if name in video_file_names :
-                names_to_show.append(name)
-        
-        
-        #names_to_show.remove("Serge_baryton_audio")      
-        num_box = get_num_box(len(names_to_show))
-        
-        
-        self.grid.set_num_box(num_box)  
-        self.grid.set_margin(margin)
-        
-        for col in range(num_box) :
-            for line in range(num_box):
-                if (col*num_box+line < len(names_to_show) ):
-                    self.players_registry[names_to_show[col*num_box+line ]].inside(self.grid).at(line+1,col+1,1)  
+#         set_current_resource(self)
+#         video_file_names = collect_video_files_names("../006 - Videos format youtube")
+#      
+#         #video_file_names.remove('Jean-Jacques_chef_totoro')
+#         names_to_show = []
+#         for name in self.players_registry :
+#             if name in video_file_names :
+#                 names_to_show.append(name)
+#         
+#         
+#         #names_to_show.remove("Serge_baryton_audio")      
+#         num_box = get_num_box(len(names_to_show))
+#         
+#         
+#         self.grid.set_num_box(num_box)  
+#         self.grid.set_margin(margin)
+#         
+#         for col in range(num_box) :
+#             for line in range(num_box):
+#                 if (col*num_box+line < len(names_to_show) ):
+#                     self.players_registry[names_to_show[col*num_box+line ]].inside(self.grid).at(line+1,col+1,1)  
+        self.grid.auto_layout()
         
     
     def save(self, path=None):
@@ -223,7 +224,7 @@ class Resource(object):
         self.node_to_object[player.playlist.node] = player.playlist
         player.playlist.set_resource(self)
         
-        player.grid = self.grid
+        player.inside(self.grid)
         
     
     def add_producer_node(self, producer_node):
@@ -284,9 +285,11 @@ class Player(DisplayedElement) :
         return self
         
     def show(self):
+        DisplayedElement.show(self)
         self.update()
         
     def hide(self):
+        DisplayedElement.hide(self)
         time = get_clock()
         if (time is not None) :
             self.on(time)

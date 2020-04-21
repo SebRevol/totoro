@@ -101,7 +101,7 @@
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
     <property name="seekable">1</property>
-    <filter id="filter2" in="00:00:05.000" out="00:00:14.960">
+    <filter id="filter2" in="00:00:05.000" out="00:00:22.280">
       <property name="argument">Temps de marge pour faire apparaitre/entrer les musiciens</property>
       <property name="geometry">0 0 1920 1080 1</property>
       <property name="family">Verdana</property>
@@ -127,7 +127,7 @@
     <property name="shotcut:name">Storyboard</property>
     <property name="shotcut:lock">1</property>
     <entry producer="producer1" in="00:00:00.000" out="00:00:04.960"/>
-    <entry producer="producer2" in="00:00:05.000" out="00:00:14.960"/>
+    <entry producer="producer2" in="00:00:05.000" out="00:00:22.280"/>
   </playlist>
   <producer id="producer3" title="Anonymous Submission" in="00:00:00.000" out="00:03:24.560">
     <property name="length">00:03:24:15</property>
@@ -781,7 +781,7 @@
     <filter id="filter30" out="00:03:35.600">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">-10</property>
+      <property name="level">-12</property>
       <property name="mlt_service">volume</property>
     </filter>
   </playlist>
@@ -1123,7 +1123,7 @@
     <filter id="filter46" out="00:03:35.600">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">-10</property>
+      <property name="level">-12</property>
       <property name="mlt_service">volume</property>
     </filter>
   </playlist>
@@ -1680,6 +1680,12 @@
     <entry producer="producer42" in="00:02:55.120" out="00:02:55.880"/>
     <entry producer="producer43" in="00:02:55.920" out="00:02:59.000"/>
     <entry producer="producer44" in="00:02:59.040" out="00:03:05.600"/>
+    <filter id="filter71" out="00:03:35.600">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-5</property>
+      <property name="mlt_service">volume</property>
+    </filter>
   </playlist>
   <producer id="producer45" title="Anonymous Submission" in="00:00:00.000" out="00:03:11.560">
     <property name="length">00:03:11:15</property>
@@ -1697,7 +1703,7 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter71" out="00:01:30.880">
+    <filter id="filter72" out="00:01:30.880">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -1727,7 +1733,7 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter72" in="00:01:30.920" out="00:01:36.080">
+    <filter id="filter73" in="00:01:30.920" out="00:01:36.080">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -1740,7 +1746,7 @@
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="filter73" in="00:01:30.920" out="00:01:36.080">
+    <filter id="filter74" in="00:01:30.920" out="00:01:36.080">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="mlt_service">volume</property>
@@ -1764,7 +1770,7 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter74" in="00:01:36.120" out="00:02:55.200">
+    <filter id="filter75" in="00:01:36.120" out="00:02:55.200">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -1794,7 +1800,7 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter75" in="00:02:55.240" out="00:02:55.880">
+    <filter id="filter76" in="00:02:55.240" out="00:02:55.880">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -1807,7 +1813,7 @@
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="filter76" in="00:02:55.240" out="00:02:55.880">
+    <filter id="filter77" in="00:02:55.240" out="00:02:55.880">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="mlt_service">volume</property>
@@ -1831,7 +1837,7 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter77" in="00:02:55.920" out="00:03:11.560">
+    <filter id="filter78" in="00:02:55.920" out="00:03:11.560">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -1855,6 +1861,12 @@
     <entry producer="producer47" in="00:01:36.120" out="00:02:55.200"/>
     <entry producer="producer48" in="00:02:55.240" out="00:02:55.880"/>
     <entry producer="producer49" in="00:02:55.920" out="00:03:11.560"/>
+    <filter id="filter79" out="00:03:35.600">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-5</property>
+      <property name="mlt_service">volume</property>
+    </filter>
   </playlist>
   <producer id="producer50" title="Anonymous Submission" in="00:00:00.000" out="00:03:26.320">
     <property name="length">00:03:26:09</property>
@@ -1873,7 +1885,7 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter78" out="00:01:29.560">
+    <filter id="filter80" out="00:01:29.560">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -1904,7 +1916,7 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter79" in="00:01:29.600" out="00:01:36.440">
+    <filter id="filter81" in="00:01:29.600" out="00:01:36.440">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -1917,7 +1929,7 @@
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="filter80" in="00:01:29.600" out="00:01:36.440">
+    <filter id="filter82" in="00:01:29.600" out="00:01:36.440">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="mlt_service">volume</property>
@@ -1942,7 +1954,7 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter81" in="00:01:36.480" out="00:01:47.760">
+    <filter id="filter83" in="00:01:36.480" out="00:01:47.760">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -1973,7 +1985,7 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter82" in="00:01:47.800" out="00:01:50.720">
+    <filter id="filter84" in="00:01:47.800" out="00:01:50.720">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -1986,7 +1998,7 @@
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="filter83" in="00:01:47.800" out="00:01:50.720">
+    <filter id="filter85" in="00:01:47.800" out="00:01:50.720">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="mlt_service">volume</property>
@@ -2011,7 +2023,7 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter84" in="00:01:50.760" out="00:02:44.520">
+    <filter id="filter86" in="00:01:50.760" out="00:02:44.520">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -2042,7 +2054,7 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter85" in="00:02:44.560" out="00:02:53.880">
+    <filter id="filter87" in="00:02:44.560" out="00:02:53.880">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -2055,7 +2067,7 @@
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="filter86" in="00:02:44.560" out="00:02:53.880">
+    <filter id="filter88" in="00:02:44.560" out="00:02:53.880">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="mlt_service">volume</property>
@@ -2080,7 +2092,7 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter87" in="00:02:53.920" out="00:03:05.240">
+    <filter id="filter89" in="00:02:53.920" out="00:03:05.240">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -2111,7 +2123,7 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter88" in="00:03:05.280" out="00:03:26.320">
+    <filter id="filter90" in="00:03:05.280" out="00:03:26.320">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -2124,7 +2136,7 @@
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="filter89" in="00:03:05.280" out="00:03:26.320">
+    <filter id="filter91" in="00:03:05.280" out="00:03:26.320">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="mlt_service">volume</property>
@@ -2145,10 +2157,10 @@
     <entry producer="producer55" in="00:02:44.560" out="00:02:53.880"/>
     <entry producer="producer56" in="00:02:53.920" out="00:03:05.240"/>
     <entry producer="producer57" in="00:03:05.280" out="00:03:26.320"/>
-    <filter id="filter90" out="00:03:35.600">
+    <filter id="filter92" out="00:03:35.600">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">-5</property>
+      <property name="level">-8</property>
       <property name="mlt_service">volume</property>
     </filter>
   </playlist>
@@ -2160,13 +2172,13 @@
     <track producer="background"/>
     <track producer="playlist0" hide="audio"/>
     <track producer="playlist1" hide="audio"/>
-    <track producer="playlist2" hide="audio"/>
-    <track producer="playlist3" hide="audio"/>
-    <track producer="playlist4" hide="both"/>
-    <track producer="playlist5" hide="both"/>
-    <track producer="playlist6" hide="audio"/>
-    <track producer="playlist7" hide="audio"/>
-    <track producer="playlist8" hide="video"/>
+    <track producer="playlist2" hide="both"/>
+    <track producer="playlist3"/>
+    <track producer="playlist4"/>
+    <track producer="playlist5"/>
+    <track producer="playlist6"/>
+    <track producer="playlist7"/>
+    <track producer="playlist8"/>
     <track producer="playlist9"/>
     <transition id="transition0">
       <property name="a_track">0</property>

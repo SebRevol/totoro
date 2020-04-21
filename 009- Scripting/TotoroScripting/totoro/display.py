@@ -8,6 +8,7 @@ from totoro.utils import get_time_string, zero_time, frame_duration,\
 import datetime
 from _collections import deque
 import math
+from builtins import isinstance
 
 
 clock_value = None
@@ -91,7 +92,7 @@ class DisplayedElement(object):
         self.width_on_height=1
         self.parent = None
         self.inside( get_current_resource().grid)
-        
+        self.hidden =False
         self.previous_move_times = []
         self.previous_coordinates=[]
     
@@ -113,12 +114,12 @@ class DisplayedElement(object):
     def update(self, duration = None):
         self.prop_move(self.rel_y, self.rel_x, self.rel_size, duration)
         
-    def inside(self, parent):
-        if (self.parent is not None ):
+    def inside(self, parent, index = None):
+        if (self.parent is not None and self.parent != parent):
             self.parent._remove_child(self)
             
         self.parent = parent
-        parent._add_child(self)
+        parent._add_child(self, index)
         return self
     
     def update_relative_coordinates(self, line_num, col_num, size_in_cols):
@@ -147,25 +148,28 @@ class DisplayedElement(object):
     
     def store_previous_coordinates(self):
         self.previous_coordinates.append(
-            {"parent": self.parent, "x": self.rel_x, "y": self.rel_y, "size": self.rel_size } )
+            {"parent": self.parent, "index":self.parent.children.index(self) ,  "x": self.rel_x, "y": self.rel_y, "size": self.rel_size } )
     
     def to_previous(self, duration=None, history =1):
         previous = self.previous_coordinates[-history]
-        self.inside(previous["parent"]).prop_move(previous["y"], previous["x"], previous["size"], duration)
+        self.inside(previous["parent"], previous["index"]).prop_move(previous["y"], previous["x"], previous["size"], duration)
         
         
     def swap(self, other, duration = None):
         other_parent = other.parent
+        other_index =other.parent.children.index(other)
         other_x = other.rel_x
         other_y = other.rel_y
         other_size = other.rel_size
 
-        other.inside(self.parent).prop_move(self.rel_y, self.rel_x, self.rel_size, duration)
-        self.inside(other_parent).prop_move(other_y, other_x, other_size, duration)
+        other.inside(self.parent, self.parent.children.index(self)).prop_move(self.rel_y, self.rel_x, self.rel_size, duration)
+        self.inside(other_parent, other_index).prop_move(other_y, other_x, other_size, duration)
         
         
     def prop_move(self,vert_ratio, horiz_ratio,size_ratio, duration =None):
         time = get_clock()
+        if (self.hidden):
+            self.hidden = False
         
         if (time is not None):
             self.on(time)
@@ -186,10 +190,10 @@ class DisplayedElement(object):
         pass
     
     def show(self):
-        raise NotImplementedError
+        self.hidden = False
     
     def hide(self):
-        raise NotImplementedError
+        self.hidden = True
     
 class Container(object):
     def __init__(self, num_of_lines, num_of_cols, children_names_or_obj=[]):
@@ -198,6 +202,8 @@ class Container(object):
         self.num_box_col = num_of_cols
         self.children = []
         
+        self.tag_map = {}
+        
         for child_name_or_obj in children_names_or_obj:
             if type(child_name_or_obj) == str :
                 child = self.player_registry[child_name_or_obj]
@@ -205,19 +211,75 @@ class Container(object):
                 child = child_name_or_obj
             child.inside(self)
             
+    
+    def tag(self, tag_name):
+        config = {}
+        config["children"] = self.children.copy()
+        children_pos ={}
+        for child in self.children :
+            children_pos[child] = {"x": child.rel_x, "y": child.rel_y, "size": child.rel_size, "hidden":child.hidden}
         
+        config["children_pos"]=children_pos
+        config["num_box_line"]= self.num_box_line
+        config["num_box_col"]= self.num_box_col
+        
+        
+        self.tag_map[tag_name]= config
+        
+        
+        for child in self.children :
+            if isinstance(child, Container):
+                child.tag(tag_name)
+    
+    
+    def to_tag(self, tag_name, duration=None):
+        config = self.tag_map.get(tag_name)
+        if config is None :
+            print("ERROR : tag {} inconnu pour {}".format(tag_name, self))
+        
+        self.num_box_line = config["num_box_line"] 
+        self.num_box_col  = config["num_box_col"]  
+
+        self.children = config["children"]
+        
+        for child in self.children :
+            child_pos = config["children_pos"][child]
+            child.inside(self).prop_move(child_pos["y"], child_pos["x"], child_pos["size"], duration)
+            if(child_pos["hidden"]):
+                child.hide()
+        
+        for child in self.children :
+            if isinstance(child, Container):
+                child.to_tag(tag_name, duration)
+                
+                
+    
+    def children_to_previous(self, duration = None, history =1 ):
+        for child in self.children :
+            child.to_previous(duration, history)
         
        
     
-    def _add_child(self, string_or_container_or_player):
+    def _add_child(self, string_or_container_or_player, index=None):
+            
         if(type(string_or_container_or_player) == str ):
             player = self.player_registry[string_or_container_or_player]
-            if (player not in self.children):
-                self.children.append(player)
+            
+        else  : 
+            player = string_or_container_or_player
+        
+        if (player not in self.children):        
+            if (index is None) :
+                index = len(self.children)
+        
+            self.children.insert(index, player)
         else :
-            if (string_or_container_or_player):
-                self.children.append(string_or_container_or_player) 
-    
+            if (index is not None):
+                current_index = self.children.index(player)
+                if (index != current_index):
+                    self.children.remove(player)
+                    self.children.insert(index,player)
+        
     
     def _remove_child(self,string_or_container_or_player):
         if(type(string_or_container_or_player) == str ):
@@ -295,7 +357,8 @@ class Box(DisplayedElement, Container):
        
         
         for child in self.children :
-            child.update(duration)
+            if (not child.hidden):
+                child.update(duration)
             
         
     def move(self,  line_num, col_num,size, duration =None):
@@ -317,10 +380,12 @@ class Box(DisplayedElement, Container):
         return self
         
     def show(self):
+        DisplayedElement.show(self)
         for child in self.children :
             child.show()
             
     def hide(self):
+        DisplayedElement.hide(self)
         for child in self.children :
             child.hide()
 
@@ -331,7 +396,7 @@ class Box(DisplayedElement, Container):
 
 class Grid(Container):
     
-    def __init__(self, res_x, res_y, num_box=1, x_margin=0) :
+    def __init__(self, res_x, res_y, num_box=0, x_margin=0) :
         super().__init__(num_box, num_box, [])
         self.res_x = res_x
         self.res_y = res_y

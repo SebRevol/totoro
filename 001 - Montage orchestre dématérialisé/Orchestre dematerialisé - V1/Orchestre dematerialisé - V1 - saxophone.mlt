@@ -101,8 +101,8 @@
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
     <property name="seekable">1</property>
-    <filter id="filter2" in="00:00:05.000" out="00:00:14.960">
-      <property name="argument">Temps de marge pour faire apparaitre/entrer les musiciens</property>
+    <filter id="filter2" in="00:00:05.000" out="00:00:22.360">
+      <property name="argument"></property>
       <property name="geometry">0 0 1920 1080 1</property>
       <property name="family">Verdana</property>
       <property name="size">1080</property>
@@ -127,7 +127,7 @@
     <property name="shotcut:name">Storyboard</property>
     <property name="shotcut:lock">1</property>
     <entry producer="producer1" in="00:00:00.000" out="00:00:04.960"/>
-    <entry producer="producer2" in="00:00:05.000" out="00:00:14.960"/>
+    <entry producer="producer2" in="00:00:05.000" out="00:00:22.360"/>
   </playlist>
   <producer id="producer3" title="Anonymous Submission" in="00:00:00.000" out="00:03:24.560">
     <property name="length">00:03:24:15</property>
@@ -233,7 +233,7 @@
     <filter id="filter6" out="00:03:20.680">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">-5</property>
+      <property name="level">-7</property>
       <property name="mlt_service">volume</property>
     </filter>
   </playlist>
@@ -829,7 +829,7 @@
     <filter id="filter33" out="00:03:20.680">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">-7</property>
+      <property name="level">-8</property>
       <property name="mlt_service">volume</property>
     </filter>
   </playlist>
@@ -1184,14 +1184,14 @@
     <property name="shotcut:scaleFactor">0.162186</property>
     <track producer="background"/>
     <track producer="playlist0" hide="audio"/>
-    <track producer="playlist1" hide="both"/>
+    <track producer="playlist1" hide="audio"/>
     <track producer="playlist2" hide="both"/>
     <track producer="playlist3"/>
     <track producer="playlist4"/>
-    <track producer="playlist5" hide="video"/>
-    <track producer="playlist6" hide="both"/>
-    <track producer="playlist7" hide="both"/>
-    <track producer="playlist8" hide="both"/>
+    <track producer="playlist5"/>
+    <track producer="playlist6"/>
+    <track producer="playlist7"/>
+    <track producer="playlist8" hide="audio"/>
     <transition id="transition0">
       <property name="a_track">0</property>
       <property name="b_track">1</property>

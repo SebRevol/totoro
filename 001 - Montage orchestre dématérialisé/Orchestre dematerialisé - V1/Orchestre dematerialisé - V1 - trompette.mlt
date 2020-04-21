@@ -556,7 +556,7 @@
     <filter id="filter20" out="00:03:24.320">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">-10</property>
+      <property name="level">-11</property>
       <property name="mlt_service">volume</property>
     </filter>
   </playlist>
@@ -637,7 +637,7 @@
     <filter id="filter25" in="00:00:18.400" out="00:01:17.280">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">-8</property>
+      <property name="level">-9</property>
       <property name="mlt_service">volume</property>
     </filter>
   </producer>
@@ -718,7 +718,7 @@
     <filter id="filter30" in="00:01:18.960" out="00:01:22.920">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">-8</property>
+      <property name="level">-9</property>
       <property name="mlt_service">volume</property>
     </filter>
   </producer>
@@ -799,7 +799,7 @@
     <filter id="filter35" in="00:01:44.160" out="00:02:59.640">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">-8</property>
+      <property name="level">-9</property>
       <property name="mlt_service">volume</property>
     </filter>
   </producer>
@@ -1534,7 +1534,7 @@
     <filter id="filter71" out="00:03:24.320">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">-5</property>
+      <property name="level">-6</property>
       <property name="mlt_service">volume</property>
     </filter>
   </playlist>
@@ -1759,7 +1759,7 @@
     <filter id="filter81" out="00:03:24.320">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">-3</property>
+      <property name="level">-5</property>
       <property name="mlt_service">volume</property>
     </filter>
   </playlist>
