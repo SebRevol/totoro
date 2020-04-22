@@ -379,7 +379,7 @@
     <filter id="filter13" out="00:03:32.600">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">-11</property>
+      <property name="level">-12</property>
       <property name="mlt_service">volume</property>
     </filter>
   </playlist>
@@ -400,7 +400,76 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter14" out="00:03:32.520">
+    <filter id="filter14" out="00:01:30.040">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <producer id="producer11" title="Anonymous Submission" in="00:00:00.000" out="00:05:55.520">
+    <property name="length">00:05:55:14</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Euphonium/Serge_baryton_totoro_recadre.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-12T16:27:49</property>
+    <property name="shotcut:hash">b07d92044a15ac5f1a605af51e13624e</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Serge_baryton_totoro_recadre.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter15" in="00:01:30.080" out="00:01:37.960">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter16" in="00:01:30.080" out="00:01:37.960">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer12" title="Anonymous Submission" in="00:00:00.000" out="00:05:55.520">
+    <property name="length">00:05:55:14</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Euphonium/Serge_baryton_totoro_recadre.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-12T16:27:49</property>
+    <property name="shotcut:hash">b07d92044a15ac5f1a605af51e13624e</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Serge_baryton_totoro_recadre.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter17" in="00:01:38.000" out="00:03:32.520">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -419,15 +488,17 @@
     <property name="shotcut:name">S Baudry recadre</property>
     <property name="shotcut:lock">1</property>
     <blank length="00:00:00.080"/>
-    <entry producer="producer10" in="00:00:00.000" out="00:03:32.520"/>
-    <filter id="filter15" out="00:03:32.600">
+    <entry producer="producer10" in="00:00:00.000" out="00:01:30.040"/>
+    <entry producer="producer11" in="00:01:30.080" out="00:01:37.960"/>
+    <entry producer="producer12" in="00:01:38.000" out="00:03:32.520"/>
+    <filter id="filter18" out="00:03:32.600">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">-12</property>
+      <property name="level">-13</property>
       <property name="mlt_service">volume</property>
     </filter>
   </playlist>
-  <producer id="producer11" title="Anonymous Submission" in="00:00:00.000" out="00:05:55.520">
+  <producer id="producer13" title="Anonymous Submission" in="00:00:00.000" out="00:05:55.520">
     <property name="length">00:05:55:14</property>
     <property name="eof">pause</property>
     <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Tuba/Srevol_tuba_recadre.mp4</property>
@@ -444,7 +515,7 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter16" out="00:00:29.400">
+    <filter id="filter19" out="00:00:29.400">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -457,7 +528,7 @@
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="filter17" out="00:00:29.400">
+    <filter id="filter20" out="00:00:29.400">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="mlt_service">volume</property>
@@ -465,7 +536,7 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer12" title="Anonymous Submission" in="00:00:00.000" out="00:05:55.520">
+  <producer id="producer14" title="Anonymous Submission" in="00:00:00.000" out="00:05:55.520">
     <property name="length">00:05:55:14</property>
     <property name="eof">pause</property>
     <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Tuba/Srevol_tuba_recadre.mp4</property>
@@ -482,7 +553,7 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter18" in="00:00:29.440" out="00:03:25.680">
+    <filter id="filter21" in="00:00:29.440" out="00:03:25.680">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -500,12 +571,12 @@
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">S Revol recadre</property>
     <property name="shotcut:lock">1</property>
-    <entry producer="producer11" in="00:00:00.000" out="00:00:29.400"/>
-    <entry producer="producer12" in="00:00:29.440" out="00:03:25.680"/>
-    <filter id="filter19" out="00:03:32.600">
+    <entry producer="producer13" in="00:00:00.000" out="00:00:29.400"/>
+    <entry producer="producer14" in="00:00:29.440" out="00:03:25.680"/>
+    <filter id="filter22" out="00:03:32.600">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">-7</property>
+      <property name="level">-9</property>
       <property name="mlt_service">volume</property>
     </filter>
   </playlist>

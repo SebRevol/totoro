@@ -99,7 +99,7 @@
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
     <property name="seekable">1</property>
-    <filter id="filter2" in="00:00:05.000" out="00:00:14.960">
+    <filter id="filter2" in="00:00:05.000" out="00:00:22.480">
       <property name="argument">Temps de marge pour faire apparaitre/entrer les musiciens</property>
       <property name="geometry">0 0 1920 1080 1</property>
       <property name="family">Verdana</property>
@@ -125,7 +125,7 @@
     <property name="shotcut:name">Storyboard</property>
     <property name="shotcut:lock">1</property>
     <entry producer="producer1" in="00:00:00.000" out="00:00:04.960"/>
-    <entry producer="producer2" in="00:00:05.000" out="00:00:14.960"/>
+    <entry producer="producer2" in="00:00:05.000" out="00:00:22.480"/>
   </playlist>
   <producer id="producer3" title="Anonymous Submission" in="00:00:00.000" out="00:03:24.560">
     <property name="length">00:03:24:15</property>
@@ -629,7 +629,82 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter24" out="00:03:09.320">
+    <filter id="filter24" out="00:00:23.480">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter25" out="00:00:23.480">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer18" title="Anonymous Submission" in="00:00:00.000" out="00:03:09.320">
+    <property name="length">00:03:09:09</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Cor/Myrtille_cor_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-21T06:33:53</property>
+    <property name="shotcut:hash">010e5be869f07125ac95af97a3278e87</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Myrtille_cor_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter26" in="00:00:23.520" out="00:00:30.600">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter27" in="00:00:23.520" out="00:00:30.600">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-3</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer19" title="Anonymous Submission" in="00:00:00.000" out="00:03:09.320">
+    <property name="length">00:03:09:09</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Cor/Myrtille_cor_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-21T06:33:53</property>
+    <property name="shotcut:hash">010e5be869f07125ac95af97a3278e87</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Myrtille_cor_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter28" in="00:00:30.640" out="00:00:56.640">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -643,13 +718,336 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
+  <producer id="producer20" title="Anonymous Submission" in="00:00:00.000" out="00:03:09.320">
+    <property name="length">00:03:09:09</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Cor/Myrtille_cor_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-21T06:33:53</property>
+    <property name="shotcut:hash">010e5be869f07125ac95af97a3278e87</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Myrtille_cor_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter29" in="00:00:56.680" out="00:01:04.760">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter30" in="00:00:56.680" out="00:01:04.760">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-3</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer21" title="Anonymous Submission" in="00:00:00.000" out="00:03:09.320">
+    <property name="length">00:03:09:09</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Cor/Myrtille_cor_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-21T06:33:53</property>
+    <property name="shotcut:hash">010e5be869f07125ac95af97a3278e87</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Myrtille_cor_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter31" in="00:01:04.800" out="00:01:27.520">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <producer id="producer22" title="Anonymous Submission" in="00:00:00.000" out="00:03:09.320">
+    <property name="length">00:03:09:09</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Cor/Myrtille_cor_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-21T06:33:53</property>
+    <property name="shotcut:hash">010e5be869f07125ac95af97a3278e87</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Myrtille_cor_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter32" in="00:01:27.560" out="00:01:38.040">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter33" in="00:01:27.560" out="00:01:38.040">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer23" title="Anonymous Submission" in="00:00:00.000" out="00:03:09.320">
+    <property name="length">00:03:09:09</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Cor/Myrtille_cor_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-21T06:33:53</property>
+    <property name="shotcut:hash">010e5be869f07125ac95af97a3278e87</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Myrtille_cor_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter34" in="00:01:38.080" out="00:01:54.360">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <producer id="producer24" title="Anonymous Submission" in="00:00:00.000" out="00:03:09.320">
+    <property name="length">00:03:09:09</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Cor/Myrtille_cor_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-21T06:33:53</property>
+    <property name="shotcut:hash">010e5be869f07125ac95af97a3278e87</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Myrtille_cor_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter35" in="00:01:54.400" out="00:02:00.880">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter36" in="00:01:54.400" out="00:02:00.880">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer25" title="Anonymous Submission" in="00:00:00.000" out="00:03:09.320">
+    <property name="length">00:03:09:09</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Cor/Myrtille_cor_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-21T06:33:53</property>
+    <property name="shotcut:hash">010e5be869f07125ac95af97a3278e87</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Myrtille_cor_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter37" in="00:02:00.920" out="00:02:39.800">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <producer id="producer26" title="Anonymous Submission" in="00:00:00.000" out="00:03:09.320">
+    <property name="length">00:03:09:09</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Cor/Myrtille_cor_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-21T06:33:53</property>
+    <property name="shotcut:hash">010e5be869f07125ac95af97a3278e87</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Myrtille_cor_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter38" in="00:02:39.840" out="00:02:41.120">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter39" in="00:02:39.840" out="00:02:41.120">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-8</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer27" title="Anonymous Submission" in="00:00:00.000" out="00:03:09.320">
+    <property name="length">00:03:09:09</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Cor/Myrtille_cor_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-21T06:33:53</property>
+    <property name="shotcut:hash">010e5be869f07125ac95af97a3278e87</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Myrtille_cor_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter40" in="00:02:41.160" out="00:03:07.800">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <producer id="producer28" title="Anonymous Submission" in="00:00:00.000" out="00:03:09.320">
+    <property name="length">00:03:09:09</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Cor/Myrtille_cor_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-21T06:33:53</property>
+    <property name="shotcut:hash">010e5be869f07125ac95af97a3278e87</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Myrtille_cor_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter41" in="00:03:07.840" out="00:03:09.320">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter42" in="00:03:07.840" out="00:03:09.320">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
   <playlist id="playlist4">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">V5</property>
     <property name="shotcut:lock">1</property>
-    <blank length="00:00:06.560"/>
-    <entry producer="producer17" in="00:00:00.000" out="00:03:09.320"/>
-    <filter id="filter25" out="00:03:15.880">
+    <blank length="00:00:06.600"/>
+    <entry producer="producer17" in="00:00:00.000" out="00:00:23.480"/>
+    <entry producer="producer18" in="00:00:23.520" out="00:00:30.600"/>
+    <entry producer="producer19" in="00:00:30.640" out="00:00:56.640"/>
+    <entry producer="producer20" in="00:00:56.680" out="00:01:04.760"/>
+    <entry producer="producer21" in="00:01:04.800" out="00:01:27.520"/>
+    <entry producer="producer22" in="00:01:27.560" out="00:01:38.040"/>
+    <entry producer="producer23" in="00:01:38.080" out="00:01:54.360"/>
+    <entry producer="producer24" in="00:01:54.400" out="00:02:00.880"/>
+    <entry producer="producer25" in="00:02:00.920" out="00:02:39.800"/>
+    <entry producer="producer26" in="00:02:39.840" out="00:02:41.120"/>
+    <entry producer="producer27" in="00:02:41.160" out="00:03:07.800"/>
+    <entry producer="producer28" in="00:03:07.840" out="00:03:09.320"/>
+    <filter id="filter43" out="00:03:23.160">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">-11</property>
@@ -660,12 +1058,12 @@
     <property name="shotcut">1</property>
     <property name="shotcut:projectAudioChannels">2</property>
     <property name="shotcut:projectFolder">1</property>
-    <property name="shotcut:scaleFactor">5.10146</property>
+    <property name="shotcut:scaleFactor">0.842382</property>
     <track producer="background"/>
     <track producer="playlist0" hide="audio"/>
     <track producer="playlist1" hide="audio"/>
-    <track producer="playlist2" hide="video"/>
-    <track producer="playlist3"/>
+    <track producer="playlist2" hide="both"/>
+    <track producer="playlist3" hide="audio"/>
     <track producer="playlist4"/>
     <transition id="transition0">
       <property name="a_track">0</property>

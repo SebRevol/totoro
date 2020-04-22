@@ -2178,8 +2178,8 @@
     <track producer="playlist5"/>
     <track producer="playlist6"/>
     <track producer="playlist7"/>
-    <track producer="playlist8"/>
-    <track producer="playlist9"/>
+    <track producer="playlist8" hide="video"/>
+    <track producer="playlist9" hide="video"/>
     <transition id="transition0">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
