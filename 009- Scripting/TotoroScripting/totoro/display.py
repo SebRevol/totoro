@@ -533,7 +533,7 @@ class LineOrColumn(Box):
         super().__init__(children_names,self.get_num_of_lines(),self.get_num_of_columns())
         
         for index,child in enumerate(self.children) :
-            self.move_child(child, index)
+            self.move_child(child, index+1)
     
     
     def get_num_of_lines(self):
@@ -599,7 +599,7 @@ class Line(LineOrColumn):
         return 1
     
     def get_num_of_columns(self):
-        self.size
+        return self.size
         
     def move_child(self, child, index,duration=None):
         child.move(1,index,1,duration)
