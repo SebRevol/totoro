@@ -130,7 +130,15 @@ def get_position(producer):
 
     
     
-        
+def parse_position(position_string):
+    pos_array = position_string.split()
+    current_resource = get_current_resource()
+    
+    abs_x =int(pos_array[0])/current_resource.x_res
+    abs_y= int(pos_array[1])/current_resource.y_res
+    abs_size = int(pos_array[2])/current_resource.x_res
+    
+    return (abs_x, abs_y, abs_size)         
     
 
     

@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<mlt LC_NUMERIC="C" version="6.17.0" title="Shotcut version 19.08.05" producer="main_bin">
-  <profile description="HD 1080p 25 fps" width="1920" height="1080" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="25" frame_rate_den="1" colorspace="709"/>
+<?xml version='1.0' encoding='us-ascii'?>
+<mlt LC_NUMERIC="C" producer="main_bin" title="Shotcut version 19.08.05" version="6.17.0">
+  <profile colorspace="709" description="HD 1080p 25 fps" display_aspect_den="9" display_aspect_num="16" frame_rate_den="1" frame_rate_num="25" height="1080" progressive="1" sample_aspect_den="1" sample_aspect_num="1" width="1920" />
   <playlist id="main_bin">
     <property name="xml_retain">1</property>
   </playlist>
@@ -14,12 +14,12 @@
     <property name="set.test_audio">0</property>
   </producer>
   <playlist id="background">
-    <entry producer="black" in="00:00:00.000" out="00:03:24.320"/>
+    <entry in="00:00:00.000" out="00:03:24.320" producer="black" />
   </playlist>
-  <producer id="producer0" title="Anonymous Submission" in="00:00:00.000" out="00:02:58.320">
+  <producer id="producer0" in="00:00:00.000" out="00:02:58.320" title="Anonymous Submission">
     <property name="length">00:02:58:09</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Chef/Jean-Jacques_chef_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Chef/Jean-Jacques_chef_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -51,10 +51,10 @@
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">Chef_JJS</property>
     <property name="shotcut:lock">1</property>
-    <blank length="00:00:22.320"/>
-    <entry producer="producer0" in="00:00:00.000" out="00:02:58.320"/>
+    <blank length="00:00:22.320" />
+    <entry in="00:00:00.000" out="00:02:58.320" producer="producer0" />
   </playlist>
-  <producer id="producer1" title="Anonymous Submission" in="00:00:00.000" out="03:59:59.960">
+  <producer id="producer1" in="00:00:00.000" out="03:59:59.960" title="Anonymous Submission">
     <property name="length">04:00:00:00</property>
     <property name="eof">pause</property>
     <property name="resource">#00000000</property>
@@ -88,7 +88,7 @@
       <property name="shotcut:animOut">00:00:00.000</property>
     </filter>
   </producer>
-  <producer id="producer2" title="Anonymous Submission" in="00:00:00.000" out="03:59:59.960">
+  <producer id="producer2" in="00:00:00.000" out="03:59:59.960" title="Anonymous Submission">
     <property name="length">04:00:00:00</property>
     <property name="eof">pause</property>
     <property name="resource">#00000000</property>
@@ -126,13 +126,13 @@
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">Storyboard</property>
     <property name="shotcut:lock">1</property>
-    <entry producer="producer1" in="00:00:00.000" out="00:00:04.960"/>
-    <entry producer="producer2" in="00:00:05.000" out="00:00:22.400"/>
+    <entry in="00:00:00.000" out="00:00:04.960" producer="producer1" />
+    <entry in="00:00:05.000" out="00:00:22.400" producer="producer2" />
   </playlist>
-  <producer id="producer3" title="Anonymous Submission" in="00:00:00.000" out="00:03:24.560">
+  <producer id="producer3" in="00:00:00.000" out="00:03:24.560" title="Anonymous Submission">
     <property name="length">00:03:24:15</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/003 - Bande son/Practice avec texte initial et son youtube.mp4</property>
+    <property name="resource">../../003 - Bande son/Practice avec texte initial et son youtube.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -151,13 +151,13 @@
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">Bande_son_practice</property>
     <property name="shotcut:lock">1</property>
-    <blank length="00:00:15.000"/>
-    <entry producer="producer3" in="00:00:18.960" out="00:03:24.560"/>
+    <blank length="00:00:15.000" />
+    <entry in="00:00:18.960" out="00:03:24.560" producer="producer3" />
   </playlist>
-  <producer id="producer4" title="Anonymous Submission" in="00:00:00.000" out="00:03:41.040">
+  <producer id="producer4" in="00:00:00.000" out="00:03:41.040" title="Anonymous Submission">
     <property name="length">00:03:41:02</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Bidou_cornet_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Bidou_cornet_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -192,10 +192,10 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer5" title="Anonymous Submission" in="00:00:00.000" out="00:03:41.040">
+  <producer id="producer5" in="00:00:00.000" out="00:03:41.040" title="Anonymous Submission">
     <property name="length">00:03:41:02</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Bidou_cornet_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Bidou_cornet_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -223,10 +223,10 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer6" title="Anonymous Submission" in="00:00:00.000" out="00:03:41.040">
+  <producer id="producer6" in="00:00:00.000" out="00:03:41.040" title="Anonymous Submission">
     <property name="length">00:03:41:02</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Bidou_cornet_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Bidou_cornet_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -261,10 +261,10 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer7" title="Anonymous Submission" in="00:00:00.000" out="00:03:41.040">
+  <producer id="producer7" in="00:00:00.000" out="00:03:41.040" title="Anonymous Submission">
     <property name="length">00:03:41:02</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Bidou_cornet_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Bidou_cornet_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -292,10 +292,10 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer8" title="Anonymous Submission" in="00:00:00.000" out="00:03:41.040">
+  <producer id="producer8" in="00:00:00.000" out="00:03:41.040" title="Anonymous Submission">
     <property name="length">00:03:41:02</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Bidou_cornet_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Bidou_cornet_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -330,10 +330,10 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer9" title="Anonymous Submission" in="00:00:00.000" out="00:03:41.040">
+  <producer id="producer9" in="00:00:00.000" out="00:03:41.040" title="Anonymous Submission">
     <property name="length">00:03:41:02</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Bidou_cornet_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Bidou_cornet_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -361,10 +361,10 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer10" title="Anonymous Submission" in="00:00:00.000" out="00:03:41.040">
+  <producer id="producer10" in="00:00:00.000" out="00:03:41.040" title="Anonymous Submission">
     <property name="length">00:03:41:02</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Bidou_cornet_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Bidou_cornet_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -399,10 +399,10 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer11" title="Anonymous Submission" in="00:00:00.000" out="00:03:41.040">
+  <producer id="producer11" in="00:00:00.000" out="00:03:41.040" title="Anonymous Submission">
     <property name="length">00:03:41:02</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Bidou_cornet_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Bidou_cornet_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -430,10 +430,10 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer12" title="Anonymous Submission" in="00:00:00.000" out="00:03:41.040">
+  <producer id="producer12" in="00:00:00.000" out="00:03:41.040" title="Anonymous Submission">
     <property name="length">00:03:41:02</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Bidou_cornet_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Bidou_cornet_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -468,10 +468,10 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer13" title="Anonymous Submission" in="00:00:00.000" out="00:03:41.040">
+  <producer id="producer13" in="00:00:00.000" out="00:03:41.040" title="Anonymous Submission">
     <property name="length">00:03:41:02</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Bidou_cornet_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Bidou_cornet_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -499,10 +499,10 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer14" title="Anonymous Submission" in="00:00:00.000" out="00:03:41.040">
+  <producer id="producer14" in="00:00:00.000" out="00:03:41.040" title="Anonymous Submission">
     <property name="length">00:03:41:02</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Bidou_cornet_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Bidou_cornet_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -541,18 +541,18 @@
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">Bidou_cornet</property>
     <property name="shotcut:lock">1</property>
-    <blank length="00:00:02.240"/>
-    <entry producer="producer4" in="00:00:22.360" out="00:00:49.960"/>
-    <entry producer="producer5" in="00:00:50.000" out="00:00:57.280"/>
-    <entry producer="producer6" in="00:00:57.320" out="00:01:10.160"/>
-    <entry producer="producer7" in="00:01:10.200" out="00:01:23.200"/>
-    <entry producer="producer8" in="00:01:23.240" out="00:01:30.760"/>
-    <entry producer="producer9" in="00:01:30.800" out="00:01:51.840"/>
-    <entry producer="producer10" in="00:01:51.880" out="00:01:55.200"/>
-    <entry producer="producer11" in="00:01:55.240" out="00:01:57.680"/>
-    <entry producer="producer12" in="00:01:57.720" out="00:02:18.680"/>
-    <entry producer="producer13" in="00:02:18.720" out="00:03:34.840"/>
-    <entry producer="producer14" in="00:03:34.880" out="00:03:41.040"/>
+    <blank length="00:00:02.240" />
+    <entry in="00:00:22.360" out="00:00:49.960" producer="producer4" />
+    <entry in="00:00:50.000" out="00:00:57.280" producer="producer5" />
+    <entry in="00:00:57.320" out="00:01:10.160" producer="producer6" />
+    <entry in="00:01:10.200" out="00:01:23.200" producer="producer7" />
+    <entry in="00:01:23.240" out="00:01:30.760" producer="producer8" />
+    <entry in="00:01:30.800" out="00:01:51.840" producer="producer9" />
+    <entry in="00:01:51.880" out="00:01:55.200" producer="producer10" />
+    <entry in="00:01:55.240" out="00:01:57.680" producer="producer11" />
+    <entry in="00:01:57.720" out="00:02:18.680" producer="producer12" />
+    <entry in="00:02:18.720" out="00:03:34.840" producer="producer13" />
+    <entry in="00:03:34.880" out="00:03:41.040" producer="producer14" />
     <filter id="filter20" out="00:03:24.320">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
@@ -560,10 +560,10 @@
       <property name="mlt_service">volume</property>
     </filter>
   </playlist>
-  <producer id="producer15" title="Anonymous Submission" in="00:00:00.000" out="00:03:02.520">
+  <producer id="producer15" in="00:00:00.000" out="00:03:02.520" title="Anonymous Submission">
     <property name="length">00:03:02:14</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Serge_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Serge_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -604,10 +604,10 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer16" title="Anonymous Submission" in="00:00:00.000" out="00:03:02.520">
+  <producer id="producer16" in="00:00:00.000" out="00:03:02.520" title="Anonymous Submission">
     <property name="length">00:03:02:14</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Serge_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Serge_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -641,10 +641,10 @@
       <property name="mlt_service">volume</property>
     </filter>
   </producer>
-  <producer id="producer17" title="Anonymous Submission" in="00:00:00.000" out="00:03:02.520">
+  <producer id="producer17" in="00:00:00.000" out="00:03:02.520" title="Anonymous Submission">
     <property name="length">00:03:02:14</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Serge_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Serge_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -685,10 +685,10 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer18" title="Anonymous Submission" in="00:00:00.000" out="00:03:02.520">
+  <producer id="producer18" in="00:00:00.000" out="00:03:02.520" title="Anonymous Submission">
     <property name="length">00:03:02:14</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Serge_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Serge_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -722,10 +722,10 @@
       <property name="mlt_service">volume</property>
     </filter>
   </producer>
-  <producer id="producer19" title="Anonymous Submission" in="00:00:00.000" out="00:03:02.520">
+  <producer id="producer19" in="00:00:00.000" out="00:03:02.520" title="Anonymous Submission">
     <property name="length">00:03:02:14</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Serge_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Serge_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -766,10 +766,10 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer20" title="Anonymous Submission" in="00:00:00.000" out="00:03:02.520">
+  <producer id="producer20" in="00:00:00.000" out="00:03:02.520" title="Anonymous Submission">
     <property name="length">00:03:02:14</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Serge_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Serge_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -803,10 +803,10 @@
       <property name="mlt_service">volume</property>
     </filter>
   </producer>
-  <producer id="producer21" title="Anonymous Submission" in="00:00:00.000" out="00:03:02.520">
+  <producer id="producer21" in="00:00:00.000" out="00:03:02.520" title="Anonymous Submission">
     <property name="length">00:03:02:14</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Serge_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Serge_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -851,19 +851,19 @@
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">Serge_arrive</property>
     <property name="shotcut:lock">1</property>
-    <blank length="00:00:14.680"/>
-    <entry producer="producer15" in="00:00:00.000" out="00:00:18.360"/>
-    <entry producer="producer16" in="00:00:18.400" out="00:01:17.280"/>
-    <entry producer="producer17" in="00:01:17.320" out="00:01:18.920"/>
-    <entry producer="producer18" in="00:01:18.960" out="00:01:22.920"/>
-    <entry producer="producer19" in="00:01:22.960" out="00:01:44.120"/>
-    <entry producer="producer20" in="00:01:44.160" out="00:02:59.640"/>
-    <entry producer="producer21" in="00:02:59.680" out="00:03:02.520"/>
+    <blank length="00:00:14.680" />
+    <entry in="00:00:00.000" out="00:00:18.360" producer="producer15" />
+    <entry in="00:00:18.400" out="00:01:17.280" producer="producer16" />
+    <entry in="00:01:17.320" out="00:01:18.920" producer="producer17" />
+    <entry in="00:01:18.960" out="00:01:22.920" producer="producer18" />
+    <entry in="00:01:22.960" out="00:01:44.120" producer="producer19" />
+    <entry in="00:01:44.160" out="00:02:59.640" producer="producer20" />
+    <entry in="00:02:59.680" out="00:03:02.520" producer="producer21" />
   </playlist>
-  <producer id="producer22" title="Anonymous Submission" in="00:00:00.000" out="00:03:14.040">
+  <producer id="producer22" in="00:00:00.000" out="00:03:14.040" title="Anonymous Submission">
     <property name="length">00:03:14:02</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -898,10 +898,10 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer23" title="Anonymous Submission" in="00:00:00.000" out="00:03:14.040">
+  <producer id="producer23" in="00:00:00.000" out="00:03:14.040" title="Anonymous Submission">
     <property name="length">00:03:14:02</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -929,10 +929,10 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer24" title="Anonymous Submission" in="00:00:00.000" out="00:03:14.040">
+  <producer id="producer24" in="00:00:00.000" out="00:03:14.040" title="Anonymous Submission">
     <property name="length">00:03:14:02</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -966,10 +966,10 @@
       <property name="mlt_service">volume</property>
     </filter>
   </producer>
-  <producer id="producer25" title="Anonymous Submission" in="00:00:00.000" out="00:03:14.040">
+  <producer id="producer25" in="00:00:00.000" out="00:03:14.040" title="Anonymous Submission">
     <property name="length">00:03:14:02</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -1004,10 +1004,10 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer26" title="Anonymous Submission" in="00:00:00.000" out="00:03:14.040">
+  <producer id="producer26" in="00:00:00.000" out="00:03:14.040" title="Anonymous Submission">
     <property name="length">00:03:14:02</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -1035,10 +1035,10 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer27" title="Anonymous Submission" in="00:00:00.000" out="00:03:14.040">
+  <producer id="producer27" in="00:00:00.000" out="00:03:14.040" title="Anonymous Submission">
     <property name="length">00:03:14:02</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -1072,10 +1072,10 @@
       <property name="mlt_service">volume</property>
     </filter>
   </producer>
-  <producer id="producer28" title="Anonymous Submission" in="00:00:00.000" out="00:03:14.040">
+  <producer id="producer28" in="00:00:00.000" out="00:03:14.040" title="Anonymous Submission">
     <property name="length">00:03:14:02</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -1103,10 +1103,10 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer29" title="Anonymous Submission" in="00:00:00.000" out="00:03:14.040">
+  <producer id="producer29" in="00:00:00.000" out="00:03:14.040" title="Anonymous Submission">
     <property name="length">00:03:14:02</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -1141,10 +1141,10 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer30" title="Anonymous Submission" in="00:00:00.000" out="00:03:14.040">
+  <producer id="producer30" in="00:00:00.000" out="00:03:14.040" title="Anonymous Submission">
     <property name="length">00:03:14:02</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -1185,10 +1185,10 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer31" title="Anonymous Submission" in="00:00:00.000" out="00:03:14.040">
+  <producer id="producer31" in="00:00:00.000" out="00:03:14.040" title="Anonymous Submission">
     <property name="length">00:03:14:02</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -1222,10 +1222,10 @@
       <property name="mlt_service">volume</property>
     </filter>
   </producer>
-  <producer id="producer32" title="Anonymous Submission" in="00:00:00.000" out="00:03:14.040">
+  <producer id="producer32" in="00:00:00.000" out="00:03:14.040" title="Anonymous Submission">
     <property name="length">00:03:14:02</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -1260,10 +1260,10 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer33" title="Anonymous Submission" in="00:00:00.000" out="00:03:14.040">
+  <producer id="producer33" in="00:00:00.000" out="00:03:14.040" title="Anonymous Submission">
     <property name="length">00:03:14:02</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -1297,10 +1297,10 @@
       <property name="mlt_service">volume</property>
     </filter>
   </producer>
-  <producer id="producer34" title="Anonymous Submission" in="00:00:00.000" out="00:03:14.040">
+  <producer id="producer34" in="00:00:00.000" out="00:03:14.040" title="Anonymous Submission">
     <property name="length">00:03:14:02</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -1334,10 +1334,10 @@
       <property name="mlt_service">volume</property>
     </filter>
   </producer>
-  <producer id="producer35" title="Anonymous Submission" in="00:00:00.000" out="00:03:14.040">
+  <producer id="producer35" in="00:00:00.000" out="00:03:14.040" title="Anonymous Submission">
     <property name="length">00:03:14:02</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -1365,10 +1365,10 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer36" title="Anonymous Submission" in="00:00:00.000" out="00:03:14.040">
+  <producer id="producer36" in="00:00:00.000" out="00:03:14.040" title="Anonymous Submission">
     <property name="length">00:03:14:02</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -1402,10 +1402,10 @@
       <property name="mlt_service">volume</property>
     </filter>
   </producer>
-  <producer id="producer37" title="Anonymous Submission" in="00:00:00.000" out="00:03:14.040">
+  <producer id="producer37" in="00:00:00.000" out="00:03:14.040" title="Anonymous Submission">
     <property name="length">00:03:14:02</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -1439,10 +1439,10 @@
       <property name="mlt_service">volume</property>
     </filter>
   </producer>
-  <producer id="producer38" title="Anonymous Submission" in="00:00:00.000" out="00:03:14.040">
+  <producer id="producer38" in="00:00:00.000" out="00:03:14.040" title="Anonymous Submission">
     <property name="length">00:03:14:02</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -1470,10 +1470,10 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer39" title="Anonymous Submission" in="00:00:00.000" out="00:03:14.040">
+  <producer id="producer39" in="00:00:00.000" out="00:03:14.040" title="Anonymous Submission">
     <property name="length">00:03:14:02</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -1512,25 +1512,25 @@
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">Patrick_trompette2</property>
     <property name="shotcut:lock">1</property>
-    <blank length="00:00:06.680"/>
-    <entry producer="producer22" in="00:00:00.000" out="00:00:43.680"/>
-    <entry producer="producer23" in="00:00:43.720" out="00:00:50.600"/>
-    <entry producer="producer24" in="00:00:50.640" out="00:00:56.400"/>
-    <entry producer="producer25" in="00:00:56.440" out="00:01:04.440"/>
-    <entry producer="producer26" in="00:01:04.480" out="00:01:10.800"/>
-    <entry producer="producer27" in="00:01:10.840" out="00:01:11.000"/>
-    <entry producer="producer28" in="00:01:11.040" out="00:01:28.320"/>
-    <entry producer="producer29" in="00:01:28.360" out="00:02:06.280"/>
-    <entry producer="producer30" in="00:02:06.320" out="00:02:06.680"/>
-    <entry producer="producer31" in="00:02:06.720" out="00:02:09.800"/>
-    <entry producer="producer32" in="00:02:09.840" out="00:02:10.200"/>
-    <entry producer="producer33" in="00:02:10.240" out="00:02:11.640"/>
-    <entry producer="producer34" in="00:02:11.680" out="00:02:12.360"/>
-    <entry producer="producer35" in="00:02:12.400" out="00:02:47.760"/>
-    <entry producer="producer36" in="00:02:47.800" out="00:02:50.160"/>
-    <entry producer="producer37" in="00:02:50.200" out="00:02:57.160"/>
-    <entry producer="producer38" in="00:02:57.200" out="00:03:07.760"/>
-    <entry producer="producer39" in="00:03:07.800" out="00:03:14.040"/>
+    <blank length="00:00:06.680" />
+    <entry in="00:00:00.000" out="00:00:43.680" producer="producer22" />
+    <entry in="00:00:43.720" out="00:00:50.600" producer="producer23" />
+    <entry in="00:00:50.640" out="00:00:56.400" producer="producer24" />
+    <entry in="00:00:56.440" out="00:01:04.440" producer="producer25" />
+    <entry in="00:01:04.480" out="00:01:10.800" producer="producer26" />
+    <entry in="00:01:10.840" out="00:01:11.000" producer="producer27" />
+    <entry in="00:01:11.040" out="00:01:28.320" producer="producer28" />
+    <entry in="00:01:28.360" out="00:02:06.280" producer="producer29" />
+    <entry in="00:02:06.320" out="00:02:06.680" producer="producer30" />
+    <entry in="00:02:06.720" out="00:02:09.800" producer="producer31" />
+    <entry in="00:02:09.840" out="00:02:10.200" producer="producer32" />
+    <entry in="00:02:10.240" out="00:02:11.640" producer="producer33" />
+    <entry in="00:02:11.680" out="00:02:12.360" producer="producer34" />
+    <entry in="00:02:12.400" out="00:02:47.760" producer="producer35" />
+    <entry in="00:02:47.800" out="00:02:50.160" producer="producer36" />
+    <entry in="00:02:50.200" out="00:02:57.160" producer="producer37" />
+    <entry in="00:02:57.200" out="00:03:07.760" producer="producer38" />
+    <entry in="00:03:07.800" out="00:03:14.040" producer="producer39" />
     <filter id="filter71" out="00:03:24.320">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
@@ -1538,10 +1538,10 @@
       <property name="mlt_service">volume</property>
     </filter>
   </playlist>
-  <producer id="producer40" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.200">
+  <producer id="producer40" in="00:00:00.000" out="00:03:23.200" title="Anonymous Submission">
     <property name="length">00:03:23:06</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Marianne_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Marianne_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -1569,10 +1569,10 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer41" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.200">
+  <producer id="producer41" in="00:00:00.000" out="00:03:23.200" title="Anonymous Submission">
     <property name="length">00:03:23:06</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Marianne_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Marianne_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -1607,10 +1607,10 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer42" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.200">
+  <producer id="producer42" in="00:00:00.000" out="00:03:23.200" title="Anonymous Submission">
     <property name="length">00:03:23:06</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Marianne_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Marianne_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -1638,10 +1638,10 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer43" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.200">
+  <producer id="producer43" in="00:00:00.000" out="00:03:23.200" title="Anonymous Submission">
     <property name="length">00:03:23:06</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Marianne_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Marianne_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -1676,10 +1676,10 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer44" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.200">
+  <producer id="producer44" in="00:00:00.000" out="00:03:23.200" title="Anonymous Submission">
     <property name="length">00:03:23:06</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Marianne_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Marianne_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -1707,10 +1707,10 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer45" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.200">
+  <producer id="producer45" in="00:00:00.000" out="00:03:23.200" title="Anonymous Submission">
     <property name="length">00:03:23:06</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Trompettes et cornets/Marianne_trompette_totoro.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Marianne_trompette_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -1749,13 +1749,13 @@
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">Marianne</property>
     <property name="shotcut:lock">1</property>
-    <blank length="00:00:01.120"/>
-    <entry producer="producer40" in="00:00:00.000" out="00:00:36.400"/>
-    <entry producer="producer41" in="00:00:36.440" out="00:00:49.280"/>
-    <entry producer="producer42" in="00:00:49.320" out="00:01:36.480"/>
-    <entry producer="producer43" in="00:01:36.520" out="00:01:57.760"/>
-    <entry producer="producer44" in="00:01:57.800" out="00:03:13.560"/>
-    <entry producer="producer45" in="00:03:13.600" out="00:03:23.200"/>
+    <blank length="00:00:01.120" />
+    <entry in="00:00:00.000" out="00:00:36.400" producer="producer40" />
+    <entry in="00:00:36.440" out="00:00:49.280" producer="producer41" />
+    <entry in="00:00:49.320" out="00:01:36.480" producer="producer42" />
+    <entry in="00:01:36.520" out="00:01:57.760" producer="producer43" />
+    <entry in="00:01:57.800" out="00:03:13.560" producer="producer44" />
+    <entry in="00:03:13.600" out="00:03:23.200" producer="producer45" />
     <filter id="filter81" out="00:03:24.320">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
@@ -1763,19 +1763,19 @@
       <property name="mlt_service">volume</property>
     </filter>
   </playlist>
-  <tractor id="tractor0" title="Shotcut version 19.08.05" global_feed="1" in="00:00:00.000" out="00:03:24.320">
+  <tractor global_feed="1" id="tractor0" in="00:00:00.000" out="00:03:24.320" title="Shotcut version 19.08.05">
     <property name="shotcut">1</property>
     <property name="shotcut:projectAudioChannels">2</property>
     <property name="shotcut:projectFolder">1</property>
     <property name="shotcut:scaleFactor">1.03564</property>
-    <track producer="background"/>
-    <track producer="playlist0" hide="audio"/>
-    <track producer="playlist1" hide="audio"/>
-    <track producer="playlist2" hide="both"/>
-    <track producer="playlist3"/>
-    <track producer="playlist4"/>
-    <track producer="playlist5"/>
-    <track producer="playlist6"/>
+    <track producer="background" />
+    <track hide="audio" producer="playlist0" />
+    <track hide="audio" producer="playlist1" />
+    <track hide="both" producer="playlist2" />
+    <track producer="playlist3" />
+    <track producer="playlist4" />
+    <track producer="playlist5" />
+    <track producer="playlist6" />
     <transition id="transition0">
       <property name="a_track">0</property>
       <property name="b_track">1</property>

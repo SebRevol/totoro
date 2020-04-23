@@ -35,6 +35,7 @@ def merge_files(resources_to_merge, output_path, MARGIN=0):
     receiving_resource.enable_tracks()
     receiving_resource.save(output_path)
     
+    return receiving_resource
 
 
 class Resource(object):
@@ -409,7 +410,7 @@ class Playlist(object):
     def get_current_entry(self, time):
 #         
         for entry in self.entries :
-            if entry.start_time == time : 
+            if abs(entry.start_time - time) <= get_frame_duration() : 
                 return entry
             elif entry.start_time < time and entry.get_end_time() > time :
               

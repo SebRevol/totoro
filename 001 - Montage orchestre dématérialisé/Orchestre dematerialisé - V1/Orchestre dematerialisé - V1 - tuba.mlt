@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<mlt LC_NUMERIC="C" version="6.17.0" title="Shotcut version 19.08.05" producer="main_bin">
-  <profile description="HD 1080p 25 fps" width="1920" height="1080" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="25" frame_rate_den="1" colorspace="709"/>
+<?xml version='1.0' encoding='us-ascii'?>
+<mlt LC_NUMERIC="C" producer="main_bin" title="Shotcut version 19.08.05" version="6.17.0">
+  <profile colorspace="709" description="HD 1080p 25 fps" display_aspect_den="9" display_aspect_num="16" frame_rate_den="1" frame_rate_num="25" height="1080" progressive="1" sample_aspect_den="1" sample_aspect_num="1" width="1920" />
   <playlist id="main_bin">
     <property name="xml_retain">1</property>
   </playlist>
@@ -14,15 +14,15 @@
     <property name="set.test_audio">0</property>
   </producer>
   <playlist id="background">
-    <entry producer="black" in="00:00:00.000" out="00:03:32.600"/>
+    <entry in="00:00:00.000" out="00:03:32.600" producer="black" />
   </playlist>
   <playlist id="playlist0">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">Chef_JJS</property>
     <property name="shotcut:lock">0</property>
-    <blank length="00:00:00.040"/>
+    <blank length="00:00:00.040" />
   </playlist>
-  <producer id="producer1" title="Anonymous Submission" in="00:00:00.000" out="03:59:59.960">
+  <producer id="producer0" in="00:00:00.000" out="03:59:59.960" title="Anonymous Submission">
     <property name="length">04:00:00:00</property>
     <property name="eof">pause</property>
     <property name="resource">#00000000</property>
@@ -34,7 +34,7 @@
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
     <property name="seekable">1</property>
-    <filter id="filter1" out="00:00:04.960">
+    <filter id="filter0" out="00:00:04.960">
       <property name="argument">Logo EMGB</property>
       <property name="geometry">0 0 1920 1080 1</property>
       <property name="family">Verdana</property>
@@ -55,7 +55,7 @@
       <property name="shotcut:animOut">00:00:00.000</property>
     </filter>
   </producer>
-  <producer id="producer2" title="Anonymous Submission" in="00:00:00.000" out="03:59:59.960">
+  <producer id="producer1" in="00:00:00.000" out="03:59:59.960" title="Anonymous Submission">
     <property name="length">04:00:00:00</property>
     <property name="eof">pause</property>
     <property name="resource">#00000000</property>
@@ -67,8 +67,8 @@
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
     <property name="seekable">1</property>
-    <filter id="filter2" in="00:00:05.000" out="00:00:29.680">
-      <property name="argument"></property>
+    <filter id="filter1" in="00:00:05.000" out="00:00:29.680">
+      <property name="argument" />
       <property name="geometry">0 0 1920 1080 1</property>
       <property name="family">Verdana</property>
       <property name="size">1080</property>
@@ -88,14 +88,14 @@
       <property name="shotcut:animOut">00:00:00.000</property>
     </filter>
   </producer>
-  <playlist id="playlist2">
+  <playlist id="playlist1">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">Storyboard</property>
     <property name="shotcut:lock">0</property>
-    <entry producer="producer1" in="00:00:00.000" out="00:00:04.960"/>
-    <entry producer="producer2" in="00:00:05.000" out="00:00:29.680"/>
+    <entry in="00:00:00.000" out="00:00:04.960" producer="producer0" />
+    <entry in="00:00:05.000" out="00:00:29.680" producer="producer1" />
   </playlist>
-  <producer id="producer3" title="Anonymous Submission" in="00:00:00.000" out="00:03:24.560">
+  <producer id="producer2" in="00:00:00.000" out="00:03:24.560" title="Anonymous Submission">
     <property name="length">00:03:24:15</property>
     <property name="eof">pause</property>
     <property name="resource">../../003 - Bande son/Practice avec texte initial et son youtube.mp4</property>
@@ -113,14 +113,14 @@
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
   </producer>
-  <playlist id="playlist3">
+  <playlist id="playlist2">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">Bande_son_practice</property>
     <property name="shotcut:lock">1</property>
-    <blank length="00:00:15.000"/>
-    <entry producer="producer3" in="00:00:18.960" out="00:03:24.560"/>
+    <blank length="00:00:15.000" />
+    <entry in="00:00:18.960" out="00:03:24.560" producer="producer2" />
   </playlist>
-  <producer id="producer4" title="Anonymous Submission" in="00:00:00.000" out="00:03:26.280">
+  <producer id="producer3" in="00:00:00.000" out="00:03:26.280" title="Anonymous Submission">
     <property name="length">00:03:26:08</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Tuba/Svoisine_tuba.mp4</property>
@@ -137,7 +137,7 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter0" in="00:00:09.680" out="00:00:34.160">
+    <filter id="filter2" in="00:00:09.680" out="00:00:34.160">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -150,7 +150,7 @@
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="filter4" in="00:00:09.680" out="00:00:34.160">
+    <filter id="filter3" in="00:00:09.680" out="00:00:34.160">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="mlt_service">volume</property>
@@ -158,7 +158,7 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer5" title="Anonymous Submission" in="00:00:00.000" out="00:03:26.280">
+  <producer id="producer4" in="00:00:00.000" out="00:03:26.280" title="Anonymous Submission">
     <property name="length">00:03:26:08</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Tuba/Svoisine_tuba.mp4</property>
@@ -175,7 +175,7 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter3" in="00:00:34.200" out="00:01:42.360">
+    <filter id="filter4" in="00:00:34.200" out="00:01:42.360">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -189,7 +189,7 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer6" title="Anonymous Submission" in="00:00:00.000" out="00:03:26.280">
+  <producer id="producer5" in="00:00:00.000" out="00:03:26.280" title="Anonymous Submission">
     <property name="length">00:03:26:08</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Tuba/Svoisine_tuba.mp4</property>
@@ -219,7 +219,7 @@
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="filter7" in="00:01:42.400" out="00:01:59.280">
+    <filter id="filter6" in="00:01:42.400" out="00:01:59.280">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="mlt_service">volume</property>
@@ -227,7 +227,7 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer7" title="Anonymous Submission" in="00:00:00.000" out="00:03:26.280">
+  <producer id="producer6" in="00:00:00.000" out="00:03:26.280" title="Anonymous Submission">
     <property name="length">00:03:26:08</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Tuba/Svoisine_tuba.mp4</property>
@@ -244,7 +244,7 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter6" in="00:01:59.320" out="00:03:01.440">
+    <filter id="filter7" in="00:01:59.320" out="00:03:01.440">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -258,7 +258,7 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer0" title="Anonymous Submission" in="00:00:00.000" out="00:03:26.280">
+  <producer id="producer7" in="00:00:00.000" out="00:03:26.280" title="Anonymous Submission">
     <property name="length">00:03:26:08</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Tuba/Svoisine_tuba.mp4</property>
@@ -295,7 +295,7 @@
       <property name="mlt_service">volume</property>
     </filter>
   </producer>
-  <producer id="producer8" title="Anonymous Submission" in="00:00:00.000" out="00:03:26.280">
+  <producer id="producer8" in="00:00:00.000" out="00:03:26.280" title="Anonymous Submission">
     <property name="length">00:03:26:08</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Tuba/Svoisine_tuba.mp4</property>
@@ -326,7 +326,7 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer9" title="Anonymous Submission" in="00:00:00.000" out="00:03:26.280">
+  <producer id="producer9" in="00:00:00.000" out="00:03:26.280" title="Anonymous Submission">
     <property name="length">00:03:26:08</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Tuba/Svoisine_tuba.mp4</property>
@@ -364,18 +364,18 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <playlist id="playlist4">
+  <playlist id="playlist3">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">S Voisine</property>
     <property name="shotcut:lock">1</property>
-    <blank length="00:00:05.280"/>
-    <entry producer="producer4" in="00:00:09.680" out="00:00:34.160"/>
-    <entry producer="producer5" in="00:00:34.200" out="00:01:42.360"/>
-    <entry producer="producer6" in="00:01:42.400" out="00:01:59.280"/>
-    <entry producer="producer7" in="00:01:59.320" out="00:03:01.440"/>
-    <entry producer="producer0" in="00:03:01.480" out="00:03:05.280"/>
-    <entry producer="producer8" in="00:03:05.320" out="00:03:19.320"/>
-    <entry producer="producer9" in="00:03:19.360" out="00:03:26.280"/>
+    <blank length="00:00:05.280" />
+    <entry in="00:00:09.680" out="00:00:34.160" producer="producer3" />
+    <entry in="00:00:34.200" out="00:01:42.360" producer="producer4" />
+    <entry in="00:01:42.400" out="00:01:59.280" producer="producer5" />
+    <entry in="00:01:59.320" out="00:03:01.440" producer="producer6" />
+    <entry in="00:03:01.480" out="00:03:05.280" producer="producer7" />
+    <entry in="00:03:05.320" out="00:03:19.320" producer="producer8" />
+    <entry in="00:03:19.360" out="00:03:26.280" producer="producer9" />
     <filter id="filter13" out="00:03:32.600">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
@@ -383,10 +383,10 @@
       <property name="mlt_service">volume</property>
     </filter>
   </playlist>
-  <producer id="producer10" title="Anonymous Submission" in="00:00:00.000" out="00:05:55.520">
+  <producer id="producer10" in="00:00:00.000" out="00:05:55.520" title="Anonymous Submission">
     <property name="length">00:05:55:14</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Euphonium/Serge_baryton_totoro_recadre.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Serge_baryton_totoro_recadre.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -414,10 +414,10 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer11" title="Anonymous Submission" in="00:00:00.000" out="00:05:55.520">
+  <producer id="producer11" in="00:00:00.000" out="00:05:55.520" title="Anonymous Submission">
     <property name="length">00:05:55:14</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Euphonium/Serge_baryton_totoro_recadre.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Serge_baryton_totoro_recadre.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -452,10 +452,10 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer12" title="Anonymous Submission" in="00:00:00.000" out="00:05:55.520">
+  <producer id="producer12" in="00:00:00.000" out="00:05:55.520" title="Anonymous Submission">
     <property name="length">00:05:55:14</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Euphonium/Serge_baryton_totoro_recadre.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Euphonium/Serge_baryton_totoro_recadre.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -483,14 +483,14 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <playlist id="playlist5">
+  <playlist id="playlist4">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">S Baudry recadre</property>
     <property name="shotcut:lock">1</property>
-    <blank length="00:00:00.080"/>
-    <entry producer="producer10" in="00:00:00.000" out="00:01:30.040"/>
-    <entry producer="producer11" in="00:01:30.080" out="00:01:37.960"/>
-    <entry producer="producer12" in="00:01:38.000" out="00:03:32.520"/>
+    <blank length="00:00:00.080" />
+    <entry in="00:00:00.000" out="00:01:30.040" producer="producer10" />
+    <entry in="00:01:30.080" out="00:01:37.960" producer="producer11" />
+    <entry in="00:01:38.000" out="00:03:32.520" producer="producer12" />
     <filter id="filter18" out="00:03:32.600">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
@@ -498,10 +498,10 @@
       <property name="mlt_service">volume</property>
     </filter>
   </playlist>
-  <producer id="producer13" title="Anonymous Submission" in="00:00:00.000" out="00:05:55.520">
+  <producer id="producer13" in="00:00:00.000" out="00:05:55.520" title="Anonymous Submission">
     <property name="length">00:05:55:14</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Tuba/Srevol_tuba_recadre.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Tuba/Srevol_tuba_recadre.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -536,10 +536,10 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer14" title="Anonymous Submission" in="00:00:00.000" out="00:05:55.520">
+  <producer id="producer14" in="00:00:00.000" out="00:05:55.520" title="Anonymous Submission">
     <property name="length">00:05:55:14</property>
     <property name="eof">pause</property>
-    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Tuba/Srevol_tuba_recadre.mp4</property>
+    <property name="resource">../../006 - Videos format youtube/Tuba/Srevol_tuba_recadre.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -567,12 +567,12 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <playlist id="playlist6">
+  <playlist id="playlist5">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">S Revol recadre</property>
     <property name="shotcut:lock">1</property>
-    <entry producer="producer13" in="00:00:00.000" out="00:00:29.400"/>
-    <entry producer="producer14" in="00:00:29.440" out="00:03:25.680"/>
+    <entry in="00:00:00.000" out="00:00:29.400" producer="producer13" />
+    <entry in="00:00:29.440" out="00:03:25.680" producer="producer14" />
     <filter id="filter22" out="00:03:32.600">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
@@ -580,18 +580,18 @@
       <property name="mlt_service">volume</property>
     </filter>
   </playlist>
-  <tractor id="tractor0" title="Shotcut version 19.08.05" global_feed="1" in="00:00:00.000" out="00:03:32.600">
+  <tractor global_feed="1" id="tractor0" in="00:00:00.000" out="00:03:32.600" title="Shotcut version 19.08.05">
     <property name="shotcut">1</property>
     <property name="shotcut:projectAudioChannels">2</property>
     <property name="shotcut:projectFolder">1</property>
     <property name="shotcut:scaleFactor">0.565481</property>
-    <track producer="background"/>
-    <track producer="playlist0" hide="audio"/>
-    <track producer="playlist2" hide="audio"/>
-    <track producer="playlist3" hide="both"/>
-    <track producer="playlist4"/>
-    <track producer="playlist5"/>
-    <track producer="playlist6"/>
+    <track producer="background" />
+    <track hide="audio" producer="playlist0" />
+    <track hide="audio" producer="playlist1" />
+    <track hide="both" producer="playlist2" />
+    <track producer="playlist3" />
+    <track producer="playlist4" />
+    <track producer="playlist5" />
     <transition id="transition0">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
@@ -606,69 +606,69 @@
       <property name="mlt_service">frei0r.cairoblend</property>
       <property name="disable">1</property>
     </transition>
-    <transition id="transition3">
+    <transition id="transition2">
       <property name="a_track">0</property>
       <property name="b_track">2</property>
       <property name="mlt_service">mix</property>
       <property name="always_active">1</property>
       <property name="sum">1</property>
+    </transition>
+    <transition id="transition3">
+      <property name="a_track">1</property>
+      <property name="b_track">2</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">0</property>
     </transition>
     <transition id="transition4">
-      <property name="a_track">1</property>
-      <property name="b_track">2</property>
-      <property name="version">0.9</property>
-      <property name="mlt_service">frei0r.cairoblend</property>
-      <property name="disable">0</property>
-    </transition>
-    <transition id="transition5">
       <property name="a_track">0</property>
       <property name="b_track">3</property>
       <property name="mlt_service">mix</property>
       <property name="always_active">1</property>
       <property name="sum">1</property>
     </transition>
-    <transition id="transition6">
+    <transition id="transition5">
       <property name="a_track">1</property>
       <property name="b_track">3</property>
       <property name="version">0.9</property>
       <property name="mlt_service">frei0r.cairoblend</property>
       <property name="disable">0</property>
     </transition>
-    <transition id="transition7">
+    <transition id="transition6">
       <property name="a_track">0</property>
       <property name="b_track">4</property>
       <property name="mlt_service">mix</property>
       <property name="always_active">1</property>
       <property name="sum">1</property>
+    </transition>
+    <transition id="transition7">
+      <property name="a_track">1</property>
+      <property name="b_track">4</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">0</property>
     </transition>
     <transition id="transition8">
       <property name="a_track">1</property>
-      <property name="b_track">4</property>
-      <property name="version">0.9</property>
-      <property name="mlt_service">frei0r.cairoblend</property>
-      <property name="disable">0</property>
-    </transition>
-    <transition id="transition9">
-      <property name="a_track">1</property>
       <property name="b_track">5</property>
       <property name="version">0.9</property>
       <property name="mlt_service">frei0r.cairoblend</property>
     </transition>
-    <transition id="transition10">
+    <transition id="transition9">
       <property name="a_track">0</property>
       <property name="b_track">5</property>
       <property name="mlt_service">mix</property>
       <property name="always_active">1</property>
       <property name="sum">1</property>
     </transition>
-    <transition id="transition12">
+    <transition id="transition10">
       <property name="a_track">0</property>
       <property name="b_track">6</property>
       <property name="mlt_service">mix</property>
       <property name="always_active">1</property>
       <property name="sum">1</property>
     </transition>
-    <transition id="transition13">
+    <transition id="transition11">
       <property name="a_track">1</property>
       <property name="b_track">6</property>
       <property name="version">0.9</property>

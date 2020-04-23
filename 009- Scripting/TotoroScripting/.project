@@ -116,6 +116,11 @@
 			<locationURI>PARENT-2-PROJECT_LOC/001%20-%20Montage%20orchestre%20d%C3%A9mat%C3%A9rialis%C3%A9/Orchestre%20dematerialis%C3%A9%20-%20V1/Orchestre%20dematerialis%C3%A9%20-%20V1_to_merge_2.mlt</locationURI>
 		</link>
 		<link>
+			<name>Orchestre dematerialisé - V1/Test-API.mlt</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/001%20-%20Montage%20orchestre%20d%C3%A9mat%C3%A9rialis%C3%A9/Orchestre%20dematerialis%C3%A9%20-%20V1/Test-API.mlt</locationURI>
+		</link>
+		<link>
 			<name>Orchestre dematerialisé - V1/TestDecoupe</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>

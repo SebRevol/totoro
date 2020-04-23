@@ -10,7 +10,7 @@ import math
 
 from totoro.utils import get_time_string, zero_time, \
     get_property, get_frame_duration, get_num_box, get_current_resource, \
-    get_time_from_user_string, get_user_string_from_time
+    get_time_from_user_string, get_user_string_from_time, parse_position
 
 
 clock_value = None
@@ -24,7 +24,11 @@ def clock(time):
     clock_value = time
     
 
-        
+def incr_clock(seconds):
+    global clock_value
+    time = get_time_from_user_string(clock_value)
+    time += datetime.timedelta(seconds = seconds)
+    clock_value = get_user_string_from_time(time)
 
 
 class DisplayedElement(object):
@@ -159,7 +163,7 @@ class Container(object):
         for player in self.player_registry.values():
             if box.is_over(player):
                 (rel_x, rel_y, rel_size)= box.get_relative_coordinates(player)
-                player.inside(box).prop_move(rel_x, rel_y, rel_size)
+                player.inside(box).prop_move( rel_y,rel_x, rel_size)
         
     
     def get_player(self, line, col):
@@ -175,7 +179,7 @@ class Container(object):
     
     def get_box(self, line_index, col_index, num_of_lines, num_of_cols):
         box = Box([], num_of_lines, num_of_cols )
-        box.inside(self).move(line_index, col_index)
+        box.inside(self).move(line_index, col_index, num_of_cols)
         self.add_players_covered_by_box(box)
        
         return box
@@ -185,6 +189,8 @@ class Container(object):
             num_of_cols = self.num_box_col
             
         line = Line([], num_of_cols)
+        
+        line.inside(self).move(line_index, 1)
         self.add_players_covered_by_box(line)
         return line
         
@@ -193,6 +199,7 @@ class Container(object):
             num_of_lines = self.num_box_line
             
         column = Column([], num_of_lines)
+        column.inside(self).move(1, col_index)
         self.add_players_covered_by_box(column)
         return column
     
@@ -342,10 +349,14 @@ class Box(DisplayedElement, Container):
     def is_over(self, displayed_element):
         rel_x, rel_y,rel_size = self.get_relative_coordinates(displayed_element)
         
+        #2 pixels de marge d'erreur
+        x_eps = 2/get_current_resource().x_res
+        y_eps = 2/get_current_resource().y_res
+        
         return ( 
             not displayed_element.hidden and
-            rel_x >=0 and rel_x +rel_size<=1 and 
-            rel_y >=0 and rel_y+rel_size/self.get_width_on_height() <=1)
+            rel_x+ x_eps >=0 and rel_x +rel_size<=1+x_eps and 
+            rel_y+y_eps >=0 and rel_y+rel_size <=(1+y_eps)/self.get_width_on_height())
                  
 
     
@@ -401,11 +412,12 @@ class Box(DisplayedElement, Container):
         
         for  child in self.children :
             rel_x, rel_y, rel_size = self.get_relative_coordinates(child)
+            
             new_y = (rel_y+num_of_box/self.num_box_line)%1
             
             if (new_y < rel_y and duration is not None):
-                duration1 = (1-rel_y)*duration
-                duration2 = new_y*duration
+                duration1 = ((1-rel_y)*self.num_box_line/num_of_box)*duration-get_frame_duration().seconds
+                duration2 = (new_y*self.num_box_line/num_of_box)*duration
                 time = get_clock()
                 
                 if num_of_box >0 :
@@ -435,8 +447,8 @@ class Box(DisplayedElement, Container):
             new_x = (rel_x+num_of_box/self.num_box_col)%1
             
             if (new_x < rel_x and duration is not None):
-                duration1 = (1-rel_x)*duration
-                duration2 = new_x*duration
+                duration1 = ((1-rel_x)*self.num_box_col/num_of_box)*duration-get_frame_duration().seconds
+                duration2 = (new_x*self.num_box_col/num_of_box)*duration
                 time = get_clock()
                 
                 if num_of_box >0 :
@@ -479,7 +491,7 @@ class Grid(Container):
         self.y_margin = int(self.res_y*self.x_margin/self.res_x)
         
     
-    def get_position(self,abs_y,abs_x , size):
+    def get_position(self,abs_x ,abs_y, size):
         x = round(self.res_x *abs_x) 
         y = round(self.res_y *abs_y)
         x_width =round(size *self.res_x)
@@ -490,36 +502,86 @@ class Grid(Container):
     
     def locate(self, producers, player):
         abs_x, abs_y, abs_size = player.get_absolute_coordinates()
-        self.locate_wit_coord(producers, abs_y, abs_x, abs_size)
+        self.locate_wit_coord(producers, abs_x,abs_y,  abs_size)
         
     
-    def locate_wit_coord(self, producers, abs_y, abs_x, abs_size):
-        target_position =self.get_position(abs_y, abs_x, abs_size)
+    def locate_wit_coord(self, producers,  abs_x, abs_y,abs_size):
+        target_position =self.get_position(abs_x,abs_y,  abs_size)
         
         for prod in producers:
             prod.set_position(target_position)
     
     
     def animate(self, producers, player,current_position_string, duration):
-        target_abs_x, target_abs_y, target_size = player.get_absolute_coordinates()
+        
+        duration = datetime.timedelta(seconds= duration)
+        target_tuple = player.get_absolute_coordinates()
+        start_tuple =parse_position(current_position_string)
         
         
-        target_position =self.get_position(target_abs_y, target_abs_x, target_size)
+        #duration_delta = get_time_string(zero_time + datetime.timedelta(seconds = duration))
+        #duration_minus_frame = get_time_string(zero_time + datetime.timedelta(seconds = duration -get_frame_duration().seconds))
         
-        duration_delta = get_time_string(zero_time + datetime.timedelta(seconds = duration))
-        duration_minus_frame = get_time_string(zero_time + datetime.timedelta(seconds = duration -get_frame_duration().seconds))
+        producer_index =0
+        current_producer =  producers[producer_index]
+        current_entry= current_producer.entry
+        animation_end_time =current_entry.start_time +duration
+        animation_start_time = current_entry.start_time
+        
+        current_position_tuple = start_tuple
         
         zero_time_string = get_time_string(zero_time)
-        first_producer =producers[0]
         
-        position_with_anim ="{}={};{}={}".format(zero_time_string, current_position_string, duration_minus_frame, target_position)
-        first_producer.set_position(position_with_anim)
-        anim_in_node = get_property(first_producer.position_filter_node, "shotcut:animIn")
-        anim_in_node.text = duration_delta
+        while(animation_end_time>current_entry.get_end_time() ) :
+            sub_duration = current_entry.get_duration()
+            sub_duration_minus_frame = sub_duration - get_frame_duration()
+            sub_position_tuple = self.interpolate(start_tuple, target_tuple,animation_start_time, duration, current_entry.get_end_time())
+            
+            current_position_string = self.get_position(*current_position_tuple)
+            sub_position_string = self.get_position(*sub_position_tuple)
+            
+            position_with_anim ="{}={};{}={}".format(zero_time_string, current_position_string, sub_duration_minus_frame, sub_position_string)
+            current_producer.set_position(position_with_anim)
+            anim_in_node = get_property(current_producer.position_filter_node, "shotcut:animIn")
+            anim_in_node.text = get_time_string(zero_time+sub_duration)   
+            
+            current_position_tuple = sub_position_tuple
+            producer_index +=1
+            current_producer =  producers[producer_index]
+            current_entry= current_producer.entry
+            
         
-        if len(producers)>1:
-            for prod in producers[1:]:
-                prod.set_position(target_position)
+        #on est dans la dernière entrée qui doit être animée
+        target_position_string= self.get_position(*target_tuple)
+        
+        current_position_string = self.get_position(*current_position_tuple)
+        last_duration = animation_end_time-current_entry.start_time
+        last_duration_minus_frame = last_duration - get_frame_duration()
+        position_with_anim ="{}={};{}={}".format(zero_time_string, current_position_string, last_duration_minus_frame, target_position_string)
+        current_producer.set_position(position_with_anim)
+        anim_in_node = get_property(current_producer.position_filter_node, "shotcut:animIn")
+        anim_in_node.text = get_time_string(zero_time+last_duration)   
+       
+
+        
+        
+        producer_index +=1
+        
+        if len(producers)>producer_index:
+            for prod in producers[producer_index:]:
+                prod.set_position(target_position_string)
+    
+    def interpolate(self, start_position, end_position, start_time, duration, current_time):
+        (start_x, start_y, start_size) = start_position
+        (end_x, end_y, end_size)= end_position
+        
+        ratio = (current_time-start_time)/duration
+        
+        current_x = start_x + ratio*(end_x-start_x) 
+        current_y = start_y + ratio*(end_y-start_y) 
+        current_size = start_size + ratio * (end_size-start_size)
+        
+        return (current_x, current_y, current_size)
         
 
 class LineOrColumn(Box):
@@ -592,6 +654,11 @@ class Column(LineOrColumn):
                 return player
         return None
     
+    def move(self, line_num, col_num, size= None, duration=None):
+        if (size == None) :
+            size = 1
+        Box.move(self, line_num, col_num, size, duration=duration)
+    
     
     
 class Line(LineOrColumn):
@@ -616,4 +683,11 @@ class Line(LineOrColumn):
             if (box.is_over(player)):
                 return player
         return None
+    
+    
+    def move(self, line_num, col_num, size= None, duration=None):
+        if (size == None) :
+            size = 1
+        Box.move(self, line_num, col_num, self.get_num_of_columns(), duration=duration)
+    
     
