@@ -17,6 +17,22 @@ current_resource = None
 
 TIME_FORMAT_USER = "%H:%M:%S:%f"
 
+
+def get_hidden_players():
+    result = []
+    for player in get_current_resource().players_registry:
+        if (player.hidden):
+            result.append(player)
+    return result
+
+
+def hide_all():
+    for player in get_current_resource().players_registry:
+        player.hide()
+    
+
+
+
 def set_frame_duration(duration):
     global frame_duration
     frame_duration = duration
@@ -24,6 +40,18 @@ def set_frame_duration(duration):
 def get_frame_duration():
     global frame_duration
     return frame_duration
+
+def get_nearest_frame_duration( duration):
+    int_ratio = int(duration/get_frame_duration().total_seconds())
+    return int_ratio * get_frame_duration().total_seconds()
+
+def get_nearest_frame_date( date):
+    duration = date-zero_time
+    nearest_frame = get_nearest_frame_duration(duration.total_seconds())
+    return zero_time + datetime.timedelta(seconds= nearest_frame)
+    
+    
+
 
 def get_current_resource():
     global current_resource
@@ -111,6 +139,11 @@ def insert_after(previous_node, node_to_insert, parent_map):
     parent_node.insert(index+1, node_to_insert)
     parent_map[node_to_insert] = parent_node
     
+def delete_node(node_to_delete, parent_map):
+    parent_node= parent_map[node_to_delete]
+    parent_node.remove(node_to_delete)
+    del parent_map[node_to_delete]
+
 def get_num_box(names_num):
     
     num=0

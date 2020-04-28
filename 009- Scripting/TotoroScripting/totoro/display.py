@@ -6,14 +6,35 @@ Created on 17 avr. 2020
 from builtins import isinstance
 import datetime
 import math
+from string import ascii_lowercase, ascii_uppercase
 
 
 from totoro.utils import get_time_string, zero_time, \
     get_property, get_frame_duration, get_num_box, get_current_resource, \
-    get_time_from_user_string, get_user_string_from_time, parse_position
+    get_time_from_user_string, get_user_string_from_time, parse_position,\
+    get_nearest_frame_date, get_nearest_frame_duration
 
 
 clock_value = None
+
+
+letters = ascii_uppercase
+letters+=ascii_lowercase
+
+def get_player_char (player):
+    if (player == None):
+        return " "
+    else :
+        sorted_player_names = list(get_current_resource().players_registry.keys())
+        sorted_player_names.sort()
+        return letters[sorted_player_names.index(player.name)]
+
+def print_legend():
+    sorted_player_names = list(get_current_resource().players_registry.keys())
+    sorted_player_names.sort()
+    for player_name in sorted_player_names :
+        print(" {} : {}".format(get_player_char(get_current_resource().players_registry[player_name]),player_name ) )
+    
 
 def get_clock():
     global clock_value
@@ -71,10 +92,10 @@ class DisplayedElement(object):
         return self
     
     def update_relative_coordinates(self, line_num, col_num, size_in_cols):
-        if (type(line_num)== float):
+        if (int(line_num)!= line_num):
             line_num +=1
         
-        if (type(col_num)== float):
+        if (int(col_num)!= col_num):
             col_num +=1
         
         self.store_previous_coordinates()
@@ -130,7 +151,10 @@ class DisplayedElement(object):
         self.rel_y = vert_ratio
         self.rel_x = horiz_ratio
         self.rel_size = size_ratio
-        
+
+    def goto(self, line, col, duration):
+        raise NotImplementedError
+            
     def move(self,  line_num, col_num,size, duration =None):
         raise NotImplementedError
     
@@ -158,13 +182,30 @@ class Container(object):
             else: 
                 child = child_name_or_obj
             child.inside(self)
-            
+
+    def fill(self, players, duration = None):
+        index = 0
+        for line in range(self.num_box_line) :
+            for col in range(self.num_box_col):
+                if(index < len(players)):
+                    players[index].inside(self).goto(line, col, duration)
+                    index+=1
+        return players[index:]
+
     def add_players_covered_by_box(self, box):
         for player in self.player_registry.values():
             if box.is_over(player):
                 (rel_x, rel_y, rel_size)= box.get_relative_coordinates(player)
                 player.inside(box).prop_move( rel_y,rel_x, rel_size)
         
+    
+    
+    def to_line_and_cols(self, rel_x, rel_y, rel_size):
+        line = round(rel_y*self.num_box_line +1,2)
+        col =  round(rel_x*self.num_box_col +1,2)
+        size =  round(rel_size *self.num_box_col,2)
+        
+        return (line, col, size)
     
     def get_player(self, line, col):
         box = Box([], 1,1)
@@ -175,6 +216,14 @@ class Container(object):
                 return player
         return None
         
+    def get_partial_player(self, line, col):
+        box = Box([], 1,1)
+        box.inside(self).move(line, col, 1)
+        
+        for player in self.player_registry.values():
+            if (box.is_partially_over(player)):
+                return player
+        return None
     
     
     def get_box(self, line_index, col_index, num_of_lines, num_of_cols):
@@ -277,9 +326,11 @@ class Container(object):
     def _remove_child(self,string_or_container_or_player):
         if(type(string_or_container_or_player) == str ):
             player = self.player_registry[string_or_container_or_player]
-            self.children.remove(player)
+            if (player  in self.children):
+                self.children.remove(player)
         else :
-            self.children.remove(string_or_container_or_player) 
+            if (string_or_container_or_player in self.children):    
+                self.children.remove(string_or_container_or_player) 
     
     
     def auto_layout(self, duration = None):
@@ -297,22 +348,24 @@ class Container(object):
             
             children_to_locate = self.children.copy()
             
-            first_line = Line(children_to_locate[:number_of_elements_in_first])
-            first_line.inside(self).prop_move(0, (self.num_box_col-number_of_elements_in_first)/(2*self.num_box_col),number_of_elements_in_first/ self.num_box_col, duration)
+            first_line = Line([], len(children_to_locate[:number_of_elements_in_first]))
+            first_line.inside(self).prop_move(0, (self.num_box_col-number_of_elements_in_first)/(2*self.num_box_col),number_of_elements_in_first/ self.num_box_col)
+            first_line.add_players(children_to_locate[:number_of_elements_in_first], duration)
             
             index_of_last_players = child_num - number_of_elements_in_last
             start_index= number_of_elements_in_first
             
             line_index= 2
             while(start_index <index_of_last_players) :
-                new_line = Line(children_to_locate[start_index:start_index +self.num_box_col ])
+                new_line = Line([], len(children_to_locate[start_index:start_index +self.num_box_col ]))
                 new_line.inside(self).move(line_index, 1, self.num_box_col)
+                new_line.add_players(children_to_locate[start_index:start_index +self.num_box_col ],duration)
                 start_index+= self.num_box_col
                 line_index +=1
             
-            last_line = Line(children_to_locate[index_of_last_players:])
+            last_line = Line([],len(children_to_locate[index_of_last_players:]))
             last_line.inside(self).prop_move((line_index-1)/self.num_box_line, (self.num_box_col-number_of_elements_in_last)/(2*self.num_box_col),number_of_elements_in_last/ self.num_box_col, duration)
-            
+            last_line.add_players(children_to_locate[index_of_last_players:],duration)
                 
     
     def compute_line_and_cols(self):
@@ -358,6 +411,20 @@ class Box(DisplayedElement, Container):
             rel_x+ x_eps >=0 and rel_x +rel_size<=1+x_eps and 
             rel_y+y_eps >=0 and rel_y+rel_size <=(1+y_eps)/self.get_width_on_height())
                  
+        
+    def is_partially_over (self, displayed_element):
+        rel_x, rel_y,rel_size = self.get_relative_coordinates(displayed_element)
+        
+        #2 pixels de marge d'erreur
+        x_eps = 2/get_current_resource().x_res
+        y_eps = 2/get_current_resource().y_res
+        
+        result = (  not displayed_element.hidden and
+            rel_x >=0 and rel_x <1-x_eps and 
+            rel_y>=0 and rel_y <(1-y_eps)/self.get_width_on_height())
+        return result
+          
+            
 
     
     def get_width_on_height(self):
@@ -370,6 +437,8 @@ class Box(DisplayedElement, Container):
         for child in self.children :
             child.update()
     
+    
+    
     def prop_move(self,rel_y, rel_x,rel_size, duration =None):
         DisplayedElement.prop_move(self,rel_y, rel_x, rel_size, duration)
        
@@ -378,6 +447,9 @@ class Box(DisplayedElement, Container):
             if (not child.hidden):
                 child.update(duration)
             
+    
+    def goto(self, line_num, col_num, duration=None):
+        self.move(line_num, col_num, self.num_box_col, duration)
         
     def move(self,  line_num, col_num,size, duration =None):
         self.auto_layout_if_needed()
@@ -410,67 +482,76 @@ class Box(DisplayedElement, Container):
    
     def v_shift(self, num_of_box, duration=None):
         
-        for  child in self.children :
-            rel_x, rel_y, rel_size = self.get_relative_coordinates(child)
-            
-            new_y = (rel_y+num_of_box/self.num_box_line)%1
-            
-            if (new_y < rel_y and duration is not None):
-                duration1 = ((1-rel_y)*self.num_box_line/num_of_box)*duration-get_frame_duration().seconds
-                duration2 = (new_y*self.num_box_line/num_of_box)*duration
-                time = get_clock()
-                
-                if num_of_box >0 :
-                    end1 =1.0
-                    end2 = 0.0
+        if num_of_box <0 :
+            offset =-1
+            jump_start = 1
+            jump_to = self.num_box_line
+        else :
+            offset =1
+            jump_start = self.num_box_line
+            jump_to = 1
+        
+        if (duration != None):
+            single_duration = abs(duration/num_of_box)
+        else :
+            single_duration=None
+      
+        
+        jumping = None
+        for i in range(abs(num_of_box)):
+            for  child in self.children :
+                child_line, child_col, child_size = self.to_line_and_cols(*self.get_relative_coordinates(child))
+                if(child_line!=jump_start):
+                    child.goto(child_line+offset, child_col, single_duration)
                 else:
-                    end1 =0.0
-                    end2 = 1.0
-                    
-                child.prop_move(end1, rel_x, rel_size, duration1)
-                time = get_clock()
+                    #child.goto(child_line+before_jump_offset, child_col, jump_duration)
+                    child.goto(child_line+offset, child_col, single_duration)
+                    jumping = child
                 
-                time1 =get_time_from_user_string(time)+ datetime.timedelta(seconds = duration1)
-                clock(get_user_string_from_time(time1))
-                child.prop_move(end2, rel_x, rel_size)
-                child.prop_move(new_y, rel_x,rel_size, duration2)
-                clock(time)
-            
-            else :
-                child.prop_move(new_y, rel_x,rel_size, duration)
+            incr_clock(single_duration)
+                    
+            if (jumping is not None) :
+                jumping.goto(jump_to,child_col)
+             
+        incr_clock(-(single_duration)*abs(num_of_box))
                     
         
     def h_shift(self, num_of_box, duration=None):
         
-        for  child in self.children :
-            rel_x, rel_y, rel_size = self.get_relative_coordinates(child)
-            new_x = (rel_x+num_of_box/self.num_box_col)%1
-            
-            if (new_x < rel_x and duration is not None):
-                duration1 = ((1-rel_x)*self.num_box_col/num_of_box)*duration-get_frame_duration().seconds
-                duration2 = (new_x*self.num_box_col/num_of_box)*duration
-                time = get_clock()
-                
-                if num_of_box >0 :
-                    end1 =1.0
-                    end2 = 0.0
+        if num_of_box <0 :
+            offset =-1
+            jump_start = 1
+            jump_to = self.num_box_col
+        else :
+            offset =1
+            jump_start = self.num_box_col
+            jump_to = 1
+        
+        if (duration != None):
+            single_duration = abs(duration/num_of_box)
+        else :
+            single_duration=None
+      
+        
+        jumping = None
+        for i in range(abs(num_of_box)):
+            for  child in self.children :
+                child_line, child_col, child_size = self.to_line_and_cols(*self.get_relative_coordinates(child))
+                if(child_col!=jump_start):
+                    child.goto(child_line, child_col+offset, single_duration)
                 else:
-                    end1 =0.0
-                    end2 = 1.0
-                    
-                child.prop_move(rel_y, end1, rel_size, duration1)
-                time = get_clock()
+                    child.goto(child_line, child_col+offset, single_duration)
+                    #child.goto(child_line, child_col+before_jump_offset, jump_duration)
+                    jumping = child
                 
-                time1 =get_time_from_user_string(time)+ datetime.timedelta(seconds = duration1)
-                clock(get_user_string_from_time(time1))
-                child.prop_move(rel_y, end2, rel_size)
-                child.prop_move(rel_y, new_x,rel_size, duration2)
-                clock(time)
-            
-            else :
-                child.prop_move(rel_y, new_x,rel_size, duration)
+            incr_clock(single_duration)
                     
+            if (jumping is not None) :
+                jumping.goto(child_line,jump_to)
+                
+        incr_clock(-(single_duration)*abs(num_of_box))
             
+
 
 class Grid(Container):
     
@@ -492,10 +573,10 @@ class Grid(Container):
         
     
     def get_position(self,abs_x ,abs_y, size):
-        x = round(self.res_x *abs_x) 
-        y = round(self.res_y *abs_y)
-        x_width =round(size *self.res_x)
-        y_width = round(size * self.res_y)
+        x = int(self.res_x *abs_x) 
+        y =int(self.res_y *abs_y)
+        x_width =int(size *self.res_x)+1
+        y_width = int(size * self.res_y)+1
         
         return  "{} {} {} {} 1".format(x, y, x_width, y_width)
    
@@ -514,7 +595,7 @@ class Grid(Container):
     
     def animate(self, producers, player,current_position_string, duration):
         
-        duration = datetime.timedelta(seconds= duration)
+        duration = datetime.timedelta(seconds=get_nearest_frame_duration(duration))
         target_tuple = player.get_absolute_coordinates()
         start_tuple =parse_position(current_position_string)
         
@@ -533,19 +614,23 @@ class Grid(Container):
         zero_time_string = get_time_string(zero_time)
         
         while(animation_end_time>current_entry.get_end_time() ) :
-            sub_duration = current_entry.get_duration()
-            sub_duration_minus_frame = sub_duration - get_frame_duration()
-            sub_position_tuple = self.interpolate(start_tuple, target_tuple,animation_start_time, duration, current_entry.get_end_time())
+            sub_duration_minus_frame = current_entry.get_duration() 
+            sub_duration_minus_frame_string =get_time_string(zero_time+ sub_duration_minus_frame)
+            sub_duration = sub_duration_minus_frame + get_frame_duration()
+            sub_position_tuple = self.interpolate(start_tuple, target_tuple,animation_start_time, duration, current_entry.get_end_time()+get_frame_duration())
+            
             
             current_position_string = self.get_position(*current_position_tuple)
             sub_position_string = self.get_position(*sub_position_tuple)
             
-            position_with_anim ="{}={};{}={}".format(zero_time_string, current_position_string, sub_duration_minus_frame, sub_position_string)
+            position_with_anim ="{}={};{}={}".format(zero_time_string, current_position_string, sub_duration_minus_frame_string, sub_position_string)
             current_producer.set_position(position_with_anim)
             anim_in_node = get_property(current_producer.position_filter_node, "shotcut:animIn")
             anim_in_node.text = get_time_string(zero_time+sub_duration)   
             
-            current_position_tuple = sub_position_tuple
+            #current_position_tuple =sub_position_tuple
+            current_position_tuple =self.interpolate(start_tuple, target_tuple,animation_start_time, duration-2*get_frame_duration(), current_entry.get_end_time()+get_frame_duration()) 
+            
             producer_index +=1
             current_producer =  producers[producer_index]
             current_entry= current_producer.entry
@@ -557,7 +642,8 @@ class Grid(Container):
         current_position_string = self.get_position(*current_position_tuple)
         last_duration = animation_end_time-current_entry.start_time
         last_duration_minus_frame = last_duration - get_frame_duration()
-        position_with_anim ="{}={};{}={}".format(zero_time_string, current_position_string, last_duration_minus_frame, target_position_string)
+        last_duration_minus_frame_string = get_time_string(zero_time + last_duration_minus_frame)
+        position_with_anim ="{}={};{}={}".format(zero_time_string, current_position_string, last_duration_minus_frame_string, target_position_string)
         current_producer.set_position(position_with_anim)
         anim_in_node = get_property(current_producer.position_filter_node, "shotcut:animIn")
         anim_in_node.text = get_time_string(zero_time+last_duration)   
@@ -583,6 +669,41 @@ class Grid(Container):
         
         return (current_x, current_y, current_size)
         
+    def get_line_separator(self):
+        result = '  '
+        for col in range (self.num_box_col) :
+            result+='|---'
+        result +='|\n'
+        return result
+    
+    def get_first_line(self):
+        result = '  '
+        for col in range (self.num_box_col) :
+            result+='|{}-'.format(str(col+1).zfill(2))
+        result +='|\n'
+        return result
+        
+        
+    def get_col(self, line_index, col_index):
+        player = self.get_partial_player(line_index, col_index)
+        player_char = get_player_char(player)
+        return "| "+player_char+" "
+        
+    def __str__(self, *args, **kwargs):
+        result = "===================================================================================================================\n"
+        result +="\n"
+        result +="Time : "+get_clock()+"\n"
+        result+= self.get_first_line()
+        for line_index in range(self.num_box_line) :
+            result +=self.get_line_separator()
+            result+=str(line_index+1).zfill(2)
+            for col_index in range(self.num_box_col):
+                result+= self.get_col(line_index+1, col_index+1)
+            result +="|\n"
+            
+        result +=self.get_line_separator()
+                 
+        return result
 
 class LineOrColumn(Box):
     def __init__(self,children_names, size = None):
@@ -597,6 +718,9 @@ class LineOrColumn(Box):
         for index,child in enumerate(self.children) :
             self.move_child(child, index+1)
     
+    
+    def goto(self, line_num, col_num, duration=None):
+        self.move(line_num, col_num,self.get_num_of_columns(), duration)
     
     def get_num_of_lines(self):
         raise NotImplementedError
@@ -659,7 +783,11 @@ class Column(LineOrColumn):
             size = 1
         Box.move(self, line_num, col_num, size, duration=duration)
     
-    
+    def add_players(self, new_children,duration=None):
+        start_pos = len(self.children)
+        for index in range (len(new_children) ):
+            position =start_pos +index +1 
+            new_children[index].inside(self).move(position,1,1 ,duration)
     
 class Line(LineOrColumn):
     def get_num_of_lines(self):
@@ -674,6 +802,11 @@ class Line(LineOrColumn):
     def shift(self, num_of_box, duration = None):
         self.h_shift(num_of_box, duration)
     
+    def add_players(self, new_children, duration=None):
+        start_pos = len(self.children)
+        for index in range (len(new_children) ):
+            position =start_pos +index +1 
+            new_children[index].inside(self).move(1,position,1,duration )
     
     def get_player(self, col):
         box = Box([], 1,1)

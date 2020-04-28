@@ -5,7 +5,8 @@ Created on 6 avr. 2020
 '''
 from totoro.model import merge_files, Resource
 from totoro.display import clock, incr_clock
-from totoro.utils import set_current_resource
+from totoro.utils import set_current_resource, hide_all
+from totoro.tetris import Barre, Te, Carre, Coeur
 
 
 def rotate(container, iteration_par_second, duration):
@@ -16,14 +17,14 @@ def rotate(container, iteration_par_second, duration):
     line_size = container.num_box_col -1
     for _ in range(iteration_num):
         col_gauche = container.get_box(1,1,col_size,1)
-        ligne_bas =  container.get_box(4,1,1,line_size)
-        col_droite =  container.get_box(2,4,col_size,1)
+        ligne_bas =  container.get_box(col_size+1,1,1,line_size)
+        col_droite =  container.get_box(2,line_size+1,col_size,1)
         ligne_haut= container.get_box(1,2,1,line_size)
         
-        col_gauche.move(2,1,1,iteration_duration)
-        ligne_bas.move(4,2,line_size,iteration_duration)
-        col_droite.move(1,4,1,2)
-        ligne_haut.move(1,1,line_size,iteration_duration)
+        col_gauche.goto(2,1,iteration_duration)
+        ligne_bas.goto(col_size+1,2,iteration_duration)
+        col_droite.goto(1,line_size+1,iteration_duration)
+        ligne_haut.goto(1,1,iteration_duration)
         incr_clock(iteration_duration)
 
 
@@ -34,7 +35,7 @@ if __name__ == '__main__':
         # in
 #         '../001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Orchestre dematerialisé - V1 - percussion.mlt',
 #         '../001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Orchestre dematerialisé - V1 - barytons.mlt',
-#        '../001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Orchestre dematerialisé - V1 - clarinette1.mlt',
+        '../001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Orchestre dematerialisé - V1 - clarinette1.mlt',
 #         '../001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Orchestre dematerialisé - V1 - cor.mlt',
         '../001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Orchestre dematerialisé - V1 - flute et hautbois.mlt',
 	    '../001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Orchestre dematerialisé - V1 - saxophone.mlt',
@@ -43,68 +44,137 @@ if __name__ == '__main__':
 #         '../001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Orchestre dematerialisé - V1 - tuba.mlt'
         ],
         # out
-        '../001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Test-API.mlt'
+        '../001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Test-API-merge2.mlt'
     )
 
 
-    resource=Resource('../001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Test-API.mlt')
+    resource=Resource('../001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Test-API-merge2.mlt')
     set_current_resource(resource)
     instru_map = resource.instru_map
     mus = resource.players_registry
     
     grid = resource.grid
     grid.auto_layout()
-    
-    
+     
+     
     grid.tag("initial")
     
     
-    bottom_line = grid.get_line(4)
-    
+    bottom_line = grid.get_line(5)
+     
     clock("00:00:25:00")
+     
+    bottom_line.goto(5,-0.5,2)
     
-    bottom_line.move(4,-0.5,1,2)
-    
+    grid.tag("aligned")
+     
     clock("00:00:30:00")
     column = grid.get_column(1)
-    
-    column.shift(3, 2)
-    
+     
+    column.shift(4, 2)
+     
     clock("00:00:32:00")
-    grid.get_line(4).shift(3,2)
-    
+    grid.get_line(5).shift(4,2)
+     
     clock("00:00:34:00")
-    grid.get_column(4).shift(-4,2)
-    
-    
+    print(grid)
+    grid.get_column(5).shift(-4,2)
+    print(grid)
+     
     clock("00:00:36:00")
-    column = grid.get_column(4)
-    column.move(-4,4,1,2)
-    
+    column = grid.get_column(5)
+    column.goto(-4,5,2)
+     
     clock("00:00:38:00")
-    grid.get_box(1,1,4,3).move(1,2,3,1)
+    grid.get_box(1,1,5,4).goto(1,2,1)
     clock("00:00:39:00")
-    column.move(-4,1)
-    column.move(1,1,1,1)
-    
-    
+    column.goto(-4,1)
+    column.goto(1,1,1)
+     
+     
     clock("00:00:41:00")
-    
-  
-    mus["Aurianne_saxophone_totoro"].move(4,4,1)
-    center_box = grid.get_box(2,2,2,2)
+     
+   
+    mus["Franck_saxophone_totoro"].inside(grid).goto(5,5,1)
+    center_box = grid.get_box(2,2,3,3)
     center_box.auto_layout(0.5)
-    
+     
     rotate(grid, 2, 10)
-        
-    moving_player = grid.get_player(2,1)
-    
-    for column in range(3):
-        other_player = grid.get_player(2,column +2)
+         
+    moving_player = grid.get_player(3,1)
+     
+    for column in range(4):
+        other_player = grid.get_player(3,column +2)
         moving_player.swap(other_player)
         incr_clock(2)
-         
-    grid.to_tag("initial", 2)
+    
+    grid.to_tag("aligned", 2)
+    incr_clock(2)
+          
+          
+    for col in range(grid.num_box_col):
+        if (col %2 ==0):
+            num_box = -20
+        else :
+            num_box = 20
+        grid.get_column(col+1).shift(num_box, 10)
+            
+    incr_clock(10)
+    
+    
+   
+    clock("00:01:30:00")
+   
+       
+    grid.get_box(1, 1, grid.num_box_line, grid.num_box_col).hide()
+       
+    grid.set_num_box(10)
+       
+    remaining_players=list(mus.values())
+        
+    barre = Barre()
+    remaining_players = barre.fill(remaining_players)
+    barre.play([ 
+        (-3,6,False),
+        (4,2,True),
+        (6,1,True)]
+        )
+    
+       
+    carre = Carre()
+    remaining_players= carre.fill(remaining_players)
+    carre.play([
+        (-2,2,False),
+        (5,5,False)
+        ])
+        
+     
+    barre2 = Barre()
+    remaining_players= barre2.fill(remaining_players)
+    barre2.play([
+        (-2,2,False),
+        (5,7,False)
+        ])
+      
+   
+    grid.to_tag("initial", 2)          
+    incr_clock(2)
+    grid.set_num_box(10)
+    remaining_players=list(mus.values())
+    coeur = Coeur()
+    remaining_players=coeur.fill(remaining_players)
+    
+    for player in remaining_players:
+        player.hide()
+    
+    coeur.inside(grid).move(4,4,3)
+    incr_clock(1)
+    print(grid)
+    coeur.move(1,1,10,3)
+    print(grid)
+    
+    
+    
     
     resource.save("../001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Test-API.mlt")
     

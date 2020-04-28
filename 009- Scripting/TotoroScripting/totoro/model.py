@@ -17,7 +17,8 @@ from totoro.utils import fix_relpath, collect_video_files_names, get_num_box, \
     insert_before, zero_time, get_position, get_time_from_user_string, \
     get_player_name, get_property, get_filter, get_time_string, TIME_FORMAT, \
     get_duration, insert_after, set_frame_duration, \
-    get_frame_duration, set_current_resource
+    get_frame_duration, set_current_resource, delete_node, get_current_resource,\
+    get_nearest_frame_date
 import xml.etree.ElementTree as ET
 
 
@@ -32,7 +33,9 @@ def merge_files(resources_to_merge, output_path, MARGIN=0):
                 receiving_resource.add_player(player)
             
     receiving_resource.auto_locate(MARGIN)
-    receiving_resource.enable_tracks()
+    #receiving_resource.enable_tracks()
+    receiving_resource.mute_and_remove_cut()
+    
     receiving_resource.save(output_path)
     
     return receiving_resource
@@ -237,6 +240,9 @@ class Resource(object):
         
         
         
+    def mute_and_remove_cut(self):
+        for player in self.players_registry.values():
+            player.mute_and_remove_cut()
         
 
 
@@ -275,12 +281,13 @@ class Player(DisplayedElement) :
         self.update_relative_coordinates(line_num, col_num, size)
         self.update(duration)
         
-        
+    def goto(self, line_num, col_num, duration=None):
+        self.move(line_num, col_num, 1, duration)
 
     
     def on(self, time_string):
         super().on(time_string)
-        self.current_time = get_time_from_user_string(time_string)
+        self.current_time = get_nearest_frame_date(get_time_from_user_string(time_string))
         self.current_entry = self.playlist.get_current_entry(self.current_time)
         
         return self
@@ -322,6 +329,32 @@ class Player(DisplayedElement) :
         
     def enable_track(self):
         self.track.set_enable(True)
+    
+    
+    def mute_and_remove_cut(self):
+        self.track.mute()
+        
+        if (len(self.producers) >1 ):
+            first_producer = self.producers[0]
+            last_producer = self.producers[-1]
+            first_entry = first_producer.entry
+            last_entry = last_producer.entry
+            
+            first_entry.set_out_time(last_entry.get_out_time())
+            
+            first_entry_index= self.playlist.entries.index(first_entry)
+            
+            for entry in self.playlist.entries[first_entry_index+1:] :
+                self.playlist.node.remove(entry.node)
+                
+            del self.playlist.entries[first_entry_index+1:]
+            
+            for producer in self.producers[1:]:
+                delete_node(producer.node, producer.resource.parent_map)
+                
+            del self.producers[1:]
+        
+        
     
     
 class Producer(object) :
@@ -369,6 +402,7 @@ class Producer(object) :
         for filter_node in self.node.findall("filter") :
             filter_node.set("in", time_string)
             
+    
                 
 class Playlist(object):
     def __init__(self, playlist_node, resource): 
@@ -458,7 +492,8 @@ class Entry(object):
         self.set_resource(resource)
         
         self.producer = self.producer_registry.get(self.node.get('producer'))
-        self.producer.entry = self
+        if (self.producer is not None):
+            self.producer.entry = self
         self.start_time = start_time
         
     def set_resource(self, resource):
@@ -502,6 +537,10 @@ class Entry(object):
         time_string = get_time_string(time)
         self.node.set("out", time_string)    
         self.producer.set_out_time(time)
+        
+    def get_out_time(self): 
+        return datetime.datetime.strptime(self.node.get('out'), TIME_FORMAT)    
+      
         
         
     def set_in_time(self, time):
@@ -548,11 +587,18 @@ class Tractor(object):
 class Track(object):
     def __init__(self, track_node, playlist_registry): 
         self.node =   track_node
-        self.playlist = playlist_registry[self.node.get('producer')]
-        self.playlist.track = self
+        if (self.node.get('producer') in playlist_registry) :
+            self.playlist = playlist_registry[self.node.get('producer')]
+            self.playlist.track = self
+        else :
+            self.playlist = None
     
     def get_name(self):
-        return self.playlist.producer_name
+        if (self.playlist is not None) :
+            
+            return self.playlist.producer_name
+        else :
+            return "Unknown"
     
     def set_playlist_idref(self, idref):
         self.node.set("producer", idref) 
@@ -566,6 +612,9 @@ class Track(object):
                 self.node.attrib.pop("hide")
         else :
             self.node.set('hide', "both")
+            
+    def mute(self):
+        self.node.set('hide', "audio")
         
         
 class Transition(object):
