@@ -10,11 +10,13 @@ from totoro.model import Resource
 
 
 
+
 if __name__ == '__main__':
-    resource = Resource('../001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Orchestre dematerialisé - V1_pupitres incomplets.mlt')
+    resource = Resource('../001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/EntreeTest.mlt')
     print(resource.players_registry)
-    resource.locate()   
-    resource.save('../001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Orchestre dematerialisé - V1_pupitres incomplets-grille-manuelle.mlt')
+    from totoro.locate import locate
+    locate(resource)   
+    resource.save('../001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Sortie.mlt')
 
 
         

@@ -21,6 +21,13 @@ clock_value = None
 letters = ascii_uppercase
 letters+=ascii_lowercase
 
+def get_short_name(name):
+    if ("_totoro" in name):
+        return name[:name.index('_totoro')]
+    else :
+        return name
+    
+
 def get_player_char (player):
     if (player == None):
         return " "
@@ -28,6 +35,11 @@ def get_player_char (player):
         sorted_player_names = list(get_current_resource().players_registry.keys())
         sorted_player_names.sort()
         return letters[sorted_player_names.index(player.name)]
+    
+def get_player_name_from_char(char):
+    sorted_player_names = list(get_current_resource().players_registry.keys())
+    sorted_player_names.sort()
+    return get_short_name(sorted_player_names[letters.index(char)])
 
 def print_legend():
     sorted_player_names = list(get_current_resource().players_registry.keys())
@@ -40,6 +52,13 @@ def get_clock():
     global clock_value
     return clock_value
 
+
+def get_duration_clock():
+    global clock_value
+    time = get_time_from_user_string(clock_value)
+    return time -zero_time
+    
+    
 def clock(time):
     global clock_value
     clock_value = time
@@ -188,7 +207,7 @@ class Container(object):
         for line in range(self.num_box_line) :
             for col in range(self.num_box_col):
                 if(index < len(players)):
-                    players[index].inside(self).goto(line, col, duration)
+                    players[index].inside(self).goto(line+1, col+1, duration)
                     index+=1
         return players[index:]
 
@@ -379,6 +398,56 @@ class Container(object):
             self.num_box_line = math.ceil(child_num/self.num_box_col)
             
             
+    def get_line_separator(self):
+        result = '  '
+        for col in range (self.num_box_col) :
+            result+='|---'
+        result +='|\n'
+        return result
+    
+    def get_first_line(self):
+        result = '  '
+        for col in range (self.num_box_col) :
+            result+='|{}-'.format(str(col+1).zfill(2))
+        result +='|\n'
+        return result
+        
+        
+    def get_col(self, line_index, col_index):
+        player = self.get_partial_player(line_index, col_index)
+        player_char = get_player_char(player)
+        if( player is not None):
+            mapping = player_char+":"+get_short_name(player.name)
+        else :
+            mapping = None
+        return "| "+player_char+" ",mapping
+        
+    def __str__(self, *args, **kwargs):
+        result = "===================================================================================================================\n"
+        result +="\n"
+        result +="Time : "+get_clock()+"\n"
+        result+= self.get_first_line()
+        for line_index in range(self.num_box_line) :
+            result +=self.get_line_separator()
+            result+=str(line_index+1).zfill(2)
+            player_mappings = set([])
+            for col_index in range(self.num_box_col):
+                col_text, player_mapping =self.get_col(line_index+1, col_index+1)
+                if(player_mapping is not None):
+                    player_mappings.add(player_mapping)
+                result+= col_text
+            
+            mapping=",".join(player_mappings)
+            result +="|"+str(line_index+1).zfill(2)+"   "+mapping+"\n"
+            
+        result +=self.get_line_separator()
+        result+= self.get_first_line()
+        
+        
+        
+        return result
+
+
 
 class Box(DisplayedElement, Container):
     
@@ -402,26 +471,33 @@ class Box(DisplayedElement, Container):
     def is_over(self, displayed_element):
         rel_x, rel_y,rel_size = self.get_relative_coordinates(displayed_element)
         
-        #2 pixels de marge d'erreur
-        x_eps = 2/get_current_resource().x_res
-        y_eps = 2/get_current_resource().y_res
+        rel_x = round(rel_x,2)
+        rel_y = round(rel_y,2)
+        rel_size = round(rel_size,2)
         
+#         #2 pixels de marge d'erreur
+#         x_eps = 2/get_current_resource().x_res
+#         y_eps = 2/get_current_resource().y_res
+#         
         return ( 
             not displayed_element.hidden and
-            rel_x+ x_eps >=0 and rel_x +rel_size<=1+x_eps and 
-            rel_y+y_eps >=0 and rel_y+rel_size <=(1+y_eps)/self.get_width_on_height())
+            rel_x>=0 and rel_x +rel_size<=1 and 
+            rel_y >=0 and rel_y+rel_size <=(1)/self.get_width_on_height())
                  
         
     def is_partially_over (self, displayed_element):
         rel_x, rel_y,rel_size = self.get_relative_coordinates(displayed_element)
         
+        rel_x = round(rel_x,2)
+        rel_y = round(rel_y,2)
+        rel_size = round(rel_size,2)
         #2 pixels de marge d'erreur
         x_eps = 2/get_current_resource().x_res
         y_eps = 2/get_current_resource().y_res
         
         result = (  not displayed_element.hidden and
-            rel_x >=0 and rel_x <1-x_eps and 
-            rel_y>=0 and rel_y <(1-y_eps)/self.get_width_on_height())
+            rel_x <1 and rel_x+rel_size > 0 and 
+            rel_y<1 and rel_y+(rel_size/self.get_width_on_height()) > 0)
         return result
           
             
@@ -573,10 +649,10 @@ class Grid(Container):
         
     
     def get_position(self,abs_x ,abs_y, size):
-        x = int(self.res_x *abs_x) 
-        y =int(self.res_y *abs_y)
-        x_width =int(size *self.res_x)+1
-        y_width = int(size * self.res_y)+1
+        x = int(self.res_x *abs_x)+ self.x_margin/2
+        y =int(self.res_y *abs_y)+self.y_margin/2
+        x_width =int(size *self.res_x)+1- self.x_margin/2
+        y_width = int(size * self.res_y)+1-self.y_margin/2
         
         return  "{} {} {} {} 1".format(x, y, x_width, y_width)
    
@@ -669,42 +745,7 @@ class Grid(Container):
         
         return (current_x, current_y, current_size)
         
-    def get_line_separator(self):
-        result = '  '
-        for col in range (self.num_box_col) :
-            result+='|---'
-        result +='|\n'
-        return result
-    
-    def get_first_line(self):
-        result = '  '
-        for col in range (self.num_box_col) :
-            result+='|{}-'.format(str(col+1).zfill(2))
-        result +='|\n'
-        return result
-        
-        
-    def get_col(self, line_index, col_index):
-        player = self.get_partial_player(line_index, col_index)
-        player_char = get_player_char(player)
-        return "| "+player_char+" "
-        
-    def __str__(self, *args, **kwargs):
-        result = "===================================================================================================================\n"
-        result +="\n"
-        result +="Time : "+get_clock()+"\n"
-        result+= self.get_first_line()
-        for line_index in range(self.num_box_line) :
-            result +=self.get_line_separator()
-            result+=str(line_index+1).zfill(2)
-            for col_index in range(self.num_box_col):
-                result+= self.get_col(line_index+1, col_index+1)
-            result +="|\n"
-            
-        result +=self.get_line_separator()
-                 
-        return result
-
+  
 class LineOrColumn(Box):
     def __init__(self,children_names, size = None):
         if (size != None):

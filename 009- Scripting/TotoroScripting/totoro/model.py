@@ -11,7 +11,6 @@ import uuid
 
 
 
-from totoro import locate
 from totoro.display import Grid, DisplayedElement, get_clock
 from totoro.utils import fix_relpath, collect_video_files_names, get_num_box, \
     insert_before, zero_time, get_position, get_time_from_user_string, \
@@ -33,7 +32,7 @@ def merge_files(resources_to_merge, output_path, MARGIN=0):
                 receiving_resource.add_player(player)
             
     receiving_resource.auto_locate(MARGIN)
-    #receiving_resource.enable_tracks()
+    receiving_resource.enable_tracks()
     receiving_resource.mute_and_remove_cut()
     
     receiving_resource.save(output_path)
@@ -101,10 +100,10 @@ class Resource(object):
         for instru in instru_to_remove :
                 self.instru_map.pop(instru)
     
-    def locate(self):
-        set_current_resource(self)
-        self.clean_instru_map()
-        locate.locate(self.players_registry, self.grid, self.instru_map)
+#     def locate(self):
+#         set_current_resource(self)
+#         self.clean_instru_map()
+#         locate.locate(self.players_registry, self.grid, self.instru_map)
     
     def auto_locate(self, margin):
 #         set_current_resource(self)
@@ -332,7 +331,7 @@ class Player(DisplayedElement) :
     
     
     def mute_and_remove_cut(self):
-        self.track.mute()
+        #self.track.mute()
         
         if (len(self.producers) >1 ):
             first_producer = self.producers[0]

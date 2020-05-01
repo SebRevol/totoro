@@ -1,0 +1,1686 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<mlt LC_NUMERIC="C" producer="main_bin" title="Shotcut version 19.08.05" version="6.17.0">
+  <profile colorspace="709" description="HD 1080p 25 fps" display_aspect_den="9" display_aspect_num="16" frame_rate_den="1" frame_rate_num="25" height="1080" progressive="1" sample_aspect_den="1" sample_aspect_num="1" width="1920" />
+  <playlist id="main_bin">
+    <property name="xml_retain">1</property>
+  </playlist>
+  <producer id="black" in="00:00:00.000" out="00:03:23.320">
+    <property name="length">5084</property>
+    <property name="eof">pause</property>
+    <property name="resource">0</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="mlt_image_format">rgb24a</property>
+    <property name="set.test_audio">0</property>
+  </producer>
+  <playlist id="background">
+    <entry in="00:00:00.000" out="00:03:23.320" producer="black" />
+  </playlist>
+  <producer id="producer0" in="00:00:00.000" out="03:59:59.960" title="Anonymous Submission">
+    <property name="length">04:00:00:00</property>
+    <property name="eof">pause</property>
+    <property name="resource">#00000000</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="mlt_image_format">rgb24a</property>
+    <property name="shotcut:caption">transparent</property>
+    <property name="shotcut:detail">transparent</property>
+    <property name="ignore_points">0</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <filter id="filter0" out="00:00:04.960">
+      <property name="argument" />
+      <property name="geometry">0 0 1920 1080 1</property>
+      <property name="family">Verdana</property>
+      <property name="size">1080</property>
+      <property name="weight">500</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">#ffffffff</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#aa000000</property>
+      <property name="pad">0</property>
+      <property name="halign">center</property>
+      <property name="valign">bottom</property>
+      <property name="outline">3</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">0</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+    </filter>
+  </producer>
+  <producer id="producer1" in="00:00:00.000" out="03:59:59.960" title="Anonymous Submission">
+    <property name="length">04:00:00:00</property>
+    <property name="eof">pause</property>
+    <property name="resource">#00000000</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="mlt_image_format">rgb24a</property>
+    <property name="shotcut:caption">transparent</property>
+    <property name="shotcut:detail">transparent</property>
+    <property name="ignore_points">0</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <filter id="filter1" in="00:00:05.000" out="00:03:23.320">
+      <property name="argument" />
+      <property name="geometry">0 0 1920 1080 1</property>
+      <property name="family">Verdana</property>
+      <property name="size">1080</property>
+      <property name="weight">500</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">#ffffffff</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#aa000000</property>
+      <property name="pad">0</property>
+      <property name="halign">center</property>
+      <property name="valign">bottom</property>
+      <property name="outline">3</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">0</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+    </filter>
+  </producer>
+  <playlist id="playlist0">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Storyboard</property>
+    <property name="shotcut:lock">1</property>
+    <entry in="00:00:00.000" out="00:00:04.960" producer="producer0" />
+    <entry in="00:00:05.000" out="00:03:23.320" producer="producer1" />
+  </playlist>
+  <producer id="producer2" in="00:00:00.000" out="00:03:24.560" title="Anonymous Submission">
+    <property name="length">00:03:24:15</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../003 - Bande son/Practice avec texte initial et son youtube.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-04T10:52:53</property>
+    <property name="shotcut:hash">4799385e220417e9b67b0873b03fdf9a</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Practice avec texte initial et son youtube.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+  </producer>
+  <playlist id="playlist1">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Bande_son_practice</property>
+    <property name="shotcut:lock">1</property>
+    <blank length="00:00:15.000" />
+    <entry in="00:00:18.960" out="00:03:24.560" producer="producer2" />
+  </playlist>
+  <producer id="producer3" in="00:00:00.000" out="00:03:23.360" title="Anonymous Submission">
+    <property name="length">00:03:23:10</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-20T12:31:07</property>
+    <property name="shotcut:hash">fa0b3ca4ef9842045a4dd842a677be53</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter2" in="00:00:04.720" out="00:03:23.360000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0.0 0.0 385.0 217.0 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter3" in="00:00:04.720" out="00:03:23.360000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist2">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Cecile clar bass</property>
+    <property name="shotcut:lock">1</property>
+    <blank length="00:00:04.680" />
+    <entry in="00:00:04.720" out="00:03:23.360000" producer="producer3" />
+    <filter id="filter4" out="00:03:23.320">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-8</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </playlist>
+  <producer id="producer4" in="00:00:00.000" out="00:03:22.160" title="Anonymous Submission">
+    <property name="length">00:03:22:05</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Am&#233;lie_clarinette_recadre.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="shotcut:hash">76dbe6d6a34f9982b0d3bc9056faad5e</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Am&#233;lie_clarinette_recadre.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter5" out="00:03:22.160">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">384.0 0.0 385.0 217.0 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist3">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Clarinette_amelie_recadree</property>
+    <property name="shotcut:lock">1</property>
+    <entry in="00:00:00.000" out="00:03:22.160" producer="producer4" />
+    <filter id="filter6" out="00:03:23.320">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-8</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </playlist>
+  <producer id="producer5" in="00:00:00.000" out="00:03:27.800" title="Anonymous Submission">
+    <property name="length">00:03:27:21</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Nelly_clarinette_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-05T13:37:57</property>
+    <property name="shotcut:hash">ce64ff05cbaafa4ab64d61c9e57002dd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Nelly_clarinette_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter7" in="00:00:15.440" out="00:03:27.800000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">768.0 0.0 385.0 217.0 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter8" in="00:00:15.440" out="00:03:27.800000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+      <property name="disable">1</property>
+    </filter>
+  </producer>
+  <playlist id="playlist4">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Clarinette_Nelly</property>
+    <property name="shotcut:lock">1</property>
+    <blank length="00:00:08.520" />
+    <entry in="00:00:15.440" out="00:03:27.800000" producer="producer5" />
+    <filter id="filter9" out="00:03:23.320">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-11</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </playlist>
+  <producer id="producer6" in="00:00:00.000" out="00:03:16.440" title="Anonymous Submission">
+    <property name="length">00:03:16:12</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Natacha_clarinette_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-09T18:24:43</property>
+    <property name="shotcut:hash">ef0c345cac52960b965edf602ef26da9</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Natacha_clarinette_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter10" out="00:03:16.440000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">1152.0 0.0 385.0 217.0 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter11" out="00:03:16.440000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist5">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">natacha</property>
+    <property name="shotcut:lock">1</property>
+    <blank length="00:00:03.080" />
+    <entry in="00:00:00.000" out="00:03:16.440000" producer="producer6" />
+    <filter id="filter12" out="00:03:23.320">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-11</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </playlist>
+  <producer id="producer7" in="00:00:00.000" out="00:03:22.120" title="Anonymous Submission">
+    <property name="length">00:03:22:04</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Pierre_clarinette_totoro_recadre.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-12T15:55:36</property>
+    <property name="shotcut:hash">e4c0c36f4b8e968ab780c99675fecd9b</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Pierre_clarinette_totoro_recadre.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter13" out="00:03:22.120000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">1536.0 0.0 385.0 217.0 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist6">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Pierre_clarinette_recadr&#233;</property>
+    <property name="shotcut:lock">1</property>
+    <entry in="00:00:00.000" out="00:03:22.120000" producer="producer7" />
+    <filter id="filter14" out="00:03:23.320">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-10</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </playlist>
+  <producer id="producer8" in="00:00:00.000" out="00:03:17.240" title="Anonymous Submission">
+    <property name="length">00:03:17:07</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Ineke_clarinette_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-20T19:10:56</property>
+    <property name="shotcut:hash">44edbdde4a7730436d308ed2f8de3797</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Ineke_clarinette_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter15" out="00:03:17.240000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0.0 216.0 385.0 217.0 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter16" out="00:03:17.240000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist7">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Ineke</property>
+    <property name="shotcut:lock">1</property>
+    <blank length="00:00:00.560" />
+    <entry in="00:00:00.000" out="00:03:17.240000" producer="producer8" />
+    <filter id="filter17" out="00:03:23.320">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-10</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </playlist>
+  <producer id="producer9" in="00:00:00.000" out="00:03:14.400" title="Anonymous Submission">
+    <property name="length">00:03:14:11</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Anne-sonia_clarinette_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-05T19:51:43</property>
+    <property name="shotcut:hash">4571e04128d43e4e5e43a6e2575279f6</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Anne-sonia_clarinette_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter18" out="00:03:14.400000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">384.0 216.0 385.0 217.0 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter19" out="00:03:14.400000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist8">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Anne-Sonia_clar 2?</property>
+    <property name="shotcut:lock">1</property>
+    <blank length="00:00:07.680" />
+    <entry in="00:00:00.000" out="00:03:14.400000" producer="producer9" />
+    <filter id="filter20" out="00:03:23.320">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-11</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </playlist>
+  <producer id="producer10" in="00:00:00.000" out="00:03:09.640" title="Anonymous Submission">
+    <property name="length">00:03:09:17</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Stephane_clarinette_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-13T11:40:34</property>
+    <property name="shotcut:hash">9a40f89235cfd4458835cfec463e07c8</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Stephane_clarinette_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter21" out="00:03:09.640000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">768.0 216.0 385.0 217.0 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter22" out="00:03:09.640000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist9">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Stephane</property>
+    <property name="shotcut:lock">1</property>
+    <blank length="00:00:10.200" />
+    <entry in="00:00:00.000" out="00:03:09.640000" producer="producer10" />
+    <filter id="filter23" out="00:03:23.320">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-11</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </playlist>
+  <producer id="producer11" in="00:00:00.000" out="00:03:32.360" title="Anonymous Submission">
+    <property name="length">00:03:32:10</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/PierreG_clarinette_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-17T16:52:31</property>
+    <property name="shotcut:hash">6b94f299793e62fd39584d2bc1ca99a4</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">PierreG_clarinette_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter24" in="00:00:15.680" out="00:03:32.360000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">1152.0 216.0 385.0 217.0 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter25" in="00:00:15.680" out="00:03:32.360000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist10">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Pierre_G</property>
+    <property name="shotcut:lock">1</property>
+    <blank length="00:00:06.640" />
+    <entry in="00:00:15.680" out="00:03:32.360000" producer="producer11" />
+    <filter id="filter26" out="00:03:23.320">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-11</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </playlist>
+  <producer id="producer12" in="00:00:00.000" out="00:03:04.400" title="Anonymous Submission">
+    <property name="length">00:03:04:11</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Violette_clarinette_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-13T15:00:56</property>
+    <property name="shotcut:hash">be5d154cb44417d0faf36686c0a4cbbc</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Violette_clarinette_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter27" out="00:03:04.400000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">1536.0 216.0 385.0 217.0 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter28" out="00:03:04.400000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist11">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Violette</property>
+    <property name="shotcut:lock">1</property>
+    <blank length="00:00:13.960" />
+    <entry in="00:00:00.000" out="00:03:04.400000" producer="producer12" />
+    <filter id="filter29" out="00:03:23.320">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-10</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </playlist>
+  <producer id="producer13" in="00:00:00.000" out="00:03:19.240" title="Anonymous Submission">
+    <property name="length">00:03:19:07</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Flutes/Alain_flute_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-08T16:32:02</property>
+    <property name="shotcut:hash">e4470a14bf088b76cf4b34d8127e4e51</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Alain_flute_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter30" out="00:03:19.240000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0.0 432.0 385.0 217.0 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter31" out="00:03:19.240000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist12">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Alain_flute2</property>
+    <property name="shotcut:lock">1</property>
+    <blank length="00:00:02.080" />
+    <entry in="00:00:00.000" out="00:03:19.240000" producer="producer13" />
+    <filter id="filter32" out="00:03:35.640">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-10</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </playlist>
+  <producer id="producer14" in="00:00:00.000" out="00:02:58.120" title="Anonymous Submission">
+    <property name="length">00:02:58:04</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Flutes/Laurence_flute_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-10T18:00:41</property>
+    <property name="shotcut:hash">60bcdee113b1401df52909414ee98b5b</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Laurence_flute_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter33" out="00:02:58.120000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">384.0 432.0 385.0 217.0 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist13">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name"> Laurence_flute 2</property>
+    <property name="shotcut:lock">1</property>
+    <blank length="00:00:19.560" />
+    <entry in="00:00:00.000" out="00:02:58.120000" producer="producer14" />
+    <filter id="filter34" out="00:03:35.640">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-12</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </playlist>
+  <producer id="producer15" in="00:00:00.000" out="00:02:59.720" title="Anonymous Submission">
+    <property name="length">00:02:59:19</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Flutes/Antoine_flute_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-09T18:43:14</property>
+    <property name="shotcut:hash">4b5c310c51f982bf236c6a3fad1fff39</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Antoine_flute_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter35" out="00:02:59.720000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">768.0 432.0 385.0 217.0 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter36" out="00:02:59.720000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist14">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Antoine_flute1</property>
+    <property name="shotcut:lock">1</property>
+    <blank length="00:00:16.720" />
+    <entry in="00:00:00.000" out="00:02:59.720000" producer="producer15" />
+    <filter id="filter37" out="00:03:35.640">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-12</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </playlist>
+  <producer id="producer16" in="00:00:00.000" out="00:03:35.640" title="Anonymous Submission">
+    <property name="length">00:03:35:17</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Flutes/Gwenn_flute_totoro_recadre.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-30T15:27:42</property>
+    <property name="shotcut:hash">100c5d626d0e8201453c2f0a20325b08</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Gwenn_flute_totoro_recadre.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter38" out="00:03:35.640">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">1152.0 432.0 385.0 217.0 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist15">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Gwenn miroir&#233;</property>
+    <entry in="00:00:00.000" out="00:03:35.640" producer="producer16" />
+  </playlist>
+  <producer id="producer17" in="00:00:00.000" out="00:03:07.840" title="Anonymous Submission">
+    <property name="length">00:03:07:22</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Flutes/Benoit_flute_totoro2.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-25T18:09:23</property>
+    <property name="shotcut:hash">25e06be6934fe2d45b07a99ff037b350</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Benoit_flute_totoro2.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter39" out="00:03:07.840000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">1536.0 432.0 385.0 217.0 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist16">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Benoit 2</property>
+    <property name="shotcut:lock">1</property>
+    <blank length="00:00:21.640" />
+    <entry in="00:00:00.000" out="00:03:07.840000" producer="producer17" />
+    </playlist>
+  <producer id="producer18" in="00:00:00.000" out="00:03:15.240" title="Anonymous Submission">
+    <property name="length">00:03:15:07</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Flutes/Jawad_flute_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-23T20:25:29</property>
+    <property name="shotcut:hash">bc7b77ed976cd8d1d97d8c5d2bfce239</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Jawad_flute_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter40" out="00:03:15.240">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0.0 648.0 385.0 217.0 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter41" out="00:03:15.240">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist17">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Jawad</property>
+    <property name="shotcut:lock">1</property>
+    <blank length="00:00:08.160" />
+    <entry in="00:00:00.000" out="00:03:15.240" producer="producer18" />
+  </playlist>
+  <producer id="producer19" in="00:00:00.000" out="00:03:11.560" title="Anonymous Submission">
+    <property name="length">00:03:11:15</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Hautbois/Aur&#233;lie_hautbois_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="shotcut:hash">eef028a0ef9d0a891fcda437adec93c6</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Aur&#233;lie_hautbois_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter42" out="00:03:11.560000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">384.0 648.0 385.0 217.0 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist18">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Aur&#233;lie_hautbois</property>
+    <property name="shotcut:lock">1</property>
+    <blank length="00:00:07.960" />
+    <entry in="00:00:00.000" out="00:03:11.560000" producer="producer19" />
+    <filter id="filter43" out="00:03:35.640">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-5</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </playlist>
+  <producer id="producer20" in="00:00:00.000" out="00:03:26.320" title="Anonymous Submission">
+    <property name="length">00:03:26:09</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Hautbois/Veronique_hautbois_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-17T16:41:56</property>
+    <property name="shotcut:hash">506874eb3b33a62e78b559d4ce6a6bec</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Veronique_hautbois_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter44" out="00:03:26.320000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">768.0 648.0 385.0 217.0 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist19">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Veronique_cor-anglais</property>
+    <property name="shotcut:lock">1</property>
+    <blank length="00:00:09.280" />
+    <entry in="00:00:00.000" out="00:03:26.320000" producer="producer20" />
+    <filter id="filter45" out="00:03:35.640">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-8</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </playlist>
+  <producer id="producer21" in="00:00:00.000" out="00:03:12.560" title="Anonymous Submission">
+    <property name="length">00:03:12:15</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Saxophone/Francoise_saxophone_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-21T20:21:24</property>
+    <property name="shotcut:hash">bf995f50e95c73cb7593ff8be7ce82da</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Francoise_saxophone_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter46" out="00:03:12.560">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">1152.0 648.0 385.0 217.0 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist20">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Francoise saxo</property>
+    <property name="shotcut:lock">1</property>
+    <blank length="00:00:08.280" />
+    <entry in="00:00:00.000" out="00:03:12.560" producer="producer21" />
+  </playlist>
+  <producer id="producer22" in="00:00:00.000" out="00:03:01.800" title="Anonymous Submission">
+    <property name="length">00:03:01:21</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Saxophone/Aurianne_saxophone_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-09T18:32:01</property>
+    <property name="shotcut:hash">dd198363db28b4d265caa15eb2e0f266</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Aurianne_saxophone_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter47" out="00:03:01.800000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">1536.0 648.0 385.0 217.0 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter48" out="00:03:01.800000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist21">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Aurianne_saxo1</property>
+    <property name="shotcut:lock">1</property>
+    <blank length="00:00:16.240" />
+    <entry in="00:00:00.000" out="00:03:01.800000" producer="producer22" />
+    <filter id="filter49" out="00:03:20.840">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-7</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </playlist>
+  <producer id="producer23" in="00:00:00.000" out="00:03:14.560" title="Anonymous Submission">
+    <property name="length">00:03:14:15</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Saxophone/Marie-Claude_saxophone_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-17T16:47:48</property>
+    <property name="shotcut:hash">93486417d24480bfbb5e6dc264b34a22</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Marie-Claude_saxophone_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter50" out="00:03:14.560000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0.0 864.0 385.0 217.0 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter51" out="00:03:14.560000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist22">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Marie(Claude</property>
+    <property name="shotcut:lock">1</property>
+    <blank length="00:00:05.920" />
+    <entry in="00:00:00.000" out="00:03:14.560000" producer="producer23" />
+    <filter id="filter52" out="00:03:20.840">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-10</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </playlist>
+  <producer id="producer24" in="00:00:00.000" out="00:03:18.880" title="Anonymous Submission">
+    <property name="length">00:03:18:23</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Saxophone/Franck_saxophone_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-13T11:28:12</property>
+    <property name="shotcut:hash">65568a88d02d9b90ac8b802dbc8299d0</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Franck_saxophone_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter53" in="00:00:08.600" out="00:03:18.880000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">384.0 864.0 385.0 217.0 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter54" in="00:00:08.600" out="00:03:18.880000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist23">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Franck</property>
+    <property name="shotcut:lock">1</property>
+    <blank length="00:00:07.040" />
+    <entry in="00:00:08.600" out="00:03:18.880000" producer="producer24" />
+    <filter id="filter55" out="00:03:20.840">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-8</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </playlist>
+  <producer id="producer25" in="00:00:00.000" out="00:02:56.880" title="Anonymous Submission">
+    <property name="length">00:02:56:23</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Saxophone/Nadine_saxophone_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-05T10:59:22</property>
+    <property name="shotcut:hash">82626502be7a153c67023eb3ec220870</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Nadine_saxophone_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter56" out="00:02:56.880000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">768.0 864.0 385.0 217.0 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist24">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Nadine_saxo2/3?</property>
+    <property name="shotcut:lock">1</property>
+    <blank length="00:00:21.600" />
+    <entry in="00:00:00.000" out="00:02:56.880000" producer="producer25" />
+    <filter id="filter57" out="00:03:20.840">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-10</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </playlist>
+  <producer id="producer26" in="00:00:00.000" out="00:03:00.640" title="Anonymous Submission">
+    <property name="length">00:03:00:17</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Saxophone/Nathalie_saxophone_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-05T20:53:59</property>
+    <property name="shotcut:hash">0d7f5f7f840ed30cff72366d537ba970</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Nathalie_saxophone_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter58" out="00:03:00.640000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">1152.0 864.0 385.0 217.0 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist25">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Nathalie_saxo2/3?</property>
+    <property name="shotcut:lock">1</property>
+    <blank length="00:00:16.440" />
+    <entry in="00:00:00.000" out="00:03:00.640000" producer="producer26" />
+    <filter id="filter59" out="00:03:20.840">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-10</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </playlist>
+  <producer id="producer27" in="00:00:00.000" out="00:03:20.680" title="Anonymous Submission">
+    <property name="length">00:03:20:18</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Saxophone/Chloe_saxophone_totoro_clown_recadre.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-12T15:45:35</property>
+    <property name="shotcut:hash">93226b3e2e8f077ce38531a1c7650b73</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Chloe_saxophone_totoro_clown_recadre.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter60" out="00:03:20.680">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">1536.0 864.0 385.0 217.0 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter61" out="00:03:20.680">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-15</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <playlist id="playlist26">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Chloe recadre</property>
+    <property name="shotcut:lock">1</property>
+    <entry in="00:00:00.000" out="00:03:20.680" producer="producer27" />
+  </playlist>
+  <tractor global_feed="1" id="tractor0" in="00:00:00.000" out="00:03:23.320" title="Shotcut version 19.08.05">
+    <property name="shotcut">1</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">1</property>
+    <property name="shotcut:scaleFactor">2.74405</property>
+    <track producer="background" />
+    <track hide="audio" producer="playlist0" />
+    <track hide="both" producer="playlist1" />
+    <track hide="audio" producer="playlist2" />
+    <track hide="audio" producer="playlist3" />
+    <track hide="audio" producer="playlist4" />
+    <track hide="audio" producer="playlist5" />
+    <track hide="audio" producer="playlist6" />
+    <track hide="audio" producer="playlist7" />
+    <track hide="audio" producer="playlist8" />
+    <track hide="audio" producer="playlist9" />
+    <track hide="audio" producer="playlist10" />
+    <track hide="audio" producer="playlist11" />
+    <track hide="audio" producer="playlist12" />
+    <track hide="audio" producer="playlist13" />
+    <track hide="audio" producer="playlist14" />
+    <track hide="audio" producer="playlist15" />
+    <track hide="audio" producer="playlist16" />
+    <track hide="audio" producer="playlist17" />
+    <track hide="audio" producer="playlist18" />
+    <track hide="audio" producer="playlist19" />
+    <track hide="audio" producer="playlist20" />
+    <track hide="audio" producer="playlist21" />
+    <track hide="audio" producer="playlist22" />
+    <track hide="audio" producer="playlist23" />
+    <track hide="audio" producer="playlist24" />
+    <track hide="audio" producer="playlist25" />
+    <track hide="audio" producer="playlist26" />
+    <transition id="transition0">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition1">
+      <property name="a_track">1</property>
+      <property name="b_track">1</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">1</property>
+    </transition>
+    <transition id="transition2">
+      <property name="a_track">0</property>
+      <property name="b_track">2</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition3">
+      <property name="a_track">1</property>
+      <property name="b_track">2</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition4">
+      <property name="a_track">1</property>
+      <property name="b_track">3</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+    </transition>
+    <transition id="transition5">
+      <property name="a_track">1</property>
+      <property name="b_track">4</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+    </transition>
+    <transition id="transition6">
+      <property name="a_track">0</property>
+      <property name="b_track">5</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition7">
+      <property name="a_track">1</property>
+      <property name="b_track">5</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition8">
+      <property name="a_track">0</property>
+      <property name="b_track">6</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition9">
+      <property name="a_track">1</property>
+      <property name="b_track">6</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition10">
+      <property name="a_track">1</property>
+      <property name="b_track">7</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+    </transition>
+    <transition id="transition11">
+      <property name="a_track">1</property>
+      <property name="b_track">8</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+    </transition>
+    <transition id="transition12">
+      <property name="a_track">0</property>
+      <property name="b_track">9</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition13">
+      <property name="a_track">1</property>
+      <property name="b_track">9</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition14">
+      <property name="a_track">0</property>
+      <property name="b_track">7</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition15">
+      <property name="a_track">0</property>
+      <property name="b_track">4</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition16">
+      <property name="a_track">0</property>
+      <property name="b_track">10</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition17">
+      <property name="a_track">1</property>
+      <property name="b_track">10</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition18">
+      <property name="a_track">1</property>
+      <property name="b_track">11</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+    </transition>
+    <transition id="transition19">
+      <property name="a_track">0</property>
+      <property name="b_track">12</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition20">
+      <property name="a_track">1</property>
+      <property name="b_track">12</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition21">
+      <property name="a_track">0</property>
+      <property name="b_track">11</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition22">
+      <property name="a_track">0</property>
+      <property name="b_track">3</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition23">
+      <property name="a_track">0</property>
+      <property name="b_track">8</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+  <transition id="transition24">
+      <property name="a_track">0</property>
+      <property name="b_track">13</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition25">
+      <property name="a_track">1</property>
+      <property name="b_track">13</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition26">
+      <property name="a_track">1</property>
+      <property name="b_track">14</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+    </transition>
+    <transition id="transition27">
+      <property name="a_track">0</property>
+      <property name="b_track">14</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition28">
+      <property name="a_track">0</property>
+      <property name="b_track">15</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition29">
+      <property name="a_track">1</property>
+      <property name="b_track">15</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition30">
+      <property name="a_track">1</property>
+      <property name="b_track">16</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+    </transition>
+    <transition id="transition31">
+      <property name="a_track">0</property>
+      <property name="b_track">16</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+  <transition id="transition32">
+      <property name="a_track">1</property>
+      <property name="b_track">17</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+    </transition>
+    <transition id="transition33">
+      <property name="a_track">0</property>
+      <property name="b_track">17</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition34">
+      <property name="a_track">1</property>
+      <property name="b_track">18</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+    </transition>
+    <transition id="transition35">
+      <property name="a_track">0</property>
+      <property name="b_track">18</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition36">
+      <property name="a_track">0</property>
+      <property name="b_track">19</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition37">
+      <property name="a_track">1</property>
+      <property name="b_track">19</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition38">
+      <property name="a_track">0</property>
+      <property name="b_track">20</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition39">
+      <property name="a_track">1</property>
+      <property name="b_track">20</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition40">
+      <property name="a_track">1</property>
+      <property name="b_track">21</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+    </transition>
+    <transition id="transition41">
+      <property name="a_track">0</property>
+      <property name="b_track">21</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+  <transition id="transition42">
+      <property name="a_track">0</property>
+      <property name="b_track">22</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition43">
+      <property name="a_track">1</property>
+      <property name="b_track">22</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition44">
+      <property name="a_track">1</property>
+      <property name="b_track">23</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+    </transition>
+    <transition id="transition45">
+      <property name="a_track">0</property>
+      <property name="b_track">23</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition46">
+      <property name="a_track">1</property>
+      <property name="b_track">24</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+    </transition>
+    <transition id="transition47">
+      <property name="a_track">0</property>
+      <property name="b_track">24</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition48">
+      <property name="a_track">0</property>
+      <property name="b_track">25</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition49">
+      <property name="a_track">1</property>
+      <property name="b_track">25</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition50">
+      <property name="a_track">0</property>
+      <property name="b_track">26</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition51">
+      <property name="a_track">1</property>
+      <property name="b_track">26</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition52">
+      <property name="a_track">0</property>
+      <property name="b_track">27</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition53">
+      <property name="a_track">1</property>
+      <property name="b_track">27</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">0</property>
+    </transition>
+    </tractor>
+</mlt>

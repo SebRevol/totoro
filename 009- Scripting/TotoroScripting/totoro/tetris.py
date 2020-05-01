@@ -3,9 +3,11 @@ Created on 24 avr. 2020
 
 @author: SR246418
 '''
+import math
+
 from totoro.display import Box, incr_clock
 from totoro.utils import get_current_resource, get_frame_duration
-import math
+
 
 #Line per seconds
 MOVE_DOWN_SPEED = 3

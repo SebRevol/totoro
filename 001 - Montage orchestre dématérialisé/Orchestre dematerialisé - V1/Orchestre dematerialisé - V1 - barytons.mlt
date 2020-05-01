@@ -1,6 +1,6 @@
-<?xml version='1.0' encoding='us-ascii'?>
-<mlt LC_NUMERIC="C" producer="main_bin" title="Shotcut version 19.08.05" version="6.17.0">
-  <profile colorspace="709" description="HD 1080p 25 fps" display_aspect_den="9" display_aspect_num="16" frame_rate_den="1" frame_rate_num="25" height="1080" progressive="1" sample_aspect_den="1" sample_aspect_num="1" width="1920" />
+<?xml version="1.0" encoding="utf-8"?>
+<mlt LC_NUMERIC="C" version="6.17.0" title="Shotcut version 19.08.05" producer="main_bin">
+  <profile description="HD 1080p 25 fps" width="1920" height="1080" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="25" frame_rate_den="1" colorspace="709"/>
   <playlist id="main_bin">
     <property name="xml_retain">1</property>
   </playlist>
@@ -14,47 +14,9 @@
     <property name="set.test_audio">0</property>
   </producer>
   <playlist id="background">
-    <entry in="00:00:00.000" out="00:03:24.320" producer="black" />
+    <entry producer="black" in="00:00:00.000" out="00:03:24.320"/>
   </playlist>
-  <producer id="producer0" in="00:00:00.000" out="00:02:58.320" title="Anonymous Submission">
-    <property name="length">00:02:58:09</property>
-    <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Chef/Jean-Jacques_chef_totoro.mp4</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="mute_on_pause">0</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="creation_time">2020-04-05T13:55:58</property>
-    <property name="shotcut:hash">54631fa1ec31562eee0a931256e35e96</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">Jean-Jacques_chef_totoro.mp4</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="global_feed">1</property>
-    <property name="xml">was here</property>
-    <filter id="filter0" out="00:02:58.320">
-      <property name="background">colour:0</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">468 263 865 485 1</property>
-      <property name="transition.valign">top</property>
-      <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-    </filter>
-  </producer>
-  <playlist id="playlist0">
-    <property name="shotcut:video">1</property>
-    <property name="shotcut:name">Chef_JJS</property>
-    <property name="shotcut:lock">1</property>
-    <blank length="00:00:22.320" />
-    <entry in="00:00:00.000" out="00:02:58.320" producer="producer0" />
-  </playlist>
-  <producer id="producer1" in="00:00:00.000" out="03:59:59.960" title="Anonymous Submission">
+  <producer id="producer1" title="Anonymous Submission" in="00:00:00.000" out="03:59:59.960">
     <property name="length">04:00:00:00</property>
     <property name="eof">pause</property>
     <property name="resource">#00000000</property>
@@ -68,7 +30,7 @@
     <property name="xml">was here</property>
     <property name="seekable">1</property>
     <filter id="filter1" out="00:00:04.960">
-      <property name="argument">Logo EMGB</property>
+      <property name="argument"></property>
       <property name="geometry">0 0 1920 1080 1</property>
       <property name="family">Verdana</property>
       <property name="size">1080</property>
@@ -88,7 +50,7 @@
       <property name="shotcut:animOut">00:00:00.000</property>
     </filter>
   </producer>
-  <producer id="producer2" in="00:00:00.000" out="03:59:59.960" title="Anonymous Submission">
+  <producer id="producer2" title="Anonymous Submission" in="00:00:00.000" out="03:59:59.960">
     <property name="length">04:00:00:00</property>
     <property name="eof">pause</property>
     <property name="resource">#00000000</property>
@@ -101,8 +63,8 @@
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
     <property name="seekable">1</property>
-    <filter id="filter2" in="00:00:05.000" out="00:00:22.320">
-      <property name="argument">Temps de marge pour faire apparaitre/entrer les musiciens</property>
+    <filter id="filter2" in="00:00:05.000" out="00:03:24.320">
+      <property name="argument"></property>
       <property name="geometry">0 0 1920 1080 1</property>
       <property name="family">Verdana</property>
       <property name="size">1080</property>
@@ -126,13 +88,13 @@
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">Storyboard</property>
     <property name="shotcut:lock">1</property>
-    <entry in="00:00:00.000" out="00:00:04.960" producer="producer1" />
-    <entry in="00:00:05.000" out="00:00:22.320" producer="producer2" />
+    <entry producer="producer1" in="00:00:00.000" out="00:00:04.960"/>
+    <entry producer="producer2" in="00:00:05.000" out="00:03:24.320"/>
   </playlist>
-  <producer id="producer3" in="00:00:00.000" out="00:03:24.560" title="Anonymous Submission">
+  <producer id="producer3" title="Anonymous Submission" in="00:00:00.000" out="00:03:24.560">
     <property name="length">00:03:24:15</property>
     <property name="eof">pause</property>
-    <property name="resource">../../003 - Bande son/Practice avec texte initial et son youtube.mp4</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/003 - Bande son/Practice avec texte initial et son youtube.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -151,13 +113,13 @@
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">Bande_son_practice</property>
     <property name="shotcut:lock">1</property>
-    <blank length="00:00:15.000" />
-    <entry in="00:00:18.960" out="00:03:24.560" producer="producer3" />
+    <blank length="00:00:15.000"/>
+    <entry producer="producer3" in="00:00:18.960" out="00:03:24.560"/>
   </playlist>
-  <producer id="producer4" in="00:00:00.000" out="00:03:21.840" title="Anonymous Submission">
+  <producer id="producer4" title="Anonymous Submission" in="00:00:00.000" out="00:03:21.840">
     <property name="length">00:03:21:22</property>
     <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -192,10 +154,10 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer5" in="00:00:00.000" out="00:03:21.840" title="Anonymous Submission">
+  <producer id="producer5" title="Anonymous Submission" in="00:00:00.000" out="00:03:21.840">
     <property name="length">00:03:21:22</property>
     <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -223,10 +185,10 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer6" in="00:00:00.000" out="00:03:21.840" title="Anonymous Submission">
+  <producer id="producer6" title="Anonymous Submission" in="00:00:00.000" out="00:03:21.840">
     <property name="length">00:03:21:22</property>
     <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -261,10 +223,10 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer7" in="00:00:00.000" out="00:03:21.840" title="Anonymous Submission">
+  <producer id="producer7" title="Anonymous Submission" in="00:00:00.000" out="00:03:21.840">
     <property name="length">00:03:21:22</property>
     <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -292,10 +254,10 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer8" in="00:00:00.000" out="00:03:21.840" title="Anonymous Submission">
+  <producer id="producer8" title="Anonymous Submission" in="00:00:00.000" out="00:03:21.840">
     <property name="length">00:03:21:22</property>
     <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -330,10 +292,10 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer9" in="00:00:00.000" out="00:03:21.840" title="Anonymous Submission">
+  <producer id="producer9" title="Anonymous Submission" in="00:00:00.000" out="00:03:21.840">
     <property name="length">00:03:21:22</property>
     <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -361,10 +323,10 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer10" in="00:00:00.000" out="00:03:21.840" title="Anonymous Submission">
+  <producer id="producer10" title="Anonymous Submission" in="00:00:00.000" out="00:03:21.840">
     <property name="length">00:03:21:22</property>
     <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -399,10 +361,10 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer11" in="00:00:00.000" out="00:03:21.840" title="Anonymous Submission">
+  <producer id="producer11" title="Anonymous Submission" in="00:00:00.000" out="00:03:21.840">
     <property name="length">00:03:21:22</property>
     <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -430,10 +392,10 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer12" in="00:00:00.000" out="00:03:21.840" title="Anonymous Submission">
+  <producer id="producer12" title="Anonymous Submission" in="00:00:00.000" out="00:03:21.840">
     <property name="length">00:03:21:22</property>
     <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -468,10 +430,10 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer13" in="00:00:00.000" out="00:03:21.840" title="Anonymous Submission">
+  <producer id="producer13" title="Anonymous Submission" in="00:00:00.000" out="00:03:21.840">
     <property name="length">00:03:21:22</property>
     <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -506,10 +468,10 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer14" in="00:00:00.000" out="00:03:21.840" title="Anonymous Submission">
+  <producer id="producer14" title="Anonymous Submission" in="00:00:00.000" out="00:03:21.840">
     <property name="length">00:03:21:22</property>
     <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -537,10 +499,10 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer15" in="00:00:00.000" out="00:03:21.840" title="Anonymous Submission">
+  <producer id="producer15" title="Anonymous Submission" in="00:00:00.000" out="00:03:21.840">
     <property name="length">00:03:21:22</property>
     <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Euphonium/Bidou_euphonium_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -579,19 +541,19 @@
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">Bidou_euphonium</property>
     <property name="shotcut:lock">1</property>
-    <blank length="00:00:00.040" />
-    <entry in="00:00:00.000" out="00:00:30.040" producer="producer4" />
-    <entry in="00:00:30.080" out="00:00:44.200" producer="producer5" />
-    <entry in="00:00:44.240" out="00:00:46.920" producer="producer6" />
-    <entry in="00:00:46.960" out="00:00:50.600" producer="producer7" />
-    <entry in="00:00:50.640" out="00:00:53.760" producer="producer8" />
-    <entry in="00:00:53.800" out="00:01:04.680" producer="producer9" />
-    <entry in="00:01:04.720" out="00:01:13.400" producer="producer10" />
-    <entry in="00:01:13.440" out="00:01:38.000" producer="producer11" />
-    <entry in="00:01:38.040" out="00:01:44.040" producer="producer12" />
-    <entry in="00:01:44.080" out="00:01:51.320" producer="producer13" />
-    <entry in="00:01:51.360" out="00:03:14.200" producer="producer14" />
-    <entry in="00:03:14.240" out="00:03:21.840" producer="producer15" />
+    <blank length="00:00:00.040"/>
+    <entry producer="producer4" in="00:00:00.000" out="00:00:30.040"/>
+    <entry producer="producer5" in="00:00:30.080" out="00:00:44.200"/>
+    <entry producer="producer6" in="00:00:44.240" out="00:00:46.920"/>
+    <entry producer="producer7" in="00:00:46.960" out="00:00:50.600"/>
+    <entry producer="producer8" in="00:00:50.640" out="00:00:53.760"/>
+    <entry producer="producer9" in="00:00:53.800" out="00:01:04.680"/>
+    <entry producer="producer10" in="00:01:04.720" out="00:01:13.400"/>
+    <entry producer="producer11" in="00:01:13.440" out="00:01:38.000"/>
+    <entry producer="producer12" in="00:01:38.040" out="00:01:44.040"/>
+    <entry producer="producer13" in="00:01:44.080" out="00:01:51.320"/>
+    <entry producer="producer14" in="00:01:51.360" out="00:03:14.200"/>
+    <entry producer="producer15" in="00:03:14.240" out="00:03:21.840"/>
     <filter id="filter22" out="00:03:24.320">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
@@ -599,10 +561,10 @@
       <property name="mlt_service">volume</property>
     </filter>
   </playlist>
-  <producer id="producer16" in="00:00:00.000" out="00:03:39.760" title="Anonymous Submission">
+  <producer id="producer16" title="Anonymous Submission" in="00:00:00.000" out="00:03:39.760">
     <property name="length">00:03:39:20</property>
     <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -630,10 +592,10 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer17" in="00:00:00.000" out="00:03:39.760" title="Anonymous Submission">
+  <producer id="producer17" title="Anonymous Submission" in="00:00:00.000" out="00:03:39.760">
     <property name="length">00:03:39:20</property>
     <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -668,10 +630,10 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer18" in="00:00:00.000" out="00:03:39.760" title="Anonymous Submission">
+  <producer id="producer18" title="Anonymous Submission" in="00:00:00.000" out="00:03:39.760">
     <property name="length">00:03:39:20</property>
     <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -705,10 +667,10 @@
       <property name="mlt_service">volume</property>
     </filter>
   </producer>
-  <producer id="producer19" in="00:00:00.000" out="00:03:39.760" title="Anonymous Submission">
+  <producer id="producer19" title="Anonymous Submission" in="00:00:00.000" out="00:03:39.760">
     <property name="length">00:03:39:20</property>
     <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -743,10 +705,10 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer20" in="00:00:00.000" out="00:03:39.760" title="Anonymous Submission">
+  <producer id="producer20" title="Anonymous Submission" in="00:00:00.000" out="00:03:39.760">
     <property name="length">00:03:39:20</property>
     <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -780,10 +742,10 @@
       <property name="mlt_service">volume</property>
     </filter>
   </producer>
-  <producer id="producer21" in="00:00:00.000" out="00:03:39.760" title="Anonymous Submission">
+  <producer id="producer21" title="Anonymous Submission" in="00:00:00.000" out="00:03:39.760">
     <property name="length">00:03:39:20</property>
     <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -818,10 +780,10 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer22" in="00:00:00.000" out="00:03:39.760" title="Anonymous Submission">
+  <producer id="producer22" title="Anonymous Submission" in="00:00:00.000" out="00:03:39.760">
     <property name="length">00:03:39:20</property>
     <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -855,10 +817,10 @@
       <property name="mlt_service">volume</property>
     </filter>
   </producer>
-  <producer id="producer23" in="00:00:00.000" out="00:03:39.760" title="Anonymous Submission">
+  <producer id="producer23" title="Anonymous Submission" in="00:00:00.000" out="00:03:39.760">
     <property name="length">00:03:39:20</property>
     <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -893,10 +855,10 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer24" in="00:00:00.000" out="00:03:39.760" title="Anonymous Submission">
+  <producer id="producer24" title="Anonymous Submission" in="00:00:00.000" out="00:03:39.760">
     <property name="length">00:03:39:20</property>
     <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -930,10 +892,10 @@
       <property name="mlt_service">volume</property>
     </filter>
   </producer>
-  <producer id="producer25" in="00:00:00.000" out="00:03:39.760" title="Anonymous Submission">
+  <producer id="producer25" title="Anonymous Submission" in="00:00:00.000" out="00:03:39.760">
     <property name="length">00:03:39:20</property>
     <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -968,10 +930,10 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer26" in="00:00:00.000" out="00:03:39.760" title="Anonymous Submission">
+  <producer id="producer26" title="Anonymous Submission" in="00:00:00.000" out="00:03:39.760">
     <property name="length">00:03:39:20</property>
     <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -1005,10 +967,10 @@
       <property name="mlt_service">volume</property>
     </filter>
   </producer>
-  <producer id="producer27" in="00:00:00.000" out="00:03:39.760" title="Anonymous Submission">
+  <producer id="producer27" title="Anonymous Submission" in="00:00:00.000" out="00:03:39.760">
     <property name="length">00:03:39:20</property>
     <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -1049,10 +1011,10 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer28" in="00:00:00.000" out="00:03:39.760" title="Anonymous Submission">
+  <producer id="producer28" title="Anonymous Submission" in="00:00:00.000" out="00:03:39.760">
     <property name="length">00:03:39:20</property>
     <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
+    <property name="resource">C:/Users/Camille/OneDrive/Camille/006 - Videos format youtube/Euphonium/Serge_euphonium_totoro.mp4</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="mute_on_pause">0</property>
@@ -1090,97 +1052,82 @@
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">Serge_euphonium</property>
     <property name="shotcut:lock">1</property>
-    <entry in="00:00:01.760" out="00:00:20.000" producer="producer16" />
-    <entry in="00:00:33.720" out="00:00:45.520" producer="producer17" />
-    <entry in="00:00:45.560" out="00:00:59.680" producer="producer18" />
-    <entry in="00:00:59.720" out="00:01:02.360" producer="producer19" />
-    <entry in="00:01:02.400" out="00:01:06.080" producer="producer20" />
-    <entry in="00:01:06.120" out="00:01:09.240" producer="producer21" />
-    <entry in="00:01:09.280" out="00:01:20.200" producer="producer22" />
-    <entry in="00:01:20.240" out="00:01:28.840" producer="producer23" />
-    <entry in="00:01:28.880" out="00:01:53.440" producer="producer24" />
-    <entry in="00:01:53.480" out="00:01:59.480" producer="producer25" />
-    <entry in="00:01:59.520" out="00:02:06.800" producer="producer26" />
-    <entry in="00:02:06.840" out="00:02:10.440" producer="producer27" />
-    <entry in="00:02:10.480" out="00:03:39.760" producer="producer28" />
+    <entry producer="producer16" in="00:00:01.760" out="00:00:20.000"/>
+    <entry producer="producer17" in="00:00:33.720" out="00:00:45.520"/>
+    <entry producer="producer18" in="00:00:45.560" out="00:00:59.680"/>
+    <entry producer="producer19" in="00:00:59.720" out="00:01:02.360"/>
+    <entry producer="producer20" in="00:01:02.400" out="00:01:06.080"/>
+    <entry producer="producer21" in="00:01:06.120" out="00:01:09.240"/>
+    <entry producer="producer22" in="00:01:09.280" out="00:01:20.200"/>
+    <entry producer="producer23" in="00:01:20.240" out="00:01:28.840"/>
+    <entry producer="producer24" in="00:01:28.880" out="00:01:53.440"/>
+    <entry producer="producer25" in="00:01:53.480" out="00:01:59.480"/>
+    <entry producer="producer26" in="00:01:59.520" out="00:02:06.800"/>
+    <entry producer="producer27" in="00:02:06.840" out="00:02:10.440"/>
+    <entry producer="producer28" in="00:02:10.480" out="00:03:39.760"/>
   </playlist>
-  <tractor global_feed="1" id="tractor0" in="00:00:00.000" out="00:03:24.320" title="Shotcut version 19.08.05">
+  <tractor id="tractor0" title="Shotcut version 19.08.05" global_feed="1" in="00:00:00.000" out="00:03:24.320">
     <property name="shotcut">1</property>
     <property name="shotcut:projectAudioChannels">2</property>
     <property name="shotcut:projectFolder">1</property>
-    <property name="shotcut:scaleFactor">0.499557</property>
-    <track producer="background" />
-    <track hide="audio" producer="playlist0" />
-    <track hide="audio" producer="playlist1" />
-    <track hide="both" producer="playlist2" />
-    <track producer="playlist3" />
-    <track producer="playlist4" />
-    <transition id="transition0">
-      <property name="a_track">0</property>
-      <property name="b_track">1</property>
-      <property name="mlt_service">mix</property>
-      <property name="always_active">1</property>
-      <property name="sum">1</property>
-    </transition>
-    <transition id="transition1">
-      <property name="a_track">0</property>
-      <property name="b_track">1</property>
-      <property name="version">0.9</property>
-      <property name="mlt_service">frei0r.cairoblend</property>
-      <property name="disable">1</property>
-    </transition>
+    <property name="shotcut:scaleFactor">0.0907355</property>
+    <track producer="background"/>
+    <track producer="playlist1" hide="audio"/>
+    <track producer="playlist2" hide="both"/>
+    <track producer="playlist3"/>
+    <track producer="playlist4"/>
     <transition id="transition2">
       <property name="a_track">0</property>
-      <property name="b_track">2</property>
+      <property name="b_track">1</property>
       <property name="mlt_service">mix</property>
       <property name="always_active">1</property>
       <property name="sum">1</property>
     </transition>
     <transition id="transition3">
       <property name="a_track">1</property>
-      <property name="b_track">2</property>
+      <property name="b_track">1</property>
       <property name="version">0.9</property>
       <property name="mlt_service">frei0r.cairoblend</property>
-      <property name="disable">0</property>
+      <property name="disable">1</property>
     </transition>
     <transition id="transition4">
       <property name="a_track">0</property>
-      <property name="b_track">3</property>
+      <property name="b_track">2</property>
       <property name="mlt_service">mix</property>
       <property name="always_active">1</property>
       <property name="sum">1</property>
     </transition>
     <transition id="transition5">
       <property name="a_track">1</property>
-      <property name="b_track">3</property>
+      <property name="b_track">2</property>
       <property name="version">0.9</property>
       <property name="mlt_service">frei0r.cairoblend</property>
       <property name="disable">0</property>
     </transition>
     <transition id="transition6">
       <property name="a_track">0</property>
-      <property name="b_track">4</property>
+      <property name="b_track">3</property>
       <property name="mlt_service">mix</property>
       <property name="always_active">1</property>
       <property name="sum">1</property>
     </transition>
     <transition id="transition7">
       <property name="a_track">1</property>
-      <property name="b_track">4</property>
+      <property name="b_track">3</property>
       <property name="version">0.9</property>
       <property name="mlt_service">frei0r.cairoblend</property>
       <property name="disable">0</property>
     </transition>
     <transition id="transition8">
       <property name="a_track">0</property>
-      <property name="b_track">5</property>
+      <property name="b_track">4</property>
       <property name="mlt_service">mix</property>
       <property name="always_active">1</property>
       <property name="sum">1</property>
     </transition>
     <transition id="transition9">
       <property name="a_track">1</property>
-      <property name="b_track">5</property>
+      <property name="b_track">4</property>
       <property name="version">0.9</property>
       <property name="mlt_service">frei0r.cairoblend</property>
       <property name="disable">0</property>

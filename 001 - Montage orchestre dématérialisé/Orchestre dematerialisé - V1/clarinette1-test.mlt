@@ -1,0 +1,1529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mlt LC_NUMERIC="C" version="6.20.0" title="Shotcut version 20.02.17" producer="main_bin">
+  <profile description="HD 1080p 25 fps" width="1920" height="1080" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="25" frame_rate_den="1" colorspace="709"/>
+  <playlist id="main_bin">
+    <property name="xml_retain">1</property>
+  </playlist>
+  <producer id="black" in="00:00:00.000" out="00:03:23.320">
+    <property name="length">5084</property>
+    <property name="eof">pause</property>
+    <property name="resource">0</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="mlt_image_format">rgb24a</property>
+    <property name="set.test_audio">0</property>
+  </producer>
+  <playlist id="background">
+    <entry producer="black" in="00:00:00.000" out="00:03:23.320"/>
+  </playlist>
+  <producer id="producer0" title="Anonymous Submission" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00:00</property>
+    <property name="eof">pause</property>
+    <property name="resource">#00000000</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="mlt_image_format">rgb24a</property>
+    <property name="shotcut:caption">transparent</property>
+    <property name="shotcut:detail">transparent</property>
+    <property name="ignore_points">0</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <filter id="filter0" out="00:00:04.960">
+      <property name="argument"></property>
+      <property name="geometry">0 0 1920 1080 1</property>
+      <property name="family">Verdana</property>
+      <property name="size">1080</property>
+      <property name="weight">500</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">#ffffffff</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#aa000000</property>
+      <property name="pad">0</property>
+      <property name="halign">center</property>
+      <property name="valign">bottom</property>
+      <property name="outline">3</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">0</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+    </filter>
+  </producer>
+  <producer id="producer1" title="Anonymous Submission" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00:00</property>
+    <property name="eof">pause</property>
+    <property name="resource">#00000000</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="mlt_image_format">rgb24a</property>
+    <property name="shotcut:caption">transparent</property>
+    <property name="shotcut:detail">transparent</property>
+    <property name="ignore_points">0</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <filter id="filter1" in="00:00:05.000" out="00:03:23.320">
+      <property name="argument"></property>
+      <property name="geometry">0 0 1920 1080 1</property>
+      <property name="family">Verdana</property>
+      <property name="size">1080</property>
+      <property name="weight">500</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">#ffffffff</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#aa000000</property>
+      <property name="pad">0</property>
+      <property name="halign">center</property>
+      <property name="valign">bottom</property>
+      <property name="outline">3</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">0</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+    </filter>
+  </producer>
+  <playlist id="playlist0">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Storyboard</property>
+    <property name="shotcut:lock">1</property>
+    <entry producer="producer0" in="00:00:00.000" out="00:00:04.960"/>
+    <entry producer="producer1" in="00:00:05.000" out="00:03:23.320"/>
+  </playlist>
+  <producer id="producer3" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+    <property name="length">00:03:23:10</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-20T12:31:07</property>
+    <property name="shotcut:hash">fa0b3ca4ef9842045a4dd842a677be53</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter2" in="00:00:04.720" out="00:00:29.720">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter3" in="00:00:04.720" out="00:00:29.720">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer4" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+    <property name="length">00:03:23:10</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-20T12:31:07</property>
+    <property name="shotcut:hash">fa0b3ca4ef9842045a4dd842a677be53</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter4" in="00:00:29.760" out="00:00:36.440">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter5" in="00:00:29.760" out="00:00:36.440">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-11</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer5" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+    <property name="length">00:03:23:10</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-20T12:31:07</property>
+    <property name="shotcut:hash">fa0b3ca4ef9842045a4dd842a677be53</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter6" in="00:00:36.480" out="00:00:40.320">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter7" in="00:00:36.480" out="00:00:40.320">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer6" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+    <property name="length">00:03:23:10</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-20T12:31:07</property>
+    <property name="shotcut:hash">fa0b3ca4ef9842045a4dd842a677be53</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter8" in="00:00:40.360" out="00:00:43.320">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter9" in="00:00:40.360" out="00:00:43.320">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-8</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer7" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+    <property name="length">00:03:23:10</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-20T12:31:07</property>
+    <property name="shotcut:hash">fa0b3ca4ef9842045a4dd842a677be53</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter10" in="00:00:43.360" out="00:00:47.120">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter11" in="00:00:43.360" out="00:00:47.120">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer8" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+    <property name="length">00:03:23:10</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-20T12:31:07</property>
+    <property name="shotcut:hash">fa0b3ca4ef9842045a4dd842a677be53</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter12" in="00:00:47.160" out="00:00:50.160">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter13" in="00:00:47.160" out="00:00:50.160">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-8</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer9" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+    <property name="length">00:03:23:10</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-20T12:31:07</property>
+    <property name="shotcut:hash">fa0b3ca4ef9842045a4dd842a677be53</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter14" in="00:00:50.200" out="00:00:54.080">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter15" in="00:00:50.200" out="00:00:54.080">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer10" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+    <property name="length">00:03:23:10</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-20T12:31:07</property>
+    <property name="shotcut:hash">fa0b3ca4ef9842045a4dd842a677be53</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter16" in="00:00:54.120" out="00:00:57.080">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <producer id="producer11" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+    <property name="length">00:03:23:10</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-20T12:31:07</property>
+    <property name="shotcut:hash">fa0b3ca4ef9842045a4dd842a677be53</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter17" in="00:00:57.120" out="00:01:00.920">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter18" in="00:00:57.120" out="00:01:00.920">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer12" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+    <property name="length">00:03:23:10</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-20T12:31:07</property>
+    <property name="shotcut:hash">fa0b3ca4ef9842045a4dd842a677be53</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter19" in="00:01:00.960" out="00:01:12.000">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter20" in="00:01:00.960" out="00:01:12.000">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer13" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+    <property name="length">00:03:23:10</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-20T12:31:07</property>
+    <property name="shotcut:hash">fa0b3ca4ef9842045a4dd842a677be53</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter21" in="00:01:12.040" out="00:01:18.120">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter22" in="00:01:12.040" out="00:01:18.120">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-10</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer14" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+    <property name="length">00:03:23:10</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-20T12:31:07</property>
+    <property name="shotcut:hash">fa0b3ca4ef9842045a4dd842a677be53</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter23" in="00:01:18.160" out="00:01:44.880">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <producer id="producer15" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+    <property name="length">00:03:23:10</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-20T12:31:07</property>
+    <property name="shotcut:hash">fa0b3ca4ef9842045a4dd842a677be53</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter24" in="00:01:44.920" out="00:01:54.920">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter25" in="00:01:44.920" out="00:01:54.920">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer16" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+    <property name="length">00:03:23:10</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-20T12:31:07</property>
+    <property name="shotcut:hash">fa0b3ca4ef9842045a4dd842a677be53</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter26" in="00:01:54.960" out="00:02:16.320">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <producer id="producer17" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+    <property name="length">00:03:23:10</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-20T12:31:07</property>
+    <property name="shotcut:hash">fa0b3ca4ef9842045a4dd842a677be53</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter27" in="00:02:16.360" out="00:02:33.640">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter28" in="00:02:16.360" out="00:02:33.640">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-5</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer18" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+    <property name="length">00:03:23:10</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-20T12:31:07</property>
+    <property name="shotcut:hash">fa0b3ca4ef9842045a4dd842a677be53</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter29" in="00:02:33.680" out="00:02:46.920">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter30" in="00:02:33.680" out="00:02:46.920">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-5</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </producer>
+  <producer id="producer19" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+    <property name="length">00:03:23:10</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-20T12:31:07</property>
+    <property name="shotcut:hash">fa0b3ca4ef9842045a4dd842a677be53</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter31" in="00:02:46.960" out="00:02:49.600">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter32" in="00:02:46.960" out="00:02:49.600">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer20" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+    <property name="length">00:03:23:10</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-20T12:31:07</property>
+    <property name="shotcut:hash">fa0b3ca4ef9842045a4dd842a677be53</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter33" in="00:02:49.640" out="00:03:10.720">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <producer id="producer21" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+    <property name="length">00:03:23:10</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-20T12:31:07</property>
+    <property name="shotcut:hash">fa0b3ca4ef9842045a4dd842a677be53</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter34" in="00:03:10.760" out="00:03:13.240">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter35" in="00:03:10.760" out="00:03:13.240">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer22" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+    <property name="length">00:03:23:10</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-20T12:31:07</property>
+    <property name="shotcut:hash">fa0b3ca4ef9842045a4dd842a677be53</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter36" in="00:03:13.280" out="00:03:14.480">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <producer id="producer23" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+    <property name="length">00:03:23:10</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-20T12:31:07</property>
+    <property name="shotcut:hash">fa0b3ca4ef9842045a4dd842a677be53</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Cecile_clarinette_totoro_recadre.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter37" in="00:03:14.520" out="00:03:23.360">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 1920 1080 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter38" in="00:03:14.520" out="00:03:23.360">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist2">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Cecile clar bass</property>
+    <property name="shotcut:lock">1</property>
+    <blank length="00:00:04.680"/>
+    <entry producer="producer3" in="00:00:04.720" out="00:00:29.720"/>
+    <entry producer="producer4" in="00:00:29.760" out="00:00:36.440"/>
+    <entry producer="producer5" in="00:00:36.480" out="00:00:40.320"/>
+    <entry producer="producer6" in="00:00:40.360" out="00:00:43.320"/>
+    <entry producer="producer7" in="00:00:43.360" out="00:00:47.120"/>
+    <entry producer="producer8" in="00:00:47.160" out="00:00:50.160"/>
+    <entry producer="producer9" in="00:00:50.200" out="00:00:54.080"/>
+    <entry producer="producer10" in="00:00:54.120" out="00:00:57.080"/>
+    <entry producer="producer11" in="00:00:57.120" out="00:01:00.920"/>
+    <entry producer="producer12" in="00:01:00.960" out="00:01:12.000"/>
+    <entry producer="producer13" in="00:01:12.040" out="00:01:18.120"/>
+    <entry producer="producer14" in="00:01:18.160" out="00:01:44.880"/>
+    <entry producer="producer15" in="00:01:44.920" out="00:01:54.920"/>
+    <entry producer="producer16" in="00:01:54.960" out="00:02:16.320"/>
+    <entry producer="producer17" in="00:02:16.360" out="00:02:33.640"/>
+    <entry producer="producer18" in="00:02:33.680" out="00:02:46.920"/>
+    <entry producer="producer19" in="00:02:46.960" out="00:02:49.600"/>
+    <entry producer="producer20" in="00:02:49.640" out="00:03:10.720"/>
+    <entry producer="producer21" in="00:03:10.760" out="00:03:13.240"/>
+    <entry producer="producer22" in="00:03:13.280" out="00:03:14.480"/>
+    <entry producer="producer23" in="00:03:14.520" out="00:03:23.360"/>
+    <filter id="filter39" out="00:03:23.320">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-8</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </playlist>
+  <producer id="producer25" title="Anonymous Submission" in="00:00:00.000" out="00:03:27.800">
+    <property name="length">00:03:27:21</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Nelly_clarinette_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-05T13:37:57</property>
+    <property name="shotcut:hash">ce64ff05cbaafa4ab64d61c9e57002dd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Nelly_clarinette_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter42" in="00:00:15.440" out="00:01:49.560">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 524 294 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter43" in="00:00:15.440" out="00:01:49.560">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+      <property name="disable">1</property>
+    </filter>
+  </producer>
+  <producer id="producer26" title="Anonymous Submission" in="00:00:00.000" out="00:03:27.800">
+    <property name="length">00:03:27:21</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Nelly_clarinette_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-05T13:37:57</property>
+    <property name="shotcut:hash">ce64ff05cbaafa4ab64d61c9e57002dd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Nelly_clarinette_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter44" in="00:01:49.600" out="00:02:04.400">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 524 294 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter45" in="00:01:49.600" out="00:02:04.400">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-12</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+    <filter id="filter46" in="00:01:49.600" out="00:02:04.400">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer27" title="Anonymous Submission" in="00:00:00.000" out="00:03:27.800">
+    <property name="length">00:03:27:21</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Nelly_clarinette_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-05T13:37:57</property>
+    <property name="shotcut:hash">ce64ff05cbaafa4ab64d61c9e57002dd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Nelly_clarinette_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter47" in="00:02:04.440" out="00:03:12.560">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 524 294 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter48" in="00:02:04.440" out="00:03:12.560">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+      <property name="disable">1</property>
+    </filter>
+  </producer>
+  <producer id="producer28" title="Anonymous Submission" in="00:00:00.000" out="00:03:27.800">
+    <property name="length">00:03:27:21</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Nelly_clarinette_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-05T13:37:57</property>
+    <property name="shotcut:hash">ce64ff05cbaafa4ab64d61c9e57002dd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Nelly_clarinette_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter49" in="00:03:12.600" out="00:03:27.800">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 524 294 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter50" in="00:03:12.600" out="00:03:27.800">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+      <property name="disable">1</property>
+    </filter>
+    <filter id="filter51" in="00:03:12.600" out="00:03:27.800">
+      <property name="mlt_service">ladspa.1913</property>
+      <property name="0">0</property>
+      <property name="1">-10</property>
+      <property name="2">0.51</property>
+      <property name="instances">1</property>
+      <property name="3[0]">5.85285</property>
+      <property name="8[0]">240</property>
+    </filter>
+  </producer>
+  <playlist id="playlist4">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Clarinette_Nelly</property>
+    <property name="shotcut:lock">1</property>
+    <blank length="00:00:08.520"/>
+    <entry producer="producer25" in="00:00:15.440" out="00:01:49.560"/>
+    <entry producer="producer26" in="00:01:49.600" out="00:02:04.400"/>
+    <entry producer="producer27" in="00:02:04.440" out="00:03:12.560"/>
+    <entry producer="producer28" in="00:03:12.600" out="00:03:27.800"/>
+    <filter id="filter52" out="00:03:23.320">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-11</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </playlist>
+  <producer id="producer29" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.440">
+    <property name="length">00:03:16:12</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Natacha_clarinette_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-09T18:24:43</property>
+    <property name="shotcut:hash">ef0c345cac52960b965edf602ef26da9</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Natacha_clarinette_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter53" out="00:00:32.600">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">1247 306 657 369 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter54" out="00:00:32.600">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer30" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.440">
+    <property name="length">00:03:16:12</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Natacha_clarinette_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-09T18:24:43</property>
+    <property name="shotcut:hash">ef0c345cac52960b965edf602ef26da9</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Natacha_clarinette_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter55" in="00:00:32.640" out="00:01:39.560">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">1247 306 657 369 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter56" in="00:00:32.640" out="00:01:39.560">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-5</property>
+      <property name="mlt_service">volume</property>
+      <property name="disable">1</property>
+    </filter>
+  </producer>
+  <producer id="producer31" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.440">
+    <property name="length">00:03:16:12</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Natacha_clarinette_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-09T18:24:43</property>
+    <property name="shotcut:hash">ef0c345cac52960b965edf602ef26da9</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Natacha_clarinette_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter57" in="00:01:39.600" out="00:01:54.400">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">1247 306 657 369 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter58" in="00:01:39.600" out="00:01:54.400">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer32" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.440">
+    <property name="length">00:03:16:12</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Natacha_clarinette_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-09T18:24:43</property>
+    <property name="shotcut:hash">ef0c345cac52960b965edf602ef26da9</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Natacha_clarinette_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter59" in="00:01:54.440" out="00:02:30.920">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">1247 306 657 369 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <producer id="producer33" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.440">
+    <property name="length">00:03:16:12</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Natacha_clarinette_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-09T18:24:43</property>
+    <property name="shotcut:hash">ef0c345cac52960b965edf602ef26da9</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Natacha_clarinette_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter60" in="00:02:30.960" out="00:02:32.440">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 0 724 407 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <producer id="producer34" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.440">
+    <property name="length">00:03:16:12</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Natacha_clarinette_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-09T18:24:43</property>
+    <property name="shotcut:hash">ef0c345cac52960b965edf602ef26da9</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Natacha_clarinette_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter61" in="00:02:32.480" out="00:02:54.840">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 661 744 418 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <producer id="producer35" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.440">
+    <property name="length">00:03:16:12</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Natacha_clarinette_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-09T18:24:43</property>
+    <property name="shotcut:hash">ef0c345cac52960b965edf602ef26da9</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Natacha_clarinette_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter62" in="00:02:54.880" out="00:03:00.040">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 661 744 418 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter63" in="00:02:54.880" out="00:03:00.040">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer36" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.440">
+    <property name="length">00:03:16:12</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Natacha_clarinette_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-09T18:24:43</property>
+    <property name="shotcut:hash">ef0c345cac52960b965edf602ef26da9</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Natacha_clarinette_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter64" in="00:03:00.080" out="00:03:02.560">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 661 744 418 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter65" in="00:03:00.080" out="00:03:02.560">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer37" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.440">
+    <property name="length">00:03:16:12</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Natacha_clarinette_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-09T18:24:43</property>
+    <property name="shotcut:hash">ef0c345cac52960b965edf602ef26da9</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Natacha_clarinette_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter66" in="00:03:02.600" out="00:03:07.800">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 661 744 418 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter67" in="00:03:02.600" out="00:03:07.800">
+      <property name="mlt_service">ladspa.1913</property>
+      <property name="0">0</property>
+      <property name="1">-10</property>
+      <property name="2">0.51</property>
+      <property name="instances">1</property>
+      <property name="3[0]">1.74527</property>
+      <property name="8[0]">240</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter68" in="00:03:02.600" out="00:03:07.800">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer38" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.440">
+    <property name="length">00:03:16:12</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Natacha_clarinette_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-09T18:24:43</property>
+    <property name="shotcut:hash">ef0c345cac52960b965edf602ef26da9</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Natacha_clarinette_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter69" in="00:03:07.840" out="00:03:16.440">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">0 661 744 418 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter70" in="00:03:07.840" out="00:03:16.440">
+      <property name="mlt_service">ladspa.1913</property>
+      <property name="0">0</property>
+      <property name="1">-10</property>
+      <property name="2">0.51</property>
+      <property name="instances">1</property>
+      <property name="3[0]">8.31908</property>
+      <property name="8[0]">240</property>
+      <property name="disable">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist5">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">natacha</property>
+    <property name="shotcut:lock">1</property>
+    <blank length="00:00:03.080"/>
+    <entry producer="producer29" in="00:00:00.000" out="00:00:32.600"/>
+    <entry producer="producer30" in="00:00:32.640" out="00:01:39.560"/>
+    <entry producer="producer31" in="00:01:39.600" out="00:01:54.400"/>
+    <entry producer="producer32" in="00:01:54.440" out="00:02:30.920"/>
+    <entry producer="producer33" in="00:02:30.960" out="00:02:32.440"/>
+    <entry producer="producer34" in="00:02:32.480" out="00:02:54.840"/>
+    <entry producer="producer35" in="00:02:54.880" out="00:03:00.040"/>
+    <entry producer="producer36" in="00:03:00.080" out="00:03:02.560"/>
+    <entry producer="producer37" in="00:03:02.600" out="00:03:07.800"/>
+    <entry producer="producer38" in="00:03:07.840" out="00:03:16.440"/>
+    <filter id="filter71" out="00:03:23.320">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-11</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </playlist>
+  <tractor id="tractor0" title="Shotcut version 20.02.17" global_feed="1" in="00:00:00.000" out="00:03:23.320">
+    <property name="shotcut">1</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">1</property>
+    <property name="shotcut:scaleFactor">2.74405</property>
+    <track producer="background"/>
+    <track producer="playlist0" hide="audio"/>
+    <track producer="playlist2"/>
+    <track producer="playlist4"/>
+    <track producer="playlist5"/>
+    <transition id="transition0">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition1">
+      <property name="a_track">1</property>
+      <property name="b_track">1</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">1</property>
+    </transition>
+    <transition id="transition4">
+      <property name="a_track">1</property>
+      <property name="b_track">2</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+    </transition>
+    <transition id="transition6">
+      <property name="a_track">0</property>
+      <property name="b_track">3</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition7">
+      <property name="a_track">1</property>
+      <property name="b_track">3</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition8">
+      <property name="a_track">0</property>
+      <property name="b_track">4</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition9">
+      <property name="a_track">1</property>
+      <property name="b_track">4</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition22">
+      <property name="a_track">0</property>
+      <property name="b_track">2</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+  </tractor>
+</mlt>
