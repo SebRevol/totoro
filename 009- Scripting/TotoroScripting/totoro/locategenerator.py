@@ -29,7 +29,7 @@ def get_space(name, max_len):
         result += ' '
     return result
 
-resource= Resource('../001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/EntreeTest.mlt')
+resource= Resource('../001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Orchestre dematerialisé - V1_pupitres incomplets.mlt')
 
 
 resource.clean_instru_map()

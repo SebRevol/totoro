@@ -7,6 +7,7 @@ mus = resource.players_registry
 
 all_players = list(resource.players_registry.values())
 
+JeanSeb_percu=mus["Jean-Seb_percu_totoro"]
 JeanJacques_percu=mus["Jean-Jacques_percu_totoro"]
 JeanJacques_chef_lacheprise=mus["Jean-Jacques_chef_laché prise"]
 Alizee_piano=mus["Alizee_piano_totoro"]
@@ -26,12 +27,12 @@ Andre_cor=mus["André_cor_totoro"]
 Myrtille_cor=mus["Myrtille_cor_totoro"]
 Alain_flute=mus["Alain_flute_totoro"]
 Laurence_flute=mus["Laurence_flute_totoro"]
-Antoine_flute=mus["Antoine_flute_totoro"]
 Gwenn_flute=mus["Gwenn_flute_totoro_recadre"]
 Benoit_flute=mus["Benoit_flute_totoro2"]
 Jawad_flute=mus["Jawad_flute_totoro"]
 Aurelie_hautbois=mus["Aurélie_hautbois_totoro"]
 Veronique_hautbois=mus["Veronique_hautbois_totoro"]
+Antoine_flute=mus["Antoine_flute_totoro_25fps"]
 Francoise_saxophone=mus["Francoise_saxophone_totoro"]
 Aurianne_saxophone=mus["Aurianne_saxophone_totoro"]
 MarieClaude_saxophone=mus["Marie-Claude_saxophone_totoro"]
@@ -40,8 +41,8 @@ Nadine_saxophone=mus["Nadine_saxophone_totoro"]
 Nathalie_saxophone=mus["Nathalie_saxophone_totoro"]
 Chloe_saxophone=mus["Chloe_saxophone_totoro_clown_recadre"]
 Camille_trombone=mus["Camille_trombone_totoro"]
-daniel_trombone=mus["daniel_trombone_totoro"]
 Cecile_trombone=mus["Cecile_trombone_totoro"]
+daniel_trombonne_recadre=mus["daniel_trombonne_recadre"]
 Bidou_cornet=mus["Bidou_cornet_totoro"]
 Serge_trompette=mus["Serge_trompette_totoro"]
 Marianne_trompette=mus["Marianne_trompette_totoro"]
@@ -120,7 +121,8 @@ class Percussions(object) :
     def __init__(self):
         self.Alizee_piano=Alizee_piano
         self.JeanJacques_percu=JeanJacques_percu
-        self.all=[Alizee_piano,JeanJacques_percu]
+        self.JeanSeb_percu=JeanSeb_percu
+        self.all=[Alizee_piano,JeanJacques_percu,JeanSeb_percu]
         return
 perc=Percussions()
 
@@ -128,8 +130,8 @@ class Trombone(object) :
     def __init__(self):
         self.Camille_trombone=Camille_trombone
         self.Cecile_trombone=Cecile_trombone
-        self.daniel_trombone=daniel_trombone
-        self.all=[Camille_trombone,Cecile_trombone,daniel_trombone]
+        self.daniel_trombonne_recadre=daniel_trombonne_recadre
+        self.all=[Camille_trombone,Cecile_trombone,daniel_trombonne_recadre]
         return
 trb=Trombone()
 

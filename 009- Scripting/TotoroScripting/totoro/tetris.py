@@ -123,7 +123,7 @@ class BaseTetrisBox(Box):
         abs_distance = min_distance/grid.num_box_line
         self.inside(grid).prop_move(self_abs_y + abs_distance, self_abs_x, self_abs_size, MOVE_DOWN_SPEED)
         incr_clock(move_down_time)
-        check_lines(self.get_top_grid())
+        #check_lines(self.get_top_grid())
         
    
     
@@ -138,11 +138,13 @@ class BaseTetrisBox(Box):
                 distance = math.sqrt((line-previous_line)**2+ (col-previous_col)**2)
                 self.goto(line, col, distance/MOVE_SPEED)
                 incr_clock(distance/(MOVE_SPEED)) 
+                print(self.parent)
                 if (switch): 
                     self.switch()
                 previous_line = line
             
         self.move_down()
+        print(self.parent)
             
             
     
@@ -152,9 +154,9 @@ class Barre(BaseTetrisBox):
     def __init__(self, children=[]):
         shapes = [
             [[0,0,0,0],
+             [1,1,1,1],
              [0,0,0,0],
-             [0,0,0,0],
-             [1,1,1,1]],
+             [0,0,0,0]],
             
             [[1,0,0,0],
              [1,0,0,0],
@@ -207,21 +209,23 @@ class L(BaseTetrisBox):
     
     def __init__(self, children=[]):
         shapes = [
-            [[0,0,0],
-             [1,1,1],
-             [1,0,0]],
-            
-            [[1,1,0],
-             [0,1,0],
-             [0,1,0]],
-            
             [[0,0,1],
              [1,1,1],
              [0,0,0]],
             
             [[0,1,0],
              [0,1,0],
-             [0,1,1]]
+             [0,1,1]],
+            
+            [[0,0,0],
+             [1,1,1],
+             [1,0,0]],
+            
+            [[1,1,0],
+             [0,1,0],
+             [0,1,0]]
+            
+          
             
             ]
             
@@ -288,7 +292,7 @@ class S(BaseTetrisBox):
         
 class Coeur(BaseTetrisBox):
     def __init__(self, children=[]):
-        shapes = [
+        shapes = [         
             [[0,1,0,0,1,0,0],
              [0,1,1,0,1,1,0],
              [1,1,1,1,1,1,0],
@@ -299,7 +303,7 @@ class Coeur(BaseTetrisBox):
              [0,0,1,1,1,0,0],
              [0,0,1,1,0,0,0],
              [0,0,0,1,0,0,0]],
-
+                           
            ]
     
         BaseTetrisBox.__init__(self, children, shapes)
@@ -425,9 +429,69 @@ class M(BaseTetrisBox):
         
     def fill(self, players, duration=None):
         result = BaseTetrisBox.fill(self, players, duration=duration)
-        self.get_box(3,1,1,4).inside(self).goto(3,1.5)
-        self.get_box(5,3,1,2).inside(self).goto(5,3.5)
-        self.get_box(3,1,1,4).inside(self).goto(3,1.5)
+        self.get_box(3,2,1,4).inside(self).goto(3,1.5)
+        self.get_box(5,3,1,2).inside(self).goto(5,2.5)
+       
         
         return result
     
+    
+class G(BaseTetrisBox):
+    def __init__(self, children=[]):
+        shapes = [
+            [[0,1,1,1,0,0],
+             [1,1,0,0,1,0],
+             [1,1,0,0,1,0],
+             [1,1,0,0,1,0],
+             [1,1,0,0,0,0],
+             [1,1,0,0,0,0],
+             [1,1,0,0,0,0],
+             [1,1,0,1,1,1],
+             [1,1,0,0,1,0],
+             [1,1,0,0,1,0],
+             [1,1,0,0,1,0],
+             [1,1,0,0,1,0],
+             [0,1,1,1,0,0]]
+
+           ]
+    
+        BaseTetrisBox.__init__(self, children, shapes)
+        
+        
+    def fill(self, players, duration=None):
+        result = BaseTetrisBox.fill(self, players, duration=duration)
+        self.get_box(1,2,1,3).inside(self).goto(1,1.5)
+        self.get_box(13,2,1,3).inside(self).goto(13,1.5)
+        
+        return result
+    
+class B(BaseTetrisBox):
+    def __init__(self, children=[]):
+        shapes = [
+            [[0,1,1,1,1,0],
+             [1,1,0,0,1,0],
+             [1,1,0,0,0,1],
+             [1,1,0,0,0,1],
+             [1,1,0,0,0,1],
+             [1,1,0,0,1,0],
+             [1,1,1,1,0,0],
+             [1,1,0,0,1,0],
+             [1,1,0,0,0,1],
+             [1,1,0,0,0,1],
+             [1,1,0,0,0,1],
+             [1,1,0,0,1,0],
+             [0,1,1,1,1,0]]
+
+           ]
+    
+        BaseTetrisBox.__init__(self, children, shapes)
+        
+        
+    def fill(self, players, duration=None):
+        result = BaseTetrisBox.fill(self, players, duration=duration)
+        self.get_player(2,5).inside(self).goto(2,4.5)
+        self.get_player(6,5).inside(self).goto(6,4.5)
+        self.get_player(8,5).inside(self).goto(8,4.5)
+        self.get_player(12,5).inside(self).goto(12,4.5)
+        
+        return result
