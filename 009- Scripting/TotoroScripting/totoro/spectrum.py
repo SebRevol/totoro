@@ -25,9 +25,10 @@ def spectrum(columns, lines, rate, duration):
     for col_num in range(columns) :
         col = SepctrumCol([], lines)
         remaining_players = col.fill(remaining_players)
-        col.inside(grid).goto(2,col_num+0.5)
+        col.inside(grid).goto(2,col_num+1)
         cols.append(col)
-       
+    
+    col.inside(grid).goto(3,col_num+1)
     
     audio_data = get_audio_data(columns,rate,duration)
     #print(audio_data.shape)

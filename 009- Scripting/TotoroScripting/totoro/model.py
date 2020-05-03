@@ -82,6 +82,12 @@ class Resource(object):
         
     
     
+    def cut(self, start, end):
+        #! Ne gère pas la coupure dans un blank
+        for player in self.player_registry:
+            player.cut(start,end)
+        
+    
         
     def clean_instru_map(self):
         instru_to_remove = []
@@ -307,8 +313,8 @@ class Player(DisplayedElement) :
             
             current_producer = self.current_entry.producer
             current_prod_index= self.producers.index(current_producer)
-        
-        self.get_top_grid().locate_wit_coord(self.producers[current_prod_index:],-1,-1,1)
+        abs_x, abs_y, abs_size = self.get_absolute_coordinates()
+        self.get_top_grid().locate_wit_coord(self.producers[current_prod_index:],-1,-1,int(abs_size))
     
                 
     def __str__(self, *args, **kwargs):
@@ -331,7 +337,7 @@ class Player(DisplayedElement) :
     
     
     def mute_and_remove_cut(self):
-        #self.track.mute()
+        self.track.mute()
         
         if (len(self.producers) >1 ):
             first_producer = self.producers[0]
@@ -353,6 +359,16 @@ class Player(DisplayedElement) :
                 
             del self.producers[1:]
         
+    def cut(self, start, end):
+        
+        if start is not None :
+            self.on(start)
+            #if (self.current_entry is None ) :
+                
+            #current_entry_index= self.playlist.entries.index(self.current_entry)
+            
+            #for entry in self.playlist.entries[]
+            
         
     
     
@@ -449,7 +465,8 @@ class Playlist(object):
               
                
                 new_entry = entry.split(time)
-                self.insert_entry(entry, new_entry)
+                if (new_entry is not None):
+                    self.insert_entry(entry, new_entry)
                 return new_entry
         return None
     
@@ -482,7 +499,10 @@ class Blank(object):
         self.node.set('length', end_date.strftime(TIME_FORMAT))
         
     def get_end_time(self):
-        return self.start_time + self.get_duration()-get_frame_duration() 
+        return self.start_time + self.get_duration()-get_frame_duration()
+    
+    def split(self,time):
+        return None 
         
     
 class Entry(object):

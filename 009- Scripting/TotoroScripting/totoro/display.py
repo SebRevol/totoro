@@ -8,11 +8,11 @@ import datetime
 import math
 from string import ascii_lowercase, ascii_uppercase
 
-
 from totoro.utils import get_time_string, zero_time, \
     get_property, get_frame_duration, get_num_box, get_current_resource, \
-    get_time_from_user_string, get_user_string_from_time, parse_position,\
+    get_time_from_user_string, get_user_string_from_time, parse_position, \
     get_nearest_frame_date, get_nearest_frame_duration
+
 
 
 clock_value = None
@@ -20,6 +20,14 @@ clock_value = None
 
 letters = ascii_uppercase
 letters+=ascii_lowercase
+
+
+def hide_all(to_hide=None):
+    if (to_hide == None):
+        to_hide = list( get_current_resource().players_registry.values())
+    for player in to_hide:
+        player.hide()
+    
 
 def get_short_name(name):
     if ("_totoro" in name):
@@ -218,6 +226,14 @@ class Container(object):
                 player.inside(box).prop_move( rel_y,rel_x, rel_size)
         
     
+    def get_players(self):
+        result =[]
+        for child in self.children :
+            if( isinstance(child, Container)):
+                result.extend(child.get_players())
+            else :
+                result.append(child)
+        return result
     
     def to_line_and_cols(self, rel_x, rel_y, rel_size):
         line = round(rel_y*self.num_box_line +1,2)
@@ -514,6 +530,20 @@ class Box(DisplayedElement, Container):
             child.update()
     
     
+    def expand(self, ratio, expand_children=False, duration=None):
+        new_size = ratio*self.rel_size
+
+        self.rel_x = self.rel_x+(self.rel_size/2)*(1-ratio)
+        self.rel_y = self.rel_y+(self.rel_size/2)*(1-ratio)/self.get_width_on_height()
+        
+        self.rel_size =new_size
+        
+        if (not expand_children):
+            for child in self.get_players() :
+                child.rel_size = child.rel_size/ratio
+        
+        self.update(duration)
+        
     
     def prop_move(self,rel_y, rel_x,rel_size, duration =None):
         DisplayedElement.prop_move(self,rel_y, rel_x, rel_size, duration)

@@ -29,7 +29,7 @@ def get_space(name, max_len):
         result += ' '
     return result
 
-resource= Resource('../001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Test-API-merge2.mlt')
+resource= Resource('../001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/EntreeTest.mlt')
 
 
 resource.clean_instru_map()
@@ -47,6 +47,8 @@ from totoro.utils import get_current_resource
 resource = get_current_resource()
 instru_map = resource.instru_map
 mus = resource.players_registry
+
+all_players = list(resource.players_registry.values())
 
 '''
 instru_name_map ={"Saxophone":"sax", "Clarinettes":"clar", "Cor": "cor",
