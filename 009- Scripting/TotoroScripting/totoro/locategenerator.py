@@ -50,11 +50,17 @@ mus = resource.players_registry
 
 all_players = list(resource.players_registry.values())
 
+def get_all_players():
+    players_with_bonus = list(resource.players_registry.values())
+    
+    result = [ player for player in players_with_bonus if player not in bonux.all] 
+    return result
+
 '''
 instru_name_map ={"Saxophone":"sax", "Clarinettes":"clar", "Cor": "cor",
                   "Euphonium":"eph", "Flutes": "fl", "Hautbois":"hb",
                   "Percussions": "perc", "Trombone":"trb", "Trompettes et cornets": "trp",
-                  "Tuba": "tb"
+                  "Tuba": "tb", "Bonus":"bonux"
                   }
 
 print(instru_map)

@@ -429,9 +429,10 @@ class M(BaseTetrisBox):
         
     def fill(self, players, duration=None):
         result = BaseTetrisBox.fill(self, players, duration=duration)
-        self.get_box(3,2,1,4).inside(self).goto(3,1.5)
-        self.get_box(5,3,1,2).inside(self).goto(5,2.5)
-       
+        self.get_player(3,3).inside(self).goto(3,2.5)
+        self.get_player(3,6).inside(self).goto(3,5.5)
+        self.get_player(5,4).inside(self).goto(5,3.5)
+        self.get_player(5,5).inside(self).goto(5,4.5)
         
         return result
     

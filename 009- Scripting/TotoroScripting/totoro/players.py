@@ -7,7 +7,14 @@ mus = resource.players_registry
 
 all_players = list(resource.players_registry.values())
 
+def get_all_players():
+    players_with_bonus = list(resource.players_registry.values())
+    
+    result = [ player for player in players_with_bonus if player not in bonux.all] 
+    return result
+
 JeanSeb_percu=mus["Jean-Seb_percu_totoro"]
+JeanJacques_chef=mus["Jean-Jacques_chef_totoro"]
 JeanJacques_percu=mus["Jean-Jacques_percu_totoro"]
 JeanJacques_chef_lacheprise=mus["Jean-Jacques_chef_laché prise"]
 Alizee_piano=mus["Alizee_piano_totoro"]
@@ -27,12 +34,12 @@ Andre_cor=mus["André_cor_totoro"]
 Myrtille_cor=mus["Myrtille_cor_totoro"]
 Alain_flute=mus["Alain_flute_totoro"]
 Laurence_flute=mus["Laurence_flute_totoro"]
+Antoine_flute=mus["Antoine_flute_totoro"]
 Gwenn_flute=mus["Gwenn_flute_totoro_recadre"]
 Benoit_flute=mus["Benoit_flute_totoro2"]
 Jawad_flute=mus["Jawad_flute_totoro"]
 Aurelie_hautbois=mus["Aurélie_hautbois_totoro"]
 Veronique_hautbois=mus["Veronique_hautbois_totoro"]
-Antoine_flute=mus["Antoine_flute_totoro_25fps"]
 Francoise_saxophone=mus["Francoise_saxophone_totoro"]
 Aurianne_saxophone=mus["Aurianne_saxophone_totoro"]
 MarieClaude_saxophone=mus["Marie-Claude_saxophone_totoro"]
@@ -49,6 +56,11 @@ Marianne_trompette=mus["Marianne_trompette_totoro"]
 Svoisine_tuba=mus["Svoisine_tuba"]
 Serge_baryton=mus["Serge_baryton_totoro_recadre"]
 Srevol_tuba_recadre=mus["Srevol_tuba_recadre"]
+Camille_bonus_recadre=mus["Camille_bonus_recadre"]
+Bidou_bonus_recadre=mus["Bidou_bonus_recadre"]
+Nelly_bonus_recadre=mus["Nelly_bonus_recadre"]
+Laurence_bonus_recadre=mus["Laurence_bonus_recadre"]
+Nadine_bonus_recadre=mus["Nadine_bonus_recadre"]
 
 
 class Saxophone(object) :
@@ -151,3 +163,14 @@ class Tuba(object) :
         self.all=[Srevol_tuba_recadre,Svoisine_tuba]
         return
 tb=Tuba()
+
+class Bonus(object) :
+    def __init__(self):
+        self.Bidou_bonus_recadre=Bidou_bonus_recadre
+        self.Camille_bonus_recadre=Camille_bonus_recadre
+        self.Laurence_bonus_recadre=Laurence_bonus_recadre
+        self.Nadine_bonus_recadre=Nadine_bonus_recadre
+        self.Nelly_bonus_recadre=Nelly_bonus_recadre
+        self.all=[Bidou_bonus_recadre,Camille_bonus_recadre,Laurence_bonus_recadre,Nadine_bonus_recadre,Nelly_bonus_recadre]
+        return
+bonux=Bonus()

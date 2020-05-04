@@ -11,7 +11,7 @@ import uuid
 
 
 
-from totoro.display import Grid, DisplayedElement, get_clock
+from totoro.display import Grid, DisplayedElement, get_clock, get_duration_clock
 from totoro.utils import fix_relpath, collect_video_files_names, get_num_box, \
     insert_before, zero_time, get_position, get_time_from_user_string, \
     get_player_name, get_property, get_filter, get_time_string, TIME_FORMAT, \
@@ -84,7 +84,7 @@ class Resource(object):
     
     def cut(self, start, end):
         #! Ne gère pas la coupure dans un blank
-        for player in self.player_registry:
+        for player in self.players_registry.values():
             player.cut(start,end)
         
     
@@ -359,15 +359,57 @@ class Player(DisplayedElement) :
                 
             del self.producers[1:]
         
-    def cut(self, start, end):
+    def cut(self, start=None, end=None):
+        
         
         if start is not None :
+             
             self.on(start)
-            #if (self.current_entry is None ) :
-                
-            #current_entry_index= self.playlist.entries.index(self.current_entry)
+            duration_to_now = get_time_from_user_string(start)-zero_time
             
-            #for entry in self.playlist.entries[]
+            blanks_to_add =[]
+            blank = None
+            if (self.current_entry is not None ) :                
+                self.playlist.entries.sort(key= lambda entry: entry.start_time)
+                current_entry_index= self.playlist.entries.index(self.current_entry) 
+                current_procuder_index = self.producers.index(self.current_entry.producer)           
+                 
+                first_entry = self.playlist.entries[0]
+                if (current_entry_index >0 and type(first_entry) == Blank):
+                    first_entry.set_duration(duration_to_now)
+                    
+                else :
+                    blank_node = ET.fromstring('<blank length="00:00:0.000" />')
+                    blank = Blank(blank_node, zero_time)
+                    blank.set_duration(duration_to_now)
+                    self.playlist.entries.insert(0, blank)
+                    self.playlist.node.insert(0, blank.node)
+                    current_entry_index+=1
+                    
+                start_index= 1                 
+                for entry in self.playlist.entries[start_index:current_entry_index]:
+                    self.playlist.node.remove(entry.node)
+                    delete_node(entry.producer.node, entry.producer.resource.parent_map)
+                    self.producers.remove(entry.producer)
+         
+                    del self.playlist.entries[1:current_entry_index]
+             
+                
+                
+        if end is not None :
+            self.on(end)
+            if (self.current_entry is not None ) :                
+                self.playlist.entries.sort(key= lambda entry: entry.start_time)
+                current_entry_index= self.playlist.entries.index(self.current_entry) 
+                
+                for entry in self.playlist.entries[current_entry_index:]:
+                    self.playlist.node.remove(entry.node)
+                    delete_node(entry.producer.node, entry.producer.resource.parent_map)
+                    self.producers.remove(entry.producer)
+                del self.playlist.entries[current_entry_index:]
+                
+                
+                
             
         
     
@@ -537,7 +579,7 @@ class Entry(object):
         new_producer_node = copy.deepcopy(self.producer.node)
         insert_after(self.producer.node, new_producer_node, self.resource.parent_map)
         new_producer = Producer(new_producer_node, self.resource)
-        tmp_id = uuid.uuid1()
+        tmp_id = str(uuid.uuid1())
         new_producer.set_id(tmp_id)
         self.producer_registry[tmp_id] = new_producer
         
