@@ -10,8 +10,7 @@ from totoro.utils import get_current_resource, get_frame_duration
 
 
 #Line per seconds
-MOVE_DOWN_SPEED = 3
-MOVE_SPEED =2
+MOVE_SPEED =2.51
 
 def check_lines(grid):
     first_full_line =0
@@ -35,7 +34,7 @@ def check_lines(grid):
             line.hide()
         incr_clock(0.1)    
         box = grid.get_box(1,1,first_full_line, grid.num_box_col )
-        t_move = len(lines_to_remove)/MOVE_DOWN_SPEED
+        t_move = len(lines_to_remove)/MOVE_SPEED
         box.goto(1+len(lines_to_remove), 1, t_move)
         incr_clock(t_move)
         
@@ -119,9 +118,9 @@ class BaseTetrisBox(Box):
         
         self_abs_x, self_abs_y, self_abs_size = self.get_absolute_coordinates()
         
-        move_down_time = min_distance/MOVE_DOWN_SPEED
+        move_down_time = min_distance/MOVE_SPEED
         abs_distance = min_distance/grid.num_box_line
-        self.inside(grid).prop_move(self_abs_y + abs_distance, self_abs_x, self_abs_size, MOVE_DOWN_SPEED)
+        self.inside(grid).prop_move(self_abs_y + abs_distance, self_abs_x, self_abs_size, move_down_time)
         incr_clock(move_down_time)
         #check_lines(self.get_top_grid())
         

@@ -6,14 +6,14 @@ Created on 4 mai 2020
 from totoro.utils import get_time_from_user_string
 from totoro.display import clock, hide_all, incr_clock
 from totoro.tetris import I, Coeur, E, M, G, B
-from totoro.players import get_all_players
+from totoro.players import get_all_players, Natacha_clarinette, JeanJacques_chef
 import random
 
 
 start_time_string = "00:01:58:62"
 start_time = get_time_from_user_string(start_time_string)
 
-end_time_string = "00:02:19:11"
+end_time_string = "00:02:17:80"
 end_time = get_time_from_user_string(end_time_string)
 
 def i_love_emgb(grid):
@@ -103,6 +103,10 @@ def i_love_emgb(grid):
      
     incr_clock(image_duration)
     print(grid)
+    
+    grid.to_tag("table2",0.5)
+    Natacha_clarinette.swap(JeanJacques_chef,0.5)
+    
      
     
     

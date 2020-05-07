@@ -21,6 +21,59 @@ clock_value = None
 letters = ascii_uppercase
 letters+=ascii_lowercase
 
+def get_box_from_players(container, line_pos, col_pos, num_of_lines, num_of_cols):
+    result = Box([],num_of_lines,num_of_cols)
+    
+    result.inside(container).goto(line_pos,col_pos )
+    for line in range(num_of_lines) :
+            for col in range (num_of_cols):
+                player = container.get_player(line_pos +line, col_pos+col)
+                player.inside(result).move(line+1, col+1, 1)    
+    
+    return result
+
+
+
+def rotate(container, iteration_par_second, duration):
+    iteration_num = int(iteration_par_second * duration)
+    iteration_duration = duration / iteration_num
+    
+    col_size = container.num_box_line -1
+    line_size = container.num_box_col -1
+    for _ in range(iteration_num):
+        col_gauche = get_box_from_players(container,1,1,col_size,1)
+        ligne_bas =  get_box_from_players(container,col_size+1,1,1,line_size)
+        col_droite =  get_box_from_players(container,2,line_size+1,col_size,1)
+        ligne_haut= get_box_from_players(container,1,2,1,line_size)
+#         
+
+        
+        col_gauche.inside(container).goto(2,1,iteration_duration)
+        ligne_bas.inside(container).goto(col_size+1,2,iteration_duration)
+        col_droite.inside(container).goto(1,line_size+1,iteration_duration)
+        ligne_haut.inside(container).goto(1,1,iteration_duration)
+        incr_clock(iteration_duration)
+        
+        
+def rotate_clock(container, iteration_par_second, duration):
+    iteration_num = int(iteration_par_second * duration)
+    iteration_duration = duration / iteration_num
+    
+    col_size = container.num_box_line -1
+    line_size = container.num_box_col -1
+    for _ in range(iteration_num):
+        col_gauche = get_box_from_players(container,2,1,col_size,1)
+        ligne_bas =  get_box_from_players(container,col_size+1,2,1,line_size)
+        col_droite =  get_box_from_players(container,1,line_size+1,col_size,1)
+        ligne_haut= get_box_from_players(container,1,1,1,line_size)
+        
+        col_gauche.goto(1,1,iteration_duration)
+        ligne_bas.goto(col_size+1,1,iteration_duration)
+        col_droite.goto(2,line_size+1,iteration_duration)
+        ligne_haut.goto(1,2,iteration_duration)
+        incr_clock(iteration_duration)
+
+
 
 def hide_all(to_hide=None):
     if (to_hide == None):

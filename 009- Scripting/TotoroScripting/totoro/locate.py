@@ -4,27 +4,29 @@
 
 from totoro.players import *
 from totoro.i_love_emgb import i_love_emgb
+from totoro import locate_camille
+from totoro.play_tetris import play_tetris
 
 def locate(resource):
-    
+    locate_camille.locate(resource)
     grid= resource.grid
     
-    grid.auto_layout()
     
     i_love_emgb(grid)
+    play_tetris(grid)
     
-    resource.cut ("00:01:55:00",  "00:02:22:00") 
+    #resource.cut ("00:03:00:00",  "00:03:41:00") 
      
     
-    
-  
+    #resource.cut ("00:01:53:62","00:03:41:00")
+    #resource.cut ("00:02:51:79","00:03:03:00")
     
     
       
    
     
     
-    #tetris
+   
   
     
     

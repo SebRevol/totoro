@@ -52,7 +52,7 @@ if __name__ == '__main__':
 
     resource=Resource('../001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Test-API-merge2.mlt')
     set_current_resource(resource)
-    from totoro.players import *
+   # from totoro.players import *
 
     
     instru_map = resource.instru_map
@@ -65,77 +65,77 @@ if __name__ == '__main__':
     grid.tag("initial")
     
     
-    grid.set_num_box(8)
-    grid.set_margin(40)
-     
-    clock("00:00:30:00")
-    columns = 3
-    lines =8
-    rate = 0.4
-    duration = 10
-    
-    Chloe_saxophone.hide()
-    
-    spectrum(columns, lines, rate, duration)
-    
-    clock("00:00:45:00")
-  
-    columns = 3
-    lines =8
-    rate = 0.3
-    duration = 10
-            
-    spectrum(columns, lines, rate, duration)
-    
-    
-    clock("00:01:00:00")
-  
-    columns = 3
-    lines =8
-    rate = 0.2
-    duration = 10
-            
-    spectrum(columns, lines, rate, duration)
-    
-            
-    
-    
-    
-#    bottom_line = grid.get_line(5)
-#     bottom_line.goto(5,-0.5,2)
-#     
-#     grid.tag("aligned")
+#     grid.set_num_box(8)
+#     grid.set_margin(40)
 #      
 #     clock("00:00:30:00")
-#     column = grid.get_column(1)
-#      
-#     column.shift(4, 2)
-#      
-#     clock("00:00:32:00")
-#     grid.get_line(5).shift(4,2)
-#      
-#     clock("00:00:34:00")
-#     grid.get_column(5).shift(-4,2)
-#      
-#     clock("00:00:36:00")
-#     column = grid.get_column(5)
-#     column.goto(-4,5,2)
-#      
-#     clock("00:00:38:00")
-#     grid.get_box(1,1,5,4).goto(1,2,1)
-#     clock("00:00:39:00")
-#     column.goto(-4,1)
-#     column.goto(1,1,1)
-#      
-#      
-#     clock("00:00:41:00")
-#      
-#    
-#     mus["Franck_saxophone_totoro"].inside(grid).goto(5,5,1)
-#     center_box = grid.get_box(2,2,3,3)
-#     center_box.auto_layout(0.5)
-#      
-#     rotate(grid, 2, 10)
+#     columns = 3
+#     lines =8
+#     rate = 0.4
+#     duration = 10
+#     
+#     Chloe_saxophone.hide()
+#     
+#     spectrum(columns, lines, rate, duration)
+#     
+#     clock("00:00:45:00")
+#   
+#     columns = 3
+#     lines =8
+#     rate = 0.3
+#     duration = 10
+#             
+#     spectrum(columns, lines, rate, duration)
+#     
+#     
+#     clock("00:01:00:00")
+#   
+#     columns = 3
+#     lines =8
+#     rate = 0.2
+#     duration = 10
+#             
+#     spectrum(columns, lines, rate, duration)
+    
+            
+    
+    
+    
+    bottom_line = grid.get_line(5)
+    bottom_line.goto(5,-0.5,2)
+    
+    grid.tag("aligned")
+     
+    clock("00:00:30:00")
+    column = grid.get_column(1)
+     
+    column.shift(4, 2)
+     
+    clock("00:00:32:00")
+    grid.get_line(5).shift(4,2)
+     
+    clock("00:00:34:00")
+    grid.get_column(5).shift(-4,2)
+     
+    clock("00:00:36:00")
+    column = grid.get_column(5)
+    column.goto(-4,5,2)
+     
+    clock("00:00:38:00")
+    grid.get_box(1,1,5,4).goto(1,2,1)
+    clock("00:00:39:00")
+    column.goto(-4,1)
+    column.goto(1,1,1)
+     
+     
+    clock("00:00:41:00")
+     
+    
+    mus["Franck_saxophone_totoro"].inside(grid).goto(5,5,1)
+    center_box = grid.get_box(2,2,3,3)
+    center_box.auto_layout(0.5)
+     
+    rotate(grid, 2, 10)
 #          
 #     moving_player = grid.get_player(3,1)
 #      

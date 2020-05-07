@@ -267,6 +267,19 @@ class Player(DisplayedElement) :
         self.update_relative_coordinates(line_num, col_num, size)
         self.get_top_grid().locate( self.producers, self)
         
+    
+    def expand(self, ratio, duration=None):
+        new_size = ratio*self.rel_size
+
+        self.rel_x = self.rel_x+(self.rel_size/2)*(1-ratio)
+        self.rel_y = self.rel_y+(self.rel_size/2)*(1-ratio)/self.get_width_on_height()
+        
+        self.rel_size =new_size
+        
+        self.update(duration)
+
+    
+    
     def prop_move(self,vert_ratio, horiz_ratio,size_ratio, duration =None):
         DisplayedElement.prop_move(self,vert_ratio, horiz_ratio, size_ratio, duration)
         if (self.current_entry is not None ):
@@ -275,6 +288,10 @@ class Player(DisplayedElement) :
             current_producer = self.producers[0]
             
         current_prod_index= self.producers.index(current_producer)
+        
+        if (duration == None) :
+            duration = get_frame_duration().total_seconds()
+        
         if (duration == None):
             self.get_top_grid().locate(self.producers[current_prod_index:],self)
         else :
@@ -367,7 +384,6 @@ class Player(DisplayedElement) :
             self.on(start)
             duration_to_now = get_time_from_user_string(start)-zero_time
             
-            blanks_to_add =[]
             blank = None
             if (self.current_entry is not None ) :                
                 self.playlist.entries.sort(key= lambda entry: entry.start_time)
@@ -392,7 +408,7 @@ class Player(DisplayedElement) :
                     delete_node(entry.producer.node, entry.producer.resource.parent_map)
                     self.producers.remove(entry.producer)
          
-                    del self.playlist.entries[1:current_entry_index]
+                del self.playlist.entries[1:current_entry_index]
              
                 
                 

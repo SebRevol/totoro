@@ -1950,7 +1950,44 @@
     <blank length="00:00:14.680" />
     <entry in="00:00:00.000" out="00:03:02.520000" producer="producer41" />
     </playlist>
-  <producer id="producer42" in="00:00:00.000" out="00:03:23.200" title="Anonymous Submission">
+  <producer id="producer42" in="00:00:00.000" out="00:03:24.360" title="Anonymous Submission">
+    <property name="length">00:03:24:10</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Patrick_trompette_totoro_recadre.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-30T16:36:42</property>
+    <property name="shotcut:hash">6d403b6511552862d61535ad4f275af7</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Patrick_trompette_totoro_recadre.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter98" out="00:03:24.360">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">1097.0 771.0 275.0 155.0 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist41">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">Patrick trompette recadre</property>
+    <property name="shotcut:lock">1</property>
+    <entry in="00:00:00.000" out="00:03:24.360" producer="producer42" />
+  </playlist>
+  <producer id="producer43" in="00:00:00.000" out="00:03:23.200" title="Anonymous Submission">
     <property name="length">00:03:23:06</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Trompettes et cornets/Marianne_trompette_totoro.mp4</property>
@@ -1967,13 +2004,13 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter98" out="00:03:23.200000">
+    <filter id="filter99" out="00:03:23.200000">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">1097.0 771.0 275.0 155.0 1</property>
+      <property name="transition.rect">1371.0 771.0 275.0 155.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1981,20 +2018,20 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <playlist id="playlist41">
+  <playlist id="playlist42">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">Marianne</property>
     <property name="shotcut:lock">1</property>
     <blank length="00:00:01.120" />
-    <entry in="00:00:00.000" out="00:03:23.200000" producer="producer42" />
-    <filter id="filter99" out="00:03:24.360">
+    <entry in="00:00:00.000" out="00:03:23.200000" producer="producer43" />
+    <filter id="filter100" out="00:03:24.360">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">-5</property>
       <property name="mlt_service">volume</property>
     </filter>
   </playlist>
-  <producer id="producer43" in="00:00:00.000" out="00:03:26.280" title="Anonymous Submission">
+  <producer id="producer44" in="00:00:00.000" out="00:03:26.280" title="Anonymous Submission">
     <property name="length">00:03:26:08</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Tuba/Svoisine_tuba.mp4</property>
@@ -2011,20 +2048,20 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter100" in="00:00:09.680" out="00:03:26.280000">
+    <filter id="filter101" in="00:00:09.680" out="00:03:26.280000">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">1371.0 771.0 275.0 155.0 1</property>
+      <property name="transition.rect">1645.0 771.0 275.0 155.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="filter101" in="00:00:09.680" out="00:03:26.280000">
+    <filter id="filter102" in="00:00:09.680" out="00:03:26.280000">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="mlt_service">volume</property>
@@ -2032,20 +2069,20 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <playlist id="playlist42">
+  <playlist id="playlist43">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">S Voisine</property>
     <property name="shotcut:lock">1</property>
     <blank length="00:00:05.280" />
-    <entry in="00:00:09.680" out="00:03:26.280000" producer="producer43" />
-    <filter id="filter102" out="00:03:32.600">
+    <entry in="00:00:09.680" out="00:03:26.280000" producer="producer44" />
+    <filter id="filter103" out="00:03:32.600">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">-10</property>
       <property name="mlt_service">volume</property>
     </filter>
   </playlist>
-  <producer id="producer44" in="00:00:00.000" out="00:05:55.520" title="Anonymous Submission">
+  <producer id="producer45" in="00:00:00.000" out="00:05:55.520" title="Anonymous Submission">
     <property name="length">00:05:55:14</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Euphonium/Serge_baryton_totoro_recadre.mp4</property>
@@ -2062,13 +2099,13 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter103" out="00:03:32.520000">
+    <filter id="filter104" out="00:03:32.520000">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">1645.0 771.0 275.0 155.0 1</property>
+      <property name="transition.rect">0.0 925.0 275.0 155.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -2076,20 +2113,20 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <playlist id="playlist43">
+  <playlist id="playlist44">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">S Baudry recadre</property>
     <property name="shotcut:lock">1</property>
     <blank length="00:00:00.080" />
-    <entry in="00:00:00.000" out="00:03:32.520000" producer="producer44" />
-    <filter id="filter104" out="00:03:32.600">
+    <entry in="00:00:00.000" out="00:03:32.520000" producer="producer45" />
+    <filter id="filter105" out="00:03:32.600">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">-13</property>
       <property name="mlt_service">volume</property>
     </filter>
   </playlist>
-  <producer id="producer45" in="00:00:00.000" out="00:05:55.520" title="Anonymous Submission">
+  <producer id="producer46" in="00:00:00.000" out="00:05:55.520" title="Anonymous Submission">
     <property name="length">00:05:55:14</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Tuba/Srevol_tuba_recadre.mp4</property>
@@ -2106,20 +2143,20 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter105" out="00:03:25.680000">
+    <filter id="filter106" out="00:03:25.680000">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">137.0 925.0 275.0 155.0 1</property>
+      <property name="transition.rect">274.0 925.0 275.0 155.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="filter106" out="00:03:25.680000">
+    <filter id="filter107" out="00:03:25.680000">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="mlt_service">volume</property>
@@ -2127,19 +2164,19 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <playlist id="playlist44">
+  <playlist id="playlist45">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">S Revol recadre</property>
     <property name="shotcut:lock">1</property>
-    <entry in="00:00:00.000" out="00:03:25.680000" producer="producer45" />
-    <filter id="filter107" out="00:03:32.600">
+    <entry in="00:00:00.000" out="00:03:25.680000" producer="producer46" />
+    <filter id="filter108" out="00:03:32.600">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">-7</property>
       <property name="mlt_service">volume</property>
     </filter>
   </playlist>
-  <producer id="producer46" in="00:00:00.000" out="00:03:35.640" title="Anonymous Submission">
+  <producer id="producer47" in="00:00:00.000" out="00:03:35.640" title="Anonymous Submission">
     <property name="length">00:03:35:17</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Bonus/Camille_bonus_recadre.mp4</property>
@@ -2156,13 +2193,13 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter108" out="00:03:35.640">
+    <filter id="filter109" out="00:03:35.640">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">411.0 925.0 275.0 155.0 1</property>
+      <property name="transition.rect">548.0 925.0 275.0 155.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -2170,13 +2207,13 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <playlist id="playlist45">
+  <playlist id="playlist46">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">Camille bonus recadre</property>
     <property name="shotcut:lock">1</property>
-    <entry in="00:00:00.000" out="00:03:35.640" producer="producer46" />
+    <entry in="00:00:00.000" out="00:03:35.640" producer="producer47" />
   </playlist>
-  <producer id="producer47" in="00:00:00.000" out="00:03:35.640" title="Anonymous Submission">
+  <producer id="producer48" in="00:00:00.000" out="00:03:35.640" title="Anonymous Submission">
     <property name="length">00:03:35:17</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Bonus/Bidou_bonus_recadre.mp4</property>
@@ -2193,13 +2230,13 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter109" out="00:03:35.640">
+    <filter id="filter110" out="00:03:35.640">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">685.0 925.0 275.0 155.0 1</property>
+      <property name="transition.rect">822.0 925.0 275.0 155.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -2207,13 +2244,13 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <playlist id="playlist46">
+  <playlist id="playlist47">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">Bidou bonus recadre</property>
     <property name="shotcut:lock">1</property>
-    <entry in="00:00:00.000" out="00:03:35.640" producer="producer47" />
+    <entry in="00:00:00.000" out="00:03:35.640" producer="producer48" />
   </playlist>
-  <producer id="producer48" in="00:00:00.000" out="00:03:35.640" title="Anonymous Submission">
+  <producer id="producer49" in="00:00:00.000" out="00:03:35.640" title="Anonymous Submission">
     <property name="length">00:03:35:17</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Bonus/Nelly_bonus_recadre.mp4</property>
@@ -2230,13 +2267,13 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter110" out="00:03:35.640">
+    <filter id="filter111" out="00:03:35.640">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">960.0 925.0 275.0 155.0 1</property>
+      <property name="transition.rect">1097.0 925.0 275.0 155.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -2244,13 +2281,13 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <playlist id="playlist47">
+  <playlist id="playlist48">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">Nelly bonus recadre</property>
     <property name="shotcut:lock">1</property>
-    <entry in="00:00:00.000" out="00:03:35.640" producer="producer48" />
+    <entry in="00:00:00.000" out="00:03:35.640" producer="producer49" />
   </playlist>
-  <producer id="producer49" in="00:00:00.000" out="00:03:35.640" title="Anonymous Submission">
+  <producer id="producer50" in="00:00:00.000" out="00:03:35.640" title="Anonymous Submission">
     <property name="length">00:03:35:17</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Bonus/Laurence_bonus_recadre.mp4</property>
@@ -2267,13 +2304,13 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter111" out="00:03:35.640">
+    <filter id="filter112" out="00:03:35.640">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">1234.0 925.0 275.0 155.0 1</property>
+      <property name="transition.rect">1371.0 925.0 275.0 155.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -2281,14 +2318,14 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <playlist id="playlist48">
+  <playlist id="playlist49">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">Laurence bonus recadre</property>
     <property name="shotcut:lock">1</property>
     <blank length="00:00:00.040" />
-    <entry in="00:00:00.000" out="00:03:35.640" producer="producer49" />
+    <entry in="00:00:00.000" out="00:03:35.640" producer="producer50" />
   </playlist>
-  <producer id="producer50" in="00:00:00.000" out="00:03:35.640" title="Anonymous Submission">
+  <producer id="producer51" in="00:00:00.000" out="00:03:35.640" title="Anonymous Submission">
     <property name="length">00:03:35:17</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Bonus/Nadine_bonus_recadre.mp4</property>
@@ -2305,13 +2342,13 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter112" out="00:03:35.640">
+    <filter id="filter113" out="00:03:35.640">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">1508.0 925.0 275.0 155.0 1</property>
+      <property name="transition.rect">1645.0 925.0 275.0 155.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -2319,11 +2356,11 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <playlist id="playlist49">
+  <playlist id="playlist50">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">Nadine bonus recadre</property>
     <property name="shotcut:lock">1</property>
-    <entry in="00:00:00.000" out="00:03:35.640" producer="producer50" />
+    <entry in="00:00:00.000" out="00:03:35.640" producer="producer51" />
   </playlist>
   <tractor global_feed="1" id="tractor0" in="00:00:00.000" out="00:03:41.600" title="Shotcut version 20.02.17">
     <property name="shotcut">1</property>
@@ -2381,6 +2418,7 @@
     <track hide="audio" producer="playlist47" />
     <track hide="audio" producer="playlist48" />
     <track hide="audio" producer="playlist49" />
+    <track hide="audio" producer="playlist50" />
     <transition id="transition0">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
@@ -2935,20 +2973,19 @@
       <property name="disable">0</property>
     </transition>
     <transition id="transition81">
+      <property name="a_track">1</property>
+      <property name="b_track">42</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+    </transition>
+    <transition id="transition82">
       <property name="a_track">0</property>
       <property name="b_track">42</property>
       <property name="mlt_service">mix</property>
       <property name="always_active">1</property>
       <property name="sum">1</property>
     </transition>
-    <transition id="transition82">
-      <property name="a_track">1</property>
-      <property name="b_track">42</property>
-      <property name="version">0.9</property>
-      <property name="mlt_service">frei0r.cairoblend</property>
-      <property name="disable">0</property>
-    </transition>
-    <transition id="transition83">
+  <transition id="transition83">
       <property name="a_track">0</property>
       <property name="b_track">43</property>
       <property name="mlt_service">mix</property>
@@ -2963,46 +3000,47 @@
       <property name="disable">0</property>
     </transition>
     <transition id="transition85">
-      <property name="a_track">1</property>
+      <property name="a_track">0</property>
       <property name="b_track">44</property>
-      <property name="version">0.9</property>
-      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
     </transition>
     <transition id="transition86">
-      <property name="a_track">0</property>
-      <property name="b_track">44</property>
-      <property name="mlt_service">mix</property>
-      <property name="always_active">1</property>
-      <property name="sum">1</property>
-    </transition>
-    <transition id="transition87">
-      <property name="a_track">0</property>
-      <property name="b_track">45</property>
-      <property name="mlt_service">mix</property>
-      <property name="always_active">1</property>
-      <property name="sum">1</property>
-    </transition>
-    <transition id="transition88">
       <property name="a_track">1</property>
-      <property name="b_track">45</property>
+      <property name="b_track">44</property>
       <property name="version">0.9</property>
       <property name="mlt_service">frei0r.cairoblend</property>
       <property name="disable">0</property>
     </transition>
-  <transition id="transition89">
+    <transition id="transition87">
       <property name="a_track">1</property>
-      <property name="b_track">46</property>
+      <property name="b_track">45</property>
       <property name="version">0.9</property>
       <property name="mlt_service">frei0r.cairoblend</property>
     </transition>
-    <transition id="transition90">
+    <transition id="transition88">
+      <property name="a_track">0</property>
+      <property name="b_track">45</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition89">
       <property name="a_track">0</property>
       <property name="b_track">46</property>
       <property name="mlt_service">mix</property>
       <property name="always_active">1</property>
       <property name="sum">1</property>
     </transition>
-    <transition id="transition91">
+    <transition id="transition90">
+      <property name="a_track">1</property>
+      <property name="b_track">46</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">0</property>
+    </transition>
+  <transition id="transition91">
       <property name="a_track">1</property>
       <property name="b_track">47</property>
       <property name="version">0.9</property>
@@ -3041,16 +3079,29 @@
       <property name="always_active">1</property>
       <property name="sum">1</property>
     </transition>
-  <transition id="transition97">
+    <transition id="transition97">
+      <property name="a_track">1</property>
+      <property name="b_track">50</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+    </transition>
+    <transition id="transition98">
       <property name="a_track">0</property>
       <property name="b_track">50</property>
       <property name="mlt_service">mix</property>
       <property name="always_active">1</property>
       <property name="sum">1</property>
     </transition>
-    <transition id="transition98">
+  <transition id="transition99">
+      <property name="a_track">0</property>
+      <property name="b_track">51</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition100">
       <property name="a_track">1</property>
-      <property name="b_track">50</property>
+      <property name="b_track">51</property>
       <property name="version">0.9</property>
       <property name="mlt_service">frei0r.cairoblend</property>
       <property name="disable">0</property>
