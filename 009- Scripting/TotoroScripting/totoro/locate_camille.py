@@ -1,5 +1,6 @@
 
-from totoro.display import Line, Column, Box, clock, incr_clock,rotate
+from totoro.display import Line, Column, Box, clock, incr_clock,rotate,\
+    rotate_clock, hide_all
 from totoro.utils import get_num_box, get_user_string_from_time,\
     get_time_from_user_string
 import datetime
@@ -9,8 +10,10 @@ from totoro.players import *
 def locate(resource):
 
     grid= resource.grid
-    grid.auto_layout()
- 
+    #grid.auto_layout()
+    grid.set_num_box(7)
+    grid.fill(get_all_players())
+    
 #initialisation de la grille à partir du auto layout    
    # JeanJacques_chef_lacheprise.swap(JeanSeb_percu)
     JeanJacques_chef_lacheprise.inside(grid).goto(0,0)
@@ -136,76 +139,123 @@ def locate(resource):
     
     print(grid)
     
-    clock("00:00:30:00")
+    start_rotate1 = "00:00:30:00"
+    clock(start_rotate1)
+    hide_all()
     grid.set_num_box(8)
-    Srevol_tuba_recadre.inside(grid).move(10,10,1)
-    Annesonia_clarinette.inside(grid).move(-1,-1,1)
-    Franck_saxophone.inside(grid).move(-1,-1,1)
-    Nelly_clarinette.inside(grid).move(-1,-1,1)
-    JeanSeb_percu.inside(grid).move(-1,-1,1)
-    Andre_cor.inside(grid).move(-1,-1,1)
-    Cecile_clarinette.inside(grid).move(-1,-1,1)
-    PierreG_clarinette.inside(grid).move(-1,-1,1)
-    Alain_flute.inside(grid).move(-1,-1,1)
-    Aurelie_hautbois.inside(grid).move(-1,-1,1)
-    Ineke_clarinette.inside(grid).move(-1,-1,1)
-    Amelie_clarinette_recadre.inside(grid).move(-1,-1,1)
-    Benoit_flute.inside(grid).move(-1,-1,1)
-    Gwenn_flute.inside(grid).move(-1,-1,1)
-    Serge_euphonium.inside(grid).move(-1,-1,1)
-    Nadine_saxophone.inside(grid).move(-1,-1,1)
-    Bidou_euphonium.inside(grid).move(-1,-1,1)
-    Patrick_trompette.inside(grid).move(-1,-1,1)
-    Alizee_piano.inside(grid).move(-1,-1,1)
-    Stephane_clarinette.inside(grid).move(-1,-1,1)
-    Pierre_clarinette.inside(grid).move(-1,-1,1)
-    Natacha_clarinette.inside(grid).move(-1,-1,1)
-    Camille_trombone.inside(grid).move(-1,-1,1)
-    #Srevol_tuba_recadre.inside(grid).move(-10,-10,1)
-    Laurence_flute.inside(grid).move(-1,-1,1)
-    Myrtille_cor.inside(grid).move(-1,-1,1)
-    Veronique_hautbois.inside(grid).move(-1,-1,1)
-    Nathalie_saxophone.inside(grid).move(-1,-1,1)
-    Francoise_saxophone.inside(grid).move(-1,-1,1)
-    Antoine_flute.inside(grid).move(-1,-1,1)
-    Chloe_saxophone.inside(grid).move(-1,-1,1)
-    Laurence_bonus.inside(grid).move(-1,-1,1)
-    MarieClaude_saxophone.inside(grid).move(-1,-1,1)
-    Jawad_flute.inside(grid).move(-1,-1,1)
-    Aurianne_saxophone.inside(grid).move(-1,-1,1)
-    Violette_clarinette.inside(grid).move(-1,-1,1)
-    daniel_trombonne_recadre.inside(grid).move(-1,-1,1)
-    Marianne_trompette.inside(grid).move(-1,-1,1)
-    Serge_trompette.inside(grid).move(-1,-1,1)
-    Svoisine_tuba.inside(grid).move(-1,-1,1)
-    Cecile_trombone.inside(grid).move(-1,-1,1)
-    Serge_baryton.inside(grid).move(-1,-1,1)
+    
+    
+#     Srevol_tuba_recadre.inside(grid).move(10,10,1)
+#     Annesonia_clarinette.inside(grid).move(-1,-1,1)
+#     Franck_saxophone.inside(grid).move(-1,-1,1)
+#     Nelly_clarinette.inside(grid).move(-1,-1,1)
+#     JeanSeb_percu.inside(grid).move(-1,-1,1)
+#     Andre_cor.inside(grid).move(-1,-1,1)
+#     Cecile_clarinette.inside(grid).move(-1,-1,1)
+#     PierreG_clarinette.inside(grid).move(-1,-1,1)
+#     Alain_flute.inside(grid).move(-1,-1,1)
+#     Aurelie_hautbois.inside(grid).move(-1,-1,1)
+#     Ineke_clarinette.inside(grid).move(-1,-1,1)
+#     Amelie_clarinette_recadre.inside(grid).move(-1,-1,1)
+#     Benoit_flute.inside(grid).move(-1,-1,1)
+#     Gwenn_flute.inside(grid).move(-1,-1,1)
+#     Serge_euphonium.inside(grid).move(-1,-1,1)
+#     Nadine_saxophone.inside(grid).move(-1,-1,1)
+#     Bidou_euphonium.inside(grid).move(-1,-1,1)
+#     Patrick_trompette.inside(grid).move(-1,-1,1)
+#     Alizee_piano.inside(grid).move(-1,-1,1)
+#     Stephane_clarinette.inside(grid).move(-1,-1,1)
+#     Pierre_clarinette.inside(grid).move(-1,-1,1)
+#     Natacha_clarinette.inside(grid).move(-1,-1,1)
+#     Camille_trombone.inside(grid).move(-1,-1,1)
+#     #Srevol_tuba_recadre.inside(grid).move(-10,-10,1)
+#     Laurence_flute.inside(grid).move(-1,-1,1)
+#     Myrtille_cor.inside(grid).move(-1,-1,1)
+#     Veronique_hautbois.inside(grid).move(-1,-1,1)
+#     Nathalie_saxophone.inside(grid).move(-1,-1,1)
+#     Francoise_saxophone.inside(grid).move(-1,-1,1)
+#     Antoine_flute.inside(grid).move(-1,-1,1)
+#     Chloe_saxophone.inside(grid).move(-1,-1,1)
+#     Laurence_bonus.inside(grid).move(-1,-1,1)
+#     MarieClaude_saxophone.inside(grid).move(-1,-1,1)
+#     Jawad_flute.inside(grid).move(-1,-1,1)
+#     Aurianne_saxophone.inside(grid).move(-1,-1,1)
+#     Violette_clarinette.inside(grid).move(-1,-1,1)
+#     daniel_trombonne_recadre.inside(grid).move(-1,-1,1)
+#     Marianne_trompette.inside(grid).move(-1,-1,1)
+#     Serge_trompette.inside(grid).move(-1,-1,1)
+#     Svoisine_tuba.inside(grid).move(-1,-1,1)
+#     Cecile_trombone.inside(grid).move(-1,-1,1)
+#     Serge_baryton.inside(grid).move(-1,-1,1)
+
+    players =get_all_players()
+    ligne_haut = Line([],7)
+    ligne_haut.inside(grid).goto(1,2)
+    players = ligne_haut.fill(players)
+    
+    col_gauche = Column([], 7)
+    col_gauche.inside(grid).goto(1,1)
+    players = col_gauche.fill(players)
+    
+    ligne_bas = Line([],7)
+    ligne_bas.inside(grid).goto(8,1)
+    players = ligne_bas.fill(players)
+    
+    col_droite = Column([],7)
+    col_droite.inside(grid).goto(2,8)
+    players= col_droite.fill(players)
+
     JeanJacques_chef.inside(grid).move(2,2,6)
+    print(grid)
     grid.tag("8x8")
     
-    line1=Line(clar.all)
-    line1.inside(grid).goto(1,1)
-    line8=Line(sax.all)
-    line8.inside(grid).goto(8,2)
-    col8=Column(fl.all)
-    col8.inside(grid).goto(2,8)
-    col1=Column(trb.all)
-    col1.inside(grid).goto(2,1)
-    col1b=Column(trp.all)
-    col1b.inside(grid).goto(5,1)
-    col1c=Column(tb.all)
-    col1c.inside(grid).goto(8,1)
+#     line1=Line(clar.all)
+#     line1.inside(grid).goto(1,1)
+#     line8=Line(sax.all)
+#     line8.inside(grid).goto(8,2)
+#     col8=Column(fl.all)
+#     col8.inside(grid).goto(2,8)
+#     col1=Column(trb.all)
+#     col1.inside(grid).goto(2,1)
+#     col1b=Column(trp.all)
+#     col1b.inside(grid).goto(5,1)
+#     col1c=Column(tb.all)
+#     col1c.inside(grid).goto(8,1)
+#     
+#     print(grid)
+#     line1.h_shift(16,20)
     
-    print(grid)
-    #line1.h_shift(16,20)
-    rotate(grid,5,20)
-    col8.v_shift(12,20)
-    line8.h_shift(-14,20)
+    rotate(grid,0.25,20)
     
+#     col8.v_shift(12,20)
+#     line8.h_shift(-14,20)
+#     
 
     clock("00:00:50:00")
+    hide_all()
     JeanJacques_chef_lacheprise.inside(grid).move(10,10,6)
     JeanJacques_chef.swap(JeanJacques_chef_lacheprise)
+    
+    players.extend(get_all_players())
+    ligne_haut = Line([],7)
+    ligne_haut.inside(grid).goto(1,2)
+    players = ligne_haut.fill(players)
+    
+    col_gauche = Column([], 7)
+    col_gauche.inside(grid).goto(1,1)
+    players = col_gauche.fill(players)
+    
+    ligne_bas = Line([],7)
+    ligne_bas.inside(grid).goto(8,1)
+    players = ligne_bas.fill(players)
+    
+    col_droite = Column([],7)
+    col_droite.inside(grid).goto(2,8)
+    players= col_droite.fill(players)
+    print(grid)
+    rotate_clock(grid,0.25,14)
+    
+    
    # clock("00:00:53:00")
    # JeanJacques_chef.swap(JeanJacques_chef_lacheprise)
    # clock("00:00:57:00")
@@ -214,7 +264,8 @@ def locate(resource):
 #    JeanJacques_chef.swap(JeanJacques_chef_lacheprise)
          
     print(grid)
-
+    
+    
     clock("00:01:04:00")
     
     grid.to_tag("initial")
@@ -247,6 +298,8 @@ def locate(resource):
     PierreG_clarinette.goto(7,7)
     Serge_baryton.goto(-3,-6)
    # print(grid)
+   
+  
     
     clock("00:01:12:00")
     daniel_trombonne_recadre.inside(grid).move(-1,-1,1)
@@ -319,7 +372,10 @@ def locate(resource):
     Svoisine_tuba.inside(grid).goto(3,4)
     Serge_baryton.inside(grid).goto(3,5)
     Srevol_tuba_recadre.inside(grid).goto(3,6)
-    #print(grid)
+    print(grid)
+    
+    Bidou_bonus.hide()
+    Camille_bonus_recadre.hide()
 
     clock("00:01:27:00")
     Camille_trombone.inside(grid).move(-1,-1,1)

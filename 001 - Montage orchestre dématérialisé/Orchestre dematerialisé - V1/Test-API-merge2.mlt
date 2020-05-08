@@ -139,10 +139,10 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0.0 0.0 385.0 217.0 1</property>
+      <property name="transition.rect">00:00:00.000000=0.0 0.0 1921.0 1081.0 1;00:00:00.000000=0.0 0.0 385.0 217.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animIn">00:00:00.040000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
@@ -189,10 +189,10 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">384.0 0.0 385.0 217.0 1</property>
+      <property name="transition.rect">00:00:00.000000=0.0 0.0 1921.0 1081.0 1;00:00:00.000000=384.0 0.0 385.0 217.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animIn">00:00:00.040000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
@@ -232,10 +232,10 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">768.0 0.0 385.0 217.0 1</property>
+      <property name="transition.rect">00:00:00.000000=0.0 0.0 525.0 295.0 1;00:00:00.000000=768.0 0.0 385.0 217.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animIn">00:00:00.040000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
@@ -283,10 +283,10 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">1152.0 0.0 385.0 217.0 1</property>
+      <property name="transition.rect">00:00:00.000000=1247.0 306.0 658.0 370.0 1;00:00:00.000000=1152.0 0.0 385.0 217.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animIn">00:00:00.040000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
@@ -334,10 +334,10 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">1536.0 0.0 385.0 217.0 1</property>
+      <property name="transition.rect">00:00:00.000000=0.0 0.0 1921.0 1081.0 1;00:00:00.000000=1536.0 0.0 385.0 217.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animIn">00:00:00.040000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
@@ -377,10 +377,10 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0.0 216.0 385.0 217.0 1</property>
+      <property name="transition.rect">00:00:00.000000=0.0 0.0 1921.0 1081.0 1;00:00:00.000000=0.0 216.0 385.0 217.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animIn">00:00:00.040000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
@@ -428,10 +428,10 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">384.0 216.0 385.0 217.0 1</property>
+      <property name="transition.rect">00:00:00.000000=0.0 0.0 1921.0 1081.0 1;00:00:00.000000=384.0 216.0 385.0 217.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animIn">00:00:00.040000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
@@ -479,10 +479,10 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">768.0 216.0 385.0 217.0 1</property>
+      <property name="transition.rect">00:00:00.000000=0.0 0.0 1921.0 1081.0 1;00:00:00.000000=768.0 216.0 385.0 217.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animIn">00:00:00.040000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
@@ -530,10 +530,10 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">1152.0 216.0 385.0 217.0 1</property>
+      <property name="transition.rect">00:00:00.000000=0.0 0.0 1921.0 1081.0 1;00:00:00.000000=1152.0 216.0 385.0 217.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animIn">00:00:00.040000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
@@ -581,10 +581,10 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">1536.0 216.0 385.0 217.0 1</property>
+      <property name="transition.rect">00:00:00.000000=0.0 0.0 1921.0 1081.0 1;00:00:00.000000=1536.0 216.0 385.0 217.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animIn">00:00:00.040000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
@@ -632,10 +632,10 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0.0 432.0 385.0 217.0 1</property>
+      <property name="transition.rect">00:00:00.000000=0.0 0.0 1921.0 1081.0 1;00:00:00.000000=0.0 432.0 385.0 217.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animIn">00:00:00.040000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
@@ -683,10 +683,10 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">384.0 432.0 385.0 217.0 1</property>
+      <property name="transition.rect">00:00:00.000000=0.0 0.0 1921.0 1081.0 1;00:00:00.000000=384.0 432.0 385.0 217.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animIn">00:00:00.040000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
@@ -727,10 +727,10 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">768.0 432.0 385.0 217.0 1</property>
+      <property name="transition.rect">00:00:00.000000=0.0 0.0 1921.0 1081.0 1;00:00:00.000000=768.0 432.0 385.0 217.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animIn">00:00:00.040000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
@@ -778,10 +778,10 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">1152.0 432.0 385.0 217.0 1</property>
+      <property name="transition.rect">00:00:00.000000=0.0 0.0 1921.0 1081.0 1;00:00:00.000000=1152.0 432.0 385.0 217.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animIn">00:00:00.040000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
@@ -814,10 +814,10 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">1536.0 432.0 385.0 217.0 1</property>
+      <property name="transition.rect">00:00:00.000000=0.0 0.0 1921.0 1081.0 1;00:00:00.000000=1536.0 432.0 385.0 217.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animIn">00:00:00.040000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
@@ -852,10 +852,10 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0.0 648.0 385.0 217.0 1</property>
+      <property name="transition.rect">00:00:00.000000=0.0 0.0 1921.0 1081.0 1;00:00:00.000000=0.0 648.0 385.0 217.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animIn">00:00:00.040000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
@@ -896,10 +896,10 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">384.0 648.0 385.0 217.0 1</property>
+      <property name="transition.rect">00:00:00.000000=0.0 0.0 1921.0 1081.0 1;00:00:00.000000=384.0 648.0 385.0 217.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animIn">00:00:00.040000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
@@ -940,10 +940,10 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">768.0 648.0 385.0 217.0 1</property>
+      <property name="transition.rect">00:00:00.000000=0.0 0.0 1921.0 1081.0 1;00:00:00.000000=768.0 648.0 385.0 217.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animIn">00:00:00.040000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
@@ -984,10 +984,10 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">1152.0 648.0 385.0 217.0 1</property>
+      <property name="transition.rect">00:00:00.000000=0.0 0.0 1921.0 1081.0 1;00:00:00.000000=1152.0 648.0 385.0 217.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animIn">00:00:00.040000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
@@ -1022,10 +1022,10 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">1536.0 648.0 385.0 217.0 1</property>
+      <property name="transition.rect">00:00:00.000000=0.0 0.0 1921.0 1081.0 1;00:00:00.000000=1536.0 648.0 385.0 217.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animIn">00:00:00.040000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
@@ -1073,10 +1073,10 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0.0 864.0 385.0 217.0 1</property>
+      <property name="transition.rect">00:00:00.000000=0.0 0.0 1921.0 1081.0 1;00:00:00.000000=0.0 864.0 385.0 217.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animIn">00:00:00.040000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
@@ -1124,10 +1124,10 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">384.0 864.0 385.0 217.0 1</property>
+      <property name="transition.rect">00:00:00.000000=0.0 0.0 1921.0 1081.0 1;00:00:00.000000=384.0 864.0 385.0 217.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animIn">00:00:00.040000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
@@ -1175,10 +1175,10 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">768.0 864.0 385.0 217.0 1</property>
+      <property name="transition.rect">00:00:00.000000=0.0 0.0 1921.0 1081.0 1;00:00:00.000000=768.0 864.0 385.0 217.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animIn">00:00:00.040000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
@@ -1219,10 +1219,10 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">1152.0 864.0 385.0 217.0 1</property>
+      <property name="transition.rect">00:00:00.000000=0.0 0.0 1921.0 1081.0 1;00:00:00.000000=1152.0 864.0 385.0 217.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animIn">00:00:00.040000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
@@ -1263,10 +1263,10 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">1536.0 864.0 385.0 217.0 1</property>
+      <property name="transition.rect">00:00:00.000000=0.0 0.0 1921.0 1081.0 1;00:00:00.000000=1536.0 864.0 385.0 217.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animIn">00:00:00.040000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>

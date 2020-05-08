@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<mlt LC_NUMERIC="C" version="6.20.0" title="Shotcut version 20.02.17" producer="main_bin">
-  <profile description="HD 1080p 25 fps" width="1920" height="1080" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="25" frame_rate_den="1" colorspace="709"/>
+<?xml version='1.0' encoding='us-ascii'?>
+<mlt LC_NUMERIC="C" producer="main_bin" title="Shotcut version 20.02.17" version="6.20.0">
+  <profile colorspace="709" description="HD 1080p 25 fps" display_aspect_den="9" display_aspect_num="16" frame_rate_den="1" frame_rate_num="25" height="1080" progressive="1" sample_aspect_den="1" sample_aspect_num="1" width="1920" />
   <playlist id="main_bin">
     <property name="xml_retain">1</property>
   </playlist>
@@ -14,9 +14,9 @@
     <property name="set.test_audio">0</property>
   </producer>
   <playlist id="background">
-    <entry producer="black" in="00:00:00.000" out="00:03:23.320"/>
+    <entry in="00:00:00.000" out="00:03:23.320" producer="black" />
   </playlist>
-  <producer id="producer0" title="Anonymous Submission" in="00:00:00.000" out="03:59:59.960">
+  <producer id="producer0" in="00:00:00.000" out="03:59:59.960" title="Anonymous Submission">
     <property name="length">04:00:00:00</property>
     <property name="eof">pause</property>
     <property name="resource">#00000000</property>
@@ -30,7 +30,7 @@
     <property name="xml">was here</property>
     <property name="seekable">1</property>
     <filter id="filter0" out="00:00:04.960">
-      <property name="argument"></property>
+      <property name="argument" />
       <property name="geometry">0 0 1920 1080 1</property>
       <property name="family">Verdana</property>
       <property name="size">1080</property>
@@ -50,7 +50,7 @@
       <property name="shotcut:animOut">00:00:00.000</property>
     </filter>
   </producer>
-  <producer id="producer1" title="Anonymous Submission" in="00:00:00.000" out="03:59:59.960">
+  <producer id="producer1" in="00:00:00.000" out="03:59:59.960" title="Anonymous Submission">
     <property name="length">04:00:00:00</property>
     <property name="eof">pause</property>
     <property name="resource">#00000000</property>
@@ -64,7 +64,7 @@
     <property name="xml">was here</property>
     <property name="seekable">1</property>
     <filter id="filter1" in="00:00:05.000" out="00:03:23.320">
-      <property name="argument"></property>
+      <property name="argument" />
       <property name="geometry">0 0 1920 1080 1</property>
       <property name="family">Verdana</property>
       <property name="size">1080</property>
@@ -88,10 +88,10 @@
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">Storyboard</property>
     <property name="shotcut:lock">1</property>
-    <entry producer="producer0" in="00:00:00.000" out="00:00:04.960"/>
-    <entry producer="producer1" in="00:00:05.000" out="00:03:23.320"/>
+    <entry in="00:00:00.000" out="00:00:04.960" producer="producer0" />
+    <entry in="00:00:05.000" out="00:03:23.320" producer="producer1" />
   </playlist>
-  <producer id="producer2" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+  <producer id="producer2" in="00:00:00.000" out="00:03:23.360" title="Anonymous Submission">
     <property name="length">00:03:23:10</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
@@ -114,10 +114,10 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 0 240 135 1</property>
+      <property name="transition.rect">00:00:00.000000=0.0 0.0 642.0 361.0 1;00:00:00.000000=0.0 0.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animIn">00:00:00.040000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
@@ -129,7 +129,7 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer3" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+  <producer id="producer3" in="00:00:00.000" out="00:03:23.360" title="Anonymous Submission">
     <property name="length">00:03:23:10</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
@@ -152,7 +152,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 0 240 135 1</property>
+      <property name="transition.rect">0.0 0.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -166,7 +166,7 @@
       <property name="mlt_service">volume</property>
     </filter>
   </producer>
-  <producer id="producer4" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+  <producer id="producer4" in="00:00:00.000" out="00:03:23.360" title="Anonymous Submission">
     <property name="length">00:03:23:10</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
@@ -189,7 +189,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 0 240 135 1</property>
+      <property name="transition.rect">0.0 0.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -204,7 +204,7 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer5" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+  <producer id="producer5" in="00:00:00.000" out="00:03:23.360" title="Anonymous Submission">
     <property name="length">00:03:23:10</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
@@ -227,7 +227,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 0 240 135 1</property>
+      <property name="transition.rect">0.0 0.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -241,7 +241,7 @@
       <property name="mlt_service">volume</property>
     </filter>
   </producer>
-  <producer id="producer6" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+  <producer id="producer6" in="00:00:00.000" out="00:03:23.360" title="Anonymous Submission">
     <property name="length">00:03:23:10</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
@@ -264,7 +264,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 0 240 135 1</property>
+      <property name="transition.rect">0.0 0.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -279,7 +279,7 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer7" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+  <producer id="producer7" in="00:00:00.000" out="00:03:23.360" title="Anonymous Submission">
     <property name="length">00:03:23:10</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
@@ -302,7 +302,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 0 240 135 1</property>
+      <property name="transition.rect">0.0 0.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -316,7 +316,7 @@
       <property name="mlt_service">volume</property>
     </filter>
   </producer>
-  <producer id="producer8" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+  <producer id="producer8" in="00:00:00.000" out="00:03:23.360" title="Anonymous Submission">
     <property name="length">00:03:23:10</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
@@ -339,7 +339,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 0 240 135 1</property>
+      <property name="transition.rect">0.0 0.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -354,7 +354,7 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer9" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+  <producer id="producer9" in="00:00:00.000" out="00:03:23.360" title="Anonymous Submission">
     <property name="length">00:03:23:10</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
@@ -377,7 +377,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 0 240 135 1</property>
+      <property name="transition.rect">0.0 0.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -385,7 +385,7 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer10" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+  <producer id="producer10" in="00:00:00.000" out="00:03:23.360" title="Anonymous Submission">
     <property name="length">00:03:23:10</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
@@ -402,20 +402,20 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter17" in="00:00:57.120" out="00:01:00.000">
+    <filter id="filter17" in="00:00:57.120" out="00:01:00.000000">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 0 240 135 1</property>
+      <property name="transition.rect">0.0 0.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="filter18" in="00:00:57.120" out="00:01:00.000">
+    <filter id="filter18" in="00:00:57.120" out="00:01:00.000000">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="mlt_service">volume</property>
@@ -423,7 +423,7 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer11" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+  <producer id="producer11" in="00:00:00.000" out="00:03:23.360" title="Anonymous Submission">
     <property name="length">00:03:23:10</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
@@ -440,20 +440,20 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter19" in="00:01:00.040" out="00:01:00.920">
+    <filter id="filter19" in="00:01:00.040000" out="00:01:00.920">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">00:00:00.000000=0 0 240 135 1;00:00:00.880000=110 0 240 135 1</property>
+      <property name="transition.rect">00:00:00.000000=0.0 0.0 242.0 136.0 1;00:00:00.880000=110.0 0.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.920000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="filter20" in="00:01:00.040" out="00:01:00.920">
+    <filter id="filter20" in="00:01:00.040000" out="00:01:00.920">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="mlt_service">volume</property>
@@ -461,7 +461,7 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer12" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+  <producer id="producer12" in="00:00:00.000" out="00:03:23.360" title="Anonymous Submission">
     <property name="length">00:03:23:10</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
@@ -478,20 +478,20 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter21" in="00:01:00.960" out="00:01:10.000">
+    <filter id="filter21" in="00:01:00.960" out="00:01:10.000000">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">00:00:00.000000=111 0 240 135 1;00:00:09.040000=1200 0 240 135 1</property>
+      <property name="transition.rect">00:00:00.000000=111.0 0.0 241.0 136.0 1;00:00:09.040000=1200.0 0.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:09.080000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="filter22" in="00:01:00.960" out="00:01:10.000">
+    <filter id="filter22" in="00:01:00.960" out="00:01:10.000000">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="mlt_service">volume</property>
@@ -499,7 +499,7 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer13" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+  <producer id="producer13" in="00:00:00.000" out="00:03:23.360" title="Anonymous Submission">
     <property name="length">00:03:23:10</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
@@ -516,20 +516,20 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter23" in="00:01:10.040" out="00:01:12.000">
+    <filter id="filter23" in="00:01:10.040000" out="00:01:12.000">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">00:00:00.000000=1200 0 240 135 1;00:00:01.960000=960 0 240 135 1</property>
+      <property name="transition.rect">00:00:00.000000=1200.0 0.0 242.0 136.0 1;00:00:01.960000=960.0 0.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:02.000000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="filter24" in="00:01:10.040" out="00:01:12.000">
+    <filter id="filter24" in="00:01:10.040000" out="00:01:12.000">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="mlt_service">volume</property>
@@ -537,7 +537,7 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer14" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+  <producer id="producer14" in="00:00:00.000" out="00:03:23.360" title="Anonymous Submission">
     <property name="length">00:03:23:10</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
@@ -560,7 +560,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">00:00:00.000000=958 0 240 135 1;00:00:06.080000=226 0 240 135 1</property>
+      <property name="transition.rect">00:00:00.000000=958.0 0.0 241.0 136.0 1;00:00:06.080000=225.0 0.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:06.120000</property>
@@ -574,7 +574,7 @@
       <property name="mlt_service">volume</property>
     </filter>
   </producer>
-  <producer id="producer15" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+  <producer id="producer15" in="00:00:00.000" out="00:03:23.360" title="Anonymous Submission">
     <property name="length">00:03:23:10</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
@@ -591,13 +591,13 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter27" in="00:01:18.160" out="00:01:20.000">
+    <filter id="filter27" in="00:01:18.160" out="00:01:20.000000">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">00:00:00.000000=218 0 240 135 1;00:00:01.840000=0 0 240 135 1</property>
+      <property name="transition.rect">00:00:00.000000=217.0 0.0 241.0 136.0 1;00:00:01.840000=0.0 0.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:01.880000</property>
@@ -605,7 +605,7 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer16" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+  <producer id="producer16" in="00:00:00.000" out="00:03:23.360" title="Anonymous Submission">
     <property name="length">00:03:23:10</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
@@ -622,13 +622,13 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter28" in="00:01:20.040" out="00:01:44.880">
+    <filter id="filter28" in="00:01:20.040000" out="00:01:44.880">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">00:00:00.000000=0 0 240 135 1;00:00:09.960000=0 945 240 135 1</property>
+      <property name="transition.rect">00:00:00.000000=0.0 0.0 242.0 136.0 1;00:00:09.960000=0.0 945.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:10.000000</property>
@@ -636,7 +636,7 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer17" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+  <producer id="producer17" in="00:00:00.000" out="00:03:23.360" title="Anonymous Submission">
     <property name="length">00:03:23:10</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
@@ -659,7 +659,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 945 240 135 1</property>
+      <property name="transition.rect">0.0 945.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -674,7 +674,7 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer18" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+  <producer id="producer18" in="00:00:00.000" out="00:03:23.360" title="Anonymous Submission">
     <property name="length">00:03:23:10</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
@@ -697,7 +697,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 945 240 135 1</property>
+      <property name="transition.rect">0.0 945.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -705,7 +705,7 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer19" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+  <producer id="producer19" in="00:00:00.000" out="00:03:23.360" title="Anonymous Submission">
     <property name="length">00:03:23:10</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
@@ -728,7 +728,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 945 240 135 1</property>
+      <property name="transition.rect">0.0 945.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -742,7 +742,7 @@
       <property name="mlt_service">volume</property>
     </filter>
   </producer>
-  <producer id="producer20" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+  <producer id="producer20" in="00:00:00.000" out="00:03:23.360" title="Anonymous Submission">
     <property name="length">00:03:23:10</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
@@ -765,7 +765,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 945 240 135 1</property>
+      <property name="transition.rect">0.0 945.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -779,7 +779,7 @@
       <property name="mlt_service">volume</property>
     </filter>
   </producer>
-  <producer id="producer21" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+  <producer id="producer21" in="00:00:00.000" out="00:03:23.360" title="Anonymous Submission">
     <property name="length">00:03:23:10</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
@@ -802,7 +802,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 945 240 135 1</property>
+      <property name="transition.rect">0.0 945.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -817,7 +817,7 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer22" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+  <producer id="producer22" in="00:00:00.000" out="00:03:23.360" title="Anonymous Submission">
     <property name="length">00:03:23:10</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
@@ -840,7 +840,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 945 240 135 1</property>
+      <property name="transition.rect">0.0 945.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -848,7 +848,7 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer23" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+  <producer id="producer23" in="00:00:00.000" out="00:03:23.360" title="Anonymous Submission">
     <property name="length">00:03:23:10</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
@@ -871,7 +871,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 945 240 135 1</property>
+      <property name="transition.rect">0.0 945.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -886,7 +886,7 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer24" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+  <producer id="producer24" in="00:00:00.000" out="00:03:23.360" title="Anonymous Submission">
     <property name="length">00:03:23:10</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
@@ -909,7 +909,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 945 240 135 1</property>
+      <property name="transition.rect">0.0 945.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -917,7 +917,7 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer25" title="Anonymous Submission" in="00:00:00.000" out="00:03:23.360">
+  <producer id="producer25" in="00:00:00.000" out="00:03:23.360" title="Anonymous Submission">
     <property name="length">00:03:23:10</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Cecile_clarinette_totoro_recadre.mp4</property>
@@ -940,7 +940,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">0 945 240 135 1</property>
+      <property name="transition.rect">0.0 945.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -959,31 +959,31 @@
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">Cecile clar bass</property>
     <property name="shotcut:lock">1</property>
-    <blank length="00:00:04.680"/>
-    <entry producer="producer2" in="00:00:04.720" out="00:00:29.720"/>
-    <entry producer="producer3" in="00:00:29.760" out="00:00:36.440"/>
-    <entry producer="producer4" in="00:00:36.480" out="00:00:40.320"/>
-    <entry producer="producer5" in="00:00:40.360" out="00:00:43.320"/>
-    <entry producer="producer6" in="00:00:43.360" out="00:00:47.120"/>
-    <entry producer="producer7" in="00:00:47.160" out="00:00:50.160"/>
-    <entry producer="producer8" in="00:00:50.200" out="00:00:54.080"/>
-    <entry producer="producer9" in="00:00:54.120" out="00:00:57.080"/>
-    <entry producer="producer10" in="00:00:57.120" out="00:01:00.000"/>
-    <entry producer="producer11" in="00:01:00.040" out="00:01:00.920"/>
-    <entry producer="producer12" in="00:01:00.960" out="00:01:10.000"/>
-    <entry producer="producer13" in="00:01:10.040" out="00:01:12.000"/>
-    <entry producer="producer14" in="00:01:12.040" out="00:01:18.120"/>
-    <entry producer="producer15" in="00:01:18.160" out="00:01:20.000"/>
-    <entry producer="producer16" in="00:01:20.040" out="00:01:44.880"/>
-    <entry producer="producer17" in="00:01:44.920" out="00:01:54.920"/>
-    <entry producer="producer18" in="00:01:54.960" out="00:02:16.320"/>
-    <entry producer="producer19" in="00:02:16.360" out="00:02:33.640"/>
-    <entry producer="producer20" in="00:02:33.680" out="00:02:46.920"/>
-    <entry producer="producer21" in="00:02:46.960" out="00:02:49.600"/>
-    <entry producer="producer22" in="00:02:49.640" out="00:03:10.720"/>
-    <entry producer="producer23" in="00:03:10.760" out="00:03:13.240"/>
-    <entry producer="producer24" in="00:03:13.280" out="00:03:14.480"/>
-    <entry producer="producer25" in="00:03:14.520" out="00:03:23.360"/>
+    <blank length="00:00:04.680" />
+    <entry in="00:00:04.720" out="00:00:29.720" producer="producer2" />
+    <entry in="00:00:29.760" out="00:00:36.440" producer="producer3" />
+    <entry in="00:00:36.480" out="00:00:40.320" producer="producer4" />
+    <entry in="00:00:40.360" out="00:00:43.320" producer="producer5" />
+    <entry in="00:00:43.360" out="00:00:47.120" producer="producer6" />
+    <entry in="00:00:47.160" out="00:00:50.160" producer="producer7" />
+    <entry in="00:00:50.200" out="00:00:54.080" producer="producer8" />
+    <entry in="00:00:54.120" out="00:00:57.080" producer="producer9" />
+    <entry in="00:00:57.120" out="00:01:00.000000" producer="producer10" />
+    <entry in="00:01:00.040000" out="00:01:00.920" producer="producer11" />
+    <entry in="00:01:00.960" out="00:01:10.000000" producer="producer12" />
+    <entry in="00:01:10.040000" out="00:01:12.000" producer="producer13" />
+    <entry in="00:01:12.040" out="00:01:18.120" producer="producer14" />
+    <entry in="00:01:18.160" out="00:01:20.000000" producer="producer15" />
+    <entry in="00:01:20.040000" out="00:01:44.880" producer="producer16" />
+    <entry in="00:01:44.920" out="00:01:54.920" producer="producer17" />
+    <entry in="00:01:54.960" out="00:02:16.320" producer="producer18" />
+    <entry in="00:02:16.360" out="00:02:33.640" producer="producer19" />
+    <entry in="00:02:33.680" out="00:02:46.920" producer="producer20" />
+    <entry in="00:02:46.960" out="00:02:49.600" producer="producer21" />
+    <entry in="00:02:49.640" out="00:03:10.720" producer="producer22" />
+    <entry in="00:03:10.760" out="00:03:13.240" producer="producer23" />
+    <entry in="00:03:13.280" out="00:03:14.480" producer="producer24" />
+    <entry in="00:03:14.520" out="00:03:23.360" producer="producer25" />
     <filter id="filter44" out="00:03:23.320">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
@@ -991,7 +991,7 @@
       <property name="mlt_service">volume</property>
     </filter>
   </playlist>
-  <producer id="producer26" title="Anonymous Submission" in="00:00:00.000" out="00:03:27.800">
+  <producer id="producer26" in="00:00:00.000" out="00:03:27.800" title="Anonymous Submission">
     <property name="length">00:03:27:21</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Nelly_clarinette_totoro.mp4</property>
@@ -1008,20 +1008,20 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter45" in="00:00:15.440" out="00:01:06.880">
+    <filter id="filter45" in="00:00:15.440" out="00:01:06.880000">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">240 0 240 135 1</property>
+      <property name="transition.rect">00:00:00.000000=640.0 0.0 642.0 361.0 1;00:00:00.000000=240.0 0.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animIn">00:00:00.040000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="filter46" in="00:00:15.440" out="00:01:06.880">
+    <filter id="filter46" in="00:00:15.440" out="00:01:06.880000">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">0</property>
@@ -1029,7 +1029,7 @@
       <property name="disable">1</property>
     </filter>
   </producer>
-  <producer id="producer27" title="Anonymous Submission" in="00:00:00.000" out="00:03:27.800">
+  <producer id="producer27" in="00:00:00.000" out="00:03:27.800" title="Anonymous Submission">
     <property name="length">00:03:27:21</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Nelly_clarinette_totoro.mp4</property>
@@ -1046,58 +1046,20 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter47" in="00:01:06.920" out="00:01:16.880">
+    <filter id="filter47" in="00:01:06.920000" out="00:01:16.880000">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">00:00:00.000000=240 0 240 135 1;00:00:09.960000=1440 0 240 135 1</property>
-      <property name="transition.valign">top</property>
-      <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:10.000000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-    </filter>
-    <filter id="filter48" in="00:01:06.920" out="00:01:16.880">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="level">0</property>
-      <property name="mlt_service">volume</property>
-      <property name="disable">1</property>
-    </filter>
-  </producer>
-  <producer id="producer28" title="Anonymous Submission" in="00:00:00.000" out="00:03:27.800">
-    <property name="length">00:03:27:21</property>
-    <property name="eof">pause</property>
-    <property name="resource">../../006 - Videos format youtube/Clarinettes/Nelly_clarinette_totoro.mp4</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="mute_on_pause">0</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="creation_time">2020-04-05T13:37:57</property>
-    <property name="shotcut:hash">ce64ff05cbaafa4ab64d61c9e57002dd</property>
-    <property name="ignore_points">0</property>
-    <property name="shotcut:caption">Nelly_clarinette_totoro.mp4</property>
-    <property name="shotcut:skipConvert">1</property>
-    <property name="global_feed">1</property>
-    <property name="xml">was here</property>
-    <filter id="filter49" in="00:01:16.920" out="00:01:26.880">
-      <property name="background">colour:0</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">00:00:00.000000=1440 0 240 135 1;00:00:09.960000=240 0 240 135 1</property>
+      <property name="transition.rect">00:00:00.000000=240.0 0.0 242.0 136.0 1;00:00:09.960000=1440.0 0.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:10.000000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="filter50" in="00:01:16.920" out="00:01:26.880">
+    <filter id="filter48" in="00:01:06.920000" out="00:01:16.880000">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">0</property>
@@ -1105,7 +1067,7 @@
       <property name="disable">1</property>
     </filter>
   </producer>
-  <producer id="producer29" title="Anonymous Submission" in="00:00:00.000" out="00:03:27.800">
+  <producer id="producer28" in="00:00:00.000" out="00:03:27.800" title="Anonymous Submission">
     <property name="length">00:03:27:21</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Nelly_clarinette_totoro.mp4</property>
@@ -1122,20 +1084,20 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter51" in="00:01:26.920" out="00:01:49.560">
+    <filter id="filter49" in="00:01:16.920000" out="00:01:26.880000">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">00:00:00.000000=240 0 240 135 1;00:00:09.960000=240 945 240 135 1</property>
+      <property name="transition.rect">00:00:00.000000=1440.0 0.0 242.0 136.0 1;00:00:09.960000=240.0 0.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:10.000000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="filter52" in="00:01:26.920" out="00:01:49.560">
+    <filter id="filter50" in="00:01:16.920000" out="00:01:26.880000">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">0</property>
@@ -1143,7 +1105,45 @@
       <property name="disable">1</property>
     </filter>
   </producer>
-  <producer id="producer30" title="Anonymous Submission" in="00:00:00.000" out="00:03:27.800">
+  <producer id="producer29" in="00:00:00.000" out="00:03:27.800" title="Anonymous Submission">
+    <property name="length">00:03:27:21</property>
+    <property name="eof">pause</property>
+    <property name="resource">../../006 - Videos format youtube/Clarinettes/Nelly_clarinette_totoro.mp4</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2020-04-05T13:37:57</property>
+    <property name="shotcut:hash">ce64ff05cbaafa4ab64d61c9e57002dd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Nelly_clarinette_totoro.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter51" in="00:01:26.920000" out="00:01:49.560">
+      <property name="background">colour:0</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000000=240.0 0.0 242.0 136.0 1;00:00:09.960000=240.0 945.0 241.0 136.0 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:10.000000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter52" in="00:01:26.920000" out="00:01:49.560">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+      <property name="disable">1</property>
+    </filter>
+  </producer>
+  <producer id="producer30" in="00:00:00.000" out="00:03:27.800" title="Anonymous Submission">
     <property name="length">00:03:27:21</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Nelly_clarinette_totoro.mp4</property>
@@ -1166,7 +1166,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">240 945 240 135 1</property>
+      <property name="transition.rect">240.0 945.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1187,7 +1187,7 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer31" title="Anonymous Submission" in="00:00:00.000" out="00:03:27.800">
+  <producer id="producer31" in="00:00:00.000" out="00:03:27.800" title="Anonymous Submission">
     <property name="length">00:03:27:21</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Nelly_clarinette_totoro.mp4</property>
@@ -1210,7 +1210,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">240 945 240 135 1</property>
+      <property name="transition.rect">240.0 945.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1225,7 +1225,7 @@
       <property name="disable">1</property>
     </filter>
   </producer>
-  <producer id="producer32" title="Anonymous Submission" in="00:00:00.000" out="00:03:27.800">
+  <producer id="producer32" in="00:00:00.000" out="00:03:27.800" title="Anonymous Submission">
     <property name="length">00:03:27:21</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Nelly_clarinette_totoro.mp4</property>
@@ -1248,7 +1248,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">240 945 240 135 1</property>
+      <property name="transition.rect">240.0 945.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1276,14 +1276,14 @@
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">Clarinette_Nelly</property>
     <property name="shotcut:lock">1</property>
-    <blank length="00:00:08.520"/>
-    <entry producer="producer26" in="00:00:15.440" out="00:01:06.880"/>
-    <entry producer="producer27" in="00:01:06.920" out="00:01:16.880"/>
-    <entry producer="producer28" in="00:01:16.920" out="00:01:26.880"/>
-    <entry producer="producer29" in="00:01:26.920" out="00:01:49.560"/>
-    <entry producer="producer30" in="00:01:49.600" out="00:02:04.400"/>
-    <entry producer="producer31" in="00:02:04.440" out="00:03:12.560"/>
-    <entry producer="producer32" in="00:03:12.600" out="00:03:27.800"/>
+    <blank length="00:00:08.520" />
+    <entry in="00:00:15.440" out="00:01:06.880000" producer="producer26" />
+    <entry in="00:01:06.920000" out="00:01:16.880000" producer="producer27" />
+    <entry in="00:01:16.920000" out="00:01:26.880000" producer="producer28" />
+    <entry in="00:01:26.920000" out="00:01:49.560" producer="producer29" />
+    <entry in="00:01:49.600" out="00:02:04.400" producer="producer30" />
+    <entry in="00:02:04.440" out="00:03:12.560" producer="producer31" />
+    <entry in="00:03:12.600" out="00:03:27.800" producer="producer32" />
     <filter id="filter61" out="00:03:23.320">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
@@ -1291,7 +1291,7 @@
       <property name="mlt_service">volume</property>
     </filter>
   </playlist>
-  <producer id="producer33" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.440">
+  <producer id="producer33" in="00:00:00.000" out="00:03:16.440" title="Anonymous Submission">
     <property name="length">00:03:16:12</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Natacha_clarinette_totoro.mp4</property>
@@ -1314,10 +1314,10 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 0 240 135 1</property>
+      <property name="transition.rect">00:00:00.000000=1280.0 0.0 642.0 361.0 1;00:00:00.000000=480.0 0.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animIn">00:00:00.040000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
@@ -1329,7 +1329,7 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer34" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.440">
+  <producer id="producer34" in="00:00:00.000" out="00:03:16.440" title="Anonymous Submission">
     <property name="length">00:03:16:12</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Natacha_clarinette_totoro.mp4</property>
@@ -1346,20 +1346,20 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter64" in="00:00:32.640" out="00:00:56.880">
+    <filter id="filter64" in="00:00:32.640" out="00:00:56.880000">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 0 240 135 1</property>
+      <property name="transition.rect">480.0 0.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="filter65" in="00:00:32.640" out="00:00:56.880">
+    <filter id="filter65" in="00:00:32.640" out="00:00:56.880000">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">-5</property>
@@ -1367,7 +1367,7 @@
       <property name="disable">1</property>
     </filter>
   </producer>
-  <producer id="producer35" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.440">
+  <producer id="producer35" in="00:00:00.000" out="00:03:16.440" title="Anonymous Submission">
     <property name="length">00:03:16:12</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Natacha_clarinette_totoro.mp4</property>
@@ -1384,20 +1384,20 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter66" in="00:00:56.920" out="00:01:06.880">
+    <filter id="filter66" in="00:00:56.920000" out="00:01:06.880000">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">00:00:00.000000=480 0 240 135 1;00:00:09.960000=1680 0 240 135 1</property>
+      <property name="transition.rect">00:00:00.000000=480.0 0.0 242.0 136.0 1;00:00:09.960000=1680.0 0.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:10.000000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="filter67" in="00:00:56.920" out="00:01:06.880">
+    <filter id="filter67" in="00:00:56.920000" out="00:01:06.880000">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">-5</property>
@@ -1405,7 +1405,7 @@
       <property name="disable">1</property>
     </filter>
   </producer>
-  <producer id="producer36" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.440">
+  <producer id="producer36" in="00:00:00.000" out="00:03:16.440" title="Anonymous Submission">
     <property name="length">00:03:16:12</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Natacha_clarinette_totoro.mp4</property>
@@ -1422,20 +1422,20 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter68" in="00:01:06.920" out="00:01:16.880">
+    <filter id="filter68" in="00:01:06.920000" out="00:01:16.880000">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">00:00:00.000000=1680 0 240 135 1;00:00:09.960000=480 0 240 135 1</property>
+      <property name="transition.rect">00:00:00.000000=1680.0 0.0 242.0 136.0 1;00:00:09.960000=480.0 0.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:10.000000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="filter69" in="00:01:06.920" out="00:01:16.880">
+    <filter id="filter69" in="00:01:06.920000" out="00:01:16.880000">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">-5</property>
@@ -1443,7 +1443,7 @@
       <property name="disable">1</property>
     </filter>
   </producer>
-  <producer id="producer37" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.440">
+  <producer id="producer37" in="00:00:00.000" out="00:03:16.440" title="Anonymous Submission">
     <property name="length">00:03:16:12</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Natacha_clarinette_totoro.mp4</property>
@@ -1460,20 +1460,20 @@
     <property name="shotcut:skipConvert">1</property>
     <property name="global_feed">1</property>
     <property name="xml">was here</property>
-    <filter id="filter70" in="00:01:16.920" out="00:01:39.560">
+    <filter id="filter70" in="00:01:16.920000" out="00:01:39.560">
       <property name="background">colour:0</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">00:00:00.000000=480 0 240 135 1;00:00:09.960000=480 945 240 135 1</property>
+      <property name="transition.rect">00:00:00.000000=480.0 0.0 242.0 136.0 1;00:00:09.960000=480.0 945.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:10.000000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
       <property name="transition.threads">0</property>
     </filter>
-    <filter id="filter71" in="00:01:16.920" out="00:01:39.560">
+    <filter id="filter71" in="00:01:16.920000" out="00:01:39.560">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">-5</property>
@@ -1481,7 +1481,7 @@
       <property name="disable">1</property>
     </filter>
   </producer>
-  <producer id="producer38" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.440">
+  <producer id="producer38" in="00:00:00.000" out="00:03:16.440" title="Anonymous Submission">
     <property name="length">00:03:16:12</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Natacha_clarinette_totoro.mp4</property>
@@ -1504,7 +1504,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 945 240 135 1</property>
+      <property name="transition.rect">480.0 945.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1519,7 +1519,7 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer39" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.440">
+  <producer id="producer39" in="00:00:00.000" out="00:03:16.440" title="Anonymous Submission">
     <property name="length">00:03:16:12</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Natacha_clarinette_totoro.mp4</property>
@@ -1542,7 +1542,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 945 240 135 1</property>
+      <property name="transition.rect">480.0 945.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1550,7 +1550,7 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer40" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.440">
+  <producer id="producer40" in="00:00:00.000" out="00:03:16.440" title="Anonymous Submission">
     <property name="length">00:03:16:12</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Natacha_clarinette_totoro.mp4</property>
@@ -1573,7 +1573,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 945 240 135 1</property>
+      <property name="transition.rect">480.0 945.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1581,7 +1581,7 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer41" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.440">
+  <producer id="producer41" in="00:00:00.000" out="00:03:16.440" title="Anonymous Submission">
     <property name="length">00:03:16:12</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Natacha_clarinette_totoro.mp4</property>
@@ -1604,7 +1604,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 945 240 135 1</property>
+      <property name="transition.rect">480.0 945.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1612,7 +1612,7 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <producer id="producer42" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.440">
+  <producer id="producer42" in="00:00:00.000" out="00:03:16.440" title="Anonymous Submission">
     <property name="length">00:03:16:12</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Natacha_clarinette_totoro.mp4</property>
@@ -1635,7 +1635,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 945 240 135 1</property>
+      <property name="transition.rect">480.0 945.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1650,7 +1650,7 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer43" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.440">
+  <producer id="producer43" in="00:00:00.000" out="00:03:16.440" title="Anonymous Submission">
     <property name="length">00:03:16:12</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Natacha_clarinette_totoro.mp4</property>
@@ -1673,7 +1673,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 945 240 135 1</property>
+      <property name="transition.rect">480.0 945.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1688,7 +1688,7 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer44" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.440">
+  <producer id="producer44" in="00:00:00.000" out="00:03:16.440" title="Anonymous Submission">
     <property name="length">00:03:16:12</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Natacha_clarinette_totoro.mp4</property>
@@ -1711,7 +1711,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 945 240 135 1</property>
+      <property name="transition.rect">480.0 945.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1737,7 +1737,7 @@
       <property name="gain">0</property>
     </filter>
   </producer>
-  <producer id="producer45" title="Anonymous Submission" in="00:00:00.000" out="00:03:16.440">
+  <producer id="producer45" in="00:00:00.000" out="00:03:16.440" title="Anonymous Submission">
     <property name="length">00:03:16:12</property>
     <property name="eof">pause</property>
     <property name="resource">../../006 - Videos format youtube/Clarinettes/Natacha_clarinette_totoro.mp4</property>
@@ -1760,7 +1760,7 @@
       <property name="shotcut:filter">affineSizePosition</property>
       <property name="transition.fill">1</property>
       <property name="transition.distort">0</property>
-      <property name="transition.rect">480 945 240 135 1</property>
+      <property name="transition.rect">480.0 945.0 241.0 136.0 1</property>
       <property name="transition.valign">top</property>
       <property name="transition.halign">left</property>
       <property name="shotcut:animIn">00:00:00.000</property>
@@ -1783,20 +1783,20 @@
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">natacha</property>
     <property name="shotcut:lock">1</property>
-    <blank length="00:00:03.080"/>
-    <entry producer="producer33" in="00:00:00.000" out="00:00:32.600"/>
-    <entry producer="producer34" in="00:00:32.640" out="00:00:56.880"/>
-    <entry producer="producer35" in="00:00:56.920" out="00:01:06.880"/>
-    <entry producer="producer36" in="00:01:06.920" out="00:01:16.880"/>
-    <entry producer="producer37" in="00:01:16.920" out="00:01:39.560"/>
-    <entry producer="producer38" in="00:01:39.600" out="00:01:54.400"/>
-    <entry producer="producer39" in="00:01:54.440" out="00:02:30.920"/>
-    <entry producer="producer40" in="00:02:30.960" out="00:02:32.440"/>
-    <entry producer="producer41" in="00:02:32.480" out="00:02:54.840"/>
-    <entry producer="producer42" in="00:02:54.880" out="00:03:00.040"/>
-    <entry producer="producer43" in="00:03:00.080" out="00:03:02.560"/>
-    <entry producer="producer44" in="00:03:02.600" out="00:03:07.800"/>
-    <entry producer="producer45" in="00:03:07.840" out="00:03:16.440"/>
+    <blank length="00:00:03.080" />
+    <entry in="00:00:00.000" out="00:00:32.600" producer="producer33" />
+    <entry in="00:00:32.640" out="00:00:56.880000" producer="producer34" />
+    <entry in="00:00:56.920000" out="00:01:06.880000" producer="producer35" />
+    <entry in="00:01:06.920000" out="00:01:16.880000" producer="producer36" />
+    <entry in="00:01:16.920000" out="00:01:39.560" producer="producer37" />
+    <entry in="00:01:39.600" out="00:01:54.400" producer="producer38" />
+    <entry in="00:01:54.440" out="00:02:30.920" producer="producer39" />
+    <entry in="00:02:30.960" out="00:02:32.440" producer="producer40" />
+    <entry in="00:02:32.480" out="00:02:54.840" producer="producer41" />
+    <entry in="00:02:54.880" out="00:03:00.040" producer="producer42" />
+    <entry in="00:03:00.080" out="00:03:02.560" producer="producer43" />
+    <entry in="00:03:02.600" out="00:03:07.800" producer="producer44" />
+    <entry in="00:03:07.840" out="00:03:16.440" producer="producer45" />
     <filter id="filter86" out="00:03:23.320">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
@@ -1804,16 +1804,16 @@
       <property name="mlt_service">volume</property>
     </filter>
   </playlist>
-  <tractor id="tractor0" title="Shotcut version 20.02.17" global_feed="1" in="00:00:00.000" out="00:03:23.320">
+  <tractor global_feed="1" id="tractor0" in="00:00:00.000" out="00:03:23.320" title="Shotcut version 20.02.17">
     <property name="shotcut">1</property>
     <property name="shotcut:projectAudioChannels">2</property>
     <property name="shotcut:projectFolder">1</property>
     <property name="shotcut:scaleFactor">2.74405</property>
-    <track producer="background"/>
-    <track producer="playlist0" hide="audio"/>
-    <track producer="playlist1"/>
-    <track producer="playlist2"/>
-    <track producer="playlist3" hide="audio"/>
+    <track producer="background" />
+    <track hide="audio" producer="playlist0" />
+    <track producer="playlist1" />
+    <track producer="playlist2" />
+    <track producer="playlist3" />
     <transition id="transition0">
       <property name="a_track">0</property>
       <property name="b_track">1</property>

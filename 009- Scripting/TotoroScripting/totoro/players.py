@@ -10,7 +10,10 @@ all_players = list(resource.players_registry.values())
 def get_all_players():
     players_with_bonus = list(resource.players_registry.values())
     
-    result = [ player for player in players_with_bonus if player not in bonux.all] 
+    result = [ player for player in players_with_bonus if player not in bonux.all]
+    result.remove(JeanJacques_chef_lacheprise)
+    result.remove(JeanJacques_chef) 
+    
     return result
 
 JeanSeb_percu=mus["Jean-Seb_percu_totoro"]
@@ -18,6 +21,7 @@ JeanJacques_chef=mus["Jean-Jacques_chef_totoro"]
 JeanJacques_percu=mus["Jean-Jacques_percu_totoro"]
 JeanJacques_chef_lacheprise=mus["Jean-Jacques_chef_laché prise"]
 Alizee_piano=mus["Alizee_piano_totoro"]
+Flore_piano=mus["Flore_piano_totoro"]
 Bidou_euphonium=mus["Bidou_euphonium_totoro"]
 Serge_euphonium=mus["Serge_euphonium_totoro"]
 Cecile_clarinette=mus["Cecile_clarinette_totoro_recadre"]
@@ -52,6 +56,7 @@ Cecile_trombone=mus["Cecile_trombone_totoro"]
 daniel_trombonne_recadre=mus["daniel_trombonne_recadre"]
 Bidou_cornet=mus["Bidou_cornet_totoro"]
 Serge_trompette=mus["Serge_trompette_totoro"]
+Patrick_trompette=mus["Patrick_trompette_totoro_recadre"]
 Marianne_trompette=mus["Marianne_trompette_totoro"]
 Svoisine_tuba=mus["Svoisine_tuba"]
 Serge_baryton=mus["Serge_baryton_totoro_recadre"]
@@ -132,9 +137,10 @@ hb=Hautbois()
 class Percussions(object) :
     def __init__(self):
         self.Alizee_piano=Alizee_piano
+        self.Flore_piano=Flore_piano
         self.JeanJacques_percu=JeanJacques_percu
         self.JeanSeb_percu=JeanSeb_percu
-        self.all=[Alizee_piano,JeanJacques_percu,JeanSeb_percu]
+        self.all=[Alizee_piano,Flore_piano,JeanJacques_percu,JeanSeb_percu]
         return
 perc=Percussions()
 
@@ -151,8 +157,9 @@ class Trompettesetcornets(object) :
     def __init__(self):
         self.Bidou_cornet=Bidou_cornet
         self.Marianne_trompette=Marianne_trompette
+        self.Patrick_trompette=Patrick_trompette
         self.Serge_trompette=Serge_trompette
-        self.all=[Bidou_cornet,Marianne_trompette,Serge_trompette]
+        self.all=[Bidou_cornet,Marianne_trompette,Patrick_trompette,Serge_trompette]
         return
 trp=Trompettesetcornets()
 

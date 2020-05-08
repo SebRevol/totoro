@@ -15,6 +15,7 @@ from totoro.utils import get_time_string, zero_time, \
 
 
 
+
 clock_value = None
 
 
@@ -280,13 +281,13 @@ class Container(object):
         
     
     def get_players(self):
-        result =[]
+        result =set([])
         for child in self.children :
             if( isinstance(child, Container)):
-                result.extend(child.get_players())
+                result.update(child.get_players())
             else :
-                result.append(child)
-        return result
+                result.add(child)
+        return list(result)
     
     def to_line_and_cols(self, rel_x, rel_y, rel_size):
         line = round(rel_y*self.num_box_line +1,2)
@@ -298,20 +299,24 @@ class Container(object):
     def get_player(self, line, col):
         box = Box([], 1,1)
         box.inside(self).move(line, col, 1)
-        
+        result = None
         for player in self.player_registry.values():
             if (box.is_over(player)):
-                return player
-        return None
+                result= player
+        self._remove_child(box)
+        
+        return result
         
     def get_partial_player(self, line, col):
         box = Box([], 1,1)
         box.inside(self).move(line, col, 1)
-        
+        result = None
         for player in self.player_registry.values():
             if (box.is_partially_over(player)):
-                return player
-        return None
+        
+                result = player
+        self._remove_child(box)
+        return result
     
     
     def get_box(self, line_index, col_index, num_of_lines, num_of_cols):
@@ -370,9 +375,9 @@ class Container(object):
         self.num_box_line = config["num_box_line"] 
         self.num_box_col  = config["num_box_col"]  
 
-        self.children = config["children"]
+        self.children.clear()#) = config["children"].copy()
         
-        for child in self.children :
+        for child in config["children"] :
             child_pos = config["children_pos"][child]
             child.inside(self).prop_move(child_pos["y"], child_pos["x"], child_pos["size"], duration)
             if(child_pos["hidden"]):
