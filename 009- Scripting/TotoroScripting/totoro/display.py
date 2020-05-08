@@ -345,7 +345,7 @@ class Container(object):
         self.add_players_covered_by_box(column)
         return column
     
-    
+
     
     def tag(self, tag_name):
         config = {}

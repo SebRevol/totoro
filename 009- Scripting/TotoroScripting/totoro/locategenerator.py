@@ -54,6 +54,8 @@ def get_all_players():
     players_with_bonus = list(resource.players_registry.values())
     
     result = [ player for player in players_with_bonus if player not in bonux.all] 
+    result.remove(JeanJacques_chef_lacheprise)
+    result.remove(JeanJacques_chef)
     return result
 
 '''

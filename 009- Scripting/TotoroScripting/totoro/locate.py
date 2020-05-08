@@ -11,7 +11,7 @@ from totoro.players import get_all_players, JeanJacques_chef, Natacha_clarinette
     Serge_baryton, JeanJacques_chef_lacheprise, Chloe_saxophone, Laurence_flute,\
     clar, Cecile_clarinette, fl, hb, Svoisine_tuba, Srevol_tuba_recadre,\
     Nathalie_saxophone, Serge_trompette, PierreG_clarinette, Francoise_saxophone,\
-    Myrtille_cor, Flore_piano, Bidou_euphonium
+    Myrtille_cor, Flore_piano, Bidou_euphonium, Camille_bonus_recadre
 from totoro.tetris import I, Coeur, E, M, G, B, Barre, L, Te, Z, Carre, S
 import random
 
@@ -27,7 +27,7 @@ def locate(resource):
      
     
     #resource.cut ("00:01:53:62","00:03:41:00")
-    #resource.cut ("00:02:15:00","00:03:30:00")
+    #resource.cut ("00:01:55:62","00:02:05:00")
     
 start_time_string = "00:01:58:62"
 start_time = get_time_from_user_string(start_time_string)
@@ -36,12 +36,11 @@ end_time_string = "00:02:17:80"
 end_time = get_time_from_user_string(end_time_string) 
       
 def i_love_emgb(grid):
-    
+    clock(start_time_string)
     grid.set_num_box(15)
     grid.set_margin(20)
     
-    hide_all()
-   
+    Camille_bonus_recadre.hide()
     nb_mesure = 12
     duration = (end_time-start_time).total_seconds()
     
@@ -127,20 +126,40 @@ def i_love_emgb(grid):
     incr_clock(image_duration)
     print(grid)
     grid.set_margin(0)
-    grid.to_tag("table2",0.4)
+    grid.set_num_box(7)
+   
+    players = get_all_players()
+    players.remove(Natacha_clarinette) 
+    random.Random(6).shuffle(players)
+    
+    col_gauche = Box([],5,2)
+    col_gauche.inside(grid).move(1,1,2)
+    
+    ligne_bas =  Box([],2,5)
+    ligne_bas.inside(grid).move(6,1, 5)
+    
+    col_droite =  Box([],5,2)
+    col_droite.inside(grid).move(3,6, 2)
+    
+    ligne_haut=  Box([],2,5)
+    ligne_haut.inside(grid).move(1,3, 5)
+    
+    players = col_gauche.fill(players,0.2)
+    players = ligne_bas.fill(players,0.2)
+    players = col_droite.fill(players,0.2)
+    players = ligne_haut.fill(players,0.2)
+    
+    Natacha_clarinette.inside(grid).move(3,3,3, 0.2)
+    hide_all(players)
+    JeanJacques_chef.hide()
+    JeanJacques_chef_lacheprise.hide()
     print(grid)
     
-    Flore_piano.hide()
     
     
-    Natacha_clarinette.swap(JeanJacques_chef,0.5)  # @UndefinedVariable
-#     PierreG_clarinette.hide()
     clock("00:02:18:70")
     
-    col_gauche = get_box_from_players(grid,1,1,5,2)
-    ligne_bas =  get_box_from_players(grid,6,1,2,5)
-    col_droite =  get_box_from_players(grid,3,6,5,2)
-    ligne_haut=  get_box_from_players(grid,1,3,2,5)
+   
     
     current_time = get_time_from_user_string(get_clock())
     fin_tour = get_time_from_user_string("00:02:21:06")
@@ -180,7 +199,7 @@ def get_next_player_index(box, line_num, col_num):
 
 def play_tetris(grid):
     
-    start_time_string = "00:02:22:45"
+    start_time_string = "00:02:21:16"
     end_time_string = "00:03:14:00"
 
     start_time = get_time_from_user_string(start_time_string)
@@ -307,7 +326,6 @@ def play_tetris(grid):
     ligne_haut= Box([],2,5)
     ligne_haut.inside(grid).goto(1,3)
     hide_all()
-    print(grid)
     remaining_players= col_gauche.fill(players, 0.5)
     remaining_players= ligne_bas.fill(remaining_players, 0.5)
     remaining_players= col_droite.fill(remaining_players, 0.5)
@@ -321,7 +339,6 @@ def play_tetris(grid):
     Chloe_saxophone.inside(grid).move(3,3,3)  # @UndefinedVariable
    
     sub_box = grid.get_box(2,2,5,5)
-    print(sub_box)
     time= get_clock()
     
     rotate(grid, 0.3,7.5)
@@ -341,14 +358,12 @@ def play_tetris(grid):
     box_clar = Box(clarinettes)
     box_clar.auto_layout()
     box_clar.inside(grid).move(1,1,4)
-    print(grid)
     
     clock("00:03:04:20")
     box_clar.hide()
     box_flute_hb = Box(flute_et_hb)
     box_flute_hb.auto_layout()
     box_flute_hb.inside(grid).move(5,5,4)
-    print(grid)
     
     clock("00:03:04:70")
     box_all = Box([],4,4)
@@ -357,7 +372,6 @@ def play_tetris(grid):
     remaining_players=box_all.fill(clarinettes)
     hide_all(remaining_players)
     
-    print(grid)
     
     clock("00:03:05:20")
     box_all.hide()
@@ -367,7 +381,6 @@ def play_tetris(grid):
     Svoisine_tuba.inside(grid).move(1,2,1)  # @UndefinedVariable
     Srevol_tuba_recadre.inside(grid).move(2,1,1)  # @UndefinedVariable
     
-    print(grid)
     
     grid.set_num_box(9)
     previous_player = None
@@ -388,7 +401,6 @@ def play_tetris(grid):
     clock(start_time_string)
     
     grid.to_tag('fin tetris') 
-    print(grid)
     box1 = grid.get_box(2,1, 7,7)
     new_box = Box([], 6,7)
     
@@ -404,7 +416,6 @@ def play_tetris(grid):
     grid.set_num_box(9)
     box1.inside(grid).move(1.5,2, 7, 0.2 )
     incr_clock(0.2)
-    print(grid)
     print(len(box1.children))
     ratio = 1+2/7
     box1.expand(ratio, expand_children = False)  

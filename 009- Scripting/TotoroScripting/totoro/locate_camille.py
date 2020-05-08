@@ -25,6 +25,7 @@ def locate(resource):
     JeanJacques_chef=mus["Jean-Jacques_chef_totoro"]
     JeanSeb_percu=mus["Jean-Seb_percu_totoro"]
     Patrick_trompette=mus["Patrick_trompette_totoro_recadre"]
+    Flore_piano=mus["Flore_piano_totoro"]
     
 
     #Camille_bonus.swap(Serge_baryton)
@@ -35,6 +36,7 @@ def locate(resource):
     Nadine_bonus.inside(grid).goto(-3,-3)
     Bidou_bonus.inside(grid).goto(-4,-4)
     Nelly_bonus.inside(grid).goto(-5,-5)
+    Flore_piano.inside(grid).goto(-1,-1)
    
 
     daniel_trombonne_recadre.inside(grid).goto(1,2)
@@ -66,6 +68,7 @@ def locate(resource):
     Alain_flute.inside(grid).goto(5,2)    
     Cecile_clarinette.inside(grid).goto(7,7)
     Serge_trompette.inside(grid).goto(5,7)
+    Serge_trompette.swap(Flore_piano)
     Nelly_clarinette.inside(grid).goto(5,6)
     Marianne_trompette.inside(grid).goto(2,7)
     Bidou_euphonium.inside(grid).goto(-5,-5)    
@@ -125,7 +128,8 @@ def locate(resource):
     Violette_clarinette.inside(grid).goto(6,6,0.5)
     daniel_trombonne_recadre.inside(grid).goto(6,7,0.5)
     Gwenn_flute.inside(grid).goto(7,1,0.5)
-    Serge_euphonium.inside(grid).goto(7,2,0.5)
+    Serge_euphonium.inside(grid).goto(-2,-2)
+    Flore_piano.inside(grid).goto(7,2,0.5)
     Patrick_trompette.inside(grid).goto(7,3,0.5) 
     Svoisine_tuba.inside(grid).goto(7,4,0.5)
     Pierre_clarinette.inside(grid).goto(7,5,0.5)
@@ -372,6 +376,8 @@ def locate(resource):
     Svoisine_tuba.inside(grid).goto(3,4)
     Serge_baryton.inside(grid).goto(3,5)
     Srevol_tuba_recadre.inside(grid).goto(3,6)
+    Camille_bonus_recadre.goto(-5,-5)
+    Bidou_bonus_recadre.goto(-10,-10)
     print(grid)
     
     Bidou_bonus.hide()
@@ -419,8 +425,9 @@ def locate(resource):
     Chloe_saxophone.swap(Andre_cor)
     JeanSeb_percu.swap(Serge_baryton)
     Alizee_piano.inside(grid).goto(3,2) #ok
-    JeanJacques_percu.inside(grid).goto(3,3) #ok
-    
+    JeanJacques_percu.inside(grid).goto(-3,-3) #ok
+    Flore_piano.inside(grid).goto(3,3)
+        
     Antoine_flute.inside(grid).goto(4,4)
     Laurence_flute.inside(grid).goto(4,5)
     Alain_flute.inside(grid).goto(4,6)
@@ -463,7 +470,7 @@ def locate(resource):
     Pierre_clarinette.inside(grid).goto(-1,-1)
     Alizee_piano.inside(grid).goto(-1,-1)
     Amelie_clarinette_recadre.inside(grid).goto(4,5)
-    Laurence_flute.swap(Myrtille_cor)
+    Laurence_flute.swap(Svoisine_tuba)
     Srevol_tuba_recadre.inside(grid).goto(1,3)
     PierreG_clarinette.inside(grid).goto(2,3)
     Antoine_flute.inside(grid).goto(3,3)
@@ -508,37 +515,41 @@ def locate(resource):
     #print(grid)
     
     clock("00:01:51:00")
-    #alizee, patrick, camille, daniel, amélie, JJ laché prise, tous les saxs
+    grid.to_tag("table2")
+    hide_all()
+    JeanSeb_percu.inside(grid).move(1,1,3)
+    Alizee_piano.inside(grid).move(1,5,3)
+    Flore_piano.inside(grid).move(5,3,3)
+    #lineclar=Line(clar.all)
+    colonne1=Column(clar.all,5)    
+    colonne1.goto(4,1)
+    zikos=clar.all
+    line4=Line([],10)
+    line4.goto(4,0)
+    zikos=line4.fill(zikos)
+    line4.shift(1,10)
     
-    grid.set_num_box(6)
-    grid.auto_layout()
-    
-    Marianne_trompette.inside(grid).goto(-1,-1)
-    Nathalie_saxophone.inside(grid).goto(-1,-1)
-    Violette_clarinette.inside(grid).goto(-1,-1)
-    Bidou_euphonium.inside(grid).goto(-1,-1)
-    Antoine_flute.inside(grid).goto(-1,-1)
-    Nelly_clarinette.inside(grid).goto(-1,-1)
-    
-    Alizee_piano.inside(grid).move(1,1,2)
-    Patrick_trompette.inside(grid).move(1,3,2)
-    Amelie_clarinette_recadre.inside(grid).move(1,5,2)
-    Stephane_clarinette.inside(grid).move(3,1,2)
-    JeanJacques_chef.inside(grid).move(3,3,2)
-    Natacha_clarinette.inside(grid).move(3,5,2)
-    Aurelie_hautbois.inside(grid).move(5,3,2)
-    Cecile_clarinette.inside(grid).move(5,1,2)
-    Chloe_saxophone.inside(grid).move(5,5,2)
-    Gwenn_flute.inside(grid).goto(-1,-1)
-    Serge_trompette.inside(grid).goto(-1,-1)
-    Pierre_clarinette.inside(grid).goto(-1,-1)
-    Serge_baryton.inside(grid).goto(-1,-1)
-    Srevol_tuba_recadre.inside(grid).goto(-1,-1)
-    Ineke_clarinette.inside(grid).goto(-1,-1)
-    PierreG_clarinette.inside(grid).goto(-1,-1)
-    Camille_trombone.inside(grid).goto(-1,-1)
-    Jawad_flute.inside(grid).goto(-1,-1)
-    
-    
+    Jawad_flute.inside(grid).goto(5,6)
+    Nadine_saxophone.inside(grid).goto(5,7)
+    Patrick_trompette.inside(grid).goto(6,6)
+    Patrick_trompette.swap(Violette_clarinette)
+    Benoit_flute.inside(grid).goto(6,7)
+    Alain_flute.inside(grid).goto(7,6)
+    Francoise_saxophone.inside(grid).goto(7,7)
+    Serge_euphonium.inside(grid).goto(1,4)
+    Camille_bonus_recadre.inside(grid).goto(2,4)
+    Bidou_euphonium.inside(grid).goto(3,4)
+    MarieClaude_saxophone.inside(grid).goto(5,2)
+    Veronique_hautbois.inside(grid).goto(5,1)
+    Aurianne_saxophone.inside(grid).goto(7,2)
+    Marianne_trompette.inside(grid).goto(6,1)
+    Srevol_tuba_recadre.inside(grid).goto(6,2)
+    Cecile_trombone.inside(grid).goto(7,1)
+    print(grid)
+ 
+
+   # hide_all()
+
     #print(grid)
-    #resource.cut("00:00:30:00",  "00:01:03:00")
+    #print(grid)
+    #resource.cut("00:01:50:00",  "00:02:10:00")

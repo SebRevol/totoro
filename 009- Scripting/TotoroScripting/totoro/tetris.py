@@ -10,7 +10,7 @@ from totoro.utils import get_current_resource, get_frame_duration
 
 
 #Line per seconds
-MOVE_SPEED =2.51
+MOVE_SPEED =2.43
 
 def check_lines(grid):
     first_full_line =0
