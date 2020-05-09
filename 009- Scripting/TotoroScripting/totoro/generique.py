@@ -6,16 +6,17 @@ Created on 6 avr. 2020
 from totoro.model import Resource
 
 from totoro.utils import get_time_from_user_string, get_user_string_from_time
-from totoro.display import clock, incr_clock, hide_all
+from totoro.display import clock, incr_clock, hide_all, Line
 import datetime
 from totoro.tetris import L_inverse, L, S, Te, Z, Carre
+from builtins import isinstance
 
 def get_cell_position(ratio, column):
     line = 1.5
     x = (column-1)/3
     y= (line-1)/3
     
-    size = 0.4
+    size = 1/3
     
     new_size = ratio*size
  
@@ -95,6 +96,38 @@ def defile_3_blocks():
         print(grid)
 
 
+def defile_simple_block():
+    t_tot = duration/len(blocks)
+    t_center = t_tot/2
+    
+    t_in = t_tot/4
+    t_out = t_tot/4
+    
+    grid.set_margin(20)
+    grid.set_num_box(5)
+    y0=1/8
+    size = 2/3
+    x =1/6 
+    
+    x0= 1
+    x1=-2.1/3
+    for block in blocks :
+        if(isinstance(block, Te) or isinstance(block, L_inverse)):
+            y =y0-size/3
+        else :
+            y=y0
+        block.prop_move(y,x0,size)
+        block.prop_move(y,x,size, t_in)
+        incr_clock(t_in+ t_center)
+        block.prop_move(y, x1, size, t_out)
+        incr_clock(t_out)
+        
+    nous = Line([Camille_trombone, Srevol_tuba_recadre])
+    
+    nous.inside(grid).prop_move(-1/3,1/6,2/3)
+    nous.prop_move(1/8,1/6,2/3,t_in)
+    
+
 if __name__ == '__main__':
     resource = Resource('../001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Orchestre dematerialisé - V1_pupitres incomplets.mlt')
 
@@ -128,7 +161,7 @@ if __name__ == '__main__':
     
     t_start_string ="00:02:20:00"
     
-    duration = 55.416
+    duration =55.416
     
     t_end  =  get_time_from_user_string(t_start_string) + datetime.timedelta(seconds = duration)
     t_end_string = get_user_string_from_time(t_end)
@@ -138,19 +171,14 @@ if __name__ == '__main__':
     
     clock(t_start_string)
     
-    defile_3_blocks()
-    
-    resource.cut(t_start_string, t_end_string)
+    #defile_3_blocks()
+    defile_simple_block()
+    resource.cut(t_start_string, None)
     
     resource.save('../001 - Montage orchestre dématérialisé/Orchestre dematerialisé - V1/Generique.mlt')
     
     
-def defile_simple_block():
-    grid.set_margin(20)
-    grid.set_num_box(5)
-    y=2 
-    for block in blocks :
-        block.move()
+
         
 
     
